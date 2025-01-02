@@ -1,0 +1,46 @@
+.hometype{
+    color: #003B4F;
+    border-bottom-left-radius: 20px;
+}
+.background-section {
+    background-image: url("./Components/images/kelli-mcclintock-wBgAVAGjzFg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+.thin{
+  font-weight: 200;
+}
+.tiny{
+  font-size: 8pt;
+}
+.italics{
+  font-style: italic;
+}
+
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hometype {
+  animation: fadeInRight 1s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+
+@media (max-width: 768px) { 
+    .hometype {
+      font-size: 15pt;
+      margin: 0 auto; /* Center the element horizontally */
+      text-align: center; /* Optional: Center text within the element */
+    }
+  }
