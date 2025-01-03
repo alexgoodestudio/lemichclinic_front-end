@@ -27,8 +27,9 @@ function Dashboard() {
 
             {/* Content Column */}
             <div className="col-lg-8 bg-slate-200 p-4 rounded">
-              <h1 className="mb-3">Our Mission</h1>
-              <p>
+              <i className="fas fa-handshake fa-3x text-gray-600"></i>
+              <h1 className="mb-3  ivy">Our Mission</h1>
+              <p className="">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
                 quality, confidential, mental health care. The majority of our
@@ -55,7 +56,7 @@ function Dashboard() {
               <div className="mb-4">
                 <i className="fas fa-user-circle fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl font-semibold mb-3">Personalized</h2>
+              <h2 className="text-xl font-semibold mb-3 ivy">Personalized</h2>
               <p>
                 You are matched with a therapist that fits your needs and style.
                 We take the time to get to know you to make the right pairing.
@@ -69,7 +70,7 @@ function Dashboard() {
               <div className="mb-4">
                 <i className="fas fa-layer-group fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl font-semibold mb-3">Varied</h2>
+              <h2 className="text-xl font-semibold mb-3 ivy">Varied</h2>
               <p>
                 We have a large variety of clinician specialties to take care of
                 your needs. A few of these include trauma, suicidal ideations,
@@ -82,7 +83,7 @@ function Dashboard() {
               <div className="mb-4">
                 <i className="fas fa-flag fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl font-semibold mb-3">Specialized</h2>
+              <h2 className="text-xl font-semibold mb-3 ivy">Specialized</h2>
               <p>
                 As most of our clients are on active duty, we also specialize in
                 military-specific concerns. Some of these struggles include PCS
@@ -96,7 +97,7 @@ function Dashboard() {
               <div className="mb-4">
                 <i className="fas fa-file-alt fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl font-semibold mb-3">Prepared</h2>
+              <h2 className="text-xl font-semibold mb-3 ivy">Prepared</h2>
               <p>
                 Our owner, Dr. Lemich, is well-versed in military and VA
                 paperwork. As such, we can assist with LIMDU, Med Board, VA, and
@@ -106,9 +107,9 @@ function Dashboard() {
           </div>
 
           {/* New GOT TRICARE Section */}
-          <div className="row mt-5">
-            <div className="col-lg-12 bg-slate-500 text-white p-4 rounded">
-              <h2 className="text-2xl font-bold mb-3">GOT TRICARE?</h2>
+          <div className="row mt-5 ">
+            <div className="col-lg-12 bg-slate-500 text-white p-5 rounded">
+              <h2 className="text-2xl  font-bold mb-3 ivy underline">GOT TRICARE?</h2>
               <p className="mb-3">Great, we are in-network.</p>
               <p className="mb-3">
                 Active duty, please have your referral made to The Lemich

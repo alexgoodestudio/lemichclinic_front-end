@@ -164,7 +164,7 @@ function OurTeam() {
     <div className="bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         {/* Gregory C. Lemich */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-5">
           <div className="w-48 h-48 mx-auto rounded-full bg-gray-200">
             <img
               src={images["lemich"]}

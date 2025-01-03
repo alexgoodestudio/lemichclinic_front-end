@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./style.css"
 
 function Navbar() {
   return (
@@ -9,7 +10,7 @@ function Navbar() {
         <Link className="navbar-brand ps-4" to="/">
           The Lemich Clinic  | <span className="thin"> Norfolk, Virginia</span>
         </Link>
-        <ul className="navbar-nav ms-auto d-flex flex-row gap-4">
+        <ul className="navbar-nav ms-auto d-flex flex-row gap-4 ivy nav-link-styling">
   <li className="nav-item">
     <Link className="nav-link" to="/">
      Home

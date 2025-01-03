@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./Components/fonts/ivy-style-sans.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.ivy {
+  font-family: 'MyCustomFont', sans-serif;
+}
+
+.nav-link-styling{
+  font-size: 14pt;
+}
+
 .hometype{
     color: #003B4F;
     border-bottom-left-radius: 20px;
@@ -42,5 +56,8 @@
       font-size: 15pt;
       margin: 0 auto; /* Center the element horizontally */
       text-align: center; /* Optional: Center text within the element */
+    }
+    .nav-link-styling{
+      font-size: 9pt;
     }
   }
