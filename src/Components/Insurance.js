@@ -1,4 +1,5 @@
 import React from "react";
+import "../style.css"
 
 function Insurance() {
   return (
@@ -6,7 +7,7 @@ function Insurance() {
       {/* Header Section */}
       <div className="row mb-5">
         <div className="col-12">
-          <h1 className="text-center text-4xl font-bold underline decoration-sky-500 mb-3">Insurance / Payment</h1>
+          <h1 className="text-center text-4xl font-bold underline decoration-sky-500 mb-3 ivy">Insurance / Payment</h1>
           <p className="text-center text-gray-600">
             Explore our payment options to find the best fit for your needs.
           </p>
@@ -18,7 +19,7 @@ function Insurance() {
         {/* Active Duty Section */}
         <div className="col-lg-6 mb-4">
           <div className="bg-slate-100 p-4 rounded shadow-lg">
-            <h2 className="text-2xl font-semibold text-sky-600 mb-3">Active Duty</h2>
+            <h2 className="text-2xl font-semibold text-sky-600 mb-3 ">Active Duty</h2>
             <ul className="list-disc pl-5 text-gray-700">
               <li className="mb-2">
                 <strong>Tricare:</strong> Must have an active referral on file

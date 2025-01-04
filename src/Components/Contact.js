@@ -1,4 +1,6 @@
 import React from "react";
+import "../style.css"
+
 
 function Contact() {
   return (
@@ -6,7 +8,7 @@ function Contact() {
       {/* Header Section */}
       <div className="row mb-5">
         <div className="col-12">
-          <h1 className="text-center text-4xl font-bold underline decoration-blue-500 mb-3">Contact Us</h1>
+          <h1 className="text-center text-4xl font-bold mb-3 ivy">Contact Us</h1>
           <p className="text-center text-gray-600">
             Reach out to us for session requests, inquiries, or business collaborations.
           </p>

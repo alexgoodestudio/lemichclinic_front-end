@@ -172,13 +172,13 @@ function OurTeam() {
               className="w-full h-full object-cover rounded-full"
             />
           </div>
-          <h3 className="text-xl font-bold mt-4">Gregory C. Lemich, Ph.D., LPC</h3>
+          <h3 className="text-xl font-bold mt-4 ">Gregory C. Lemich, Ph.D., LPC</h3>
           <p className="text-gray-600 mt-2">Owner and Clinical Director</p>
           <p className="text-gray-700 mt-4 text-sm">{team[0].description}</p>
         </div>
 
         {/* Clinicians */}
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+        <h2 className="text-3xl  font-bold text-center text-gray-800 mb-8">
           Clinicians
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

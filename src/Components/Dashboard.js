@@ -19,11 +19,11 @@ function Dashboard() {
       </div>
 
       {/* Mission Section */}
-      <div className="py-5">
-        <div className="container">
+      <div className="py-5 bg-slate-100">
+        <div className="container ">
           <div className="row">
             {/* Spacer Column */}
-            <div className="col-lg-2"></div>
+            <div className="col-lg-2 "></div>
 
             {/* Content Column */}
             <div className="col-lg-8 bg-slate-200 p-4 rounded">
@@ -48,11 +48,11 @@ function Dashboard() {
       </div>
 
       {/* Features Section */}
-      <div className="py-5">
+      <div className="py-5 bg-slate-100">
         <div className="container">
           <div className="row text-center">
             {/* Personalized Section */}
-            <div className="col-lg-3 bg-slate-100 p-4 rounded">
+            <div className="col-lg-3 bg-slate-100 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-user-circle fa-3x text-gray-600"></i>
               </div>
@@ -66,7 +66,7 @@ function Dashboard() {
             </div>
 
             {/* Varied Section */}
-            <div className="col-lg-3 bg-slate-200 p-4 rounded">
+            <div className="col-lg-3 bg-slate-200 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-layer-group fa-3x text-gray-600"></i>
               </div>
@@ -79,7 +79,7 @@ function Dashboard() {
             </div>
 
             {/* Specialized Section */}
-            <div className="col-lg-3 bg-slate-300 p-4 rounded">
+            <div className="col-lg-3 bg-slate-300 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-flag fa-3x text-gray-600"></i>
               </div>
@@ -93,7 +93,7 @@ function Dashboard() {
             </div>
 
             {/* Prepared Section */}
-            <div className="col-lg-3 bg-slate-400 p-4 rounded">
+            <div className="col-lg-3 bg-slate-400 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-file-alt fa-3x text-gray-600"></i>
               </div>
@@ -109,7 +109,7 @@ function Dashboard() {
           {/* New GOT TRICARE Section */}
           <div className="row mt-5 ">
             <div className="col-lg-12 bg-slate-500 text-white p-5 rounded">
-              <h2 className="text-2xl  font-bold mb-3 ivy underline">GOT TRICARE?</h2>
+              <h2 className="text-2xl  font-bold mb-3 underline">GOT TRICARE?</h2>
               <p className="mb-3">Great, we are in-network.</p>
               <p className="mb-3">
                 Active duty, please have your referral made to The Lemich

@@ -7,6 +7,14 @@
 .ivy {
   font-family: 'MyCustomFont', sans-serif;
 }
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+  background-color: #e2e8f0; /* Matches bg-slate-300 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
 
 .nav-link-styling{
   font-size: 14pt;
