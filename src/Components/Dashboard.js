@@ -11,9 +11,15 @@ function Dashboard() {
 
         {/* Right Column (Text Content) */}
         <div className="col-lg-6 text-start p-5">
-          <h1 className=" display-3 hometype p-3 shadow-lg">
+          <h1 className=" display-3 hometype p-5 shadow-lg">
             THE HOME OF<br /> <span className="font-bold">MILITARY</span>
             <br /> MENTAL HEALTH.
+            <br/>
+          <div className="btn phone-button ">
+            <a href="tel:+18044820516" className="phone-link ">
+            CALL NOW! (757) 536-1233
+            </a>
+        </div>
           </h1>
         </div>
       </div>

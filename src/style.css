@@ -14,6 +14,20 @@
   background-color: #e2e8f0; /* Matches bg-slate-300 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
+.phone-button{
+  background-color: rgb(235, 116, 30);
+  color: white;
+  border-radius: 25px;
+}
+.phone-link {
+  color: inherit; 
+  text-decoration: none; 
+
+}
+
+.phone-link:hover {
+  background-color: rgb(255, 255, 255);
+}
 
 
 .nav-link-styling{
