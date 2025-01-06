@@ -5,21 +5,19 @@ import Footer from "../Footer";
 function Dashboard() {
   return (
     <div className="bg-slate-50">
-      <div className="row align-items-center text-white vh-100 background-section">
-        {/* Left Column (Empty) */}
-        <div className="col-lg-6 d-none d-lg-block"></div>
 
-        {/* Right Column (Text Content) */}
-        <div className="col-lg-6 text-start p-5">
-          <h1 className=" display-3 hometype p-5 shadow-lg">
-            THE HOME OF<br /> <span className="font-bold">MILITARY</span>
+      <div className="row align-items-center fullscreen background-section">
+        <div className="col-5  offset-6  text-start shadowBox rounded2 p-lg-5">
+          <h1 className=" display-3 textLeft textMobile hometype p-lg-5 ">
+            THE HOME OF
+            <br /> <span className="font-bold">MILITARY</span>
             <br /> MENTAL HEALTH.
-            <br/>
-          <div className="btn phone-button ">
-            <a href="tel:+18044820516" className="phone-link ">
-            CALL NOW! (757) 536-1233
-            </a>
-        </div>
+            <br />
+            <div className="btn phone-button textMobile">
+              <a href="tel:+18044820516" className="phone-link ">
+                CALL NOW! (757) 536-1233
+              </a>
+            </div>
           </h1>
         </div>
       </div>
@@ -32,7 +30,7 @@ function Dashboard() {
             <div className="col-lg-2 "></div>
 
             {/* Content Column */}
-            <div className="col-lg-8 bg-slate-200 p-4 rounded">
+            <div className="col-lg-8 p-4 rounded">
               <i className="fas fa-handshake fa-3x text-gray-600"></i>
               <h1 className="mb-3  ivy">Our Mission</h1>
               <p className="">
@@ -58,7 +56,7 @@ function Dashboard() {
         <div className="container">
           <div className="row text-center">
             {/* Personalized Section */}
-            <div className="col-lg-3 bg-slate-100 p-4 rounded shadow">
+            <div className="col-lg-3 col-12 bg-slate-100 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-user-circle fa-3x text-gray-600"></i>
               </div>
@@ -72,7 +70,7 @@ function Dashboard() {
             </div>
 
             {/* Varied Section */}
-            <div className="col-lg-3 bg-slate-200 p-4 rounded shadow">
+            <div className="col-lg-3 col-12 bg-slate-200 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-layer-group fa-3x text-gray-600"></i>
               </div>
@@ -85,7 +83,7 @@ function Dashboard() {
             </div>
 
             {/* Specialized Section */}
-            <div className="col-lg-3 bg-slate-300 p-4 rounded shadow">
+            <div className="col-lg-3 col-12 bg-slate-300 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-flag fa-3x text-gray-600"></i>
               </div>
@@ -99,7 +97,7 @@ function Dashboard() {
             </div>
 
             {/* Prepared Section */}
-            <div className="col-lg-3 bg-slate-400 p-4 rounded shadow">
+            <div className="col-lg-3 col-12 bg-slate-400 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-file-alt fa-3x text-gray-600"></i>
               </div>
@@ -115,7 +113,9 @@ function Dashboard() {
           {/* New GOT TRICARE Section */}
           <div className="row mt-5 ">
             <div className="col-lg-12 bg-slate-500 text-white p-5 rounded">
-              <h2 className="text-2xl  font-bold mb-3 underline">GOT TRICARE?</h2>
+              <h2 className="text-2xl  font-bold mb-3 underline">
+                GOT TRICARE?
+              </h2>
               <p className="mb-3">Great, we are in-network.</p>
               <p className="mb-3">
                 Active duty, please have your referral made to The Lemich

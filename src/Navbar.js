@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="navbar navbar-light  bg-slate-300 ">
       <div className="container-fluid ">
         <Link className="navbar-brand ps-4" to="/">
-          The Lemich Clinic  | <span className="thin"> Norfolk, Virginia</span>
+          <span className=" ms-3 me-2">The Lemich Clinic</span>  | <span className="thin italics ms-2"> Norfolk, Virginia</span>
         </Link>
         <ul className="navbar-nav ms-auto d-flex flex-row gap-4 ivy nav-link-styling">
   <li className="nav-item">

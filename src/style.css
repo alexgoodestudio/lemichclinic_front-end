@@ -4,6 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.fullscreen{
+  height: 100vh;
+}
 .ivy {
   font-family: 'MyCustomFont', sans-serif;
 }
@@ -11,7 +14,7 @@
   position: sticky;
   top: 0;
   z-index: 1000; /* Ensures it stays on top of other elements */
-  background-color: #e2e8f0; /* Matches bg-slate-300 */
+  background-color: #e2e8f0; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 .phone-button{
@@ -19,16 +22,16 @@
   color: white;
   border-radius: 25px;
 }
+.phone-button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  border:solid;
+}
 .phone-link {
   color: inherit; 
-  text-decoration: none; 
-
+  text-decoration: none;
 }
-
-.phone-link:hover {
-  background-color: rgb(255, 255, 255);
-}
-
 
 .nav-link-styling{
   font-size: 14pt;
@@ -39,12 +42,25 @@
     border-bottom-left-radius: 20px;
 }
 .background-section {
-    background-image: url("./Components/images/kelli-mcclintock-wBgAVAGjzFg-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+  background-image: url("./Components/images/kelli-mcclintock-wBgAVAGjzFg-unsplash.jpg");
+  background-size: 100% auto; /* Fill the width, let height adjust automatically */
+  background-position: center top; /* Align image to the top center */
+  background-repeat: no-repeat; /* Prevent image tiling */
+  width: 100%; /* Ensure the container spans the full width */
+}
+  
 .thin{
   font-weight: 200;
+}
+
+.rounded2{
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.shadowBox{
+  box-shadow: 0 -5px 10px -3px rgba(0, 0, 0, 0.1), 
+              0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 .tiny{
   font-size: 8pt;
@@ -52,7 +68,6 @@
 .italics{
   font-style: italic;
 }
-
 
 
 @keyframes fadeInRight {
@@ -79,7 +94,30 @@
       margin: 0 auto; /* Center the element horizontally */
       text-align: center; /* Optional: Center text within the element */
     }
+    .fullscreen{
+      height: 30vh;
+    }
+    .phone-button{
+      margin-top: 5%;
+    }
     .nav-link-styling{
       font-size: 9pt;
+    }
+    .background-section{
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .textMobile{
+      font-size: 60%;
+    }
+
+    .textLeft {
+      text-align: start;
+    }
+    .rounded2{
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding: 30px;
     }
   }
