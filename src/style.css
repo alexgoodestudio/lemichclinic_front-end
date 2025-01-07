@@ -14,19 +14,24 @@
   position: sticky;
   top: 0;
   z-index: 1000; /* Ensures it stays on top of other elements */
-  background-color: #e2e8f0; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
+.main{
+  background-color: #d4e6fe; 
+}
+
 .phone-button{
-  background-color: rgb(235, 116, 30);
+  background-color: #d4e6fe; 
   color: white;
   border-radius: 25px;
+  padding: 16px;
 }
 .phone-button:hover{
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border-radius: 25px;
-  border:solid;
+  background-color: #f8caab; 
+  color: black;
+}
+.text-orange{
+  color: #003B4F;
 }
 .phone-link {
   color: inherit; 
@@ -48,9 +53,12 @@
   background-repeat: no-repeat; /* Prevent image tiling */
   width: 100%; /* Ensure the container spans the full width */
 }
-  
+
 .thin{
   font-weight: 200;
+}
+.icon{
+  width: 15%;
 }
 
 .rounded2{
@@ -99,17 +107,22 @@
     }
     .phone-button{
       margin-top: 5%;
+      padding: 5px;
     }
     .nav-link-styling{
       font-size: 9pt;
     }
+    
     .background-section{
       background-size:contain;
       background-repeat: no-repeat;
       background-position: center;
     }
     .textMobile{
-      font-size: 60%;
+      font-size: 10pt;
+    }
+    .textMobile2{
+      font-size: 6pt;
     }
 
     .textLeft {

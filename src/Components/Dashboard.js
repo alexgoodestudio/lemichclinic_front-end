@@ -7,13 +7,13 @@ function Dashboard() {
     <div className="bg-slate-50">
 
       <div className="row align-items-center fullscreen background-section">
-        <div className="col-5  offset-6  text-start shadowBox rounded2 p-lg-5">
+        <div className="col-5  offset-6  text-start  shadowBox rounded2 p-lg-3">
           <h1 className=" display-3 textLeft textMobile hometype p-lg-5 ">
             THE HOME OF
-            <br /> <span className="font-bold">MILITARY</span>
+            <br /> <span className="font-bold ">MILITARY</span>
             <br /> MENTAL HEALTH.
             <br />
-            <div className="btn phone-button textMobile">
+            <div className="btn phone-button textMobile2 text-orange">
               <a href="tel:+18044820516" className="phone-link ">
                 CALL NOW! (757) 536-1233
               </a>
@@ -23,8 +23,8 @@ function Dashboard() {
       </div>
 
       {/* Mission Section */}
-      <div className="py-5 bg-slate-100">
-        <div className="container ">
+      <div className="py-4 bg-slate-100">
+        <div className="container">
           <div className="row">
             {/* Spacer Column */}
             <div className="col-lg-2 "></div>
@@ -32,7 +32,7 @@ function Dashboard() {
             {/* Content Column */}
             <div className="col-lg-8 p-4 rounded">
               <i className="fas fa-handshake fa-3x text-gray-600"></i>
-              <h1 className="mb-3  ivy">Our Mission</h1>
+              <h1 className="mb-3 ivy underline ">Our Mission</h1>
               <p className="">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
@@ -52,8 +52,8 @@ function Dashboard() {
       </div>
 
       {/* Features Section */}
-      <div className="py-5 bg-slate-100">
-        <div className="container">
+      <div className=" bg-slate-100">
+        <div className="container px-5">
           <div className="row text-center">
             {/* Personalized Section */}
             <div className="col-lg-3 col-12 bg-slate-100 p-4 rounded shadow">
@@ -129,7 +129,10 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="mt-5">
+      <Footer/>
+      </div>
+      
     </div>
   );
 }

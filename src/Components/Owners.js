@@ -9,7 +9,7 @@ function Owners() {
           <img
             src={img4}
             alt="Gregory and Jennifer Lemich"
-            className="w-48 h-48 mx-auto rounded-full border-4 "
+            className=" w-3/4 h-auto mx-auto rounded-full border-4"
           />
           <h1 className="text-3xl font-bold text-blue-700 mt-6">Owners</h1>
           <p className="text-gray-700 mt-4">
