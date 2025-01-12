@@ -1,23 +1,50 @@
 import React from "react";
 import "../style.css";
 import Footer from "../Footer";
+import useGsapAnimations from "./animations/useGsapAnimations.js";
 
 function Dashboard() {
+  // Define animations
+  useGsapAnimations([
+    {
+      trigger: ".slide",
+      config: {
+        start: "top 80%",
+        props: { opacity: 0, y: 50, duration: 1.2 },
+      },
+    },
+    {
+      trigger: ".shadow",
+      config: {
+        start: "top 90%",
+        props: { opacity: 0, scale: 0.9, duration: 1, stagger: 0.2 },
+      },
+    },
+    // {
+    //   trigger: ".bg-slate-500",
+    //   config: {
+    //     start: "top 85%",
+    //     props: { opacity: 0, y: 100, duration: 1.5 },
+    //   },
+    // },
+  ]);
+
   return (
     <div className="bg-slate-50">
-
+      {/* Hero Section */}
       <div className="row align-items-center fullscreen background-section">
-        <div className="col-5  offset-6  text-start  shadowBox rounded2 p-lg-3">
-          <h1 className=" display-3 textLeft textMobile hometype p-lg-5 ">
+        <div className="col-5 offset-6 text-start shadowBox rounded2 p-lg-3">
+          <h1 className="display-3 textLeft textMobile slide p-lg-5">
             THE HOME OF
-            <br /> <span className="font-bold ">MILITARY</span>
+            <br /> <span className="font-bold">MILITARY</span>
             <br /> MENTAL HEALTH.
             <br />
-            <div className="btn phone-button textMobile2 text-orange">
-              <a href="tel:+18044820516" className="phone-link ">
-                CALL NOW! (757) 536-1233
-              </a>
-            </div>
+            <div className="btn phone-button textMobile2 text-orange flex items-center gap-2">
+  <i className="fas fa-phone-alt text-xl"></i> {/* Font Awesome Icon */}
+  <a href="tel:+18044820516" className="phone-link font-bold">
+    CALL NOW! (757) 536-1233
+  </a>
+</div>
           </h1>
         </div>
       </div>
@@ -27,13 +54,13 @@ function Dashboard() {
         <div className="container">
           <div className="row">
             {/* Spacer Column */}
-            <div className="col-lg-2 "></div>
+            <div className="col-lg-2"></div>
 
             {/* Content Column */}
             <div className="col-lg-8 p-4 rounded">
               <i className="fas fa-handshake fa-3x text-gray-600"></i>
-              <h1 className="mb-3 ivy underline ">Our Mission</h1>
-              <p className="">
+              <h1 className="mb-3 ivy underline">Our Mission</h1>
+              <p>
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
                 quality, confidential, mental health care. The majority of our
@@ -52,7 +79,7 @@ function Dashboard() {
       </div>
 
       {/* Features Section */}
-      <div className=" bg-slate-100">
+      <div className="bg-slate-100">
         <div className="container px-5">
           <div className="row text-center">
             {/* Personalized Section */}
@@ -111,11 +138,9 @@ function Dashboard() {
           </div>
 
           {/* New GOT TRICARE Section */}
-          <div className="row mt-5 ">
+          <div className="row mt-5">
             <div className="col-lg-12 bg-slate-500 text-white p-5 rounded">
-              <h2 className="text-2xl  font-bold mb-3 underline">
-                GOT TRICARE?
-              </h2>
+              <h1 className="font-bold mb-3 underline">GOT TRICARE?</h1>
               <p className="mb-3">Great, we are in-network.</p>
               <p className="mb-3">
                 Active duty, please have your referral made to The Lemich
@@ -129,10 +154,11 @@ function Dashboard() {
           </div>
         </div>
       </div>
+
+      {/* Footer Section */}
       <div className="mt-5">
-      <Footer/>
+        <Footer />
       </div>
-      
     </div>
   );
 }

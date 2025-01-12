@@ -26,49 +26,48 @@ async function fetchJson(url, options, onCancel) {
   }
 }
 
+// Fetch contact information by ID (for editing)
+export async function readContact(contact_id, signal) {
+  const url = `${API_BASE_URL}/contacts/${contact_id}`;
+  return await fetchJson(url, { headers, signal }, {});
+}
 
 export async function updateContact(contact_id, formData, signal) {
-    const url = `${API_BASE_URL}/contacts/${contact_id}`;
-    const options = {
-        headers,
-        method: "PUT",
-        body: JSON.stringify({ data: formData }),
-        signal,
-    };
-    // Assuming the API response contains the updated data
-    const response = await fetchJson(url, options);
-    return response.data;  // Adjust this based on your API response structure
-  }
-  
-  export async function readContact(contact_id, signal) {
-    const url = `${API_BASE_URL}/contacts/${contact_id}`;
-    return await fetchJson(url, { headers, signal }, {});
-  }
-  
-  export async function createContact(contact, signal){
-    const url = `${API_BASE_URL}/contacts`;
-      const options ={
-        headers,
-        method:"POST",
-        body:JSON.stringify({data: contact}),
-        signal
-      }
-    return await fetchJson(url, options, contact)
-  }
-  
-  export async function deleteContact(contact_id,formData, signal){
-    const url = `${API_BASE_URL}/contacts/${contact_id}`;
-    const options = {
-      method: "DELETE",
-      headers,
-      signal,
-    };
-    return await fetchJson(url, options);
-  }
-  
-  export async function listContacts(signal){
-    const url = `${API_BASE_URL}/contacts`;
-    return await fetchJson(url, { headers, signal });
-  }
-  
-  
+  const url = `${API_BASE_URL}/contacts/${contact_id}`;
+  const options = {
+    headers,
+    method: "PUT",
+    body: JSON.stringify({ data: formData }),
+    signal,
+  };
+  const response = await fetchJson(url, options);
+  return response;  
+}
+
+export async function createContact(contact, signal) {
+  const url = `${API_BASE_URL}/contacts`;
+  const options = {
+    headers,
+    method: "POST",
+    body: JSON.stringify({ data: contact }),
+    signal,
+  };
+  return await fetchJson(url, options, contact);
+}
+
+
+export async function deleteContact(contact_id, signal) {
+  console.log("deleteContact API func")
+  const url = `${API_BASE_URL}/contacts/${contact_id}`;
+  const options = {
+    method: "DELETE",
+    headers,
+    signal,
+  };
+  return await fetchJson(url, options);
+}
+
+export async function listContacts(signal) {
+  const url = `${API_BASE_URL}/contacts`;
+  return await fetchJson(url, { headers, signal });
+}

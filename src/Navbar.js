@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css"
-
+import "./Components/animations/useGsapAnimations"
 
 function Navbar() {
+
   return (
     <nav className="navbar main">
       <div className="container-fluid ">
-        <Link className="navbar-brand ps-4 d-flex" to="/">
+        <Link className="logo-location navbar-brand ps-4 d-flex" to="/">
           <span className=" ms-3 me-2">The Lemich Clinic</span>  | <span className="thin italics ms-2"> Norfolk, Virginia</span>
        
         </Link>

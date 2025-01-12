@@ -7,6 +7,10 @@
 .fullscreen{
   height: 100vh;
 }
+
+
+
+
 .ivy {
   font-family: 'MyCustomFont', sans-serif;
 }
@@ -27,8 +31,8 @@
   padding: 16px;
 }
 .phone-button:hover{
-  background-color: #f8caab; 
-  color: black;
+  background-color:  #003B4F; 
+  color: rgb(255, 255, 255);
 }
 .text-orange{
   color: #003B4F;

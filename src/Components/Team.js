@@ -161,11 +161,11 @@ function OurTeam() {
   ];
 
   return (
-    <div className="bg-gray-50 py-12">
+    <div className="bg-gray-50  py-12">
       <div className="container mx-auto px-4">
         {/* Gregory C. Lemich */}
-        <div className="text-center mb-12 mt-5">
-          <div className="w-48 h-48 mx-auto rounded-full bg-gray-200">
+        <div className="text-center bg-white rounded-lg shadow-lg p-5 mb-12 mt-5">
+          <div className="w-60 h-60 mx-auto rounded-full bg-gray-200">
             <img
               src={images["lemich"]}
               alt="Gregory C. Lemich"
@@ -174,7 +174,7 @@ function OurTeam() {
           </div>
           <h3 className="text-xl font-bold mt-4 ">Gregory C. Lemich, Ph.D., LPC</h3>
           <p className="text-gray-600 mt-2">Owner and Clinical Director</p>
-          <p className="text-gray-700 mt-4 text-sm">{team[0].description}</p>
+          <p className="text-gray-700 mt-4 text-sm text-justify">{team[0].description}</p>
         </div>
 
         {/* Clinicians */}
@@ -189,7 +189,7 @@ function OurTeam() {
                 key={index}
                 className="bg-white rounded-lg shadow-lg p-6 text-center"
               >
-                <div className="w-40 h-40 mx-auto rounded-full bg-gray-200 mb-4">
+                <div className="w-60 h-60 mx-auto rounded-full bg-gray-200 mb-4">
                   <img
                     src={images[member.lastName]}
                     alt={member.name}
@@ -200,7 +200,7 @@ function OurTeam() {
                   {member.name}
                 </h3>
                 <p className="text-sm text-gray-500">{member.role}</p>
-                <p className="text-sm text-gray-700 mt-2">{member.description}</p>
+                <p className="text-sm text-gray-700 mt-2 text-justify">{member.description}</p>
                 {member.specialties && (
                   <p className="text-sm text-gray-600 mt-2">
                     <span className="font-bold">Specialties: </span>
@@ -234,7 +234,7 @@ function OurTeam() {
                 key={index}
                 className="bg-white rounded-lg shadow-lg p-6 text-center"
               >
-                <div className="w-40 h-40 mx-auto rounded-full bg-gray-200 mb-4">
+                <div className="w-60 h-60 mx-auto rounded-full bg-gray-200 mb-4">
                   <img
                     src={images[member.lastName]}
                     alt={member.name}
@@ -245,7 +245,7 @@ function OurTeam() {
                   {member.name}
                 </h3>
                 <p className="text-sm text-gray-500">{member.role}</p>
-                <p className="text-sm text-gray-700 mt-2">{member.description}</p>
+                <p className="text-sm text-gray-700 mt-2 text-justify">{member.description}</p>
                 {member.specialties && (
                   <p className="text-sm text-gray-600 mt-2">
                     <span className="font-bold">Areas of Focus: </span>
