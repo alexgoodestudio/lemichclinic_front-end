@@ -5,7 +5,7 @@ import garner from "./staffimages/garner.avif";
 import goulart from "./staffimages/goulart.avif";
 import hendersen from "./staffimages/hendersen.avif";
 import ladikos from "./staffimages/ladikos.avif";
-import lemich from "./staffimages/lemich.png";
+import lemich from "./staffimages/lemich.jpeg";
 import lindelof from "./staffimages/Lindelof.avif";
 import little from "./staffimages/litle.avif";
 import mcnair from "./staffimages/mcnair.avif";
@@ -164,17 +164,19 @@ function OurTeam() {
     <div className="bg-gray-50  py-12">
       <div className="container mx-auto px-4">
         {/* Gregory C. Lemich */}
-        <div className="text-center bg-white rounded-lg shadow-lg p-5 mb-12 mt-5">
-          <div className="w-60 h-60 mx-auto rounded-full bg-gray-200">
+        <div className="row bg-white rounded-lg shadow-lg p-5 mb-12 mt-5">
+          <div className="mx-auto col-3">
             <img
-              src={images["lemich"]}
+              src={lemich}
               alt="Gregory C. Lemich"
-              className="w-full h-full object-cover rounded-full"
+              className="rounded w-100"
             />
           </div>
+          <div className="col-9 p-5 text-start">
           <h3 className="text-xl font-bold mt-4 ">Gregory C. Lemich, Ph.D., LPC</h3>
           <p className="text-gray-600 mt-2">Owner and Clinical Director</p>
           <p className="text-gray-700 mt-4 text-sm text-justify">{team[0].description}</p>
+          </div>
         </div>
 
         {/* Clinicians */}

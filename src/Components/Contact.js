@@ -38,7 +38,7 @@ function Contact({ contactId = null }) {
       } else {
         // Otherwise, create a new contact
         await createContact(formData);
-        setSuccessMessage("Contact created successfully!");
+        setSuccessMessage("We will be in touch shortly");
       }
     } catch (error) {
       setErrorMessage("Error processing contact. Please try again.");

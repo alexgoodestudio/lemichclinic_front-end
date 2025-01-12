@@ -31,20 +31,19 @@ function Dashboard() {
 
   return (
     <div className="bg-slate-50">
-      {/* Hero Section */}
       <div className="row align-items-center fullscreen background-section">
-        <div className="col-5 offset-6 text-start shadowBox rounded2 p-lg-3">
+        <div className="col-lg-5 offset-6 text-start shadowBox rounded2 p-lg-3">
           <h1 className="display-3 textLeft textMobile slide p-lg-5">
             THE HOME OF
             <br /> <span className="font-bold">MILITARY</span>
             <br /> MENTAL HEALTH.
             <br />
-            <div className="btn phone-button textMobile2 text-orange flex items-center gap-2">
-  <i className="fas fa-phone-alt text-xl"></i> {/* Font Awesome Icon */}
-  <a href="tel:+18044820516" className="phone-link font-bold">
-    CALL NOW! (757) 536-1233
-  </a>
-</div>
+            <div className="btn phone-button  textMobile2 text-orange flex items-center gap-2">
+            <i className="fas fa-phone-alt text-xl"> </i> 
+            <a href="tel:+18044820516" className="phone-link font-bold">
+            &nbsp;  CALL NOW! 
+            </a>
+          </div>
           </h1>
         </div>
       </div>
@@ -58,7 +57,7 @@ function Dashboard() {
 
             {/* Content Column */}
             <div className="col-lg-8 p-4 rounded">
-              <i className="fas fa-handshake fa-3x text-gray-600"></i>
+              <i className=" fas fa-handshake fa-3x text-gray-600"></i>
               <h1 className="mb-3 ivy underline">Our Mission</h1>
               <p>
                 The Lemich Clinic for Military Mental Health was founded on the

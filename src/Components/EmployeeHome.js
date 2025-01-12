@@ -32,10 +32,10 @@ function EmployeeHome() {
     }
   };
 
-  const handleEdit = (contactId) => {
-    if (!contactId) return;
-    navigate(`/contacts/${contactId}/edit`);
-  };
+  // const handleEdit = (contactId) => {
+  //   if (!contactId) return;
+  //   navigate(`/contacts/${contactId}/edit`);
+  // };
 
   return (
     <div className="bg-gray-100 py-10">
@@ -63,14 +63,14 @@ function EmployeeHome() {
                       >
                         Delete
                       </button>
-                      <button
+                      {/* <button
                         onClick={() => {
                           handleEdit(contact.id);  // Use 'id' in the handleEdit function
                         }}
                         className="text-blue-500 hover:text-blue-700"
                       >
                         Edit
-                      </button>
+                      </button> */}
                     </div>
                   </div>
                   <p className="text-gray-700">{contact.email}</p>
