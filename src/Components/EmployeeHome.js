@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { listContacts, deleteContact } from "../utils/api"; 
-import { useNavigate } from "react-router-dom"; 
 import "../style.css"; 
 
 function EmployeeHome() {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const navigate = useNavigate(); 
+
 
   useEffect(() => {
     const fetchData = async () => {

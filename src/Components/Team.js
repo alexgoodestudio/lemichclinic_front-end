@@ -162,6 +162,9 @@ function OurTeam() {
 
   return (
     <div className="bg-gray-50  py-12">
+       <h2 className="text-4xl  font-bold text-center text-gray-800 mb-8">
+          Meet Our Team
+        </h2>
       <div className="container mx-auto px-4">
         {/* Gregory C. Lemich */}
         <div className="row bg-white rounded-lg shadow-lg p-5 mb-12 mt-5">
@@ -169,10 +172,10 @@ function OurTeam() {
             <img
               src={lemich}
               alt="Gregory C. Lemich"
-              className="rounded w-100"
+              className="rounded w-75"
             />
           </div>
-          <div className="col-9 p-5 text-start">
+          <div className="col-9 text-start">
           <h3 className="text-xl font-bold mt-4 ">Gregory C. Lemich, Ph.D., LPC</h3>
           <p className="text-gray-600 mt-2">Owner and Clinical Director</p>
           <p className="text-gray-700 mt-4 text-sm text-justify">{team[0].description}</p>

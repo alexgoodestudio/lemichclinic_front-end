@@ -90,7 +90,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
           className="btn btn-primary px-6 py-2 shadow-md hover:shadow-lg transition"
           disabled={loading}
         >
-          {loading ? "Submitting..." : isEditing ? "Update Contact" : "Submit Contact"}
+       Submit
         </button>
       </div>
     </form>

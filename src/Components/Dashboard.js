@@ -30,7 +30,7 @@ function Dashboard() {
   ]);
 
   return (
-    <div className="bg-slate-50">
+    <div className="bg-slate-50 overflow-hidden">
       <div className="row align-items-center fullscreen background-section">
         <div className="col-lg-5 offset-6 text-start shadowBox rounded2 p-lg-3">
           <h1 className="display-3 textLeft textMobile slide p-lg-5">
@@ -38,10 +38,10 @@ function Dashboard() {
             <br /> <span className="font-bold">MILITARY</span>
             <br /> MENTAL HEALTH.
             <br />
-            <div className="btn phone-button  textMobile2 text-orange flex items-center gap-2">
+            <div className="btn phone-button p-3 text-orange flex items-center gap-2">
             <i className="fas fa-phone-alt text-xl"> </i> 
             <a href="tel:+18044820516" className="phone-link font-bold">
-            &nbsp;  CALL NOW! 
+            &nbsp;  CALL NOW! <span className="hideMobile">757-536-1233</span>
             </a>
           </div>
           </h1>
@@ -57,9 +57,9 @@ function Dashboard() {
 
             {/* Content Column */}
             <div className="col-lg-8 p-4 rounded">
-              <i className=" fas fa-handshake fa-3x text-gray-600"></i>
-              <h1 className="mb-3 ivy underline">Our Mission</h1>
-              <p>
+           
+              <h1 className="mb-3 ivy underline2">Our Mission</h1>
+              <p className="text-justify ">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
                 quality, confidential, mental health care. The majority of our
@@ -138,7 +138,7 @@ function Dashboard() {
 
           {/* New GOT TRICARE Section */}
           <div className="row mt-5">
-            <div className="col-lg-12 bg-slate-500 text-white p-5 rounded">
+            <div className="col-lg-12 bg-slate-500 text-white p-5 shape ">
               <h1 className="font-bold mb-3 underline">GOT TRICARE?</h1>
               <p className="mb-3">Great, we are in-network.</p>
               <p className="mb-3">

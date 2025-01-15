@@ -2,21 +2,22 @@ import React from "react";
 import img1 from "./images/1.avif"
 import img2 from "./images/2.avif"
 import img3 from "./images/3.avif"
+import "../style.css";
 
 function Services() {
   return (
-    <div className="container py-5">
+    <div className="container  py-5">
       {/* Header Section */}
       <div className="row mb-4">
         <div className="col-12">
-          <h1 className="text-center ivy">Our Services</h1>
+          <h1 className="text-start text-4xl font-bold">Our Services</h1>
         </div>
       </div>
 
       {/* Description Section */}
       <div className="row mb-5">
         <div className="col-lg-12">
-          <p className="text-center">
+          <p className="text-justify ">
             For current clients, we have a selection of services provided by our
             team to support you in your journey to better mental health. Prices
             and availability may vary, so please talk to our office staff about
