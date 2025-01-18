@@ -2,6 +2,8 @@ import React from "react";
 import "../style.css";
 import Footer from "../Footer";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
+import Tricare from "./Tricare.js";
+import HoverExpand from "./HoverExpand.js";
 
 function Dashboard() {
   // Define animations
@@ -35,7 +37,19 @@ function Dashboard() {
         <div className="col-lg-5 offset-6 text-start shadowBox rounded2 p-lg-3">
           <h1 className="display-3 textLeft textMobile slide p-lg-5">
             THE HOME OF
-            <br /> <span className="font-bold">MILITARY</span>
+            <br /> 
+            
+            <HoverExpand
+            
+              triggerText="MILITARY"
+              expandedContent={
+                <p >
+                  Our military mental health services are designed to
+                  support active duty, dependents, and retirees with specialized
+                  care.
+                </p>
+              }
+            />
             <br /> MENTAL HEALTH.
             <br />
             <div className="btn phone-button p-3 text-orange flex items-center gap-2">
@@ -79,7 +93,7 @@ function Dashboard() {
 
       {/* Features Section */}
       <div className="bg-slate-100">
-        <div className="container px-5">
+        <div className="container px-5 mb-5">
           <div className="row text-center">
             {/* Personalized Section */}
             <div className="col-lg-3 col-12 bg-slate-100 p-4 rounded shadow">
@@ -135,23 +149,8 @@ function Dashboard() {
               </p>
             </div>
           </div>
-
-          {/* New GOT TRICARE Section */}
-          <div className="row mt-5">
-            <div className="col-lg-12 bg-slate-500 text-white p-5 shape ">
-              <h1 className="font-bold mb-3 underline">GOT TRICARE?</h1>
-              <p className="mb-3">Great, we are in-network.</p>
-              <p className="mb-3">
-                Active duty, please have your referral made to The Lemich
-                Clinic.
-              </p>
-              <p>
-                For dependents and retirees, no referral is needed. Just make an
-                appointment, and we will do the rest.
-              </p>
-            </div>
-          </div>
         </div>
+        <Tricare/>
       </div>
 
       {/* Footer Section */}

@@ -1,13 +1,14 @@
 import React from "react";
 import "../style.css";
-import calm from "./images/calm.png";
+import happy from "./images/happy.png";
+
 
 function Insurance() {
   return (
-    <div className="bg-gray-100 py-10">
+    <div className=" py-10">
       {/* Header Section */}
       <div className="container mx-auto text-start mb-8">
-        <h1 className="text-4xl font-bold mb-4">Insurance / Payment</h1>
+        <h1 className="text-4xl thin mb-3">Insurance  /  Payment</h1>
         <p className="text-gray-600 text-lg">
           Explore our payment options to find the best fit for your needs.
         </p>
@@ -20,17 +21,17 @@ function Insurance() {
           {/* Image Column */}
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <img
-              src={calm}
+              src={happy}
               alt="Calm scene"
-              className="img-fluid rounded"
+              className="img-fluid w-75"
             />
           </div>
 
           {/* Text Content Column */}
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-6 text-start col-md-12">
             <div className="p-4 rounded">
               <h2 className="text-2xl font-semibold mb-3">Active Duty</h2>
-              <ul className="text-start list-unstyled text-gray-700 mb-4">
+              <ul className="list-unstyled text-gray-700 mb-4">
                 <li>
                   <strong>Tricare:</strong> Must have an active referral on file
                   for counseling prior to scheduling.
@@ -68,6 +69,7 @@ function Insurance() {
                   length.
                 </li>
               </ul>
+              
             </div>
           </div>
         </div>

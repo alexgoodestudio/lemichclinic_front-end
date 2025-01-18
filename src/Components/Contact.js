@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { createContact, updateContact } from "../utils/api"; // API functions for create and update
-import ContactForm from "./ContactForm"; // Import the reusable ContactForm
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { createContact, updateContact } from "../utils/api"; 
+import ContactForm from "./ContactForm"; 
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+
+
+import Footer from "../Footer";
+import "../style.css";
 
 const ContactInfo = ({ icon, label, value }) => (
   <li className="flex items-center space-x-3 hover:bg-blue-50 p-3 rounded-lg transition-all ease-in-out duration-300">
@@ -13,7 +17,7 @@ const ContactInfo = ({ icon, label, value }) => (
 );
 
 const ContactDetails = () => (
-  <div className="bg-white shape shadow-lg rounded-lg p-8 mb-8 max-w-lg mx-auto">
+  <div className="bg-white shape shadow-lg rounded-lg p-8 mb-8 max-w-lg mx-auto relative z-10">
     <ul className="space-y-6 text-lg">
       <ContactInfo icon={<FaPhoneAlt />} label="Phone" value="757-536-1233" />
       <ContactInfo icon={<FaEnvelope />} label="Email" value="info@lemichclinic.org" />
@@ -70,21 +74,24 @@ function Contact({ contactId = null }) {
       setLoading(false);
     }
   };
-// bg-gradient-to-r from-[#b3cde0] to-white
+
   return (
-    <div className="bg-gray-50  py-12">
-      <h1 className="text-2xl font-bold text-center  mb-6 tracking-wide">
-      For session requests and client inquiries:
+    <div className="relative py-12 padding-mobile">
+      <h1 className="text-2xl font-bold text-center mb-6 tracking-wide relative z-10">
+        For session requests and client inquiries:
       </h1>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center relative z-10">
         <div className="max-w-lg w-full">
-          {/* Contact Information Section */}
           <ContactDetails />
 
           <div className="mt-10">
-            {errorMessage && <div className="text-red-600 text-center mb-4">{errorMessage}</div>}
-            {successMessage && <div className="text-green-600 text-center mb-4">{successMessage}</div>}
+            {errorMessage && (
+              <div className="text-red-600 text-center mb-4">{errorMessage}</div>
+            )}
+            {successMessage && (
+              <div className="text-green-600 text-center mb-4">{successMessage}</div>
+            )}
 
             <ContactForm
               onSubmit={handleSubmit}
@@ -94,6 +101,8 @@ function Contact({ contactId = null }) {
           </div>
         </div>
       </div>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <Footer/>
     </div>
   );
 }

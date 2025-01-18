@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import img4 from "./images/lemichs.avif"; // Importing the image
+import img4 from "./images/lemichs.avif"; 
+
 
 function Owners() {
   useEffect(() => {
@@ -32,15 +33,17 @@ function Owners() {
   }, []);
 
   return (
-    <div className=" min-h-screen flex items-center justify-center p-8">
-      <div className="bg-white rounded-2xl w-full max-w-3xl p-8 owner-card">
+    <div className=" min-h-screen flex items-center justify-center ">
+
+      <div className="rounded-2xl w-full max-w-3xl p-8 owner-card">
         <div className="text-center">
           <img
             src={img4}
             alt="Gregory and Jennifer Lemich"
             className="w-72 h-72 mx-auto rounded-full owner-image"
           />
-          <h1 className="text-4xl font-semibold text-gray-800 mt-6 owner-text">
+       
+          <h1 className="text-4xl  thin text-gray-800 mt-6 owner-text">
             Meet the Owners
           </h1>
           <p className="text-lg text-gray-600 mt-4 owner-text">
@@ -51,6 +54,7 @@ function Owners() {
             Together, they have been happily married for 9 years and live in 
             Norfolk, Virginia, with their French Bulldog and two cats.
           </p>
+      
         </div>
       </div>
     </div>

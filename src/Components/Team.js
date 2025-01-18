@@ -162,20 +162,20 @@ function OurTeam() {
 
   return (
     <div className="bg-gray-50  py-12">
-       <h2 className="text-4xl  font-bold text-center text-gray-800 mb-8">
-          Meet Our Team
+       <h2 className="text-4xl  thin text-center text-gray-800 mb-8">
+          <span className="">Meet</span> Our <span className="">Team</span>
         </h2>
       <div className="container mx-auto px-4">
         {/* Gregory C. Lemich */}
         <div className="row bg-white rounded-lg shadow-lg p-5 mb-12 mt-5">
-          <div className="mx-auto col-3">
+          <div className="mx-auto col-lg-3 col-sm-12 ">
             <img
               src={lemich}
               alt="Gregory C. Lemich"
-              className="rounded w-75"
+              className="rounded "
             />
           </div>
-          <div className="col-9 text-start">
+          <div className="col-lg-9 col-sm-12  text-start">
           <h3 className="text-xl font-bold mt-4 ">Gregory C. Lemich, Ph.D., LPC</h3>
           <p className="text-gray-600 mt-2">Owner and Clinical Director</p>
           <p className="text-gray-700 mt-4 text-sm text-justify">{team[0].description}</p>
@@ -183,7 +183,7 @@ function OurTeam() {
         </div>
 
         {/* Clinicians */}
-        <h2 className="text-3xl  font-bold text-center text-gray-800 mb-8">
+        <h2 className="text-4xl  thin text-center text-gray-800 mb-8">
           Clinicians
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -223,7 +223,7 @@ function OurTeam() {
         </div>
 
         {/* Administration */}
-        <h2 className="text-3xl font-bold text-center text-gray-800 mt-12 mb-8">
+        <h2 className="text-4xl thin text-center text-gray-800 mt-12 mb-8">
           Administration
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

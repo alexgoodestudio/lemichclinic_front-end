@@ -10,7 +10,7 @@ function Services() {
       {/* Header Section */}
       <div className="row mb-4">
         <div className="col-12">
-          <h1 className="text-start text-4xl font-bold">Our Services</h1>
+          <h1 className="text-start text-4xl thin">Our Services</h1>
         </div>
       </div>
 
@@ -30,7 +30,7 @@ function Services() {
       <div className="row">
         {/* Card 1 */}
         <div className="col-lg-4 col-md-6 mb-4">
-          <div className="bg-slate-100 p-4 rounded shadow-lg text-center">
+          <div className="bg-slate-50 p-4 rounded shadow-lg text-center">
             <img
               src={img1}
               alt="Service 1"
@@ -46,7 +46,7 @@ function Services() {
 
         {/* Card 2 */}
         <div className="col-lg-4 col-md-6 mb-4">
-          <div className="bg-slate-100 p-4 rounded shadow-lg text-center">
+          <div className="bg-slate-50 p-4 rounded shadow-lg text-center">
             <img
               src={img2}
               alt="Service 2"
@@ -62,7 +62,7 @@ function Services() {
 
         {/* Card 3 */}
         <div className="col-lg-4 col-md-6 mb-4">
-          <div className="bg-slate-100 p-4 rounded shadow-lg text-center">
+          <div className="bg-slate-50 p-4 rounded shadow-lg text-center">
             <img
               src={img3}
               alt="Service 3"
