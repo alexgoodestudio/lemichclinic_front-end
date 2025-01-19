@@ -1,6 +1,5 @@
 import React from "react";
 import "../style.css";
-import Footer from "../Footer";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
@@ -151,11 +150,6 @@ function Dashboard() {
           </div>
         </div>
         <Tricare/>
-      </div>
-
-      {/* Footer Section */}
-      <div className="mt-5">
-        <Footer />
       </div>
     </div>
   );

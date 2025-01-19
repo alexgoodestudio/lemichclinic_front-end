@@ -2,7 +2,6 @@ import React from "react";
 import img1 from "./images/1.avif";
 import img2 from "./images/2.avif";
 import img3 from "./images/3.avif";
-import Footer from "../Footer";
 import { FaUserAlt, FaUsers, FaHeart } from "react-icons/fa"; // Importing icons
 import "../style.css";
 
@@ -80,9 +79,6 @@ function Services() {
           </div>
         </div>
       </div>
-
-      {/* Footer Section */}
-      <Footer />
     </div>
   );
 }

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { createContact, updateContact } from "../utils/api";
 import ContactForm from "./ContactForm";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import Footer from "../Footer";
 import "../style.css";
 
 function ContactInfo({ icon, label, value }) {
@@ -102,7 +101,7 @@ function Contact({ contactId = null }) {
         </div>
       </div>
       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      <Footer />
+
     </div>
   );
 }
