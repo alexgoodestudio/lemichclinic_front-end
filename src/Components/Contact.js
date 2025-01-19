@@ -1,34 +1,41 @@
 import React, { useState, useEffect } from "react";
-import { createContact, updateContact } from "../utils/api"; 
-import ContactForm from "./ContactForm"; 
+import { createContact, updateContact } from "../utils/api";
+import ContactForm from "./ContactForm";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-
-
 import Footer from "../Footer";
 import "../style.css";
 
-const ContactInfo = ({ icon, label, value }) => (
-  <li className="flex items-center space-x-3 hover:bg-blue-50 p-3 rounded-lg transition-all ease-in-out duration-300">
-    {icon}
-    <span className="text-gray-800">
-      <strong>{label}:</strong> {value}
-    </span>
-  </li>
-);
+function ContactInfo({ icon, label, value }) {
+  return (
+    <li className="flex items-center space-x-4 p-3 rounded-lg bg-gray-100 hover:bg-blue-100 transition-shadow duration-200 shadow-sm hover:shadow-md">
+      <div className="text-blue-500 text-xl">{icon}</div>
+      <span className="text-gray-800">
+        <strong>{label}:</strong> {value}
+      </span>
+    </li>
+  );
+}
 
-const ContactDetails = () => (
-  <div className="bg-white shape shadow-lg rounded-lg p-8 mb-8 max-w-lg mx-auto relative z-10">
-    <ul className="space-y-6 text-lg">
-      <ContactInfo icon={<FaPhoneAlt />} label="Phone" value="757-536-1233" />
-      <ContactInfo icon={<FaEnvelope />} label="Email" value="info@lemichclinic.org" />
-      <ContactInfo icon={<FaMapMarkerAlt />} label="Address" value="5205 Colley Ave, Norfolk, VA 23508" />
-    </ul>
-
-    <p className="mt-6 text-sm text-gray-600">
-      We are located 4 miles south of Naval Station Norfolk and 2 blocks from ODU. For business requests, email Dr. Gregory Lemich at <strong>info@lemichclinic.org</strong>.
-    </p>
-  </div>
-);
+function ContactDetails() {
+  return (
+    <div className="rounded-lg bg-white shadow-lg p-6">
+      <h2 className="text-xl font-bold text-gray-800 mb-4">Contact Information</h2>
+      <ul className="space-y-4">
+        <ContactInfo icon={<FaPhoneAlt />} label="Phone" value="757-536-1233" />
+        <ContactInfo icon={<FaEnvelope />} label="Email" value="info@lemichclinic.org" />
+        <ContactInfo
+          icon={<FaMapMarkerAlt />}
+          label="Address"
+          value="5205 Colley Ave, Norfolk, VA 23508"
+        />
+      </ul>
+      <p className="mt-6 text-gray-600 text-sm">
+        We are located 4 miles south of Naval Station Norfolk and 2 blocks from ODU. For business
+        requests, email Dr. Gregory Lemich at <strong>info@lemichclinic.org</strong>.
+      </p>
+    </div>
+  );
+}
 
 function Contact({ contactId = null }) {
   const [loading, setLoading] = useState(false);
@@ -38,21 +45,18 @@ function Contact({ contactId = null }) {
 
   useEffect(() => {
     if (contactId) {
-      // If contactId is provided, fetch the contact data to edit
       async function fetchContact() {
         try {
           const data = await fetch(`/api/contacts/${contactId}`).then((res) => res.json());
-          setContactData(data); // Set the contact data for editing
+          setContactData(data);
         } catch (error) {
           setErrorMessage("Error loading contact data.");
         }
       }
-
       fetchContact();
     }
   }, [contactId]);
 
-  // Handle form submission for both create and update
   const handleSubmit = async (formData) => {
     setLoading(true);
     setSuccessMessage("");
@@ -60,11 +64,9 @@ function Contact({ contactId = null }) {
 
     try {
       if (contactId) {
-        // If contactId exists, update the contact
         await updateContact(contactId, formData);
         setSuccessMessage("Contact updated successfully!");
       } else {
-        // Otherwise, create a new contact
         await createContact(formData);
         setSuccessMessage("We will be in touch shortly.");
       }
@@ -76,23 +78,21 @@ function Contact({ contactId = null }) {
   };
 
   return (
-    <div className="relative py-12 padding-mobile">
-      <h1 className="text-2xl font-bold text-center mb-6 tracking-wide relative z-10">
-        For session requests and client inquiries:
-      </h1>
-
-      <div className="flex justify-center relative z-10">
-        <div className="max-w-lg w-full">
+    <div className="py-12 bg-gray-50">
+      <div className="container mx-auto px-6 lg:px-12">
+        <h1 className="text-3xl font-extrabold text-center text-gray-800 mb-10">
+          Get in Touch with Us
+        </h1>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Left Column - Contact Details */}
           <ContactDetails />
 
-          <div className="mt-10">
-            {errorMessage && (
-              <div className="text-red-600 text-center mb-4">{errorMessage}</div>
-            )}
+          {/* Right Column - Contact Form */}
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            {errorMessage && <div className="text-red-500 text-center mb-4">{errorMessage}</div>}
             {successMessage && (
-              <div className="text-green-600 text-center mb-4">{successMessage}</div>
+              <div className="text-green-500 text-center mb-4">{successMessage}</div>
             )}
-
             <ContactForm
               onSubmit={handleSubmit}
               initialData={contactData}
@@ -101,8 +101,8 @@ function Contact({ contactId = null }) {
           </div>
         </div>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/>
-      <Footer/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <Footer />
     </div>
   );
 }

@@ -28,7 +28,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
       {successMessage && <div className="text-green-500">{successMessage}</div>}
       
       <div className="row mb-3">
-        <div className="col-md-6">
+        <div className="col-lg-6">
           <label className="form-label text-gray-700 font-medium" htmlFor="name">
             Name
           </label>
@@ -42,7 +42,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
             required
           />
         </div>
-        <div className="col-md-6">
+        <div className="col-lg-6">
           <label className="form-label text-gray-700 font-medium" htmlFor="email">
             Email
           </label>

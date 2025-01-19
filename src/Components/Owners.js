@@ -4,33 +4,6 @@ import img4 from "./images/lemichs.avif";
 
 
 function Owners() {
-  useEffect(() => {
-    // Smooth fade-in and scaling for the owner card
-    gsap.from(".owner-card", {
-      opacity: 0,
-      y: 20,
-      duration: 1.5,
-      ease: "power3.out",
-    });
-
-    // Fade-in and smooth scaling for the image
-    gsap.from(".owner-image", {
-      opacity: 0,
-      scale: 0.9, // Slightly smaller at first for smooth scaling
-      duration: 1.5,
-      ease: "power3.out",
-      delay: 0.2,
-    });
-
-    // Text animations with slight upwards motion
-    gsap.from(".owner-text", {
-      opacity: 0,
-      y: 30,
-      duration: 1.5,
-      ease: "power3.out",
-      delay: 0.4,
-    });
-  }, []);
 
   return (
     <div className=" min-h-screen flex items-center justify-center ">
@@ -40,7 +13,7 @@ function Owners() {
           <img
             src={img4}
             alt="Gregory and Jennifer Lemich"
-            className="w-72 h-72 mx-auto rounded-full owner-image"
+            className="w-72 h-72 mx-auto rounded owner-image"
           />
        
           <h1 className="text-4xl  thin text-gray-800 mt-6 owner-text">

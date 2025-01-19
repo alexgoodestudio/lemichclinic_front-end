@@ -1,37 +1,38 @@
 import React from "react";
 import "../style.css";
-import happy from "./images/happy.png";
-
+import happy from "./images/stretch.png";
 
 function Insurance() {
   return (
-    <div className=" py-10">
+    <div className=" py-10 container">
       {/* Header Section */}
-      <div className="container mx-auto text-start mb-8">
-        <h1 className="text-4xl thin mb-3">Insurance  /  Payment</h1>
-        <p className="text-gray-600 text-lg">
-          Explore our payment options to find the best fit for your needs.
-        </p>
-        <br />
-      </div>
 
       {/* Content Section */}
-      <div className="container">
-        <div className="row align-items-center gx-4">
+      <div className="">
+        <div className="row align-items-center">
           {/* Image Column */}
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <img
               src={happy}
               alt="Calm scene"
-              className="img-fluid w-75"
+              className="img-fluid insurance-image "
             />
           </div>
 
           {/* Text Content Column */}
           <div className="col-lg-6 text-start col-md-12">
-            <div className="p-4 rounded">
+            <div className="blueCombo py-lg-4 mb-5 text-center  rounded">
+              <h2 className=" text-4xl  mb-1">
+                Insurance <span className="">and</span> Payment Options
+              </h2>
+              <p className="pb-2">
+                Explore our payment options to find the best fit for your needs.
+              </p>
+              
+            </div>
+        
               <h2 className="text-2xl font-semibold mb-3">Active Duty</h2>
-              <ul className="list-unstyled text-gray-700 mb-4">
+              <ul className="list-unstyled text-gray-700 mb-5">
                 <li>
                   <strong>Tricare:</strong> Must have an active referral on file
                   for counseling prior to scheduling.
@@ -43,6 +44,7 @@ function Insurance() {
                   length.
                 </li>
               </ul>
+              <br />
 
               <h2 className="text-2xl font-semibold mb-3">
                 Veterans and Dependents
@@ -69,8 +71,6 @@ function Insurance() {
                   length.
                 </li>
               </ul>
-              
-            </div>
           </div>
         </div>
       </div>

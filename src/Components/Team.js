@@ -5,7 +5,7 @@ import garner from "./staffimages/garner.avif";
 import goulart from "./staffimages/goulart.avif";
 import hendersen from "./staffimages/hendersen.avif";
 import ladikos from "./staffimages/ladikos.avif";
-import lemich from "./staffimages/lemich.jpeg";
+import lemich from "./staffimages/lemich.png";
 import lindelof from "./staffimages/Lindelof.avif";
 import little from "./staffimages/litle.avif";
 import mcnair from "./staffimages/mcnair.avif";
@@ -162,25 +162,32 @@ function OurTeam() {
 
   return (
     <div className="bg-gray-50  py-12">
-       <h2 className="text-4xl  thin text-center text-gray-800 mb-8">
-          <span className="">Meet</span> Our <span className="">Team</span>
-        </h2>
       <div className="container mx-auto px-4">
+      <h2 className=" text-4xl text-start text-gray-800 mb-1">
+        Meet Our Team
+      </h2>
         {/* Gregory C. Lemich */}
-        <div className="row bg-white rounded-lg shadow-lg p-5 mb-12 mt-5">
-          <div className="mx-auto col-lg-3 col-sm-12 ">
+        <div className="row bg-white shadow-lg p-4 mb-5 mt-5">
+        <div className="mx-auto col-lg-3">
+          <div className="w-60 h-60 mx-auto rounded-full bg-gray-200 overflow-hidden">
             <img
               src={lemich}
               alt="Gregory C. Lemich"
-              className="rounded "
+              className="w-full h-full object-cover"
             />
           </div>
-          <div className="col-lg-9 col-sm-12  text-start">
-          <h3 className="text-xl font-bold mt-4 ">Gregory C. Lemich, Ph.D., LPC</h3>
-          <p className="text-gray-600 mt-2">Owner and Clinical Director</p>
-          <p className="text-gray-700 mt-4 text-sm text-justify">{team[0].description}</p>
-          </div>
         </div>
+        <div className="col-lg-9 col-sm-12 text-start">
+          <h3 className="text-xl font-bold mt-4">
+            Gregory C. Lemich, Ph.D., LPC
+          </h3>
+          <p className="text-gray-600 mt-2">Owner and Clinical Director</p>
+          <p className="text-gray-700 mt-4 text-sm text-justify">
+            {team[0].description}
+          </p>
+        </div>
+      </div>
+
 
         {/* Clinicians */}
         <h2 className="text-4xl  thin text-center text-gray-800 mb-8">
@@ -198,7 +205,7 @@ function OurTeam() {
                   <img
                     src={images[member.lastName]}
                     alt={member.name}
-                    className="w-full h-full object-cover rounded-full"
+                    className="w-full h-full  object-cover rounded-full"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-gray-800">
