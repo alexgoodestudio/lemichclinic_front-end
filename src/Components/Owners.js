@@ -1,5 +1,3 @@
-import React, { useEffect } from "react";
-import { gsap } from "gsap";
 import img4 from "./images/lemichs.avif"; 
 
 
