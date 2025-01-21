@@ -87,6 +87,9 @@
 .insurance-image {
   width: 80%;;
 }
+.normalize{
+  text-decoration: none;
+}
 
 .blueCombo{
   color: #d4e6fe;
