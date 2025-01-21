@@ -40,7 +40,7 @@ function Services() {
               <div className="service-overlay1">
                 <FaUserAlt className="text-white text-4xl mb-3" />
                 <h3 className="text-white text-xl font-semibold mb-2">Individual Therapy</h3>
-                <p className="text-white">
+                <p className="text-white text-start">
                   Work one-on-one with a therapist to address personal challenges,
                   improve mental health, and achieve your goals.
                 </p>
@@ -55,7 +55,7 @@ function Services() {
               <div className="service-overlay2">
                 <FaHeart className="text-white text-4xl mb-3" />
                 <h3 className="text-white text-xl font-semibold mb-2">Couples Therapy</h3>
-                <p className="text-white">
+                <p className="text-white text-start">
                   Strengthen your relationship with the guidance of a skilled
                   therapist who specializes in couple dynamics and communication.
                 </p>
@@ -70,7 +70,7 @@ function Services() {
               <div className="service-overlay3">
                 <FaUsers className="text-white text-4xl mb-3" />
                 <h3 className="text-white text-xl font-semibold mb-2">Group Therapy</h3>
-                <p className="text-white">
+                <p className="text-white text-start">
                   Join a supportive group setting to share experiences and gain
                   insights from others with similar challenges.
                 </p>
