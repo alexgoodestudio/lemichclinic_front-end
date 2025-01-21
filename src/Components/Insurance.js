@@ -1,30 +1,28 @@
 import React from "react";
 import "../style.css";
-import happy from "./images/stretch.png";
+import happy from "./images/two.png";
 
 function Insurance() {
   return (
     <div className="min-h-screen  flex flex-col">
-      <div className="blueCombo py-lg-4 px-lg-5 py-2 pt-4 px-4 mb-5 text-start">
-        <h2 className="text-5xl ivy  mobile-header ">
-          Insurance <span className="">and</span> Payment Options
-        </h2>
-        <p className="pb-2 text-2xl mt-3 thin-insurance-body">
-          - Find the best fit for your needs.
+      <div className="blueCombo py-lg-3 px-lg-5 py-2 pt-4 px-4 mb-5 text-center">
+        <p className="pb-1  ms-lg-5 mt-3 thin-insurance-body">
+          Find the best payment and insurance options to fit your needs.
         </p>
       </div>
 
       {/* Image Section */}
-      <div className="flex-grow pb-10 container">
+      <div className="flex-grow pb-10 container-fluid">
         <div className="row align-items-center">
           {/* Image Column */}
-          <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
-            <img
-              src={happy}
-              alt="Calm scene"
-              className="img-fluid insurance-image "
-            />
-          </div>
+          <div className="col-lg-6 col-md-12 px-lg-5 mb-4 mb-lg-0">
+              <img
+                src={happy}
+                alt="Calm scene"
+                className="img-fluid "
+              />
+            </div>
+
 
           {/* Text Content Column */}
           <div className="col-lg-6 text-start  col-md-12 ">

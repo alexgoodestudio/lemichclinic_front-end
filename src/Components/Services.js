@@ -13,10 +13,10 @@ function Services() {
         {/* Header Section */}
         <div className="row mb-3">
           <div className="col-12">
-          <h2 className=" text-4xl text-start text-gray-800 mb-1">
-        Our Services
-      </h2>          
-      </div>
+            <h2 className=" text-4xl mb-5 text-start text-gray-800 mb-1">
+              Our Services.
+            </h2>
+          </div>
         </div>
 
         {/* Description Section */}

@@ -77,11 +77,12 @@ function Contact({ contactId = null }) {
   };
 
   return (
-    <div className="py-12 bg-gray-50">
+    <div className="py-5 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-12">
-        <h1 className="text-3xl font-extrabold text-center text-gray-800 mb-10">
-          Get in Touch with Us
-        </h1>
+
+        <h2 className=" text-4xl text-start text-gray-800 mb-5">
+        Get in Touch with Us.
+      </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Column - Contact Details */}
           <ContactDetails />
@@ -100,7 +101,7 @@ function Contact({ contactId = null }) {
           </div>
         </div>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
     </div>
   );
