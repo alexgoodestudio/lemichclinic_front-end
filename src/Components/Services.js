@@ -2,9 +2,7 @@ import React from "react";
 import img1 from "./images/1.avif";
 import img2 from "./images/2.avif";
 import img3 from "./images/3.avif";
-import { FaUserAlt, FaUsers, FaHeart } from "react-icons/fa"; // Importing icons
 import "../style.css";
-
 
 function Services() {
   return (
@@ -13,8 +11,8 @@ function Services() {
         {/* Header Section */}
         <div className="row mb-3">
           <div className="col-12">
-            <h2 className=" text-4xl mb-5 text-start text-gray-800 mb-1">
-              Our Services.
+            <h2 className="text-4xl mb-5 text-start text-gray-800 mb-1">
+              Exclusive Services.
             </h2>
           </div>
         </div>
@@ -34,15 +32,15 @@ function Services() {
         {/* Services Cards Section */}
         <div className="row">
           {/* Card 1 */}
-          <div className="col-lg-4 col-md-6  mb-3">
+          <div className="col-lg-4 col-md-6 mb-3">
             <div className="service-card">
               <img src={img1} alt="Service 1" className="service-image" />
               <div className="service-overlay1">
-                <FaUserAlt className="text-white text-4xl mb-3" />
-                <h3 className="text-white text-xl font-semibold mb-2">Individual Therapy</h3>
+                <h3 className="text-white text-xl font-semibold mb-2">Summary Letters</h3>
                 <p className="text-white text-start">
-                  Work one-on-one with a therapist to address personal challenges,
-                  improve mental health, and achieve your goals.
+                  Only for Active Duty Military Service Members.
+                  This letter will outline the diagnosis that the client has, confirm and give a brief description of their session attendance, and give advice and confirmation of their clinical needs.
+                  PRICE: $40/letter
                 </p>
               </div>
             </div>
@@ -53,11 +51,11 @@ function Services() {
             <div className="service-card">
               <img src={img2} alt="Service 2" className="service-image" />
               <div className="service-overlay2">
-                <FaHeart className="text-white text-4xl mb-3" />
-                <h3 className="text-white text-xl font-semibold mb-2">Couples Therapy</h3>
+                <h3 className="text-white text-xl font-semibold mb-2">NEXUS Letters</h3>
                 <p className="text-white text-start">
-                  Strengthen your relationship with the guidance of a skilled
-                  therapist who specializes in couple dynamics and communication.
+                  Only for Veterans who have been out of Active Duty Military Service for more than one year.
+                  This letter is a compilation of your medical history that explains the connection between current medical condition(s) and military service.
+                  PRICE: $180/letter
                 </p>
               </div>
             </div>
@@ -68,12 +66,14 @@ function Services() {
             <div className="service-card">
               <img src={img3} alt="Service 3" className="service-image" />
               <div className="service-overlay3">
-                <FaUsers className="text-white text-4xl mb-3" />
                 <h3 className="text-white text-xl font-semibold mb-2">Group Therapy</h3>
-                <p className="text-white text-start">
-                  Join a supportive group setting to share experiences and gain
-                  insights from others with similar challenges.
-                </p>
+                <ul className="text-white text-start ul li">
+                  <li>Active Duty Females: Fridays 9am - 10am</li>
+                  <li>Military Spouse Support: Thursdays 4pm - 5pm</li>
+                  <li>Couples Counseling: Every other Thursday 5pm - 6:30pm</li>
+                  <li>Betrayed Partners: Mondays 12pm - 1pm</li>
+                  <li>Men's Relationship Skills: Every other Thursday 5pm - 6:30pm</li>
+                </ul>
               </div>
             </div>
           </div>
