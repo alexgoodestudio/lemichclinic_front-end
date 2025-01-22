@@ -3,9 +3,10 @@ import "../style.css";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
+import Video from "./images/3151442-uhd_4096_2160_24fps.mp4"
 
 function Dashboard() {
-  // Define animations
+
   useGsapAnimations([
     {
       trigger: ".slide",
@@ -21,42 +22,38 @@ function Dashboard() {
         props: { opacity: 0, scale: 0.9, duration: 1, stagger: 0.2 },
       },
     },
-    // {
-    //   trigger: ".bg-slate-500",
-    //   config: {
-    //     start: "top 85%",
-    //     props: { opacity: 0, y: 100, duration: 1.5 },
-    //   },
-    // },
   ]);
 
   return (
     <div className="bg-slate-50 overflow-hidden">
+      {/* Background Section */}
       <div className="row align-items-center fullscreen background-section">
-        <div className="col-lg-5 offset-6 text-start shadowBox rounded2 p-lg-3">
+        <video autoPlay muted loop className="video-background">
+          <source src={Video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="col-lg-5 offset-6 text-start text-white shadowBox rounded2 p-lg-3">
           <h1 className="display-3 textLeft textMobile slide p-lg-5">
             THE HOME OF
-            <br /> 
-            
+            <br />
             <HoverExpand
-            
               triggerText="MILITARY"
               expandedContent={
-                <p >
+                <p>
                   Our military mental health services are designed to
-                  support active duty, dependents, and retirees with specialized
-                  care.
+                  support active duty, dependents, and retirees with
+                  specialized care.
                 </p>
               }
             />
             <br /> MENTAL HEALTH.
             <br />
-            <div className="btn phone-button p-3 text-orange flex items-center gap-2">
-            <i className="fas fa-phone-alt text-xl"> </i> 
-            <a href="tel:+18044820516" className="phone-link font-bold">
-            &nbsp;  CALL NOW! <span className="hideMobile">757-536-1233</span>
-            </a>
-          </div>
+            <div className="btn phone-button p-3 flex items-center gap-2">
+              <i className="fas fa-phone-alt text-xl"></i>
+              <a href="tel:+18044820516" className="phone-link font-bold">
+                &nbsp; CALL NOW! <span className="hideMobile">757-536-1233</span>
+              </a>
+            </div>
           </h1>
         </div>
       </div>
@@ -65,14 +62,10 @@ function Dashboard() {
       <div className="py-4 bg-slate-100">
         <div className="container">
           <div className="row">
-            {/* Spacer Column */}
             <div className="col-lg-2"></div>
-
-            {/* Content Column */}
             <div className="col-lg-8 p-4 rounded">
-           
               <h1 className="mb-3 ivy underline2">Our Mission</h1>
-              <p className="text-justify ">
+              <p className="text-justify">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
                 quality, confidential, mental health care. The majority of our
@@ -83,8 +76,6 @@ function Dashboard() {
                 contact us to see if you qualify for our program.
               </p>
             </div>
-
-            {/* Spacer Column */}
             <div className="col-lg-2"></div>
           </div>
         </div>
@@ -94,7 +85,6 @@ function Dashboard() {
       <div className="bg-slate-100">
         <div className="container px-5 mb-5">
           <div className="row text-center">
-            {/* Personalized Section */}
             <div className="col-lg-3 col-12 bg-slate-100 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-user-circle fa-3x text-gray-600"></i>
@@ -107,8 +97,6 @@ function Dashboard() {
                 spend the time with you during an intake to find your match.
               </p>
             </div>
-
-            {/* Varied Section */}
             <div className="col-lg-3 col-12 bg-slate-200 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-layer-group fa-3x text-gray-600"></i>
@@ -120,8 +108,6 @@ function Dashboard() {
                 major depression, anxiety, anger, OCD, and perinatal concerns.
               </p>
             </div>
-
-            {/* Specialized Section */}
             <div className="col-lg-3 col-12 bg-slate-300 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-flag fa-3x text-gray-600"></i>
@@ -134,8 +120,6 @@ function Dashboard() {
                 grief over fallen friends, and civilian transitioning.
               </p>
             </div>
-
-            {/* Prepared Section */}
             <div className="col-lg-3 col-12 bg-slate-400 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-file-alt fa-3x text-gray-600"></i>
@@ -149,7 +133,7 @@ function Dashboard() {
             </div>
           </div>
         </div>
-        <Tricare/>
+        <Tricare />
       </div>
     </div>
   );
