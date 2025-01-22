@@ -10,10 +10,9 @@
 
 .bottom-left-text {
   position: absolute;
-  font-size: 45pt !important;
-  bottom: 20px; /* Adjust vertical spacing */
-  left: 20px; /* Adjust horizontal spacing */
-  font-size: 2rem; /* Adjust font size */
+  font-size: 45pt;
+  bottom: 20px; 
+  left: 20px;
   color: white; /* Ensure it's readable */
   padding: 10px 20px; /* Optional: Add padding for better appearance */
   border-radius: 5px; /* Optional: Add rounded corners */
@@ -281,7 +280,6 @@ li {
   .mobile-header{
     font-size: 25pt;
     padding-bottom: 10px;
-
   }
 
   .fullscreen {
@@ -295,6 +293,11 @@ li {
 
   .nav-link-styling {
     font-size: 9pt;
+  }
+
+  .bottom-left-text{
+    font-size: 10pt;
+    padding-bottom: 0px;
   }
 
   .lemich {
@@ -337,4 +340,5 @@ li {
     border-bottom-left-radius: 10px;
     padding: 30px;
   }
+
 }

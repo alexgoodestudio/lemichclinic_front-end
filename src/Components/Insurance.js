@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import happy from "./images/two.png";
+import happy from "./images/boxer.png";
 
 function Insurance() {
   return (
