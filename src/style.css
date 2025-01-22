@@ -8,7 +8,17 @@
   height: 100vh;
 }
 
-
+.bottom-left-text {
+  position: absolute;
+  font-size: 45pt !important;
+  bottom: 20px; /* Adjust vertical spacing */
+  left: 20px; /* Adjust horizontal spacing */
+  font-size: 2rem; /* Adjust font size */
+  color: white; /* Ensure it's readable */
+  padding: 10px 20px; /* Optional: Add padding for better appearance */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  z-index: 2; /* Ensure it's above the video */
+}
 
 .service-card {
   position: relative;
@@ -119,6 +129,7 @@
   background-color: #ffffff;
 
 }
+
 ul {
   list-style-type: disc; /* Ensures bullet points */
   padding-left: 20px;    /* Adds spacing before the list */
@@ -278,7 +289,8 @@ li {
   }
   .phone-button {
     margin-top: 5%;
-    padding: 5px;
+    padding: 11px;
+    font-size: 9pt;
   }
 
   .nav-link-styling {
@@ -318,10 +330,6 @@ li {
 
   .textMobile2 {
     font-size: 8pt;
-  }
-
-  .textLeft {
-    text-align: start;
   }
 
   .rounded2 {
