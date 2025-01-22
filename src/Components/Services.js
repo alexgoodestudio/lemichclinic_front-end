@@ -37,6 +37,7 @@ function Services() {
               <img src={img1} alt="Service 1" className="service-image" />
               <div className="service-overlay1">
                 <h3 className="text-white text-xl font-semibold mb-2">Summary Letters</h3>
+                <br/>
                 <p className="text-white text-start">
                   Only for Active Duty Military Service Members.
                   This letter will outline the diagnosis that the client has, confirm and give a brief description of their session attendance, and give advice and confirmation of their clinical needs.
@@ -52,6 +53,7 @@ function Services() {
               <img src={img2} alt="Service 2" className="service-image" />
               <div className="service-overlay2">
                 <h3 className="text-white text-xl font-semibold mb-2">NEXUS Letters</h3>
+                <br/>
                 <p className="text-white text-start">
                   Only for Veterans who have been out of Active Duty Military Service for more than one year.
                   This letter is a compilation of your medical history that explains the connection between current medical condition(s) and military service.
@@ -67,6 +69,7 @@ function Services() {
               <img src={img3} alt="Service 3" className="service-image" />
               <div className="service-overlay3">
                 <h3 className="text-white text-xl font-semibold mb-2">Group Therapy</h3>
+                <br/>
                 <ul className="text-white text-start ul li">
                   <li>Active Duty Females: Fridays 9am - 10am</li>
                   <li>Military Spouse Support: Thursdays 4pm - 5pm</li>
