@@ -15,7 +15,7 @@ function Owners() {
           <img
             src={img4}
             alt="Gregory and Jennifer Lemich"
-            className="w-96 h-96 mx-auto rounded4 mb-5 owner-image"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto rounded mb-5 owner-image"
           />
        
 
