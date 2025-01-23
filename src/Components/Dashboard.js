@@ -26,17 +26,13 @@ function Dashboard() {
 
   return (
     <div className="bg-slate-50 overflow-hidden">
-      {/* <h1 className="p-1">The Lemich Clinic</h1> */}
-      {/* Background Section */}
       <div className="row align-items-center fullscreen background-section">
-        <video autoPlay muted loop className="video-background">
+        <video autoPlay muted loop playsInline className="video-background">
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="col-lg-5 offset-6 text-start text-white p-lg-3">
-          
           <h1 className="display-3 mobile-shrink shadowBox rounded2 textLeft textMobile slide p-lg-5">
-
             THE HOME OF
             <br />
             <HoverExpand
@@ -51,7 +47,7 @@ function Dashboard() {
             />
             <br /> MENTAL HEALTH.
             <br />
-            <div className="btn phone-button p-lg-3  flex items-center gap-2">
+            <div className="btn phone-button text-center p-lg-3  flex items-center ">
               <i className="fas fa-phone-alt hideMobile text-xl"></i>
               <a href="tel:+18044820516" className="phone-link font-bold">
                 &nbsp; CALL NOW! <span className="hideMobile">757-536-1233</span>

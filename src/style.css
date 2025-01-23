@@ -153,14 +153,13 @@ li {
 
 .phone-button {
   color: #d4e6fe;
-  /* background-color: #033982; */
   background-color: #242526;
   border-radius: 25px;
   padding: 16px;
 }
 .phone-button:hover {
-  background-color: #d4e6fe;
-  color: #033982;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .lemich {
@@ -287,8 +286,11 @@ li {
   }
   .phone-button {
     margin-top: 5%;
-    padding: 11px;
+    padding: 9px;
     font-size: 9pt;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
   }
 
   .nav-link-styling {
