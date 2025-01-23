@@ -26,7 +26,7 @@ function Dashboard() {
 
   return (
     <div className="bg-slate-50 overflow-hidden">
-      <div className="row align-items-center fullscreen background-section">
+      <div className="row align-items-center  fullscreen background-section">
         <video autoPlay muted loop playsInline className="video-background">
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
