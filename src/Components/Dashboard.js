@@ -32,12 +32,12 @@ function Dashboard() {
           Your browser does not support the video tag.
         </video>
         <div className="col-lg-5 offset-6 text-start text-white p-lg-3">
-          <h1 className="display-3 mobile-shrink textLeft textMobile slide p-lg-5">
+          <h1 className="display-4 ipad mobile-shrink textLeft textMobile slide p-lg-5">
             THE HOME OF
             <br />
             <HoverExpand
            
-              triggerText="MILITARY"
+              triggerText="MILITARY&nbsp;"
               expandedContent={
                 <p className>
                   Our military mental health services are designed to
@@ -46,9 +46,9 @@ function Dashboard() {
                 </p>
               }
             />
-             &nbsp;MENTAL<br /> HEALTH 🫡
+             MENTAL<br /> HEALTH 
             <br />
-            <div className="btn phone-button branch text-center  flex items-center ">
+            <div className="btn phone-button text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
               <i className="fas fa-phone-alt hideMobile text-xl"></i>
               <a href="tel:+18044820516" className="phone-link font-bold">
                 <span className="hideMobile">&nbsp;</span> CALL NOW<span className="hideMobile"> 757-536-1233</span>

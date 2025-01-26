@@ -29,7 +29,7 @@
 
 .bottom-left-text {
   position: absolute;
-  font-size: 45pt;
+  font-size: 40pt;
   bottom: 40px; 
   left: 20px;
   color: white; /* Ensure it's readable */
@@ -139,7 +139,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .main {
-  /* background-color: #d4e6fe; */
   background-color: #ffffff;
 
 }
@@ -149,7 +148,7 @@ ul {
   padding-left: 20px;    
 }
 li {
-  margin-bottom: 0.5rem; /* Adds spacing between list items */
+  margin-bottom: 0.5rem; 
 }
 
 .dark-blue {
@@ -181,9 +180,9 @@ li {
   width: 75%;
 }
 .underline2 {
-  display: inline-block; /* Ensure the underline wraps the text */
-  border-bottom: 1px solid black; /* Thin underline */
-  padding-bottom: 3px; /* Space between the text and the line */
+  display: inline-block; 
+  border-bottom: 1px solid black; 
+  padding-bottom: 3px;
 }
 
 .phone-link {
@@ -205,17 +204,9 @@ li {
   border-bottom-left-radius: 20px;
 }
 
-/* .background-section {
-  background-image: url("./Components/images/kelli-mcclintock-wBgAVAGjzFg-unsplash.jpg");
-  background-size: 100% auto; 
-  background-position: center top; 
-  background-repeat: no-repeat; 
-  width: cover; 
-} */
-
 .background-section {
   position: relative;
-  height: 100vh; /* Fullscreen height */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -229,11 +220,6 @@ li {
   object-fit: cover; /* Ensures the video covers the section */
   z-index: 0; /* Keeps the video behind the content */
 }
-/* .background-section {
-  background-image: url("./Components/images/kelli-mcclintock-wBgAVAGjzFg-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-} */
 
 .scale {
   width: 55%;
@@ -242,6 +228,7 @@ li {
 .thin {
   font-weight: 200;
 }
+
 .thin-insurance-body {
   font-weight: 200;
   font-size: 22pt;
@@ -362,5 +349,11 @@ li {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ipad {
+    font-size: 35px;
   }
 }
