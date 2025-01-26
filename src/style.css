@@ -4,6 +4,23 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Branch";
+  src: url("./Components/fonts/Branch.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ivy {
+  font-family: "MyCustomFont", sans-serif;
+}
+
+.branch{
+    font-family: "Branch", sans-serif;
+  
+}
+
 .fullscreen {
   height: 100vh;
 }
@@ -11,7 +28,7 @@
 .bottom-left-text {
   position: absolute;
   font-size: 45pt;
-  bottom: 20px; 
+  bottom: 40px; 
   left: 20px;
   color: white; /* Ensure it's readable */
   padding: 10px 20px; /* Optional: Add padding for better appearance */
@@ -113,9 +130,6 @@
   height: auto; /* Ensure the height scales proportionally with width */
 }
 
-.ivy {
-  font-family: "MyCustomFont", sans-serif;
-}
 .navbar {
   position: sticky;
   top: 0;
@@ -298,8 +312,9 @@ li {
   }
 
   .bottom-left-text{
-    font-size: 10pt;
+    font-size: 16pt;
     padding-bottom: 0px;
+    bottom: 0px; 
   }
 
   .lemich {

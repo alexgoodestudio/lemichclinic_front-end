@@ -32,7 +32,7 @@ function Dashboard() {
           Your browser does not support the video tag.
         </video>
         <div className="col-lg-5 offset-6 text-start text-white p-lg-3">
-          <h1 className="display-3 mobile-shrink shadowBox rounded2 textLeft textMobile slide p-lg-5">
+          <h1 className="display-3 mobile-shrink textLeft textMobile slide p-lg-5">
             THE HOME OF
             <br />
             <HoverExpand
@@ -55,7 +55,7 @@ function Dashboard() {
             </div>
           </h1>
         </div>
-        <h1 className="bottom-left-text text-start mb-3">The Lemich Clinic</h1>      
+        <h1 className="bottom-left-text branch text-start mb-3">The Lemich Clinic</h1>      
         </div>
 
       {/* Mission Section */}
