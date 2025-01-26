@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import happy from "./images/boxer.png";
+import happy from "./images/phone.png";
 
 function Insurance() {
   return (
@@ -19,7 +19,7 @@ function Insurance() {
               <img
                 src={happy}
                 alt="Calm scene"
-                className="img-fluid "
+                className="img-fluid hand"
               />
             </div>
 

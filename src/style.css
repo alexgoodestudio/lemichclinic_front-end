@@ -24,7 +24,9 @@
 .fullscreen {
   height: 100vh;
 }
-
+.hand{
+  width: 70%;
+}
 
 
 .bottom-left-text {
