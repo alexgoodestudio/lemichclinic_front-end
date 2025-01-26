@@ -45,12 +45,12 @@ function Dashboard() {
                 </p>
               }
             />
-            <br /> MENTAL HEALTH.
+             &nbsp;MENTAL<br /> HEALTH 🫡
             <br />
-            <div className="btn phone-button text-center p-lg-3  flex items-center ">
+            <div className="btn phone-button branch text-center  flex items-center ">
               <i className="fas fa-phone-alt hideMobile text-xl"></i>
               <a href="tel:+18044820516" className="phone-link font-bold">
-                &nbsp; CALL NOW! <span className="hideMobile">757-536-1233</span>
+                <span className="hideMobile">&nbsp;</span> CALL NOW<span className="hideMobile"> 757-536-1233</span>
               </a>
             </div>
           </h1>

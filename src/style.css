@@ -165,14 +165,15 @@ li {
 }
 
 .phone-button {
-  color: #d4e6fe;
-  background-color: #242526;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 25px;
   padding: 16px;
 }
 .phone-button:hover {
-  background-color: transparent;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1.5px solid #ffffff;;
+  color: #ffffff;
 }
 
 .lemich {
@@ -284,8 +285,8 @@ li {
 @media (max-width: 768px) {
   .hometype {
     font-size: 15pt;
-    margin: 0 auto; /* Center the element horizontally */
-    text-align: center; /* Optional: Center text within the element */
+    margin: 0 auto; 
+    text-align: center; 
   }
   .padding-mobile {
     padding: 30px;
@@ -300,7 +301,8 @@ li {
   }
   .phone-button {
     margin-top: 5%;
-    padding: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     font-size: 9pt;
     background-color: transparent;
     color: white;
@@ -346,7 +348,7 @@ li {
    
   }
   .textMobile {
-    font-size: 13pt;
+    font-size: 12pt;
   }
 
   .textMobile2 {
