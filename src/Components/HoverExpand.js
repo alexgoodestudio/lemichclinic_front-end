@@ -20,7 +20,7 @@ function HoverExpand({ triggerText, expandedContent }) {
       {/* Expanded Content */}
       {isHovered && (
         <div
-          className="absolute z-10 blueCombo shadow-lg rounded3 p-3 mt-2 max-w-lg expandStyle text-gray-700"
+          className="absolute z-10 mobile-text blueCombo shadow-lg rounded3 p-3 mt-2 max-w-lg expandStyle text-gray-700"
           style={{
             overflow: "hidden",
             wordWrap: "break-word",

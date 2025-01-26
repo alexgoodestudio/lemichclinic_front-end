@@ -36,9 +36,10 @@ function Dashboard() {
             THE HOME OF
             <br />
             <HoverExpand
+           
               triggerText="MILITARY"
               expandedContent={
-                <p>
+                <p className>
                   Our military mental health services are designed to
                   support active duty, dependents, and retirees with
                   specialized care.
