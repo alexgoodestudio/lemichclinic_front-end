@@ -9,7 +9,7 @@ function Owners() {
 
       <div className=" w-full max-w-3xl p-8">
       <h2 className=" text-4xl text-start mb-5  text-gray-800 mb-1">
-        Meet The Owners
+        Meet The Owners. 
       </h2>
         <div className="text-center">
           <img

@@ -31,9 +31,9 @@
 
 .bottom-left-text {
   position: absolute;
-  font-size: 40pt;
+  font-size: 37pt;
   bottom: 40px; 
-  left: 20px;
+  left: 40px;
   color: white; /* Ensure it's readable */
   padding: 10px 20px; /* Optional: Add padding for better appearance */
   z-index: 2; /* Ensure it's above the video */
@@ -174,7 +174,7 @@ li {
   padding: 16px;
 }
 .phone-button:hover {
-  border: 1.5px solid #ffffff;;
+  border: 1.5px solid #fff200;;
   color: #ffffff;
 }
 
@@ -306,6 +306,7 @@ li {
     font-size: 13pt;
     padding-bottom: 0px;
     bottom: 0px; 
+    left: 30px;
   }
   
   .mobile-text{
