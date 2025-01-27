@@ -21,7 +21,7 @@ function Navbar() {
   </li>
   <li className="nav-item">
     <Link className="nav-link" to="/team">
-      Our Team
+      Team
     </Link>
   </li>
   <li className="nav-item">
