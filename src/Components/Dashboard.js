@@ -4,7 +4,7 @@ import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
 import Video from "./images/3151442-uhd_4096_2160_24fps.mp4"
-
+import logo from "./images/logo2.png"
 function Dashboard() {
 
   useGsapAnimations([
@@ -32,7 +32,9 @@ function Dashboard() {
           Your browser does not support the video tag.
         </video>
         <div className="col-lg-5 offset-6 text-start text-white  p-lg-3">
+          
           <h1 className="  display-4 ipad mobile-shrink textLeft textMobile slide p-lg-5">
+          <img src={logo} alt="logo heart" className="logo mb-1"/>
             THE HOME OF
             <br />
             <HoverExpand

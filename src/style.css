@@ -11,6 +11,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.logo{
+  width: 20%;
+}
 
 .ivy {
   font-family: "MyCustomFont", sans-serif;
@@ -174,7 +177,7 @@ li {
   padding: 16px;
 }
 .phone-button:hover {
-  border: 1.5px solid #fff200;;
+  border: 1.5px solid #b8b8b8;;
   color: #ffffff;
 }
 
@@ -352,6 +355,9 @@ li {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 30px;
+  }
+  .logo{
+    width: 8%;
   }
 }
 
