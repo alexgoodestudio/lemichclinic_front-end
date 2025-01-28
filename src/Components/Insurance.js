@@ -15,7 +15,7 @@ function Insurance() {
       <div className="  flex-grow pb-10 container-fluid">
         <div className="row  align-items-center">
           {/* Image Column */}
-          <div className="col-lg-7 col-md-12 px-lg-5 mb-4 mb-lg-0 flex justify-center">
+          <div className="col-lg-6 col-md-12 px-lg-5 mb-4 mb-lg-0 flex justify-center">
               <img
                 src={runner}
                 alt="Runner"
@@ -25,7 +25,7 @@ function Insurance() {
 
 
           {/* Text Content Column */}
-          <div className="col-lg-4 text-start col-md-12 ">
+          <div className="col-lg-5 text-start col-md-12 ">
             <h2 className="text-2xl font-semibold mb-3 ">Active Duty</h2>
             <ul className="list-unstyled text-gray-700 mb-5">
               <li>

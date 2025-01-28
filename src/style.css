@@ -37,9 +37,9 @@
   font-size: 40pt;
   bottom: 40px; 
   left: 40px;
-  color: white; /* Ensure it's readable */
-  padding: 10px 20px; /* Optional: Add padding for better appearance */
-  z-index: 2; /* Ensure it's above the video */
+  color: white; 
+  padding: 10px 20px; 
+  z-index: 2; 
 }
 
 .service-card {
