@@ -1,31 +1,31 @@
 import React from "react";
 import "../style.css";
-import happy from "./images/phone.png";
+import runner from "./images/runner.png";
 
 function Insurance() {
   return (
     <div className="min-h-screen  flex flex-col">
-      <div className="blueCombo py-lg-3 px-lg-5 py-2 pt-4 px-4 mb-5 text-center">
-        <p className="pb-1  ms-lg-5 mt-3 thin-insurance-body">
+      <div className="blueCombo py-lg-3 px-lg-5 py-2 pt-4 px-4 mb-5 text-start">
+        <p className="pb-1 ms-lg-5 mt-3 thin-insurance-body">
           Find the best payment and insurance options to fit your needs.
         </p>
       </div>
 
       {/* Image Section */}
-      <div className="flex-grow pb-10 container-fluid">
-        <div className="row align-items-center">
+      <div className="  flex-grow pb-10 container-fluid">
+        <div className="row  align-items-center">
           {/* Image Column */}
-          <div className="col-lg-6 col-md-12 px-lg-5 mb-4 mb-lg-0">
+          <div className="col-lg-7 col-md-12 px-lg-5 mb-4 mb-lg-0 flex justify-center">
               <img
-                src={happy}
-                alt="Calm scene"
+                src={runner}
+                alt="Runner"
                 className="img-fluid hand"
               />
             </div>
 
 
           {/* Text Content Column */}
-          <div className="col-lg-6 text-start  col-md-12 ">
+          <div className="col-lg-4 text-start col-md-12 ">
             <h2 className="text-2xl font-semibold mb-3 ">Active Duty</h2>
             <ul className="list-unstyled text-gray-700 mb-5">
               <li>
