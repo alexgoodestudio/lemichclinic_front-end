@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import runner from "./images/juliane-liebermann-G8gzkaqTqOA-unsplash.jpg";
+import hiker from "./images/juliane-liebermann-G8gzkaqTqOA-unsplash.jpg";
 import logo from "./images/logo2.png"
 
 function Insurance() {
@@ -24,7 +24,7 @@ function Insurance() {
           {/* Image Column */}
           <div className="col-lg-6 col-md-12">
               <img
-                src={runner}
+                src={hiker}
                 alt="Hiker"
                 className="img-fluid  "
               />
@@ -72,9 +72,6 @@ function Insurance() {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="bg-slate-200 row">
-       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
       </div>
     </div>

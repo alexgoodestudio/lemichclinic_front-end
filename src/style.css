@@ -234,6 +234,7 @@ li {
 
 .video-background {
   position: absolute;
+  background-size: none;
   top: 0;
   left: 0;
   width: 100%;
@@ -338,7 +339,7 @@ li {
   .mobile-expand-text{
     display: none;
   }
-  
+
   .lemich {
     width: 100%;
   }
@@ -382,6 +383,7 @@ li {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    background-size: none;
     padding: 0%;
   }
 
