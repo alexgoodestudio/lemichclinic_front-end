@@ -15,7 +15,11 @@
   width: 20%;
 }
 
-
+.reduce{
+  width: 30px;
+  margin-bottom: 10px;
+  
+}
 
 .ivy {
   font-family: "MyCustomFont", sans-serif;
@@ -234,11 +238,13 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(10, 151, 198, 0.45); 
+  background-color: rgba(45, 112, 135, 0.45); 
   /* background-color: rgba(10, 151, 198, 0.45);  */
 
   z-index: 0; /* Keeps the overlay on top of the video */
 }
+
+
 
 .scale {
   width: 55%;
