@@ -16,6 +16,7 @@
 }
 
 
+
 .ivy {
   font-family: "MyCustomFont", sans-serif;
 }
@@ -24,9 +25,6 @@
     font-family: "Branch", sans-serif;  
 }
 
-.hand{
-  width: 70%;
-}
 
 
 .bottom-left-text {
@@ -236,7 +234,9 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(10, 151, 198, 0.45); /* Overlay color with transparency */
+  background-color: rgba(10, 151, 198, 0.45); 
+  /* background-color: rgba(10, 151, 198, 0.45);  */
+
   z-index: 0; /* Keeps the overlay on top of the video */
 }
 
@@ -384,7 +384,6 @@ li {
     width: 105%;
     height: 60vh;
     overflow: hidden;
-
   }
   .mobile-bold{
     font-weight: 600;
