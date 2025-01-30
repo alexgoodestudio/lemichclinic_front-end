@@ -35,13 +35,13 @@ function Dashboard() {
         <div className="col-lg-5 spacer offset-between-5-6 col-md-7 offset-md-5 col-12 d-flex justify-content-center text-start text-white p-lg-3">
         {/* Your content */}
         <h1 className="home-text-border p-2 display-4 ipad mobile-center-text  textMobile slide p-lg-5">
-          <img src={logo} alt="logo heart" className="logo mb-1 hideMobile"/>
+          <img src={logo} alt="logo heart" className="logo offset-between-5-6 mb-1 "/>
           
-            The Home of
+            THE HOME OF
             <br />
             <HoverExpand
            
-              triggerText="Military&nbsp;"
+              triggerText="MILITARY&nbsp;"
               expandedContent={
                 <p>
                   Our military mental health services are designed to
@@ -50,7 +50,7 @@ function Dashboard() {
                 </p>
               }
             />
-             Mental<br /> Health
+             MENTAL<br /> HEALTH
             <br />
             <div className="btn phone-button mobile-top-margin text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
               <i className="fas fa-phone-alt hideMobile text-xl"></i>
@@ -60,7 +60,7 @@ function Dashboard() {
             </div>
           </h1>
         </div>
-        <h1 className="bottom-left-text branch text-start">The Lemich Clinic</h1>      
+        {/* <h1 className="bottom-left-text branch text-start">The Lemich Clinic</h1>       */}
         </div>
 
       {/* Mission Section */}

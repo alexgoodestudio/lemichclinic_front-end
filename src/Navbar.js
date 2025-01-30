@@ -10,6 +10,7 @@ function Navbar() {
     <nav className="navbar  main">
       <div className="container overflow-hidden">
         <Link className="logo-location  navbar-brand ps-4 d-flex" to="/">
+       
           <span className="branch">The Lemich Clinic  </span> &nbsp;| <span className="thin  ms-2"> Norfolk, Virginia</span>
        
         </Link>
