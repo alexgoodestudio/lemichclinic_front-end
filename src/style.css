@@ -17,6 +17,7 @@
 
 .reduce{
   width: 30px;
+  height: 30px;
   margin-bottom: 10px;
   
 }
@@ -177,7 +178,7 @@ li {
 .phone-button {
   color: #ffffff;
   background-color: transparent;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1.5px solid rgb(255, 255, 255);
   border-radius: 25px;
   padding: 16px;
 }
@@ -326,7 +327,7 @@ li {
   }
 
   .bottom-left-text{
-    font-size: 13pt;
+    font-size: 16pt;
     padding-bottom: 0px;
     bottom: 0px; 
     left: 30px;
@@ -396,6 +397,9 @@ li {
   }
   .hideFull {
     display: inline; /* or block, depending on the layout you want */
+  }
+  .text-insurance-header-mobile{
+    font-size: 12pt;
   }
 }
 

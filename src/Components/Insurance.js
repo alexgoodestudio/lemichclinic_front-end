@@ -6,17 +6,21 @@ import logo from "./images/logo2.png"
 function Insurance() {
   return (
     <div className="min-h-screen  flex flex-col">
-      <div className="blueCombo py-lg-3 px-lg-5  py-2 pt-4 px-4  text-start">
-        <p className="pb-1 ms-lg-5 mt-3 thin-insurance-body flex">
-        <img
+     
+      <div className="blueCombo py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-start ">
+      <img
                 src={logo}
                 alt="Logo"
-                className="img-fluid reduce "
+                className="img-fluid reduce m-3 "
               />
+        <p className="pb-1 mt-3 thin-insurance-body flex text-insurance-header-mobile">
+
           
-          &nbsp; Find the best payment and insurance options to fit your needs.
+          Find the best payment and insurance options to fit your needs.
+
         </p>
       </div>
+
 
       {/* Image Section */}
       <div className="  flex-grow  ">

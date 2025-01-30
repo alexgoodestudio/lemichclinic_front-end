@@ -58,7 +58,7 @@ function Dashboard() {
             </div>
           </h1>
         </div>
-        <h1 className="bottom-left-text branch text-start mb-3">The Lemich Clinic</h1>      
+        <h1 className="bottom-left-text branch text-start">The Lemich Clinic</h1>      
         </div>
 
       {/* Mission Section */}
