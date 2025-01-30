@@ -250,7 +250,7 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(45, 112, 135, 0.45); 
+  background-color: rgba(45, 112, 135, 0.40); 
   z-index: 0; 
 }
 
@@ -311,7 +311,8 @@ li {
   }
 
   .bg-overlay {
-    z-index: -1; 
+    z-index: 0; 
+ 
   }
   .mobile-header{
     font-size: 25pt;
