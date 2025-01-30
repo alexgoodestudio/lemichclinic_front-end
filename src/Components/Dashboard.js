@@ -32,25 +32,27 @@ function Dashboard() {
           Your browser does not support the video tag.
         </video>
         <div className="bg-overlay"></div>
-        <div className="col-lg-5 offset-lg-6 col-md-7 offset-md-5 col-12 d-flex justify-content-center text-start text-white p-lg-3">
-        {/* Your content */}                <h1 className=" p-2 display-4 ipad mobile-shrink textLeft textMobile slide p-lg-5">
-          <img src={logo} alt="logo heart" className="logo mb-1 "/>
-            THE HOME OF
+        <div className="col-lg-5 spacer offset-lg-6 col-md-7 offset-md-5 col-12 d-flex justify-content-center text-start text-white p-lg-3">
+        {/* Your content */}
+        <h1 className="home-text-border p-2 display-4 ipad mobile-center-text  textMobile slide p-lg-5">
+          <img src={logo} alt="logo heart" className="logo mb-1 hideMobile"/>
+          
+            The Home of
             <br />
             <HoverExpand
            
-              triggerText="MILITARY&nbsp;"
+              triggerText="Military&nbsp;"
               expandedContent={
-                <p className>
+                <p>
                   Our military mental health services are designed to
                   support active duty, dependents, and retirees with
                   specialized care.
                 </p>
               }
             />
-             MENTAL<br /> HEALTH 
+             Mental<br /> Health
             <br />
-            <div className="btn phone-button text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
+            <div className="btn phone-button mobile-top-margin text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
               <i className="fas fa-phone-alt hideMobile text-xl"></i>
               <a href="tel:+18044820516" className="phone-link mobile-bold">
             <span className="hideMobile">&nbsp;</span> CALL NOW<span className="hideFull">!</span><span className="hideMobile"> 757-536-1233</span>

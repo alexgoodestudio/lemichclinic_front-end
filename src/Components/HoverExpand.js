@@ -10,7 +10,7 @@ function HoverExpand({ triggerText, expandedContent }) {
     <div className="relative  inline-block">
       {/* Trigger Text */}
       <span
-        className="font-bold cursor-pointer whitespace-nowrap"
+        className="font-bold  cursor-pointer whitespace-nowrap"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
