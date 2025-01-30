@@ -311,9 +311,11 @@ li {
   }
 
   .bg-overlay {
-    z-index: 0; 
- 
+
+    background-color: rgba(45, 112, 135, 0.0); 
+
   }
+
   .mobile-header{
     font-size: 25pt;
     padding-bottom: 10px;
