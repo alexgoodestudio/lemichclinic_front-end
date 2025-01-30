@@ -310,6 +310,9 @@ li {
     padding: 30px;
   }
 
+  .bg-overlay {
+    z-index: -1; 
+  }
   .mobile-header{
     font-size: 25pt;
     padding-bottom: 10px;
