@@ -3,7 +3,7 @@ import "../style.css";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
-import Video from "./images/3151442-uhd_4096_2160_24fps.mp4"
+import Video from "./images/cropped3.mp4"
 import logo from "./images/logo2.png"
 function Dashboard() {
 
@@ -26,15 +26,15 @@ function Dashboard() {
 
   return (
     <div className="bg-slate-50 overflow-hidden">
-      <div className="row align-items-center  fullscreen background-section">
-        <video autoPlay muted loop playsInline className="video-background">
+      <div className="row align-items-center background-section">
+        <video autoPlay muted loop playsInline className="video-background ">
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="col-lg-5 offset-6 text-start text-white  p-lg-3">
-          
-          <h1 className="  display-4 ipad mobile-shrink textLeft textMobile slide p-lg-5">
-          <img src={logo} alt="logo heart" className="logo mb-1"/>
+        <div className="bg-overlay"></div>
+        <div className="col-lg-5 offset-lg-6 col-md-7 offset-md-5 col-12 d-flex justify-content-center text-start text-white p-lg-3">
+        {/* Your content */}                <h1 className=" p-2 display-4 ipad mobile-shrink textLeft textMobile slide p-lg-5">
+          <img src={logo} alt="logo heart" className="logo mb-1 "/>
             THE HOME OF
             <br />
             <HoverExpand
@@ -52,8 +52,8 @@ function Dashboard() {
             <br />
             <div className="btn phone-button text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
               <i className="fas fa-phone-alt hideMobile text-xl"></i>
-              <a href="tel:+18044820516" className="phone-link">
-                <span className="hideMobile">&nbsp;</span> CALL NOW<span className="hideMobile"> 757-536-1233</span>
+              <a href="tel:+18044820516" className="phone-link mobile-bold">
+            <span className="hideMobile">&nbsp;</span> CALL NOW<span className="hideFull">!</span><span className="hideMobile"> 757-536-1233</span>
               </a>
             </div>
           </h1>
