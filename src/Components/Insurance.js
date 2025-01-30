@@ -19,22 +19,22 @@ function Insurance() {
       </div>
 
       {/* Image Section */}
-      <div className="  flex-grow  ">
+      <div className="">
         <div className="row">
           {/* Image Column */}
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-7 col-md-12 ">
               <img
                 src={hiker}
                 alt="Hiker"
-                className="img-fluid  "
+                className="img-fluid "
               />
             </div>
 
 
           {/* Text Content Column */}
-          <div className="col-lg-5 text-start p-5 col-md-12 mt-sm-5 mt-lg-3">
+          <div className="col-lg-5 text-start p-5 col-md-12">
             <h2 className="text-2xl font-semibold mb-3 ">Active Duty</h2>
-            <ul className="list-unstyled text-gray-700 mb-5">
+            <ul className="list-unstyled text-gray-700">
               <li>
                 <strong>Tricare:</strong> Must have an active referral on file
                 for counseling prior to scheduling.
