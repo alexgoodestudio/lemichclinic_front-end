@@ -55,7 +55,7 @@ function Dashboard() {
             <div className="btn phone-button mobile-top-margin text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
               <i className="fas fa-phone-alt hideMobile text-xl"></i>
               <a href="tel:+18044820516" className="phone-link mobile-bold">
-            <span className="hideMobile">&nbsp;</span> CALL NOW<span className="hideFull">!</span><span className="hideMobile"> 757-536-1233</span>
+            <span className="hideMobile">&nbsp;</span> CALL NOW<span className="hideExclamation">!</span><span className="hideMobile"> 757-536-1233</span>
               </a>
             </div>
           </h1>
