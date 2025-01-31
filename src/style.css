@@ -421,6 +421,12 @@ li {
   .text-insurance-header-mobile{
     font-size: 12pt;
   }
+  .padding-mobile-owners{
+    padding: 30px;
+  }
+  .border-radius-mobile{
+    border-radius: 40px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
