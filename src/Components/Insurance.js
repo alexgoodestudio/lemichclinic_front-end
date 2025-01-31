@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import hiker from "./images/juliane-liebermann-G8gzkaqTqOA-unsplash.jpg";
+import hiker from "./images/juliane-liebermann-G8gzkaqTqOA-unsplash2.jpg";
 import logo from "./images/logo2.png"
 
 function Insurance() {
