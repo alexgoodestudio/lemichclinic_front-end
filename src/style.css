@@ -42,7 +42,9 @@
     font-family: "Branch", sans-serif;  
 }
 
-
+.large-text{
+  font-size: 35pt;
+}
 
 .bottom-left-text {
   position: absolute;
@@ -163,7 +165,6 @@
 }
 .main {
   background-color: #ffffff;
-
 }
 
 ul {
@@ -189,7 +190,9 @@ li {
 
 .phone-button {
   color: #ffffff;
-  background: rgba(1, 141, 148, 0.4);
+
+  background: rgba(1, 141, 148, 0.225);
+
   border: 1.5px solid rgb(255, 255, 255);
   border-radius: 25px;
   padding: 16px;
@@ -306,6 +309,7 @@ li {
     margin: 0 auto; 
     text-align: center; 
   }
+
   
   .padding-mobile {
     padding: 30px;
@@ -322,6 +326,7 @@ li {
     padding-bottom: 6px;
     font-size: 9pt;
     background: rgba(1, 141, 148, 0.4);
+    /* background: rgba(1, 141, 148, 0.4); */
     color: white;
     border: 1px solid rgb(255, 255, 255);
   }

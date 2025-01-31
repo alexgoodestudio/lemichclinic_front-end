@@ -7,11 +7,11 @@ import "./Components/animations/useGsapAnimations"
 function Navbar() {
 
   return (
-    <nav className="navbar  main">
-      <div className="container overflow-hidden">
-        <Link className="logo-location  navbar-brand ps-4 d-flex" to="/">
+    <nav className="navbar main">
+      <div className="container  overflow-hidden">
+        <Link className="logo-location  navbar-brand  d-flex" to="/">
        
-          <span className="branch">The Lemich Clinic  </span> &nbsp;| <span className="thin  ms-2"> Norfolk, Virginia</span>
+          <span className="thin">The Lemich Clinic  </span> &nbsp;| <span className="thin  ms-2"> Norfolk, Virginia</span>
        
         </Link>
         <ul className="navbar-nav ms-auto d-flex flex-row gap-4 ivy nav-link-styling">
