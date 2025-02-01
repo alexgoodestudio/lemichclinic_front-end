@@ -11,25 +11,34 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .logo{
   width: 17%;
 }
 
+.rotate {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(30deg);
+}
 .spacer{
   letter-spacing: .5px;
 }
 
+
 .spaced-underline{
   text-decoration: underline;
-  text-underline-offset: 12px;
+  text-underline-offset: 6px;
 }
 .home-text-border{
   border: #d4e6fe;
 }
 
 .reduce{
-  width: 30px;
-  height: 30px;
+  width: 39px;
+  height: 39px;
   margin-bottom: 10px;
   
 }

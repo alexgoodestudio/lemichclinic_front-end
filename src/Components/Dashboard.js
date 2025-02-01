@@ -35,7 +35,7 @@ function Dashboard() {
         <div className="col-lg-5 spacer offset-between-5-6 col-md-7 offset-md-5 col-12 d-flex justify-content-center text-start text-white p-lg-3">
         {/* Your content */}
         <h1 className="home-text-border p-2 display-4 ipad mobile-center-text  textMobile slide p-lg-5">
-          <img src={logo} alt="logo heart" className="logo offset-between-5-6 mb-1 "/>
+          <img src={logo} alt="logo heart" className="logo rotate offset-between-5-6 mb-1 "/>
           
             THE HOME OF
             <br />
