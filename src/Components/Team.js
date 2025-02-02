@@ -193,7 +193,7 @@ function OurTeam() {
         <h2 className="text-4xl  thin text-center text-gray-800 mb-8">
           Clinicians 
         </h2>
-          <p className="text-justify pb-3">Our counselors have a Master's Degree in Mental Health Counseling and are licensed by Virginia to perform empirically validated medical counseling.</p>   
+          <p className="text-justify p-lg-5 p-3 border bg-slate-100">Our counselors have a Master's Degree in Mental Health Counseling and are licensed by Virginia to perform empirically validated medical counseling.</p>   
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {team
             .filter((member) => member.role === "Clinician")
