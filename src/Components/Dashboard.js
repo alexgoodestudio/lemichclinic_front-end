@@ -35,7 +35,7 @@ function Dashboard() {
         <div className="col-lg-5 spacer offset-between-5-6 col-md-7 offset-md-5 col-12 d-flex justify-content-center text-start text-white p-lg-3">
         {/* Your content */}
         <h1 className="home-text-border p-2 display-4 ipad mobile-center-text  textMobile slide p-lg-5">
-          <img src={logo} alt="logo heart" className="logo rotate offset-between-5-6 mb-1 "/>
+          <img src={logo} alt="logo heart" className="logo rotate offset-between-5-6 mb-lg-1 mb-2"/>
           
             THE HOME OF
             <br />
@@ -53,7 +53,7 @@ function Dashboard() {
              MENTAL<br /> HEALTH
             <br />
             <div className="btn phone-button  mobile-top-margin text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
-              <i className="fas fa-phone-alt hideMobile text-xl"></i>
+              <i className="fas fa-phone-alt text-md"></i>
               <a href="tel:+18044820516" className="phone-link mobile-bold">
             <span className="hideMobile">&nbsp;</span> CALL NOW<span className="hideExclamation">!</span><span className="hideMobile"> 757-536-1233</span>
               </a>
