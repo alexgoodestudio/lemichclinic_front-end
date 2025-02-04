@@ -9,11 +9,11 @@ function Navbar() {
   return (
     <nav className="navbar main">
       <div className="container  overflow-hidden">
-        <Link className="logo-location  navbar-brand  d-flex" to="/">
-          <span className="thin">The Lemich Clinic  </span> &nbsp;| <span className="thin  ms-2"> Norfolk, Virginia</span>
+        <Link className="logo-location navbar-brand  d-flex" to="/">
+          <span className="">The Lemich Clinic  </span>  <span className="thin  ms-2">|&nbsp; Norfolk, Virginia</span>
        
         </Link>
-        <ul className="navbar-nav ms-auto d-flex flex-row gap-4 ivy nav-link-styling">
+        <ul className="navbar-nav  ms-auto d-flex flex-row gap-4 ivy nav-link-styling">
   <li className="nav-item">
     <Link className="nav-link" to="/">
      Home

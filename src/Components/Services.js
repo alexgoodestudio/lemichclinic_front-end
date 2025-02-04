@@ -20,7 +20,7 @@ function Services() {
         {/* Description Section */}
         <div className="row">
           <div className="col-lg-12">
-            <p className="text-justify mb-4 text-lg text-gray-600">
+            <p className="text-justify mb-4 text-lg text-gray-600 border bg-slate-100 p-5">
               For current clients, we have a selection of services provided by our
               team to support you in your journey to better mental health. Prices
               and availability may vary, so please talk to our office staff about

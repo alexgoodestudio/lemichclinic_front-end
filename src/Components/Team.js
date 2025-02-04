@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import armbruster from "./staffimages/armbruster.avif";
 import casey from "./staffimages/casey.avif";
 import garner from "./staffimages/garner.avif";
@@ -40,6 +41,9 @@ const images = {
 };
 
 function OurTeam() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const team = [
     {
       name: "Gregory C. Lemich, Ph.D., LPC",
@@ -161,7 +165,7 @@ function OurTeam() {
   ];
 
   return (
-    <div className="bg-gray-50  py-12">
+    <div className="bg-gray-50   py-12">
       <div className="container mx-auto px-4">
       <h2 className=" text-4xl text-start text-gray-800 mb-1">
         Meet Our Team.

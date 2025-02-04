@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import "../style.css";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
@@ -6,6 +7,10 @@ import HoverExpand from "./HoverExpand.js";
 import Video from "./images/output.mp4"
 import logo from "./images/logo2.png"
 function Dashboard() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useGsapAnimations([
     {
