@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4d46e400.css",
+    "main.js": "/static/js/main.52c4a7ef.js",
+    "static/media/output.mp4": "/static/media/output.dacdef447c837a079b15.mp4",
+    "static/media/juliane-liebermann-G8gzkaqTqOA-unsplash2.jpg": "/static/media/juliane-liebermann-G8gzkaqTqOA-unsplash2.8cd24e616a6d4eeb8088.jpg",
+    "static/media/lemich.png": "/static/media/lemich.43786399030e4eb1a30f.png",
+    "static/media/2.avif": "/static/media/2.45789a30ce9fb9390260.avif",
+    "static/media/Lindelof.avif": "/static/media/Lindelof.27eee149a4219fdef491.avif",
+    "static/media/lemichs.avif": "/static/media/lemichs.7276fc7fd9d08d33220d.avif",
+    "static/media/murdock.avif": "/static/media/murdock.629fb208df155a1e4e3d.avif",
+    "static/media/Perez.avif": "/static/media/Perez.433774051abf52b03c79.avif",
+    "static/media/meltesen.avif": "/static/media/meltesen.22e22701408dfe8d9c36.avif",
+    "static/media/litle.avif": "/static/media/litle.c1e01c1fc5b9fa5b1db9.avif",
+    "static/media/moghaddam.avif": "/static/media/moghaddam.30e5c5643224fac651c9.avif",
+    "static/media/ivy-style-sans.otf": "/static/media/ivy-style-sans.eb75f50e0638f9b89528.otf",
+    "static/media/Rominger.avif": "/static/media/Rominger.aa5559d0d233b8de39c5.avif",
+    "static/media/templeton.avif": "/static/media/templeton.f844eade78016afb2079.avif",
+    "static/media/mcnair.avif": "/static/media/mcnair.32ba989b96cc6b6ea04b.avif",
+    "static/media/1.avif": "/static/media/1.231ff76e68894d88a10a.avif",
+    "static/media/Branch.otf": "/static/media/Branch.83f212824c314017eba1.otf",
+    "static/media/armbruster.avif": "/static/media/armbruster.4455f0398f53dc1ac0dd.avif",
+    "static/media/garner.avif": "/static/media/garner.162a284fdafd2ad5bd80.avif",
+    "static/media/casey.avif": "/static/media/casey.f9baaa86007ba8975b6c.avif",
+    "static/media/goulart.avif": "/static/media/goulart.8522374c858cf8fdfe63.avif",
+    "static/media/ladikos.avif": "/static/media/ladikos.c829c504f491ee5ae8c2.avif",
+    "static/media/stone.avif": "/static/media/stone.116f6c011ccd86d8f0ff.avif",
+    "static/media/hendersen.avif": "/static/media/hendersen.91fb2777dbac714f495c.avif",
+    "static/media/3.avif": "/static/media/3.00cd25047737ebfed935.avif",
+    "static/media/logo2.png": "/static/media/logo2.7f224d1a6a04f48bdbd4.png",
+    "static/media/reike.avif": "/static/media/reike.4ed135458b1900470739.avif",
+    "index.html": "/index.html",
+    "main.4d46e400.css.map": "/static/css/main.4d46e400.css.map",
+    "main.52c4a7ef.js.map": "/static/js/main.52c4a7ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d46e400.css",
+    "static/js/main.52c4a7ef.js"
+  ]
+}
