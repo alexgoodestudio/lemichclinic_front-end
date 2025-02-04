@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d46e400.css",
-    "main.js": "/static/js/main.52c4a7ef.js",
+    "main.css": "/static/css/main.ab554389.css",
+    "main.js": "/static/js/main.e2375ff5.js",
     "static/media/output.mp4": "/static/media/output.dacdef447c837a079b15.mp4",
     "static/media/juliane-liebermann-G8gzkaqTqOA-unsplash2.jpg": "/static/media/juliane-liebermann-G8gzkaqTqOA-unsplash2.8cd24e616a6d4eeb8088.jpg",
     "static/media/lemich.png": "/static/media/lemich.43786399030e4eb1a30f.png",
@@ -30,11 +30,11 @@
     "static/media/logo2.png": "/static/media/logo2.7f224d1a6a04f48bdbd4.png",
     "static/media/reike.avif": "/static/media/reike.4ed135458b1900470739.avif",
     "index.html": "/index.html",
-    "main.4d46e400.css.map": "/static/css/main.4d46e400.css.map",
-    "main.52c4a7ef.js.map": "/static/js/main.52c4a7ef.js.map"
+    "main.ab554389.css.map": "/static/css/main.ab554389.css.map",
+    "main.e2375ff5.js.map": "/static/js/main.e2375ff5.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d46e400.css",
-    "static/js/main.52c4a7ef.js"
+    "static/css/main.ab554389.css",
+    "static/js/main.e2375ff5.js"
   ]
 }
