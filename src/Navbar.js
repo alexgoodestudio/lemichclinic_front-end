@@ -10,37 +10,37 @@ function Navbar() {
     <nav className="navbar main">
       <div className="container  overflow-hidden">
         <Link className="logo-location navbar-brand  d-flex" to="/">
-          <span className="">The Lemich Clinic  </span>  <span className="thin  ms-2">|&nbsp; Norfolk, Virginia</span>
+          <span className="">The Lemich Clinic  </span>  <span className="thin  ms-2">|&nbsp; Norfolk, Virginia </span>
        
         </Link>
         <ul className="navbar-nav  ms-auto d-flex flex-row gap-4 ivy nav-link-styling">
   <li className="nav-item">
-    <Link className="nav-link" to="/">
+    <Link className="nav-link underline3" to="/">
      Home
     </Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link" to="/team">
+    <Link className="nav-link underline3" to="/team">
       Team
     </Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link" to="/services">
+    <Link className="nav-link underline3" to="/services">
       Services
     </Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link" to="/insurance">
+    <Link className="nav-link underline3" to="/insurance">
       Insurance
     </Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link" to="/contact">
+    <Link className="nav-link underline3" to="/contact">
       Contact
     </Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link" to="/owners">
+    <Link className="nav-link underline3" to="/owners">
       Owners
     </Link>
   </li>

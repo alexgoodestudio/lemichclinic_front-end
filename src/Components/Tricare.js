@@ -8,10 +8,10 @@ function Tricare() {
           <div className="col-lg-4"></div>
           <div className="col-lg-4 my-4">
           <h2 className="mb-4 ivy  tracking-wide">
-            GOT TRICARE?
+          ✺ GOT TRICARE?
           </h2>
           <p className="">
-          Great! We are in-network. Active duty, please have your referral made to The Lemich Clinic. Dependents and retirees, no referral is needed. Just make an appointment, and we will do the rest.
+          Great! We are <span className="italics">in-network</span>. Active duty, please have your referral made to The Lemich Clinic. Dependents and retirees, no referral is needed. Just make an appointment, and we will do the rest.
           </p> 
           </div>
           <div className="col-lg-4"></div>

@@ -46,7 +46,9 @@
 .ivy {
   font-family: "MyCustomFont", sans-serif;
 }
-
+.large{
+  font-size: 15pt;
+}
 
 .branch{
     font-family: "Branch", sans-serif;  
@@ -222,6 +224,12 @@ li {
   display: inline-block; 
   border-bottom: 1px solid black; 
   padding-bottom: 3px;
+}
+.underline3:hover {
+  display: inline-block; 
+  border-bottom: 1px solid rgb(0, 0, 0); 
+  padding-bottom: 3px;
+
 }
 
 .phone-link {
