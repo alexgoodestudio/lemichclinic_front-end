@@ -5,7 +5,7 @@ import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
 import Video from "./images/output.mp4"
-import logo from "./images/logo2.png"
+import logo from "./images/newlogo.png"
 function Dashboard() {
   
   useEffect(() => {
@@ -38,10 +38,10 @@ function Dashboard() {
         </video>
         <div className="bg-overlay"></div>
         <div className="col-lg-5 spacer offset-between-5-6 col-md-7 offset-md-5 col-12 d-flex justify-content-center text-start text-white p-lg-3">
-        {/* Your content */}
+
         <h1 className="home-text-border p-2 display-4 ipad mobile-center-text  textMobile slide p-lg-5">
-          <img src={logo} alt="logo heart" className="logo rotate offset-between-5-6 mb-lg-1 mb-2"/>
-          
+        <img src={logo} alt="logo heart" className="logo rotate offset-between-5-6 mb-lg-1 mb-2"/>
+        
             THE HOME OF
             <br />
             <HoverExpand
@@ -75,6 +75,7 @@ function Dashboard() {
             <div className="col-lg-2"></div>
             <div className="col-lg-8 p-4 rounded">
               <h1 className="mb-3 ivy underline2">Our Mission</h1>
+              
               <p className="text-justify">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
