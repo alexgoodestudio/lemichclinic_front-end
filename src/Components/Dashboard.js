@@ -6,10 +6,27 @@ import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
 import Video from "./images/output.mp4"
 import logo from "./images/newlogo.png"
+import { gsap } from "gsap";
+
 function Dashboard() {
   
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+
+    // Fade in entire page
+    gsap.fromTo(
+      ".page-container",
+      { opacity: 0 },
+      { opacity: 1, duration: 1.5, ease: "power2.out" }
+    );
+
+    // Fade in video separately
+    gsap.fromTo(
+      ".video-background",
+      { opacity: 0 },
+      { opacity: 1, duration: 2, delay: 0.5, ease: "power2.out" }
+    );
   }, []);
 
   useGsapAnimations([
@@ -28,6 +45,7 @@ function Dashboard() {
       },
     },
   ]);
+
 
   return (
     <div className="bg-slate-50 overflow-hidden">

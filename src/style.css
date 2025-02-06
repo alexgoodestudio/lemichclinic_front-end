@@ -15,6 +15,14 @@
 .logo{
   width: 17%;
 }
+.footer_logo{
+  width: 8%;
+  height: 8%;
+}
+
+.text-logo{
+  font-size: 24pt;
+}
 
 .rotate {
   transition: transform 0.3s ease-in-out;
@@ -446,6 +454,9 @@ li {
   }
   .border-radius-mobile{
     border-radius: 40px;
+  }
+  .text-logo{
+    font-size: 10pt;
   }
 }
 

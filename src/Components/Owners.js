@@ -33,14 +33,20 @@
 // }
 
 // export default Owners;
+
 import img4 from "./images/lemichs.avif";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Owners() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   return (
     <div className="row flex items-center justify-center padding-mobile-owners">
       <div className="col-lg-6 p-lg-5">
-        <div className=" w-full ">
+        <div className=" w-full p-lg-5">
           <h2 className=" text-4xl text-start mb-lg-5  text-gray-800 mb-1">
             Meet The Owners.
           </h2>

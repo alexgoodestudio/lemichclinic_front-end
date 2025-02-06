@@ -2,9 +2,14 @@ import React from "react";
 import img1 from "./images/1.avif";
 import img2 from "./images/2.avif";
 import img3 from "./images/3.avif";
+import { useEffect } from "react";
 import "../style.css";
 
 function Services() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   return (
     <div className="d-flex flex-column min-vh-100">
       <div className="container py-5 flex-grow-1">
@@ -20,7 +25,7 @@ function Services() {
         {/* Description Section */}
         <div className="row">
           <div className="col-lg-12">
-            <p className="text-justify mb-4 text-lg text-gray-600 border bg-slate-100 p-4">
+            <p className="text-justify mb-4 text-lg text-gray-600 border rounded bg-slate-100 p-4">
               For current clients, we have a selection of services provided by our
               team to support you in your journey to better mental health. Prices
               and availability may vary, so please talk to our office staff about

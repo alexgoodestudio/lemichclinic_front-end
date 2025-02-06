@@ -5,6 +5,9 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "../style.css";
 
 function ContactInfo({ icon, label, value }) {
+  
+
+
   return (
     <li className="flex items-center space-x-4 p-3 rounded-lg bg-gray-100 hover:bg-blue-100 transition-shadow duration-200 shadow-sm hover:shadow-md">
       <div className="text-blue-500 text-xl">{icon}</div>
@@ -41,6 +44,10 @@ function Contact({ contactId = null }) {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [contactData, setContactData] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     if (contactId) {

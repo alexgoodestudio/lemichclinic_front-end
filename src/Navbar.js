@@ -11,7 +11,6 @@ function Navbar() {
       <div className="container  overflow-hidden">
         <Link className="logo-location navbar-brand  d-flex" to="/">
           <span className="">The Lemich Clinic  </span>  <span className="thin  ms-2">|&nbsp; Norfolk, Virginia </span>
-       
         </Link>
         <ul className="navbar-nav  ms-auto d-flex flex-row gap-4 ivy nav-link-styling">
   <li className="nav-item">

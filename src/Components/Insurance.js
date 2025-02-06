@@ -1,9 +1,14 @@
 import React from "react";
 import "../style.css";
 import hiker from "./images/juliane-liebermann-G8gzkaqTqOA-unsplash2.jpg";
-import logo from "./images/logo2.png"
+import logo from "./images/newlogo.png"
+import { useEffect } from "react";
 
 function Insurance() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   return (
     <div className="min-h-screen  flex flex-col">
       <div className="blueCombo py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-start ">
@@ -70,7 +75,7 @@ function Insurance() {
                 highest level of confidentiality, we can work with you on a
                 private pay option. Prices vary by clinician and session length.
               </li>
-              <li className="mt-5 border bg-slate-100 p-4">
+              <li className="mt-5 border rounded bg-slate-100 p-4">
               Are you Active Duty and not able to see your PCM quickly to get a referral? AD may present to the Care Connect station at the Behavioral Health Department in Building 3 at NMCP to meet with a Behavioral Health Technician to get a referral for mental health counseling. The Care Connect station is open Monday-Friday from 8:30-10:30. Once the referral is created, the service member will need to call Tricare to have the provider updated to The Lemich Clinic.
               </li>
             </ul>
