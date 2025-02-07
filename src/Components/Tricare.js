@@ -4,10 +4,13 @@ import "../style.css";
 function Tricare() {
   return (
     <div className="container-fluid ">
+      
       <div className="row p-4 bg-slate-500 text-white ">
+        
           <div className="col-lg-4"></div>
-          <div className="col-lg-4 my-4">
-          <h2 className="mb-4 ivy  tracking-wide">
+          <div className="col-lg-4  my-4">
+            
+          <h2 className="mb-4 ivy tracking-wide">
           ✺ GOT TRICARE?
           </h2>
           <p className="">

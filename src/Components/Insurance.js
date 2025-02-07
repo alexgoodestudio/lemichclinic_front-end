@@ -15,7 +15,7 @@ function Insurance() {
       gsap.fromTo(
           logoRef.current, 
           { opacity: 0 }, 
-          { opacity: 1, duration: 4.5, ease: "power2.out" }
+          { opacity: 1, duration: 2, ease: "power2.out" }
       );
   }, []);
   return (
