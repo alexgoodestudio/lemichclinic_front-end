@@ -14,7 +14,6 @@ function Dashboard() {
     window.scrollTo(0, 0);
     
 
-    // Fade in entire page
     gsap.fromTo(
       ".page-container",
       { opacity: 0 },

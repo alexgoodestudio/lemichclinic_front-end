@@ -36,13 +36,22 @@
 
 import img4 from "./images/lemichs.avif";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 function Owners() {
-    useEffect(() => {
+  const logoRef = useRef(null); // Reference for the logo
+
+  useEffect(() => {
       window.scrollTo(0, 0);
-    }, []);
-    
+
+      // Ensure the animation runs only after the component is mounted
+      gsap.fromTo(
+          logoRef.current, 
+          { opacity: 0 }, 
+          { opacity: 1, duration: 4.5, ease: "power2.out" }
+      );
+  }, []);
   return (
     <div className="row flex items-center justify-center padding-mobile-owners">
       <div className="col-lg-6 p-lg-5">
@@ -71,6 +80,7 @@ function Owners() {
         <div className="">
           <div className="text-center">
             <img
+            ref={logoRef} 
               src={img4}
               alt="Gregory and Jennifer Lemich"
               className="mx-auto border-radius-mobile owner-image"

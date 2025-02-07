@@ -2,13 +2,22 @@ import React from "react";
 import "../style.css";
 import hiker from "./images/juliane-liebermann-G8gzkaqTqOA-unsplash2.jpg";
 import logo from "./images/newlogo.png"
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 function Insurance() {
-    useEffect(() => {
+  const logoRef = useRef(null); // Reference for the logo
+
+  useEffect(() => {
       window.scrollTo(0, 0);
-    }, []);
-    
+
+      // Ensure the animation runs only after the component is mounted
+      gsap.fromTo(
+          logoRef.current, 
+          { opacity: 0 }, 
+          { opacity: 1, duration: 4.5, ease: "power2.out" }
+      );
+  }, []);
   return (
     <div className="min-h-screen  flex flex-col">
       <div className="blueCombo py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-start ">
@@ -29,6 +38,7 @@ function Insurance() {
           {/* Image Column */}
           <div className="col-lg-7 col-md-12 ">
               <img
+                ref={logoRef} 
                 src={hiker}
                 alt="Hiker"
                 className="img-fluid "
