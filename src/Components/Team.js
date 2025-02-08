@@ -178,7 +178,7 @@ function OurTeam() {
             <img
               src={lemich}
               alt="Gregory C. Lemich"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover zoom"
             />
           </div>
         </div>
@@ -211,7 +211,7 @@ function OurTeam() {
                   <img
                     src={images[member.lastName]}
                     alt={member.name}
-                    className="w-full h-full  object-cover rounded-full"
+                    className="w-full h-full zoom object-cover rounded-full"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-gray-800">
@@ -256,7 +256,7 @@ function OurTeam() {
                   <img
                     src={images[member.lastName]}
                     alt={member.name}
-                    className="w-full h-full object-cover rounded-full"
+                    className="w-full h-full zoom object-cover rounded-full"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-gray-800">

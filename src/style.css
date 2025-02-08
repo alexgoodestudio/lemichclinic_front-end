@@ -19,6 +19,15 @@
 .bold{
   font-weight: 700;
 }
+
+.zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.08);
+}
+
 .logo{
   width: 17%;
 }
