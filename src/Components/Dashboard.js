@@ -14,9 +14,9 @@ function Dashboard() {
     window.scrollTo(0, 0);
 
     gsap.fromTo(
-      ".video-background",
+      ".bg-overlay",
       { opacity: 0 },
-      { opacity: 1, duration: 2, delay: 0.5, ease: "power2.out" }
+      { opacity: 1, duration: 0, delay: 0, ease: "power2.out" }
     );
   }, []);
 

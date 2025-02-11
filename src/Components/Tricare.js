@@ -11,7 +11,7 @@ function Tricare() {
           <div className="col-lg-4"></div>
           <div className="col-lg-4 my-4">
            
-          <img src={img} alt="tricare logo" className="mb-4 tricare"/>
+          <img src={img} alt="tricare logo" className="mb-5 tricare"/>
       
           <p className=" text-white">
           Got <span className="bold">Tricare</span>? Great! We are <span className="italics">in-network</span>. Active duty, please have your referral made to The Lemich Clinic. Dependents and retirees, no referral is needed. Just make an appointment, and we will do the rest.
