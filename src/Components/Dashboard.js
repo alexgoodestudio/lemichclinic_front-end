@@ -4,7 +4,7 @@ import "../style.css";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
-import Video from "./images/output.mp4"
+import Video from "./images/bw1.mp4"
 import logo from "./images/newlogo.png"
 import { gsap } from "gsap";
 
@@ -48,9 +48,9 @@ function Dashboard() {
         <div className="bg-overlay "></div>
         <div className="col-lg-6 spacer   col-md-7 offset-md-5 col-12 d-flex justify-content-center text-start text-white p-lg-3">
 
-        <h1 className="home-text-border   p-2 display-4 ipad mobile-center-text  textMobile slide p-lg-5">
+        <h1 className="home-text-border font-bold  p-2 title-thin ipad mobile-center-text  textMobile slide p-lg-5">
         
-        <img src={logo} alt="logo heart" className="logo rotate offset-between-5-6 mb-lg-1 mb-2"/>
+        <img src={logo} alt="logo heart" className="logo rotate offset-between-5-6 mb-lg-2  mb-2"/>
         
             THE HOME OF
             <br />
