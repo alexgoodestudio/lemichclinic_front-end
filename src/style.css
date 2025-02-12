@@ -29,7 +29,7 @@
 }
 
 .logo{
-  width: 17%;
+  width: 14%;
 }
 .footer_logo{
   width: 8%;
@@ -303,7 +303,7 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(45, 112, 135, 0.40); 
+  background-color: rgba(1, 59, 78, 0.4); 
   z-index: 0; 
 }
 
