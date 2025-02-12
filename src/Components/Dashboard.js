@@ -4,7 +4,7 @@ import "../style.css";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
-import Video from "./images/bw1.mp4"
+import Video from "./images/bw1-1.mp4"
 import logo from "./images/newlogo.png"
 import { gsap } from "gsap";
 
