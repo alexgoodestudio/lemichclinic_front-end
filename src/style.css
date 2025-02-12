@@ -43,6 +43,7 @@
   font-weight: 800;
   color: #ffb3a0;
 }
+
 .title-thin{
   font-size: 44pt;
   font-weight: 400;
@@ -71,7 +72,7 @@
 }
 
 .logo{
-  width: 14%;
+  width: 12%;
 }
 .footer_logo{
   width: 8%;
@@ -373,6 +374,11 @@ li {
     font-size: 15pt;
     margin: 0 auto; 
     text-align: center; 
+  }
+  .title{
+    font-size: 30pt;
+    font-weight: 800;
+    color: #ffb3a0;
   }
 
   

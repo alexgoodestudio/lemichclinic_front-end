@@ -60,7 +60,7 @@ function Dashboard() {
               expandedContent={
                 <p>
                   Our military mental health services are designed to
-                  support active duty, dependents, and retirees with
+                  support active duty, spouses, and retirees with
                   specialized care.
                 </p>
               }
