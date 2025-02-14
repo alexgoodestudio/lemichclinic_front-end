@@ -48,9 +48,9 @@ function Dashboard() {
           
         <div className="col-lg-1  col-0" ></div>
         <div className="col-lg-5  col-12  text-start p-lg-3 ">
-          <h1 className="home-text-border mobile-bold-title  title text-white ipad mobile-center-text  textMobile slide ">
+          <h1 className="home-text-border  title text-white ipad mobile-center-text textMobile slide ">
             <img src={logo} alt="logo heart" className="mobile-top-margin-2  logo rotate offset-between-5-6 mb-lg-3  mb-2"/>
-            THE HOME OF&nbsp;
+         <div className="spacer">   THE HOME OF&nbsp;
             <HoverExpand
               triggerText="MILITARY"
               expandedContent={
@@ -62,7 +62,8 @@ function Dashboard() {
             />
             <br />
             MENTAL HEALTH
-            <br />
+            </div>
+            
             <div className="btn phone-button  mobile-top-margin text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
               <i className="fas fa-phone-alt text-md"></i>
               <a href="tel:+17575361233" className="phone-link mobile-bold">

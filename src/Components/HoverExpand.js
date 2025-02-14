@@ -7,7 +7,7 @@ function HoverExpand({ triggerText, expandedContent }) {
   const handleMouseLeave = () => setIsHovered(false);
 
   return (
-    <div className="relative inline-block">
+    <div className="relative inline-block font-big ">
       {/* Trigger Text */}
       <span
         className=" cursor-pointer whitespace-nowrap"

@@ -11,6 +11,16 @@
   font-weight: normal;
   font-style: normal;
 }
+/* @font-face {
+  font-family: "Poppins";
+  src: url("./Components/fonts/Poppins-Medium.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+} */
+
 .tricare {
   width: 50%;
   display: block; /* Ensures margin auto works */
@@ -41,8 +51,9 @@
 
 .title{
   font-size: 42pt;
-  font-weight: 500;
+  font-weight: 520;
 }
+
 
 .video-background {
   position: absolute;
@@ -54,7 +65,10 @@
   object-fit: cover;
   z-index: 0; 
 }
+.spacer{
+  letter-spacing: 1.4px; 
 
+}
 .bg-overlay {
   content: "";
   position: absolute;
@@ -384,11 +398,6 @@ li {
     margin: 0 auto; 
     text-align: center; 
   }
-
-  .title{
-
-    font-weight: 400;
-  }
   
   .padding-mobile {
     padding: 30px;
@@ -492,8 +501,10 @@ li {
   .mobile-top-margin-2{
     margin-top: 100px;
   }
-  .mobile-bold-title{
-    font-weight: 400;
+
+  .title{
+    font-size: 18pt;
+    font-weight: 600;
   }
   .mobile-bold{
     font-weight: 600;
