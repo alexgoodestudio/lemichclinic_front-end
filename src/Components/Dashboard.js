@@ -4,12 +4,11 @@ import "../style.css";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
-import Video from "./images/bw1-1.mp4"
-import logo from "./images/newlogo.png"
+import Video from "./images/stream2.mp4";
+import logo from "./images/newlogo.png";
 import { gsap } from "gsap";
 
 function Dashboard() {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
 
@@ -37,46 +36,46 @@ function Dashboard() {
     },
   ]);
 
-
   return (
     <div className="bg-slate-50 overflow-hidden">
-      <div className="row align-items-center background-section">
+      <div className="row  align-items-center background-section">
+
         <video autoPlay muted loop playsInline className="video-background ">
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="bg-overlay "></div>
-        <div className="col-lg-6 spacer   col-md-7 offset-md-5 col-12 d-flex justify-content-center text-start text-white p-lg-3">
-
-        <h1 className="home-text-border font-bold  p-2 title-thin ipad mobile-center-text  textMobile slide p-lg-5">
-        
-        <img src={logo} alt="logo heart" className="logo rotate offset-between-5-6 mb-lg-2  mb-2"/>
-        
-            THE HOME OF
-            <br />
+          
+        <div className="col-lg-1  col-0" ></div>
+        <div className="col-lg-5  col-12  text-start p-lg-3 ">
+          <h1 className="home-text-border mobile-bold-title  title text-white ipad mobile-center-text  textMobile slide ">
+            <img src={logo} alt="logo heart" className="mobile-top-margin-2  logo rotate offset-between-5-6 mb-lg-3  mb-2"/>
+            THE HOME OF&nbsp;
             <HoverExpand
-           
-              triggerText="MILITARY&nbsp;"
+              triggerText="MILITARY"
               expandedContent={
                 <p>
-                  Our military mental health services are designed to
-                  support active duty, spouses, and retirees with
-                  specialized care.
+                  Our military mental health services are designed to support
+                  active duty, spouses, and retirees with specialized care.
                 </p>
               }
             />
-             MENTAL<br /> HEALTH
+            <br />
+            MENTAL HEALTH
             <br />
             <div className="btn phone-button  mobile-top-margin text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
               <i className="fas fa-phone-alt text-md"></i>
               <a href="tel:+17575361233" className="phone-link mobile-bold">
-            <span className="hideMobile">&nbsp;</span> CALL NOW<span className="hideExclamation">!</span><span className="hideMobile"> 757-536-1233</span>
+                <span className="hideMobile">&nbsp;</span> Call Now
+                <span className="hideMobile small">+1 (757) 536-1233 </span>
               </a>
             </div>
           </h1>
         </div>
-        {/* <h1 className="bottom-left-text branch text-start">The Lemich Clinic</h1>       */}
-        </div>
+        <div className="col-lg-5 col-0"></div>
+        <div className="col-lg-1 col-0"></div>
+    
+      </div>
 
       {/* Mission Section */}
       <div className="py-4 bg-slate-100">
@@ -85,7 +84,7 @@ function Dashboard() {
             <div className="col-lg-2"></div>
             <div className="col-lg-8 p-4 rounded">
               <h1 className="mb-3 ivy underline2">Our Mission</h1>
-              
+
               <p className="text-justify">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
@@ -100,7 +99,8 @@ function Dashboard() {
             <div className="col-lg-2"></div>
           </div>
         </div>
-      </div>
+        </div>
+      
 
       {/* Features Section */}
       <div className="bg-slate-100">
@@ -153,7 +153,6 @@ function Dashboard() {
               </p>
             </div>
           </div>
-          
         </div>
         <Tricare />
       </div>
