@@ -48,10 +48,10 @@ function Dashboard() {
           <h1 className="relative  z-10 p-5 ms-4 title text-white ipad mobile-center-text textMobile text-start">
             <div className="d-flex">
             <img src={logo} alt="logo heart" className=" logo rotate mb-lg-3 mb-2" />
-            <h1 className="align-content-center ms-3 branch TLC">The Lemich Clinic</h1>
+            <h1 className="align-content-center branch TLC">The Lemich Clinic</h1>
             </div>
-            <div className="spacer ">
-              THE HOME OF&nbsp;
+            <div className="spacer d-flex">
+              HOME OF&nbsp;
               
               <HoverExpand
                 triggerText="MILITARY MENTAL HEALTH"
@@ -66,7 +66,7 @@ function Dashboard() {
               
             </div>
 
-            <div className="btn phone-button mobile-top-margin text-center my-lg-4 my-md-3 my-sm-1 my-xs-1 flex items-center">
+            <div className="btn phone-button mt-4 mobile-top-margin text-center my-lg-4 my-md-3 my-sm-1 my-xs-1 flex items-center">
               <i className="fas fa-phone-alt text-md"></i>
               <a href="tel:+17575361233" className="phone-link mobile-bold">
                 <span className="hideMobile">&nbsp;</span> Call Now
