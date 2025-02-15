@@ -39,45 +39,42 @@ function Dashboard() {
   return (
     <div className="bg-slate-50 overflow-hidden">
       <div className="row  align-items-center background-section">
-
         <video autoPlay muted loop playsInline className="video-background ">
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-          
-        
         <div className="col-lg-6 col-12 relative h-full flex justify-center items-center">
-  {/* Blurred Background */}
-  <div className="absolute inset-0 backdrop-blur-lg border-right-white bg-opacity-40"></div>
+          <div className="absolute inset-0 backdrop-blur-lg border-right-white bg-opacity-40"></div>
+          <h1 className="relative  z-10 p-5 ms-4 title text-white ipad mobile-center-text textMobile text-start">
+            <div className="d-flex">
+            <img src={logo} alt="logo heart" className=" logo rotate mb-lg-3 mb-2" />
+            <h1 className="align-content-center ms-3 branch TLC">The Lemich Clinic</h1>
+            </div>
+            <div className="spacer ">
+              THE HOME OF&nbsp;
+              
+              <HoverExpand
+                triggerText="MILITARY MENTAL HEALTH"
+                expandedContent={
+                  <p className="small">
+                    Our military mental health services are designed to support
+                    active duty, spouses, and retirees with specialized care.
+                  </p>
+                }
+              />
+         
+              
+            </div>
 
-  {/* Text Content (Ensure it is above the blur effect) */}
-  <h1 className="relative  z-10 p-5 title text-white ipad mobile-center-text textMobile text-start">
-    <img src={logo} alt="logo heart" className=" logo rotate mb-lg-3 mb-2"/>
-    
-    <div className="spacer ">
-      THE HOME OF&nbsp;
-      <HoverExpand
-        triggerText="MILITARY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
-        expandedContent={
-          <p>
-            Our military mental health services are designed to support
-            active duty, spouses, and retirees with specialized care.
-          </p>
-        }
-      />
-      <br />
-      MENTAL HEALTH
-    </div>
-    
-    <div className="btn phone-button mobile-top-margin text-center my-lg-4 my-md-3 my-sm-1 my-xs-1 flex items-center">
-      <i className="fas fa-phone-alt text-md"></i>
-      <a href="tel:+17575361233" className="phone-link mobile-bold">
-        <span className="hideMobile">&nbsp;</span> Call Now
-        <span className="hideMobile small">+1 (757) 536-1233 </span>
-      </a>
-    </div>
-  </h1>
-</div>
+            <div className="btn phone-button mobile-top-margin text-center my-lg-4 my-md-3 my-sm-1 my-xs-1 flex items-center">
+              <i className="fas fa-phone-alt text-md"></i>
+              <a href="tel:+17575361233" className="phone-link mobile-bold">
+                <span className="hideMobile">&nbsp;</span> Call Now
+                <span className="hideMobile small2">&nbsp;+1 (757) 536-1233 </span>
+              </a>
+            </div>
+          </h1>
+        </div>
         <div className="col-lg-6 col-12  forward">
         </div>
       </div>
@@ -104,8 +101,8 @@ function Dashboard() {
             <div className="col-lg-2"></div>
           </div>
         </div>
-        </div>
-      
+      </div>
+
 
       {/* Features Section */}
       <div className="bg-slate-100">

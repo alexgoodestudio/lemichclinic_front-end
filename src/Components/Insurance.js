@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import hiker from "./images/juliane-liebermann-G8gzkaqTqOA-unsplash2.jpg";
+import run from "./images/run.png";
 import logo from "./images/newlogo.png"
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -39,7 +39,7 @@ function Insurance() {
           <div className="col-lg-7 col-md-12 ">
               <img
                 ref={logoRef} 
-                src={hiker}
+                src={run}
                 alt="Hiker"
                 className="img-fluid "
               />
