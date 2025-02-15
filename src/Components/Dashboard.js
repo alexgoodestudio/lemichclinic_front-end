@@ -4,7 +4,7 @@ import "../style.css";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
-import Video from "./images/hike.mp4";
+import Video from "./images/stream2.mp4";
 import logo from "./images/newlogo.png";
 import { gsap } from "gsap";
 
@@ -51,7 +51,7 @@ function Dashboard() {
   <div className="absolute inset-0 backdrop-blur-lg border-right-white bg-opacity-40"></div>
 
   {/* Text Content (Ensure it is above the blur effect) */}
-  <h1 className="relative z-10 p-5 title text-white ipad mobile-center-text textMobile text-start">
+  <h1 className="relative  z-10 p-5 title text-white ipad mobile-center-text textMobile text-start">
     <img src={logo} alt="logo heart" className=" logo rotate mb-lg-3 mb-2"/>
     
     <div className="spacer ">
