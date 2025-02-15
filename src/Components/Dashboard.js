@@ -4,7 +4,7 @@ import "../style.css";
 import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
-import Video from "./images/flower.mp4";
+import Video from "./images/hike.mp4";
 import logo from "./images/newlogo.png";
 import { gsap } from "gsap";
 
@@ -44,38 +44,42 @@ function Dashboard() {
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="bg-overlay "></div>
           
-        <div className="col-lg-1  col-0" ></div>
-        <div className="col-lg-5  col-12  text-start p-lg-3 ">
-          <h1 className="home-text-border  title text-white ipad mobile-center-text textMobile slide ">
-            <img src={logo} alt="logo heart" className="mobile-top-margin-2  logo rotate offset-between-5-6 mb-lg-3  mb-2"/>
-         <div className="spacer">   THE HOME OF&nbsp;
-            <HoverExpand
-              triggerText="MILITARY"
-              expandedContent={
-                <p>
-                  Our military mental health services are designed to support
-                  active duty, spouses, and retirees with specialized care.
-                </p>
-              }
-            />
-            <br />
-            MENTAL HEALTH
-            </div>
-            
-            <div className="btn phone-button  mobile-top-margin text-center my-lg-4 my-md-3 my-sm-2 my-xs-1 flex items-center ">
-              <i className="fas fa-phone-alt text-md"></i>
-              <a href="tel:+17575361233" className="phone-link mobile-bold">
-                <span className="hideMobile">&nbsp;</span> Call Now
-                <span className="hideMobile small">+1 (757) 536-1233 </span>
-              </a>
-            </div>
-          </h1>
-        </div>
-        <div className="col-lg-5 col-0"></div>
-        <div className="col-lg-1 col-0"></div>
+        
+        <div className="col-lg-6 col-12 relative h-full flex justify-center items-center">
+  {/* Blurred Background */}
+  <div className="absolute inset-0 backdrop-blur-lg border-right-white bg-opacity-40"></div>
+
+  {/* Text Content (Ensure it is above the blur effect) */}
+  <h1 className="relative z-10 p-5 title text-white ipad mobile-center-text textMobile text-start">
+    <img src={logo} alt="logo heart" className=" logo rotate mb-lg-3 mb-2"/>
     
+    <div className="spacer ">
+      THE HOME OF&nbsp;
+      <HoverExpand
+        triggerText="MILITARY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+        expandedContent={
+          <p>
+            Our military mental health services are designed to support
+            active duty, spouses, and retirees with specialized care.
+          </p>
+        }
+      />
+      <br />
+      MENTAL HEALTH
+    </div>
+    
+    <div className="btn phone-button mobile-top-margin text-center my-lg-4 my-md-3 my-sm-1 my-xs-1 flex items-center">
+      <i className="fas fa-phone-alt text-md"></i>
+      <a href="tel:+17575361233" className="phone-link mobile-bold">
+        <span className="hideMobile">&nbsp;</span> Call Now
+        <span className="hideMobile small">+1 (757) 536-1233 </span>
+      </a>
+    </div>
+  </h1>
+</div>
+        <div className="col-lg-6 col-12  forward">
+        </div>
       </div>
 
       {/* Mission Section */}

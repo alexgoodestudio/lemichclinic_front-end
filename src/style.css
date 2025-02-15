@@ -11,15 +11,22 @@
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
-  font-family: "Poppins";
-  src: url("./Components/fonts/Poppins-Medium.ttf") format("woff2");
+ @font-face {
+  font-family: "Manrope";
+  src: url("./Components/fonts/Manrope-Bold.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-.poppins {
-  font-family: "Poppins", sans-serif;
-} */
+.manrope {
+  font-family: "Manrope", sans-serif;
+} 
+.bottom-left{
+  bottom: 0%;
+left: 0;
+  position: absolute;
+  z-index: 100000;
+  color: white;
+}
 
 .tricare {
   width: 50%;
@@ -48,9 +55,8 @@
   font-weight: 300;
 }
 
-
 .title{
-  font-size: 42pt;
+  font-size: 30pt;
   font-weight: 520;
 }
 
@@ -66,19 +72,14 @@
   z-index: 0; 
 }
 .spacer{
-  letter-spacing: 1.4px; 
+  letter-spacing: 1px; 
 
 }
-.bg-overlay {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 
-  /* background-color: rgba(242, 232, 225, .6);  z-index: 0;  */
+.backdrop-blur-lg {
+  backdrop-filter: blur(16px);
 }
+
 /* .title::before {
   content: "";
   position: absolute;
@@ -102,12 +103,23 @@
   height:max-content;
   padding: 20px; /* Inner content padding */
 }
+
+.no-blur {
+  position: relative;
+  z-index: 100;
+}
 .border-left-white {
   border-left: 1px solid rgb(255, 255, 255);
   z-index: 2;
 }
+
 .border-right-white {
   border-right: 1px solid rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.border-top-white{
+  border-top: 1px solid rgb(255, 255, 255);
   z-index: 2;
 }
 
@@ -398,7 +410,11 @@ li {
     margin: 0 auto; 
     text-align: center; 
   }
-  
+  .backdrop-blur-lg {
+    backdrop-filter: blur(20px);
+    margin-top: 55%;
+    height: 40%;
+  }
   .padding-mobile {
     padding: 30px;
   }
@@ -491,19 +507,14 @@ li {
     margin-left: 50%; /* Moves the element halfway between col-5 and col-6 */
     transform: translateX(-50%); /* Centers it properly between the two */
   }
-  .mobile-center-text {
-    text-align: center; 
-  }
+
 
   .mobile-top-margin{
-    margin-top: 25px;
-  }
-  .mobile-top-margin-2{
-    margin-top: 100px;
+    margin-top: 10px;
   }
 
   .title{
-    font-size: 18pt;
+    font-size: 14pt;
     font-weight: 600;
   }
   .mobile-bold{
