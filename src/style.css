@@ -32,7 +32,9 @@ left: 0;
   z-index: 100000;
   color: white;
 }
-
+.margin-left-home{
+  margin-left:70px ;
+}
 .tricare {
   width: 30%;
   display: block; /* Ensures margin auto works */
@@ -170,8 +172,8 @@ left: 0;
   font-weight: 500;
 }
 .logo{
-  width: 6%;
-  height: 6%;
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
 }
 .footer_logo{
@@ -472,6 +474,9 @@ li {
   .TLC{
     font-size: 20pt;
   }
+  .margin-left-home{
+    margin-left:24px ;
+  }
   .phone-button {
     margin-top: 5%;
     padding-top: 6px;
@@ -536,7 +541,9 @@ li {
     padding: 30px;
   }
   .logo{
-    width: 10.5%;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
   }
   .video-background {
     width: 100%;
@@ -594,6 +601,14 @@ li {
     font-weight: 600;
   }
   .TLC{
-    font-size: 32pt;
+    font-size: 28pt;
+  }
+  .logo{
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+  }
+  .margin-left-home{
+    margin-left:0px ;
   }
 }
