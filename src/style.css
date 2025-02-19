@@ -43,7 +43,31 @@ left: 0;
 }
 .TLC{
   font-size: 37pt;
+
 }
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.larger{
+  width: 200%;
+  height: 200%;
+}
+.margin-left-full-screen{
+  margin-left: 30%;
+}
+.slide-text {
+  display: inline-block;
+  animation: slideIn ease-in-out 1.5s forwards; /* 1s delay, 1s duration */
+}
+
 .zoom {
   transition: transform 0.3s ease-in-out;
 }
@@ -426,6 +450,9 @@ li {
     margin: 0 auto; 
     text-align: center; 
   }
+  .margin-left-full-screen{
+    margin-left: 0%;
+  }
 
   .backdrop-blur-lg {
     backdrop-filter: blur(0px);
@@ -524,11 +551,11 @@ li {
     height: 90vh;
     overflow: hidden;
   }
-  .offset-between-5-6 {
-    margin-left: 50%; /* Moves the element halfway between col-5 and col-6 */
-    transform: translateX(-50%); /* Centers it properly between the two */
-  }
 
+  .offset-between-5-6 {
+    margin-left: 50%;
+    transform: translateX(-50%); 
+  }
 
   .mobile-top-margin{
     margin-top: 10px;
@@ -544,7 +571,7 @@ li {
   }
 
   .hideFull {
-    display: inline; /* or block, depending on the layout you want */
+    display: inline; 
   }
   .text-insurance-header-mobile{
     font-size: 12pt;

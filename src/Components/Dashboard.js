@@ -44,11 +44,11 @@ function Dashboard() {
           Your browser does not support the video tag.
         </video>
         <div className="col-lg-6 col-12 relative h-full flex justify-center items-center">
-          <div className="absolute inset-0 backdrop-blur-lg border-right-white bg-opacity-40"></div>
-          <h1 className="relative  z-10 p-5 ms-4 title text-white ipad mobile-center-text textMobile text-start">
-            <div className="d-flex">
+          <div className="absolute inset-0   bg-opacity-40"></div>
+          <h1 className="relative   z-10 p-5 slide-text  ms-5 title text-white ipad mobile-center-text textMobile text-start">
+            <div className="d-flex ">
             <img src={logo} alt="logo heart" className=" logo rotate mb-lg-3 mb-2" />
-            <h1 className="align-content-center branch TLC">The Lemich Clinic</h1>
+            <h1 className="align-content-center branch TLC ">The Lemich Clinic</h1>
             </div>
             <div className="spacer d-flex">
               HOME OF&nbsp;
