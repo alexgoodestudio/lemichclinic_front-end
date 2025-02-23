@@ -168,9 +168,9 @@ function OurTeam() {
   return (
     <div className="bg-gray-50   py-12">
       <div className="container mx-auto px-4">
-      <h2 className=" text-4xl text-start text-gray-800 mb-1">
+      <h1 className=" text-4xl text-start text-gray-800 mb-1">
         Meet Our Team.
-      </h2>
+      </h1>
         {/* Gregory C. Lemich */}
         <div className="row bg-white shadow-lg p-4 mb-5 mt-5">
         <div className="mx-auto col-lg-3">

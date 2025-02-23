@@ -27,9 +27,9 @@ function Insurance() {
                 className="img-fluid reduce rotate m-3 "
         />
         
-        <p className="pb-1 mt-3 thin-insurance-body flex text-insurance-header-mobile">
+        <h1 className="pb-1 mt-3 thin-insurance-body flex text-insurance-header-mobile">
           Find the best payment and insurance options to fit your needs.
-        </p>
+        </h1>
       </div>
 
       {/* Image Section */}

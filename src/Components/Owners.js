@@ -20,9 +20,9 @@ function Owners() {
     <div className="row flex items-center justify-center padding-mobile-owners">
       <div className="col-lg-6 p-lg-5">
         <div className=" w-full p-lg-5">
-          <h2 className=" text-4xl text-start mb-lg-5  text-gray-800 mb-1">
+          <h1 className=" text-4xl text-start mb-lg-5  text-gray-800 mb-1">
             Meet The Owners.
-          </h2>
+          </h1>
           <div className="text-center">
             <p className="text-lg text-gray-600 text-justify mt-4 owner-text">
               The Lemich Clinic was founded by Gregory and Jennifer Lemich.
