@@ -45,7 +45,7 @@ function Dashboard() {
         </video>
         <div className="col-lg-6 col-12 relative h-full flex justify-center items-center">
           <div className="absolute inset-0   bg-opacity-40"></div>
-          <h1 className="relative   z-10 p-5 slide-text  margin-left-home title text-white ipad mobile-center-text textMobile text-start">
+          <h1 className="relative z-10 p-5 slide-text  margin-left-home title text-white ipad mobile-center-text textMobile text-start">
             <div className="d-flex ">
             <img src={logo} alt="logo heart" className=" logo rotate mb-lg-3 mb-2" />
             <h1 className="align-content-center branch TLC ">The Lemich Clinic</h1>
@@ -70,7 +70,7 @@ function Dashboard() {
               <i className="fas fa-phone-alt text-md"></i>
               <a href="tel:+17575361233" className="phone-link mobile-bold">
                 <span className="hideMobile">&nbsp;</span> Call Now
-                <span className="hideMobile small2">&nbsp;+1 (757) 536-1233 </span>
+                <span className="hideMobile ">&nbsp;+1 (757) 536-1233 </span>
               </a>
             </div>
           </h1>

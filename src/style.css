@@ -67,8 +67,10 @@ left: 0;
 }
 .slide-text {
   display: inline-block;
-  animation: slideIn ease-in-out 1.5s forwards; /* 1s delay, 1s duration */
+  animation: slideIn ease-in-out 1s forwards; /* 1s delay, 1s duration */
 }
+
+
 
 .zoom {
   transition: transform 0.3s ease-in-out;
