@@ -1,60 +1,61 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import "../style.css";
-import useGsapAnimations from "./animations/useGsapAnimations.js";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
 import Video from "./images/stream2.mp4";
 import logo from "./images/newlogo.png";
-import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";  
 
 function Dashboard() {
+  const titleRef = useRef(null);
+  gsap.registerPlugin(TextPlugin);  
+
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    gsap.fromTo(
-      ".bg-overlay",
-      { opacity: 0 },
-      { opacity: 1, duration: 0, delay: 0, ease: "power2.out" }
-    );
+    // Set the initial text and visibility
+    gsap.set(".title2", { text: "The Lemich Clinic", opacity: 1 });
+    const textTimeline = gsap.timeline({ repeat: -1, yoyo: false, onComplete: () => textTimeline.restart() });
+
+    textTimeline
+      .to(".title2", { opacity: 1, duration: 1, delay: 2 }) 
+      .to(".title2", { opacity: 0, blur: 5, duration: 1 }) 
+      .to(".title2", { opacity: 1, text: "Take A Deep Breath", blur: 0, duration: 0 }) 
+      .to(".title2", { opacity: 1, duration: 3 })
+      .to(".title2", { opacity: 0, blur: 5, duration: 1 }) 
+      .to(".title2", { opacity: 1, text: "Find Your Calm", blur: 0, duration: 0 }) 
+      .to(".title2", { opacity: 1, duration: 3 }) 
+      .to(".title2", { opacity: 0, blur: 5, duration: 1 }) 
+      .to(".title2", { opacity: 1, text: "Trust the Process", blur: 0, duration: 0 }) 
+      .to(".title2", { opacity: 1, duration: 3 }) 
+      .to(".title2", { opacity: 0, blur: 5, duration: 1 }); 
   }, []);
-
-  useGsapAnimations([
-    {
-      trigger: ".slide",
-      config: {
-        start: "top 80%",
-        props: { opacity: 0, y: 50, duration: 1.2 },
-      },
-    },
-    {
-      trigger: ".shadow",
-      config: {
-        start: "top 90%",
-        props: { opacity: 0, scale: 0.9, duration: 1, stagger: 0.2 },
-      },
-    },
-  ]);
-
   return (
     <div className="bg-slate-50 overflow-hidden">
-      <div className="row  align-items-center background-section">
+      <div className="row align-items-center background-section">
         <video autoPlay muted loop playsInline className="video-background ">
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="col-lg-6 col-12 relative h-full flex justify-center items-center">
-          <div className="absolute inset-0   bg-opacity-40"></div>
-          <h1 className="relative z-10 p-5 slide-text  margin-left-home title text-white ipad mobile-center-text textMobile text-start">
-            <div className="d-flex ">
-            <img src={logo} alt="logo heart" className=" logo rotate mb-lg-3 mb-2" />
-            <h1 className="align-content-center branch TLC ">The Lemich Clinic</h1>
+          <div className="absolute inset-0 bg-opacity-40"></div>
+          <h1
+            ref={titleRef}
+            className="relative z-10 p-5 slide-text margin-left-home title text-white ipad mobile-center-text textMobile text-start"
+          >
+            <div className="d-flex">
+              <img
+                src={logo}
+                alt="logo heart"
+                className="logo rotate mb-lg-3 mb-2"
+              />
+              <h1 className="align-content-center branch TLC title2">The Lemich Clinic</h1>
             </div>
-            <div className="spacer d-flex">
+            <div className="spacer d-flex ">
               HOME OF&nbsp;
-              
               <HoverExpand
-                triggerText="MILITARY MENTAL HEALTH"
+                triggerText="MILITARY MENTAL"
                 expandedContent={
                   <p className="small">
                     Our military mental health services are designed to support
@@ -62,21 +63,20 @@ function Dashboard() {
                   </p>
                 }
               />
-         
-              
+              &nbsp;HEALTH
             </div>
 
             <div className="btn phone-button mt-4 mobile-top-margin text-center my-lg-4 my-md-3 my-sm-1 my-xs-1 flex items-center">
-              <i className="fas fa-phone-alt text-md"></i>
-              <a href="tel:+17575361233" className="phone-link mobile-bold">
-                <span className="hideMobile">&nbsp;</span> Call Now
+              <i className="fas fa-phone-alt text-md "></i>
+              <a href="tel:+17575361233" className="phone-link mobile-bold ">
+                <span className="hideMobile">&nbsp;</span>{" "}
+                <span className="">Call Now</span>
                 <span className="hideMobile ">&nbsp;+1 (757) 536-1233 </span>
               </a>
             </div>
           </h1>
         </div>
-        <div className="col-lg-6 col-12  forward">
-        </div>
+        <div className="col-lg-6 col-12 forward"></div>
       </div>
 
       {/* Mission Section */}
@@ -102,7 +102,6 @@ function Dashboard() {
           </div>
         </div>
       </div>
-
 
       {/* Features Section */}
       <div className="bg-slate-100">

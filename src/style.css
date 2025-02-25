@@ -11,14 +11,25 @@
   font-weight: normal;
   font-style: normal;
 }
+
  @font-face {
   font-family: "Manrope";
   src: url("./Components/fonts/Manrope-Bold.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Space-mono";
+  src: url("./Components/fonts/SpaceMono-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .manrope {
   font-family: "Manrope", sans-serif;
+} 
+.space-mono {
+  font-family: "Space-mono", sans-serif;
 } 
 
 .forward{
@@ -44,7 +55,7 @@ left: 0;
   font-weight: 700;
 }
 .TLC{
-  font-size: 37pt;
+  font-size: 35pt;
 
 }
 
@@ -174,10 +185,17 @@ left: 0;
   font-weight: 500;
 }
 .logo{
-  width: 50px;
-  height: 50px;
+
+  width:35px;
+  height:35px;
   margin-right: 10px;
+  vertical-align: middle;
 }
+.d-flex {
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+}
+
 .footer_logo{
   width: 8%;
   height: 8%;
@@ -201,6 +219,7 @@ left: 0;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
+
 
 
 .reduce{
@@ -353,20 +372,17 @@ li {
   border-radius: 8%;
 }
 
-
 .phone-button {
-  color: #ffffff;
-  /* background: rgba(1, 141, 148, 0.225); */
-  border: 1.75px solid rgb(255, 255, 255);
+  color: #033982;
+  background-color: #d4e6fe;
   border-radius: 25px;
   padding: 16px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
 }
 
 .phone-button:hover {
-  border: 1.5px solid #ffffff;;
-    background: rgba(1, 141, 148, 0.225);
-  color: #ffffff;
+  background-color: #033982;
+  color:#d4e6fe;
 }
 
 .lemich {
@@ -474,7 +490,7 @@ li {
   }
 
   .TLC{
-    font-size: 20pt;
+    font-size: 18pt;
   }
   .margin-left-home{
     margin-left:24px ;
@@ -484,11 +500,6 @@ li {
     padding-top: 6px;
     padding-bottom: 6px;
     font-size: 10pt;
-    
-    /* background: rgba(1, 141, 148, 0.4); */
-    /* background: rgba(1, 141, 148, 0.4); */
-    color: white;
-    border: 1px solid rgb(255, 255, 255);
   }
 
   .nav-link-styling {
@@ -576,7 +587,7 @@ li {
   }
   .mobile-bold{
     font-weight: 600;
-    font-size: 9pt;
+    font-size: 10pt;
   }
 
   .hideFull {
