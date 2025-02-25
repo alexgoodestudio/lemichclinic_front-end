@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import run from "./images/run.png";
+import run from "./images/take1.jpg";
 import logo from "./images/newlogo.png"
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
