@@ -19,17 +19,20 @@ function Dashboard() {
     const textTimeline = gsap.timeline({ repeat: -1, yoyo: false, onComplete: () => textTimeline.restart() });
 
     textTimeline
-      .to(".title2", { opacity: 1, duration: 1, delay: 2 }) 
-      .to(".title2", { opacity: 0, blur: 5, duration: 1 }) 
-      .to(".title2", { opacity: 1, text: "Take A Deep Breath", blur: 0, duration: 0 }) 
-      .to(".title2", { opacity: 1, duration: 3 })
-      .to(".title2", { opacity: 0, blur: 5, duration: 1 }) 
-      .to(".title2", { opacity: 1, text: "Find Your Calm", blur: 0, duration: 0 }) 
-      .to(".title2", { opacity: 1, duration: 3 }) 
-      .to(".title2", { opacity: 0, blur: 5, duration: 1 }) 
-      .to(".title2", { opacity: 1, text: "Trust the Process", blur: 0, duration: 0 }) 
-      .to(".title2", { opacity: 1, duration: 3 }) 
-      .to(".title2", { opacity: 0, blur: 5, duration: 1 }); 
+    .to(".title2", { opacity: 1, duration: 1, delay: 2 }) // Initial text stays for 4 seconds
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }) // Fade out and blur
+    .to(".title2", { opacity: 0, text: "Take A Deep Breath", blur: 0, duration: 0 }) // Set next text instantly
+    .to(".title2", { opacity: 1, duration: 1 }) // Fade in new text
+    .to(".title2", { opacity: 1, duration: 3 }) // Keep the text visible for 3 seconds
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }) // Fade out and blur again
+    .to(".title2", { opacity: 0, text: "Find Your Calm", blur: 0, duration: 0 }) // Set next text instantly
+    .to(".title2", { opacity: 1, duration: 1 }) // Fade in new text
+    .to(".title2", { opacity: 1, duration: 3 }) // Keep the text visible for 3 seconds
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }) // Fade out and blur again
+    .to(".title2", { opacity: 0, text: "Trust the Process", blur: 0, duration: 0 }) // Set next text instantly
+    .to(".title2", { opacity: 1, duration: 1 }) // Fade in new text
+    .to(".title2", { opacity: 1, duration: 3 }) // Keep the text visible for 3 seconds
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }); // Final fade out
   }, []);
   return (
     <div className="bg-slate-50 overflow-hidden">
