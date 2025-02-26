@@ -25,7 +25,7 @@ function Dashboard() {
     .to(".title2", { opacity: 1, duration: 1 }) // Fade in new text
     .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
     .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }) // Fade out and blur again
-    .to(".title2", { opacity: 0, text: "Find Your Calm", blur: 0, duration: 0 }) // Set next text instantly
+    .to(".title2", { opacity: 0, text: "Here and Now...", blur: 0, duration: 0 }) // Set next text instantly
     .to(".title2", { opacity: 1, duration: 1 }) // Fade in new text
     .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
     .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }) // Fade out and blur again
@@ -74,7 +74,7 @@ function Dashboard() {
               <a href="tel:+17575361233" className="phone-link mobile-bold ">
                 <span className="hideMobile">&nbsp;</span>{" "}
                 <span className="">Call Now</span>
-                <span className="hideMobile ">&nbsp;+1 (757) 536-1233 </span>
+                <span className="hideMobile smallText">&nbsp;+1(757) 536-1233 </span>
               </a>
             </div>
           </h1>
