@@ -21,11 +21,11 @@ function Dashboard() {
     textTimeline
     .to(".title2", { opacity: 1, duration: 1, delay: 1 }) // Initial text stays for 4 seconds
     .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur
-    .to(".title2", { opacity: 0, text: "Take A Deep Breath", blur: 0, duration: 0 }) // Set next text instantly
+    .to(".title2", { opacity: 0, text: "Take a Deep Breath", blur: 0, duration: 0 }) // Set next text instantly
     .to(".title2", { opacity: 1, duration: .8 }) // Fade in new text
     .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
     .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur again
-    .to(".title2", { opacity: 0, text: "Here and Now...", blur: 0, duration: 0 }) // Set next text instantly
+    .to(".title2", { opacity: 0, text: "Here and Now ...", blur: 0, duration: 0 }) // Set next text instantly
     .to(".title2", { opacity: 1, duration: .8 }) // Fade in new text
     .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
     .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur again
@@ -55,7 +55,7 @@ function Dashboard() {
               />
               <h1 className="align-content-center branch TLC title2">The Lemich Clinic</h1>
             </div>
-            <div className="spacer d-flex ">
+            <div className="spacer home-weight d-flex ">
               HOME OF&nbsp;
               <HoverExpand
                 triggerText="MILITARY MENTAL"
