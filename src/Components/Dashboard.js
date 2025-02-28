@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import "../style.css";
 import Tricare from "./Tricare.js";
 import HoverExpand from "./HoverExpand.js";
-import Video from "./images/stream2.mp4";
+import Video from "./images/stream3.mp4";
 import logo from "./images/newlogo.png";
 import { TextPlugin } from "gsap/TextPlugin";  
 
@@ -20,19 +20,19 @@ function Dashboard() {
 
     textTimeline
     .to(".title2", { opacity: 1, duration: 1, delay: 1 }) // Initial text stays for 4 seconds
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }) // Fade out and blur
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur
     .to(".title2", { opacity: 0, text: "Take A Deep Breath", blur: 0, duration: 0 }) // Set next text instantly
-    .to(".title2", { opacity: 1, duration: 1 }) // Fade in new text
+    .to(".title2", { opacity: 1, duration: .8 }) // Fade in new text
     .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }) // Fade out and blur again
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur again
     .to(".title2", { opacity: 0, text: "Here and Now...", blur: 0, duration: 0 }) // Set next text instantly
-    .to(".title2", { opacity: 1, duration: 1 }) // Fade in new text
+    .to(".title2", { opacity: 1, duration: .8 }) // Fade in new text
     .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }) // Fade out and blur again
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur again
     .to(".title2", { opacity: 0, text: "Trust the Process", blur: 0, duration: 0 }) // Set next text instantly
-    .to(".title2", { opacity: 1, duration: 1 }) // Fade in new text
+    .to(".title2", { opacity: 1, duration: .8 }) // Fade in new text
     .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.5 }); // Final fade out
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }); // Final fade out
   }, []);
   return (
     <div className="bg-slate-50 overflow-hidden">
