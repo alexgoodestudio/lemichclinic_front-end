@@ -3,10 +3,10 @@ import { createContact, updateContact } from "../utils/api";
 import ContactForm from "./ContactForm";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "../style.css";
+import { Helmet } from "react-helmet";
+
 
 function ContactInfo({ icon, label, value }) {
-  
-
 
   return (
     <li className="flex items-center space-x-4 p-3 rounded-lg bg-gray-100 hover:bg-blue-100 transition-shadow duration-200 shadow-sm hover:shadow-md">
@@ -20,7 +20,15 @@ function ContactInfo({ icon, label, value }) {
 
 function ContactDetails() {
   return (
+    
     <div className="rounded-lg bg-white shadow-lg p-6">
+            <Helmet>
+              <meta
+                name="description"
+                content="Contact us at The Lemich Clinic | Experts in mental health services for veterans and military personnel in Norfolk, VA."
+              />
+              <title> Contact Us | Norfolk, VA | Military Mental Health Services</title>
+            </Helmet>
       <h2 className="text-xl font-bold text-gray-800 mb-4">Contact Information</h2>
       <ul className="space-y-4">
         <ContactInfo icon={<FaPhoneAlt />} label="Phone" value="757-536-1233" />

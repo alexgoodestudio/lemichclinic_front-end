@@ -18,6 +18,9 @@ import reike from "./staffimages/reike.avif";
 import rominger from "./staffimages/Rominger.avif";
 import stone from "./staffimages/stone.avif";
 import templeton from "./staffimages/templeton.avif";
+import useZoomOnScroll from "./useZoomOnScroll.js";
+import { Helmet } from "react-helmet";
+
 
 const images = {
   armbruster,
@@ -41,6 +44,7 @@ const images = {
 };
 
 function OurTeam() {
+  useZoomOnScroll();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -167,6 +171,13 @@ function OurTeam() {
 
   return (
     <div className="bg-gray-50   py-12">
+            <Helmet>
+              <meta
+                name="description"
+                content="Meet the team at The Lemich Clinic. Experts in mental health services for veterans and military personnel in Norfolk, and Virginia Beach VA."
+              />
+              <title> Meet The Team | The Lemich Clinic | Norfolk, VA | Military Mental Health Services</title>
+            </Helmet>
       <div className="container mx-auto px-4">
       <h1 className=" text-4xl text-start text-gray-800 mb-1">
         Meet Our Team.
@@ -178,7 +189,7 @@ function OurTeam() {
             <img
               src={lemich}
               alt="Gregory C. Lemich"
-              className="w-full h-full object-cover zoom"
+              className="zoom w-full h-full object-cover zoom"
             />
           </div>
         </div>
@@ -211,7 +222,7 @@ function OurTeam() {
                   <img
                     src={images[member.lastName]}
                     alt={member.name}
-                    className="w-full h-full zoom object-cover rounded-full"
+                    className="zoom w-full h-full zoom object-cover rounded-full"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-gray-800">
@@ -256,7 +267,7 @@ function OurTeam() {
                   <img
                     src={images[member.lastName]}
                     alt={member.name}
-                    className="w-full h-full zoom object-cover rounded-full"
+                    className="zoom w-full h-full zoom object-cover rounded-full"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-gray-800">

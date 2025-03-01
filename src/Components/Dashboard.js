@@ -6,6 +6,9 @@ import HoverExpand from "./HoverExpand.js";
 import Video from "./images/stream3.mp4";
 import logo from "./images/newlogo.png";
 import { TextPlugin } from "gsap/TextPlugin";  
+import { Helmet } from "react-helmet";
+
+
 
 function Dashboard() {
   const titleRef = useRef(null);
@@ -13,7 +16,7 @@ function Dashboard() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
+    
     // Set the initial text and visibility
     gsap.set(".title2", { text: "The Lemich Clinic", opacity: 1 });
     const textTimeline = gsap.timeline({ repeat: -1, yoyo: false, onComplete: () => textTimeline.restart() });
@@ -36,6 +39,13 @@ function Dashboard() {
   }, []);
   return (
     <div className="bg-slate-50 overflow-hidden">
+      <Helmet>
+        <meta
+          name="description"
+          content="Home of Military Mental Health Services for veterans and military personnel in Norfolk, VA."
+        />
+        <title> The Lemich Clinic | Norfolk, VA | Military Mental Health Services </title>
+      </Helmet>
       <div className="row align-items-center background-section">
         <video autoPlay muted loop playsInline className="video-background ">
           <source src={Video} type="video/mp4" />

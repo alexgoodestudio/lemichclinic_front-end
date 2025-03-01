@@ -4,6 +4,8 @@ import img2 from "./images/2.avif";
 import img3 from "./images/3.avif";
 import { useEffect } from "react";
 import "../style.css";
+import { Helmet } from "react-helmet";
+
 
 function Services() {
     useEffect(() => {
@@ -12,6 +14,13 @@ function Services() {
     
   return (
     <div className="d-flex flex-column min-vh-100">
+                  <Helmet>
+                    <meta
+                      name="description"
+                      content="Contact us at The Lemich Clinic | Experts in mental health services for veterans and military personnel in Norfolk, VA."
+                    />
+                    <title> Exclusive Services | Norfolk, VA | Military Mental Health Services</title>
+                  </Helmet>
       <div className="container py-5 flex-grow-1">
         {/* Header Section */}
         <div className="row mb-3">

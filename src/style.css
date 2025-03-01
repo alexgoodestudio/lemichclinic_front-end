@@ -58,7 +58,7 @@ left: 0;
   font-weight: 700;
 }
 .TLC{
-  font-size: 35pt;
+  font-size: 40pt;
 
 }
 
@@ -93,6 +93,14 @@ left: 0;
 .zoom:hover {
   transform: scale(1.08);
 }
+
+/* For mobile devices (where hover isn’t available) */
+@media (hover: none) {
+  .zoom.in-view {
+    transform: scale(1.08);
+  }
+}
+
 
 .background-section {
   position: relative;
@@ -489,7 +497,7 @@ li {
     font-size: 19.6pt;
   }
   .home-weight{
-    font-weight:600;
+    font-weight:500;
   }
   .margin-left-home{
     margin-left:24px ;
