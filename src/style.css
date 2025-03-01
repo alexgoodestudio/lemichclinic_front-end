@@ -364,16 +364,16 @@ li {
 }
 
 .phone-button {
-  color: #d4e6fe;
-  background-color: #033982;
+  background-color: #d4e6fe;
+  color: #000000;
   border-radius: 25px;
   padding: 16px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
 }
 
 .phone-button:hover {
-  background-color: #d4e6fe;
-  color:#033982;
+  color: #d4e6fe;
+  border: 2px solid #d4e6fe;
 }
 
 .lemich {
