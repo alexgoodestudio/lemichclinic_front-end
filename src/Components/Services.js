@@ -10,35 +10,6 @@ function Services() {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        let activeCard = null;
-
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            activeCard = entry.target;
-          }
-        });
-
-        // Remove "show" from all, then add it only to the active one
-        document.querySelectorAll(".service-card").forEach((card) => {
-          card.classList.remove("show", "active");
-        });
-
-        if (activeCard) {
-          activeCard.classList.add("show", "active");
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    const cards = document.querySelectorAll(".service-card");
-    cards.forEach((card) => observer.observe(card));
-
-    return () => cards.forEach((card) => observer.unobserve(card));
-  }, []);
-
   return (
     <div className="d-flex flex-column min-vh-100">
       <Helmet>
