@@ -6,7 +6,7 @@ function Tricare() {
   return (
     <div className="container-fluid ">
       
-      <div className="row p-4 bg-slate-500 ">
+      <div className="row p-4 blueCombo ">
         
           <div className="col-lg-4"></div>
           <div className="col-lg-4 my-4">
