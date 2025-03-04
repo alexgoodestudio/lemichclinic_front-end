@@ -274,7 +274,7 @@ left: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(3, 57, 130, 0.65);
+  background: rgba(3, 90, 130, 0.65);
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -306,7 +306,7 @@ left: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(3, 57, 130, 0.65);
+  background: rgba(3, 7, 130, 0.65);
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -485,6 +485,10 @@ li {
     font-size: 15pt;
     margin: 0 auto; 
     text-align: center; 
+  }
+
+  .service-overlay1, .service-overlay2, .service-overlay3 {
+    opacity: 1; /* Set opacity for mobile */
   }
 
   .tiny{
