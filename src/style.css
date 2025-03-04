@@ -28,6 +28,7 @@
 .manrope {
   font-family: "Manrope", sans-serif;
 } 
+
 .ppneue {
   font-family: "ppneue", sans-serif;
 } 
@@ -91,14 +92,13 @@ left: 0;
   animation: slideIn ease-in-out 1s forwards; /* 1s delay, 1s duration */
 }
 
-
-
 .zoom {
   transition: transform 0.3s ease-in-out;
 }
 
 .zoom:hover {
   transform: scale(1.08);
+
 }
 
 /* For mobile devices (where hover isn’t available) */
