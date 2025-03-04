@@ -19,8 +19,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Space-mono";
-  src: url("./Components/fonts/SpaceMono-Regular.ttf") format("woff2");
+  font-family: "ppneue";
+  src: url("./Components/fonts/ppneuemontreal-thin.otf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -28,8 +28,8 @@
 .manrope {
   font-family: "Manrope", sans-serif;
 } 
-.space-mono {
-  font-family: "Space-mono", sans-serif;
+.ppneue {
+  font-family: "ppneue", sans-serif;
 } 
 
 .forward{
@@ -49,6 +49,13 @@ left: 0;
 .margin-left-home{
   margin-left:70px ;
 }
+
+.tiny{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
 .tricare {
   width: 30%;
   display: block; /* Ensures margin auto works */
@@ -58,7 +65,7 @@ left: 0;
   font-weight: 700;
 }
 .TLC{
-  font-size: 40pt;
+  font-size: 39pt;
 
 }
 
@@ -474,6 +481,13 @@ li {
     margin: 0 auto; 
     text-align: center; 
   }
+
+  .tiny{
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+
   .margin-left-full-screen{
     margin-left: 0%;
   }
