@@ -75,7 +75,7 @@ function Services() {
                 <h3 className="text-white text-xl font-semibold mb-2">
                   Summary Letters
                 </h3>
-                <p className="text-white text-start">
+                <p className="text-blue-white text-start">
                   Only for Active Duty Military Service Members.
                   This letter will outline the diagnosis that the client has, confirm and give a brief description of their session attendance, and give advice and confirmation of their clinical needs.
                   PRICE: $40/letter
@@ -92,7 +92,7 @@ function Services() {
                 <h3 className="text-white text-xl font-semibold mb-2">
                   NEXUS Letters
                 </h3>
-                <p className="text-white text-start">
+                <p className="text-blue-white text-start">
                   Only for Veterans who have been out of Active Duty Military Service for more than one year.
                   This letter is a compilation of your medical history that explains the connection between current medical condition(s) and military service.
                   PRICE: $180/letter
@@ -109,7 +109,7 @@ function Services() {
                 <h3 className="text-white text-xl font-semibold mb-2">
                   Group Therapy
                 </h3>
-                <ul className="text-white text-start">
+                <ul className="text-blue-white text-start">
                   <li><span className="">Active Duty Females:</span> Fridays 9am - 10am</li>
                   <li><span className="">Military Spouse Support:</span> Thursdays 4pm - 5pm</li>
                   <li><span className="">Couples Counseling:</span> Every other Thursday 5pm - 6:30pm</li>
