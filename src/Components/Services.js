@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Helmet } from "react-helmet";
 import img1 from "./images/1.avif";
 import img2 from "./images/2.avif";
@@ -6,11 +6,35 @@ import img3 from "./images/3.avif";
 import "../style.css";
 
 function Services() {
+  const [activeOverlay, setActiveOverlay] = useState(null);
+  const serviceRefs = useRef([]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntry = entries.find((entry) => entry.isIntersecting);
+        if (visibleEntry) {
+          setActiveOverlay(visibleEntry.target.getAttribute("data-overlay"));
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    const elements = serviceRefs.current; // Store the ref value in a variable
+
+    elements.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      elements.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+      observer.disconnect();
+    };
   }, []);
-
-
 
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -45,9 +69,9 @@ function Services() {
         <div className="row">
           {/* Card 1 */}
           <div className="col-lg-4 col-md-6 mb-3">
-            <div className="service-card">
+            <div className="service-card" data-overlay="overlay1" ref={(el) => (serviceRefs.current[0] = el)}>
               <img src={img1} alt="Service 1" className="service-image" />
-              <div className="service-overlay1">
+              <div className={`service-overlay service-overlay1 ${activeOverlay === "overlay1" ? "visible-overlay" : ""}`}>
                 <h3 className="text-white text-xl font-semibold mb-2">
                   Summary Letters
                 </h3>
@@ -62,9 +86,9 @@ function Services() {
 
           {/* Card 2 */}
           <div className="col-lg-4 col-md-6 mb-3">
-            <div className="service-card">
+            <div className="service-card" data-overlay="overlay2" ref={(el) => (serviceRefs.current[1] = el)}>
               <img src={img2} alt="Service 2" className="service-image" />
-              <div className="service-overlay2">
+              <div className={`service-overlay service-overlay2 ${activeOverlay === "overlay2" ? "visible-overlay" : ""}`}>
                 <h3 className="text-white text-xl font-semibold mb-2">
                   NEXUS Letters
                 </h3>
@@ -79,9 +103,9 @@ function Services() {
 
           {/* Card 3 */}
           <div className="col-lg-4 col-md-6 mb-3">
-            <div className="service-card">
+            <div className="service-card" data-overlay="overlay3" ref={(el) => (serviceRefs.current[2] = el)}>
               <img src={img3} alt="Service 3" className="service-image" />
-              <div className="service-overlay3">
+              <div className={`service-overlay service-overlay3 ${activeOverlay === "overlay3" ? "visible-overlay" : ""}`}>
                 <h3 className="text-white text-xl font-semibold mb-2">
                   Group Therapy
                 </h3>
