@@ -17,7 +17,6 @@ function Dashboard() {
   useEffect(() => {
     window.scrollTo(0, 0);
     
-    // Set the initial text and visibility
     gsap.set(".title2", { text: "The Lemich Clinic", opacity: 1 });
     const textTimeline = gsap.timeline({ repeat: -1, yoyo: false, onComplete: () => textTimeline.restart() });
 
