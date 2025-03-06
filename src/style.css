@@ -225,7 +225,10 @@ left: 0;
   text-underline-offset: 6px;
 }
 
-
+.phone-button-bold{
+  font-weight: 600;
+  font-size: 12pt;
+}
 
 .reduce{
   width: 39px;
@@ -349,6 +352,17 @@ left: 0;
   background-color: #d4e6fe;
   color: #033982;
 }
+.accent-button{
+  background-color: #ff6200;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 16px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.accent-button:hover {
+  color: #d4e6fe;
+  background-color: #033982;
+}
 
 
 .icon {
@@ -390,6 +404,8 @@ li {
   padding: 16px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
 }
+
+
 
 .phone-button:hover {
   color: #d4e6fe;
