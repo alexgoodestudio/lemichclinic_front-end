@@ -353,18 +353,21 @@ left: 0;
   color: #033982;
 }
 .accent-button{
-  background-color: #ff7824;
-  color: #ffffff;
+  color: #d4e6fe;
+  background-color: #033982;
   border-radius: 25px;
   padding: 16px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .accent-button:hover {
-  color: #d4e6fe;
-  background-color: #033982;
+  background-color: #d4e6fe;
+ color: #033982;
 }
 
+.accent{
+  color: #ff7f50 ;
+}
 
 .icon {
   width: 10%;

@@ -86,7 +86,7 @@ function Dashboard() {
               <i className="fas fa-phone-alt text-md "></i>
               <a href="tel:+17575361233" className="phone-link mobile-bold ">
                 <span className="hideMobile">&nbsp;</span>{" "}
-                <span className="phone-button-bold">Call Now</span>
+                <span className="phone-button-bold accent">Call Now</span>
                 <span className="hideMobile smallText">&nbsp;+1(757) 536-1233 </span>
               </a>
             </div>
