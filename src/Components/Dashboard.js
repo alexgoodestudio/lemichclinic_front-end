@@ -73,9 +73,7 @@ function Dashboard() {
                     </>
                   }
                   expandedContent={
-                    <p className="small">
-                      Our military mental health services are designed to support active duty, spouses, and retirees with specialized care in Norfolk, Virginia.
-                    </p>
+                    <p className="small">Our military mental health services are designed to support active duty, spouses, and retirees with specialized care in Norfolk, Virginia. </p>
                   }
                 />
 
@@ -86,7 +84,7 @@ function Dashboard() {
               <i className="fas fa-phone-alt text-md accent"></i>
               <a href="tel:+17575361233" className="phone-link mobile-bold ">
                 <span className="hideMobile">&nbsp;</span>{" "}
-                <span className="phone-button-bold ">Call Now</span>
+                <span className="phone-button-bold ">Call Us</span>
                 <span className="hideMobile smallText">&nbsp;+1(757) 536-1233 </span>
               </a>
             </div>

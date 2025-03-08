@@ -226,7 +226,7 @@ left: 0;
 }
 
 .phone-button-bold{
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12pt;
 }
 
@@ -353,8 +353,8 @@ left: 0;
   color: #033982;
 }
 .accent-button{
-  color: #d4e6fe;
-  background-color: #033982;
+  color: #ffffff;
+  background-color: #5bc099;
   border-radius: 25px;
   padding: 16px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
@@ -365,9 +365,6 @@ left: 0;
  color: #033982;
 }
 
-.accent{
-  color: #47b5ff  ;
-}
 
 .icon {
   width: 10%;
