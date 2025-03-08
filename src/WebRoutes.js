@@ -14,11 +14,11 @@ function WebRoutes() {
   return (
     <Routes>
       <Route path="/" element={<div className="fade-in"><Dashboard /></div>} /> 
-      <Route path="team" element={<div className="fade-in"><OurTeam /></div>} />
-      <Route path="services" element={<div className="fade-in"><Services /></div>} />
-      <Route path="insurance" element={<div className="fade-in"><Insurance /></div>} />
+      <Route path="team-norfolk" element={<div className="fade-in"><OurTeam /></div>} />
+      <Route path="exclusive-services-norfolk" element={<div className="fade-in"><Services /></div>} />
+      <Route path="tricare-health-insurance" element={<div className="fade-in"><Insurance /></div>} />
       <Route path="contact" element={<div className="fade-in"><Contact /></div>} />
-      <Route path="owners" element={<div className="fade-in"><Owners /></div>} />
+      <Route path="owners-norfolk" element={<div className="fade-in"><Owners /></div>} />
       <Route path="login" element={<div className="fade-in"><Login /></div>} />
       <Route path="contacts/:contact_id/edit" element={<div className="fade-in"><ContactEditForm /></div>} /> 
     </Routes>

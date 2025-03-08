@@ -21,17 +21,17 @@ function Navbar() {
     </Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link underline3" to="/team">
+    <Link className="nav-link underline3" to="/team-norfolk">
       Team
     </Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link underline3" to="/services">
+    <Link className="nav-link underline3" to="/exclusive-services-norfolk">
       Services
     </Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link underline3" to="/insurance">
+    <Link className="nav-link underline3" to="/tricare-health-insurance">
       Insurance
     </Link>
   </li>
@@ -41,7 +41,7 @@ function Navbar() {
     </Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link underline3" to="/owners">
+    <Link className="nav-link underline3" to="/owners-norfolk">
       Owners
     </Link>
   </li>

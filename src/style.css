@@ -359,6 +359,7 @@ left: 0;
   padding: 16px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 .accent-button:hover {
   color: #d4e6fe;
   background-color: #033982;
@@ -519,7 +520,9 @@ li {
     }
   }
   
-
+  .footer-text-mobile{
+    font-size: 10pt;
+  }
   
   .tiny{
     width: 20px;
@@ -555,10 +558,10 @@ li {
   .margin-left-home{
     margin-left:24px ;
   }
-  .phone-button {
+  .accent-button {
     margin-top: 5%;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     font-size: 10pt;
   }
 

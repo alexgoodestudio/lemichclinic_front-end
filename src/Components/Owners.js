@@ -51,7 +51,7 @@ function Owners() {
             Meet The Owners.
           </h1>
           <div className="text-center p-2">
-            <p className="text-lg text-gray-600 full-screen-owners-padding text-justify mt-4 mb-4 owner-text">
+            <p className="text-lg text-gray-600 text-justify mt-4 mb-4">
               The Lemich Clinic was founded by Gregory and Jennifer Lemich.
               Jennifer is a 22-year US Navy retiree and current Navy employee.
               Gregory holds a PhD in Counselor Education and Supervision, and is
