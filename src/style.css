@@ -366,7 +366,7 @@ left: 0;
 }
 
 .accent{
-  color: #ff7f50 ;
+  color: #47b5ff  ;
 }
 
 .icon {
@@ -434,6 +434,7 @@ li {
 .phone-link {
   color: inherit;
   text-decoration: none;
+  
 }
 
 .nav-link-styling {
@@ -529,7 +530,13 @@ li {
   .footer-text-mobile{
     font-size: 12pt;
   }
-  
+ 
+  .phone-button-bold{
+    font-weight: 600;
+    font-size: 10pt;
+    color: #e7f1fe;
+  }
+
   .tiny{
     width: 20px;
     height: 20px;
@@ -649,7 +656,9 @@ li {
   .mobile-bold{
     font-weight: 600;
     font-size: 10pt;
+    
   }
+
 
   .hideFull {
     display: inline; 
