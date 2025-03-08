@@ -25,9 +25,9 @@ function Insurance() {
                   <Helmet>
                     <meta
                       name="description"
-                      content="Payment and Insurance Options at The Lemich Clinic | We take Tricare Tricare | Experts in mental health services for veterans and military personnel in Norfolk, VA."
+                      content="Payment and Insurance Options at The Lemich Clinic | Tricare | Experts in mental health services for veterans and active duty military in Norfolk, VA."
                     />
-                    <title> Payment and Insurance Options | Norfolk, VA | Tricare | Military Mental Health Services</title>
+                    <title> Payment and Insurance Options | Norfolk, VA | Tricare Accepted | Military Mental Health Services</title>
                   </Helmet>
       <div className="blueCombo py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-start ">
       <img
