@@ -12,10 +12,9 @@ function Tricare() {
           <div className="col-lg-4 my-4">
            
           {/* <img src={img} alt="tricare logo" className="mb-5 tricare"/> */}
-          <h2 className="text-white">Got Tricare?</h2>
-          <p className=" text-white">
-        Great! We are <span className="italics">in-network</span>. Active duty, please have your referral made to The Lemich Clinic. Dependents and retirees, no referral is needed. Just make an appointment, and we will do the rest.
-          </p> 
+          <h2 className="text-white text-start">Tricare Accepted</h2>
+          <p className=" text-white text-start">
+          Great news! We are in-network with Tricare. Active duty, please have your referral made to The Lemich Clinic. Dependents and retirees, no referral is needed. Just make an appointment, and we’ll take care of the rest.          </p> 
           </div>
           <div className="col-lg-4"></div>
        

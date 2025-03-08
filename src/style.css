@@ -67,8 +67,8 @@ left: 0;
 }
 .TLC{
   font-size: 39pt;
-
 }
+
 
 @keyframes slideIn {
   0% {
@@ -467,6 +467,9 @@ li {
 .icon {
   width: 15%;
 }
+.home-weight{
+  font-weight: 300;
+  letter-spacing: 1pt;}
 
 .rounded2 {
   border-top-right-radius: 100px;

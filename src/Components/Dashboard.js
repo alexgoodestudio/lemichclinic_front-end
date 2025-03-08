@@ -21,20 +21,20 @@ function Dashboard() {
     const textTimeline = gsap.timeline({ repeat: -1, yoyo: false, onComplete: () => textTimeline.restart() });
 
     textTimeline
-    .to(".title2", { opacity: 1, duration: 5, delay: 1 }) // Initial text stays for 4 seconds
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur
-    .to(".title2", { opacity: 0, text: "Take a Deep Breath", blur: 0, duration: 0 }) // Set next text instantly
-    .to(".title2", { opacity: 1, duration: .8 }) // Fade in new text
-    .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur again
-    .to(".title2", { opacity: 0, text: "Trust the Process", blur: 0, duration: 0 }) // Set next text instantly
-    .to(".title2", { opacity: 1, duration: .8 }) // Fade in new text
-    .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur again
-    .to(".title2", { opacity: 0, text: "Exhale Slowly", blur: 0, duration: 0 }) // Set next text instantly
-    .to(".title2", { opacity: 1, duration: .8 }) // Fade in new text
-    .to(".title2", { opacity: 1, duration: 1 }) // Keep the text visible for 3 seconds
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }); // Final fade out
+    .to(".title2", { opacity: 1, duration: 5, delay: 1 }) 
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
+    .to(".title2", { opacity: 0, text: "Take a Deep Breath", blur: 0, duration: 0 }) 
+    .to(".title2", { opacity: 1, duration: .8 }) 
+    .to(".title2", { opacity: 1, duration: 1 }) 
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
+    .to(".title2", { opacity: 0, text: "Trust the Process", blur: 0, duration: 0 }) 
+    .to(".title2", { opacity: 1, duration: .8 }) 
+    .to(".title2", { opacity: 1, duration: 1 }) 
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
+    .to(".title2", { opacity: 0, text: "Exhale Slowly", blur: 0, duration: 0 }) 
+    .to(".title2", { opacity: 1, duration: .8 }) 
+    .to(".title2", { opacity: 1, duration: 1 }) 
+    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }); 
   }, []);
   return (
     <div className="bg-slate-50 overflow-hidden">
@@ -54,7 +54,7 @@ function Dashboard() {
           <div className="absolute inset-0 bg-opacity-40"></div>
           <h1
             ref={titleRef}
-            className="relative z-10 p-5 slide-text margin-left-home title text-white ipad mobile-center-text textMobile text-start"
+            className="relative  z-10 p-5 slide-text margin-left-home title text-white ipad mobile-center-text textMobile text-start"
           >
             <div className="d-flex">
               <img
@@ -62,19 +62,23 @@ function Dashboard() {
                 alt="logo heart"
                 className="logo rotate mb-lg-3 mb-2"
               />
-              <h1 className="align-content-center branch TLC title2">The Lemich Clinic</h1>
+              <h1 className="align-content-center branch TLC title2 ">The Lemich Clinic</h1>
             </div>
             <div className="spacer home-weight d-flex ">
               HOME OF&nbsp;
               <HoverExpand
-                triggerText="MILITARY MENTAL"
-                expandedContent={
-                  <p className="small">
-                    Our military mental health services are designed to support
-                    active duty, spouses, and retirees with specialized care in Norfolk, Virginia.
-                  </p>
-                }
-              />
+                  triggerText={
+                    <>
+                      <span className="">MILITARY</span> MENTAL
+                    </>
+                  }
+                  expandedContent={
+                    <p className="small">
+                      Our military mental health services are designed to support active duty, spouses, and retirees with specialized care in Norfolk, Virginia.
+                    </p>
+                  }
+                />
+
               &nbsp;HEALTH
             </div>
 
@@ -124,7 +128,7 @@ function Dashboard() {
                 <i className="fas fa-user-circle fa-3x text-gray-600"></i>
               </div>
               <h2 className="text-xl font-semibold mb-3 ivy">Personalized</h2>
-              <p>
+              <p className="">
                 You are matched with a therapist that fits your needs and style.
                 We take the time to get to know you to make the right pairing.
                 If we cannot make this determination before you arrive, we will
@@ -136,7 +140,7 @@ function Dashboard() {
                 <i className="fas fa-layer-group fa-3x text-gray-600"></i>
               </div>
               <h2 className="text-xl font-semibold mb-3 ivy">Varied</h2>
-              <p>
+              <p className="">
                 We have a large variety of clinician specialties to take care of
                 your needs. A few of these include trauma, suicidal ideations,
                 major depression, anxiety, anger, OCD, and perinatal concerns.
@@ -147,7 +151,7 @@ function Dashboard() {
                 <i className="fas fa-flag fa-3x text-gray-600"></i>
               </div>
               <h2 className="text-xl font-semibold mb-3 ivy">Specialized</h2>
-              <p>
+              <p className="">
                 As most of our clients are on active duty, we also specialize in
                 military-specific concerns. Some of these struggles include PCS
                 issues, relationship strains from work-ups and deployments,
@@ -159,7 +163,7 @@ function Dashboard() {
                 <i className="fas fa-file-alt fa-3x text-gray-600"></i>
               </div>
               <h2 className="text-xl font-semibold mb-3 ivy">Prepared</h2>
-              <p>
+              <p className="">
                 Our owner, Dr. Lemich, is well-versed in military and VA
                 paperwork. As such, we can assist with LIMDU, Med Board, VA, and
                 Security Clearance paperwork if medically necessary.
