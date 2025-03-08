@@ -41,7 +41,7 @@ function Dashboard() {
       <Helmet>
         <meta
           name="description"
-          content="Home of Military Mental Health Services for veterans and military personnel in Norfolk, VA."
+          content="The Lemich Clinic in Norfolk, Virginia offers expert mental health care for active duty military, spouses and veterans. Specializing in PTSD treatment, trauma recovery, and anxiety therapy, we provide confidential, compassionate support to help you heal and thrive."
         />
         <title> The Lemich Clinic | Norfolk, VA | Military Mental Health Services </title>
       </Helmet>

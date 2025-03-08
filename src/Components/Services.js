@@ -41,7 +41,7 @@ function Services() {
       <Helmet>
         <meta
           name="description"
-          content="Contact us at The Lemich Clinic | Experts in mental health services for veterans and military personnel in Norfolk, VA."
+          content="The Lemich Clinic | Mental health services for veterans and active duty military in Norfolk, VA."
         />
         <title>Exclusive Services | Norfolk, VA | Military Mental Health Services</title>
       </Helmet>
