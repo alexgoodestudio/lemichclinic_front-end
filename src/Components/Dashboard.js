@@ -21,7 +21,7 @@ function Dashboard() {
     const textTimeline = gsap.timeline({ repeat: -1, yoyo: false, onComplete: () => textTimeline.restart() });
 
     textTimeline
-    .to(".title2", { opacity: 1, duration: 1, delay: 1 }) // Initial text stays for 4 seconds
+    .to(".title2", { opacity: 1, duration: 5, delay: 1 }) // Initial text stays for 4 seconds
     .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) // Fade out and blur
     .to(".title2", { opacity: 0, text: "Take a Deep Breath", blur: 0, duration: 0 }) // Set next text instantly
     .to(".title2", { opacity: 1, duration: .8 }) // Fade in new text
