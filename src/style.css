@@ -521,7 +521,7 @@ li {
   }
   
   .footer-text-mobile{
-    font-size: 10pt;
+    font-size: 12pt;
   }
   
   .tiny{
@@ -649,7 +649,8 @@ li {
     display: inline; 
   }
   .text-insurance-header-mobile{
-    font-size: 12pt;
+    font-size: 11pt;
+  
   }
   .padding-mobile-owners{
     padding: 30px;

@@ -29,8 +29,8 @@ function Owners() {
       </Helmet>
 
       {/* Image Section (Moves to top on mobile) */}
-      <div className="row d-flex justify-content-center align-items-center">
-      <h1 className="text-4xl hideFull pb-3 ps-5  owners-mobile-text text-start px-2 text-gray-800 mb-0">
+      <div className="row d-flex justify-content-center align-items-center ">
+      <h1 className="text-4xl hideFull pb-3 ps-4 mt-4 mb-3   owners-mobile-text text-start px-2 text-gray-800 mb-0">
             Meet The Owners.
           </h1>
         <div className="col-lg-6  order-1 order-lg-2 text-center p-lg-0 ">
