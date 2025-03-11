@@ -25,13 +25,13 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
   };
 
   return (
-    <form className="space-y-4" onSubmit={handleSubmit}>
+    <form className="space-y-4 ppneue" onSubmit={handleSubmit}>
       {error && <div className="text-red-500">{error}</div>}
       {successMessage && <div className="text-green-500">{successMessage}</div>}
       
       <div className="row mb-3">
         <div className="col-lg-6">
-          <label className="form-label text-gray-700 font-medium" htmlFor="name">
+          <label className=" ppneue-med form-label text-gray-700 font-medium" htmlFor="name">
             Name
           </label>
           <input
@@ -45,7 +45,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
           />
         </div>
         <div className="col-lg-6">
-          <label className="form-label text-gray-700 font-medium" htmlFor="email">
+          <label className=" ppneue-med form-label text-gray-700 font-medium" htmlFor="email">
             Email
           </label>
           <input
@@ -60,7 +60,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
         </div>
       </div>
       <div className="mb-3">
-        <label className="form-label text-gray-700 font-medium" htmlFor="phone">
+        <label className=" ppneue-med form-label text-gray-700 font-medium" htmlFor="phone">
           Phone Number
         </label>
         <input
@@ -73,7 +73,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
         />
       </div>
       <div className="mb-3">
-        <label className="form-label text-gray-700 font-medium" htmlFor="message">
+        <label className=" ppneue-med form-label text-gray-700 font-medium" htmlFor="message">
           Message
         </label>
         <textarea
@@ -89,7 +89,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
       <div className="text-center">
         <button
           type="submit"
-          className="btn btn-primary px-6 py-2 shadow-md hover:shadow-lg transition"
+          className="btn accent-button px-6 py-2 shadow-md hover:shadow-lg transition"
           disabled={loading}
         >
        Submit

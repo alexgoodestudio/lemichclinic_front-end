@@ -1,7 +1,6 @@
 import React from "react";
 import "../style.css";
 import run from "./images/take1.jpg";
-import logo from "./images/newlogo.png"
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Helmet } from "react-helmet";
@@ -21,7 +20,7 @@ function Insurance() {
       );
   }, []);
   return (
-    <div className="min-h-screen  flex flex-col">
+    <div className="min-h-screen ppneue flex flex-col">
                   <Helmet>
                     <meta
                       name="description"
@@ -30,11 +29,6 @@ function Insurance() {
                     <title> Payment and Insurance Options | Norfolk, VA | Tricare Accepted | Military Mental Health Services</title>
                   </Helmet>
       <div className="blueCombo py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-start ">
-      <img
-                src={logo}
-                alt="Logo"
-                className="img-fluid reduce rotate m-3 "
-        />
         
         <h1 className="pb-1 mt-3 thin-insurance-body flex text-insurance-header-mobile">
           Find the best payment and insurance options to fit your needs.
@@ -45,20 +39,20 @@ function Insurance() {
       <div className="">
         <div className="row">
           {/* Image Column */}
-          <div className="col-lg-7 col-md-12 ">
+          <div className="col-lg-6 col-md-12 ">
               <img
                 ref={logoRef} 
                 src={run}
                 alt="Hiker"
-                className="img-fluid "
+                className="img-fluid"
               />
             </div>
 
 
           {/* Text Content Column */}
-          <div className="col-lg-5 text-start p-5 col-md-12">
+          <div className="col-lg-6 text-start p-3 col-md-12">
             <h2 className="text-2xl font-semibold mb-3 ">Active Duty</h2>
-            <ul className="list-unstyled text-gray-700">
+            <ul className=" list-unstyled text-gray-700">
               <li>
                 <strong>Tricare:</strong> Must have an active referral on file
                 for counseling prior to scheduling.

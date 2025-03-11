@@ -20,6 +20,8 @@ import stone from "./staffimages/stone.avif";
 import templeton from "./staffimages/templeton.avif";
 import useZoomOnScroll from "./useZoomOnScroll.js";
 import { Helmet } from "react-helmet";
+import "../style.css";
+
 
 
 const images = {
@@ -170,7 +172,7 @@ function OurTeam() {
   ];
 
   return (
-    <div className="bg-gray-50   py-12">
+    <div className="bg-gray-50  ppneue py-12">
             <Helmet>
               <meta
                 name="description"
@@ -179,7 +181,7 @@ function OurTeam() {
               <title> Meet The Team | The Lemich Clinic | Norfolk, VA | Military Mental Health Services</title>
             </Helmet>
       <div className="container mx-auto px-4">
-      <h1 className=" text-4xl  text-start text-gray-800 mb-1">
+      <h1 className=" text-4xl ppneue-med text-start mb-1">
         Meet Our Team.
       </h1>
         {/* Gregory C. Lemich */}
@@ -209,7 +211,7 @@ function OurTeam() {
         <h2 className="text-4xl  thin text-center text-gray-800 mb-8">
           Clinicians 
         </h2>
-          <p className="text-justify p-lg-4 p-3 border rounded bg-slate-100">Our counselors have a Master's Degree in Mental Health Counseling and are licensed by Virginia to perform empirically validated medical counseling.</p>   
+          <p className="text-justify p-lg-3 text-md p-2 border  rounded bg-slate-100">Our counselors have a Master's Degree in Mental Health Counseling and are licensed by Virginia to perform empirically validated medical counseling.</p>   
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {team
             .filter((member) => member.role === "Clinician")

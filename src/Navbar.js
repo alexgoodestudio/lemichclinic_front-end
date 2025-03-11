@@ -8,13 +8,14 @@ import logo from "../src/Components/images/black.png"
 function Navbar() {
 
   return (
-    <nav className="navbar main">
+    <nav className="navbar  main">
       <div className="container  overflow-hidden">
-        <Link className="logo-location navbar-brand d-flex" to="/">
-          <img className="tiny" src={logo} alt="logo"  />
-          <span className="">The Lemich Clinic  </span><span className="thin  ms-2">| Norfolk, VA</span>
+        <Link className="logo-location  navbar-brand d-flex " to="/">
+          <img className="tiny hideMobile" src={logo} alt="logo"  />
+          <span className="ppneue ">The Lemich Clinic</span> 
         </Link>
-        <ul className="navbar-nav  ms-auto d-flex flex-row gap-4 ivy nav-link-styling">
+
+        <ul className="navbar-nav  ms-auto d-flex flex-row gap-4 ppneue nav-link-styling">
   <li className="nav-item">
     <Link className="nav-link underline3" to="/">
      Home

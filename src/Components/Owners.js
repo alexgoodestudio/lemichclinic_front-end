@@ -19,7 +19,7 @@ function Owners() {
   }, []);
 
   return (
-    <div className="">
+    <div className="ppneue">
       <Helmet>
         <meta
           name="description"
@@ -30,7 +30,7 @@ function Owners() {
 
       {/* Image Section (Moves to top on mobile) */}
       <div className="row d-flex justify-content-center align-items-center ">
-      <h1 className="text-4xl hideFull pb-3 ps-4 mt-4 mb-3   owners-mobile-text text-start px-2 text-gray-800 mb-0">
+      <h1 className="text-4xl ppneue-med hideFull pb-3 ps-4 mt-4 mb-3   owners-mobile-text text-start px-2 text-gray-800 mb-0">
             Meet The Owners.
           </h1>
         <div className="col-lg-6  order-1 order-lg-2 text-center p-lg-0 ">
@@ -47,7 +47,7 @@ function Owners() {
         <h2 className="text-insurance-header-mobile hideFull thin-insurance-body-2 p-3">
         Gregory and Jennifer Lemich
         </h2>
-          <h1 className="text-4xl hideMobile  owners-mobile-text text-start px-2 text-gray-800 mb-0">
+          <h1 className="text-4xl ppneue-med hideMobile  owners-mobile-text text-start px-2 text-gray-800 mb-0">
             Meet The Owners.
           </h1>
           <div className="text-center p-2">

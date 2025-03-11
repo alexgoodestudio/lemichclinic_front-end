@@ -50,42 +50,41 @@ function Dashboard() {
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="col-lg-6 col-12 relative h-full flex justify-center items-center">
+        <div className="col-lg-6  col-12 relative h-full flex justify-center items-center">
           <div className="absolute inset-0 bg-opacity-40"></div>
           <h1
             ref={titleRef}
-            className="relative  z-10 p-5 slide-text margin-left-home title text-white ipad mobile-center-text textMobile text-start"
+            className="relative z-10 p-5 slide-text margin-left-home text-white ipad mobile-center-text textMobile text-start"
           >
-            <div className="d-flex">
+            <div className="d-flex ">
               <img
                 src={logo}
                 alt="logo heart"
                 className="logo rotate mb-lg-3 mb-2"
               />
-              <h1 className="align-content-center branch TLC title2 ">The Lemich Clinic</h1>
+              <h1 className="align-content-center  TLC title2">THE LEMICH CLINIC</h1>
             </div>
-            <div className="spacer home-weight d-flex ">
-              HOME OF&nbsp;
+            <div className="sub-head ppneue d-flex">
+              HOME&nbsp;
               <HoverExpand
                   triggerText={
                     <>
-                      <span className="">MILITARY</span> MENTAL
+                     OF MILITARY MENTAL
                     </>
                   }
                   expandedContent={
-                    <p className="small">Our military mental health services are designed to support active duty, spouses, and retirees with specialized care in Norfolk, Virginia. </p>
+                    <p className="text-xl">Our military mental health services are designed to support active duty, spouses, and retirees with specialized care in Norfolk, Virginia. </p>
                   }
                 />
 
-              &nbsp;HEALTH
+              &nbsp;HEALTH<span className="hideMobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             </div>
 
-            <div className="btn accent-button mt-4 mobile-top-margin text-center my-lg-4 my-md-3 my-sm-1 my-xs-1 flex items-center">
+            <div className="btn accent-button text-center my-lg-4 my-md-3 my-sm-1 my-xs-1">
               <i className="fas fa-phone-alt text-md accent"></i>
               <a href="tel:+17575361233" className="phone-link mobile-bold ">
                 <span className="hideMobile">&nbsp;</span>{" "}
-                <span className="phone-button-bold ">Call Us</span>
-                <span className="hideMobile smallText">&nbsp;+1(757) 536-1233 </span>
+                <span className=" ppneue-med px-1">Call Us</span>
               </a>
             </div>
           </h1>
@@ -95,13 +94,15 @@ function Dashboard() {
 
       {/* Mission Section */}
       <div className="py-4 bg-slate-100">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-2"></div>
-            <div className="col-lg-8 p-4 rounded">
-              <h1 className="mb-3 ivy underline2">Our Mission</h1>
 
-              <p className="text-justify">
+        <div className="container">
+          <div className="row ">
+            <div className="col-lg-2"></div>
+            <div className="col-lg-8 px-4 m-0 ">
+            <h2 className="mb-3 mt-3 text-start">Our Mission</h2>
+
+
+              <p className="text-justify ppneue text-lg p-lg-2">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
                 quality, confidential, mental health care. The majority of our
@@ -118,15 +119,15 @@ function Dashboard() {
       </div>
 
       {/* Features Section */}
-      <div className="bg-slate-100">
+      <div className="bg-slate-100 pt-3">
         <div className="container px-5 mb-5">
           <div className="row text-center">
             <div className="col-lg-3 col-12 bg-slate-100 p-4 rounded shadow">
               <div className="mb-4">
                 <i className="fas fa-user-circle fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl font-semibold mb-3 ivy">Personalized</h2>
-              <p className="">
+              <h2 className="text-xl  mb-3 ppneue-med">Personalized</h2>
+              <p className="ppneue text-lg card-text mb-5">
                 You are matched with a therapist that fits your needs and style.
                 We take the time to get to know you to make the right pairing.
                 If we cannot make this determination before you arrive, we will
@@ -137,8 +138,8 @@ function Dashboard() {
               <div className="mb-4">
                 <i className="fas fa-layer-group fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl font-semibold mb-3 ivy">Varied</h2>
-              <p className="">
+              <h2 className="text-xl  mb-3 ppneue-med">Varied</h2>
+              <p className="ppneue text-lg card-text mb-5">
                 We have a large variety of clinician specialties to take care of
                 your needs. A few of these include trauma, suicidal ideations,
                 major depression, anxiety, anger, OCD, and perinatal concerns.
@@ -148,8 +149,8 @@ function Dashboard() {
               <div className="mb-4">
                 <i className="fas fa-flag fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl font-semibold mb-3 ivy">Specialized</h2>
-              <p className="">
+              <h2 className="text-xl  mb-3 ppneue-med">Specialized</h2>
+              <p className="ppneue text-lg card-text mb-5">
                 As most of our clients are on active duty, we also specialize in
                 military-specific concerns. Some of these struggles include PCS
                 issues, relationship strains from work-ups and deployments,
@@ -160,8 +161,8 @@ function Dashboard() {
               <div className="mb-4">
                 <i className="fas fa-file-alt fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl font-semibold mb-3 ivy">Prepared</h2>
-              <p className="">
+              <h2 className="text-xl  mb-3 ppneue-med">Prepared</h2>
+              <p className="ppneue text-lg card-text mb-5">
                 Our owner, Dr. Lemich, is well-versed in military and VA
                 paperwork. As such, we can assist with LIMDU, Med Board, VA, and
                 Security Clearance paperwork if medically necessary.

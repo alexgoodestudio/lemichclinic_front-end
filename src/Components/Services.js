@@ -37,7 +37,7 @@ function Services() {
   }, []);
 
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="d-flex ppneue flex-column min-vh-100">
       <Helmet>
         <meta
           name="description"
@@ -50,7 +50,7 @@ function Services() {
         {/* Header Section */}
         <div className="row mb-3">
           <div className="col-12">
-            <h1 className="text-4xl mb-4 text-start text-gray-800 mb-1">
+            <h1 className="text-4xl ppneue-med mb-4 text-start text-gray-800 mb-1">
               Exclusive Services.
             </h1>
           </div>
@@ -59,7 +59,7 @@ function Services() {
         {/* Description Section */}
         <div className="row">
           <div className="col-lg-12">
-            <p className="text-justify mb-4 text-lg text-gray-600 border rounded bg-slate-100 p-4">
+            <p className="text-justify mb-4 text-lg text-gray-600 border rounded bg-slate-100 p-3">
               For current clients, we have a selection of services provided by our team to support you in your journey to better mental health. Prices and availability may vary, so please talk to our office staff about options for you.
             </p>
           </div>

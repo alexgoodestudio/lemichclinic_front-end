@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 function ContactInfo({ icon, label, value }) {
 
   return (
-    <li className="flex items-center space-x-4 p-3 rounded-lg bg-gray-100 hover:bg-blue-100 transition-shadow duration-200 shadow-sm hover:shadow-md">
+    <li className="flex items-center text-lg space-x-4 p-3 rounded-lg bg-gray-100 hover:bg-blue-100 transition-shadow duration-200 shadow-sm hover:shadow-md">
       <div className="text-blue-500 text-xl">{icon}</div>
       <span className="text-gray-800">
         <strong>{label}:</strong> {value}
@@ -21,7 +21,7 @@ function ContactInfo({ icon, label, value }) {
 function ContactDetails() {
   return (
     
-    <div className="rounded-lg bg-white shadow-lg p-6">
+    <div className="rounded-lg ppneue bg-white shadow-lg p-6">
             <Helmet>
               <meta
                 name="description"
@@ -29,7 +29,7 @@ function ContactDetails() {
               />
               <title> Contact Us | Norfolk, VA | Military Mental Health Services</title>
             </Helmet>
-      <h2 className="text-xl font-bold text-gray-800 mb-4">Contact Information</h2>
+      <h2 className="text-xl  font-bold text-gray-800 mb-4">Contact Information</h2>
       <ul className="space-y-4">
         <ContactInfo icon={<FaPhoneAlt />} label="Phone" value="757-536-1233" />
         <ContactInfo icon={<FaEnvelope />} label="Email" value="info@lemichclinic.org" />
@@ -95,7 +95,7 @@ function Contact({ contactId = null }) {
     <div className="py-5 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-12">
 
-      <h1 className=" text-4xl text-start text-gray-800 mb-5">
+      <h1 className=" text-4xl ppneue-med text-start text-gray-800 mb-5">
         Get in Touch with Us.
       </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
