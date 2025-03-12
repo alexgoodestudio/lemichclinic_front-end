@@ -30,6 +30,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "ppneue-bold";
+  src: url("./Components/fonts/ppneuemontreal-bold.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .barlow {
   font-family: "Barlow", sans-serif;
@@ -49,6 +55,9 @@
 }
 .ppneue-med {
   font-family: "ppneue-med", sans-serif;
+}
+.ppneue-bold {
+  font-family: "ppneue-bold", sans-serif;
 }
 
 .branch {
@@ -94,8 +103,7 @@
 }
 
 .TLC {
-  font-size: 36pt;
-  font-family: branch, sans-serif;
+  font-size: 40pt;
 }
 
 .footer-text-1 {
@@ -161,7 +169,7 @@
 
 .sub-head{
   letter-spacing: 1.35px;
-  font-size: 17pt;
+  font-size: 20pt;
 }
 
 
@@ -237,8 +245,8 @@
 }
 
 .spaced-underline {
-  text-decoration: underline;
-  text-underline-offset: 6px;
+  text-decoration: underline 1px;
+  text-underline-offset: 3px;
 }
 
 
@@ -358,6 +366,26 @@
 
 .number{
   letter-spacing: 1px;
+}
+
+.bg1{
+background-color: #e1eed9;
+color:#000000;
+}
+
+.bg2{
+  background-color: #e7e0ec ;
+  color:#000000;
+}
+
+.bg3{
+  background-color: #fae6d1;
+  color:#000000;
+}
+
+.bg4{
+  background-color: #faeed1;
+  color:#000000;
 }
 
 .blueCombo {

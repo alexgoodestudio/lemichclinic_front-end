@@ -18,23 +18,19 @@ function Dashboard() {
     window.scrollTo(0, 0);
     
     gsap.set(".title2", { text: "The Lemich Clinic", opacity: 1 });
+  
     const textTimeline = gsap.timeline({ repeat: -1, yoyo: false, onComplete: () => textTimeline.restart() });
-
+  
     textTimeline
-    .to(".title2", { opacity: 1, duration: 5, delay: 1 }) 
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
-    .to(".title2", { opacity: 0, text: "Take a Deep Breath", blur: 0, duration: 0 }) 
-    .to(".title2", { opacity: 1, duration: .8 }) 
-    .to(".title2", { opacity: 1, duration: 1 }) 
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
-    .to(".title2", { opacity: 0, text: "Trust the Process", blur: 0, duration: 0 }) 
-    .to(".title2", { opacity: 1, duration: .8 }) 
-    .to(".title2", { opacity: 1, duration: 1 }) 
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
-    .to(".title2", { opacity: 0, text: "Exhale Slowly", blur: 0, duration: 0 }) 
-    .to(".title2", { opacity: 1, duration: .8 }) 
-    .to(".title2", { opacity: 1, duration: 1 }) 
-    .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }); 
+      .to(".title2", { opacity: 1, duration: 3, delay: 1 }) 
+      .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
+      .set(".title2", { text: "take a deep breath" }) // Instead of instantly changing text, set it before fading in
+      .to(".title2", { opacity: 1, duration: 1.5 })  // Smooth fade-in
+      .to(".title2", { opacity: 1, duration: 2 }) 
+      .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
+      .set(".title2", { text: "The Lemich Clinic" }) // Add slight delay before fading back in
+      .to(".title2", { opacity: 1, duration: 1.8, ease: "power2.out" }); // Smooth fade-in with easing
+  
   }, []);
   return (
     <div className="bg-slate-50 overflow-hidden">
@@ -60,9 +56,9 @@ function Dashboard() {
               <img
                 src={logo}
                 alt="logo heart"
-                className="logo rotate mb-lg-3 mb-2"
+                className="logo rotate mb-lg-2 mb-2"
               />
-              <h1 className="align-content-center  TLC title2">THE LEMICH CLINIC</h1>
+              <h1 className="align-content-center TLC ppneue title2">THE LEMICH CLINIC</h1>
             </div>
             <div className="sub-head ppneue d-flex">
               HOME&nbsp;
@@ -99,10 +95,10 @@ function Dashboard() {
           <div className="row ">
             <div className="col-lg-2"></div>
             <div className="col-lg-8 px-4 m-0 ">
-            <h2 className="mb-3 mt-3 text-start">Our Mission</h2>
+            <h2 className="mb-3 mt-3 text-start spaced-underline">Our Mission</h2>
 
 
-              <p className="text-justify ppneue text-lg p-lg-2">
+              <p className="text-justify ppneue text-lg ">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
                 quality, confidential, mental health care. The majority of our

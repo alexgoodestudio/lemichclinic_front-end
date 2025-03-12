@@ -37,7 +37,7 @@ function Services() {
   }, []);
 
   return (
-    <div className="d-flex ppneue flex-column min-vh-100">
+    <div className="d-flex ppneue flex-column ">
       <Helmet>
         <meta
           name="description"

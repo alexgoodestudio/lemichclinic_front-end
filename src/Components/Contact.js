@@ -116,7 +116,7 @@ function Contact({ contactId = null }) {
           </div>
         </div>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
 
     </div>
   );
