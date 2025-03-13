@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css"
 import "./Components/animations/useGsapAnimations"
-import logo from "../src/Components/images/black.png"
-          <img className="tiny hideMobile" src={logo} alt="logo"  />
+import logo from "../src/Components/images/greenlogo2.png"
 
 function Navbar() {
 
@@ -12,8 +11,8 @@ function Navbar() {
     <nav className="navbar  main">
       <div className="container  overflow-hidden">
         <Link className="logo-location  navbar-brand d-flex " to="/">
-          <img className="tiny hideMobile" src={logo} alt="logo"  />
-          <span className="ppneue ">The Lemich Clinic</span> 
+          <img className="tiny" src={logo} alt="logo"  />
+          <span className="ppneue-med nav-logo-text green">The Lemich Clinic</span> 
         </Link>
 
         <ul className="navbar-nav  ms-auto d-flex flex-row gap-4 ppneue nav-link-styling">

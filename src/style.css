@@ -54,9 +54,8 @@
   letter-spacing: .5pt;
 }
 
-.bg-service-cards{
- /* background-color: #10685a */
-}
+/* .bg-service-cards{
+} */
 .ppneue-700-{
   font-family: "ppneue", sans-serif;
   font-weight: 700;
@@ -99,10 +98,15 @@
 }
 
 .tiny {
-  width: 17px;
-  height: 17px;
+  width: 28px;
+  height: 28px;
   margin-right: 10px;
 }
+
+.nav-logo-text{
+  font-size: 18pt;
+}
+
 .tiny2 {
   width: 25px;
   height: 25px;
@@ -553,6 +557,7 @@ li {
 .tiny {
   font-size: 12pt;
 }
+
 .italics {
   font-style: italic;
 }
@@ -622,9 +627,13 @@ li {
   }
 
   .tiny {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     margin-right: 6px;
+  }
+
+  .nav-logo-text{
+    font-size: 15pt;
   }
 
   .margin-left-full-screen {
