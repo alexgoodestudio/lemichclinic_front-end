@@ -14,7 +14,8 @@ function Navbar() {
           <span className="ppneue-med nav-logo-text green">
             The Lemich Clinic &nbsp;
           </span>{" "}
-          |&nbsp; Norfolk, VA
+          <span className="nav-logo-text">|&nbsp; <span className="ppneue">Norfolk, VA</span></span>
+          
         </Link>
 
         <ul className="navbar-nav  ms-auto d-flex flex-row gap-4 ppneue nav-link-styling">
