@@ -54,8 +54,10 @@
   letter-spacing: .5pt;
 }
 
-/* .bg-service-cards{
-} */
+.bg-service-cards{
+background-color: #F7F3F0;
+}
+
 .ppneue-700-{
   font-family: "ppneue", sans-serif;
   font-weight: 700;
@@ -629,7 +631,7 @@ li {
   .tiny {
     width: 22px;
     height: 22px;
-    margin-right: 6px;
+    margin-left: 8px;
   }
 
   .nav-logo-text{
