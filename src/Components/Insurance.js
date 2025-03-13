@@ -20,7 +20,7 @@ function Insurance() {
       );
   }, []);
   return (
-    <div className="min-h-screen ppneue flex flex-col">
+    <div className=" ppneue flex flex-col">
                   <Helmet>
                     <meta
                       name="description"
@@ -28,7 +28,7 @@ function Insurance() {
                     />
                     <title> Payment and Insurance Options | Norfolk, VA | Tricare Accepted | Military Mental Health Services</title>
                   </Helmet>
-      <div className="bg-green text-white py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-start ">
+      <div className="bg-green text-white py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-justify ">
         
         <h1 className="pb-1 mt-3 thin-insurance-body flex text-insurance-header-mobile">
           Find the best payment and insurance options to fit your needs.
@@ -50,7 +50,7 @@ function Insurance() {
 
 
           {/* Text Content Column */}
-          <div className="col-lg-6 text-start p-3 col-md-12">
+          <div className="col-lg-6 text-justify px-lg-5 pt-lg-5 p-4 col-md-12">
             <h2 className="text-2xl font-semibold mb-3 ">Active Duty</h2>
             <ul className=" list-unstyled text-gray-700">
               <li>
@@ -68,7 +68,7 @@ function Insurance() {
             <h2 className="text-2xl font-semibold mb-3">
               Veterans and Dependents
             </h2>
-            <ul className="text-start list-unstyled text-gray-700">
+            <ul className="text-justify list-unstyled text-gray-700">
               <li>
                 <strong>Tricare:</strong> A referral is not required for Tricare
                 Prime or Select. Provide your benefits number when completing
