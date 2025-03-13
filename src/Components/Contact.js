@@ -98,6 +98,7 @@ function Contact({ contactId = null }) {
       <h1 className=" text-4xl ppneue-med text-start text-gray-800 mb-5">
         Get in Touch with Us.
       </h1>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Column - Contact Details */}
           <ContactDetails />

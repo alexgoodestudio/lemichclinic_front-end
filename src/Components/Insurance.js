@@ -30,8 +30,8 @@ function Insurance() {
                   </Helmet>
       <div className="bg-green text-white py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-justify ">
         
-        <h1 className="pb-1 mt-3 thin-insurance-body flex text-insurance-header-mobile">
-          Find the best payment and insurance options to fit your needs.
+        <h1 className=" pb-1 mt-3 thin-insurance-body text-white flex text-insurance-header-mobile">
+        <span className="me-lg-4  me-2 ">╰┈➤</span>Find the best payment and insurance options to fit your needs
         </h1>
       </div>
 

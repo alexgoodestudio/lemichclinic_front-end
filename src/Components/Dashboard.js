@@ -93,10 +93,14 @@ function Dashboard() {
         <div className="container">
           <div className="row ">
             <div className="col-lg-2"></div>
-            <div className="col-lg-8 p-lg-5  p-4">
+            <div className="col-lg-8 p-lg-3  p-4">
             
-              <h2 className="mb-3 mt-3 text-start green mobile-header-mission">Our Mission</h2>
+              <h2 className="mb-lg-5 mt-lg-2 mb-4 text-start green mobile-header-mission big-line"><span>Our Mission</span></h2>
          
+      {/* <h1 className="text-4xl ppneue-med text-start text-gray-800 mb-5">
+         Get in <span className="big-line"><span>Touch</span></span> with Us.
+        </h1> */}
+
               <p className="text-justify ppneue mission-text ">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
