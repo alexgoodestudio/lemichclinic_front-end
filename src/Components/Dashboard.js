@@ -93,7 +93,7 @@ function Dashboard() {
         <div className="container">
           <div className="row ">
             <div className="col-lg-2"></div>
-            <div className="col-lg-8 p-lg-5 p-4">
+            <div className="col-lg-8 p-lg-5  p-4">
             
               <h2 className="mb-3 mt-3 text-start green mobile-header-mission">Our Mission</h2>
          
@@ -117,7 +117,7 @@ function Dashboard() {
       <div className="bg-gray-50 pt-3">
         <div className="container mb-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
-            <div className="text-center bg-service-cards p-3 border rounded">
+            <div className="text-center  p-3 border rounded">
               <div className="mb-4 mt-5 ">
                 <i className="fas fa-user-circle text-gray-600 fa-2x"></i>
               </div>
@@ -129,7 +129,7 @@ function Dashboard() {
                 spend the time with you during an intake to find your match.
               </p>
             </div>
-            <div className="text-center bg-service-cards p-3 border rounded">
+            <div className="text-center  p-3 border rounded">
               <div className="mb-4 mt-5 ">
                 <i className="fas fa-layer-group text-gray-600 fa-2x"></i>
               </div>
@@ -140,7 +140,7 @@ function Dashboard() {
                 major depression, anxiety, anger, OCD, and perinatal concerns.
               </p>
             </div>
-            <div className="text-center bg-service-cards p-3 border rounded">
+            <div className="text-center  p-3 border rounded">
               <div className="mb-4 mt-5 ">
                 <i className="fas fa-flag fa-2x text-gray-600"></i>
               </div>
@@ -152,7 +152,7 @@ function Dashboard() {
                 grief over fallen friends, and civilian transitioning.
               </p>
             </div>
-            <div className="text-center bg-service-cards p-3 border rounded">
+            <div className="text-center  p-3 border rounded">
               <div className="mb-4 mt-5 ">
                 <i className="fas fa-file-alt fa-2x text-gray-600"></i>
               </div>
