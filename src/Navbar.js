@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css"
 import "./Components/animations/useGsapAnimations"
 import logo from "../src/Components/images/black.png"
+          <img className="tiny hideMobile" src={logo} alt="logo"  />
 
 function Navbar() {
 

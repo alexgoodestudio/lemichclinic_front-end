@@ -49,7 +49,14 @@
   font-size: 16pt;
   padding: 5%;
 }
+.mission-text{
+  font-size: 15pt;
+  letter-spacing: .5pt;
+}
 
+.bg-service-cards{
+ /* background-color: #10685a */
+}
 .ppneue-700-{
   font-family: "ppneue", sans-serif;
   font-weight: 700;
@@ -95,6 +102,18 @@
   width: 17px;
   height: 17px;
   margin-right: 10px;
+}
+.tiny2 {
+  width: 25px;
+  height: 25px;
+  margin-right: 14px;
+}
+
+.green{
+  color: #10685a;
+}
+.bg-green{
+  background-color: #10685a;
 }
 
 .tricare {
@@ -563,6 +582,9 @@ li {
     transition: opacity 0.5s ease-in-out;
   }
 
+  .mission-text{
+    font-size: 12pt;
+  }
  
   .blueCombo2Home{
     display: none;

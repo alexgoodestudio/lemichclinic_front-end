@@ -4,7 +4,7 @@ import "../style.css";
 function Tricare() {
   return (
     <div className="container-fluid ">
-      <div className="row p-4 blueCombo py-5">
+      <div className="row p-4 bg-green py-5">
           <div className="col-lg-4"></div>
           <div className="col-lg-4 my-4">
           <h2 className="text-white text-start">Tricare Accepted</h2>

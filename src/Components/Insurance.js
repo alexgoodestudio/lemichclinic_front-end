@@ -28,7 +28,7 @@ function Insurance() {
                     />
                     <title> Payment and Insurance Options | Norfolk, VA | Tricare Accepted | Military Mental Health Services</title>
                   </Helmet>
-      <div className="blueCombo py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-start ">
+      <div className="bg-green text-white py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-start ">
         
         <h1 className="pb-1 mt-3 thin-insurance-body flex text-insurance-header-mobile">
           Find the best payment and insurance options to fit your needs.
