@@ -12,7 +12,7 @@ function Navbar() {
       <div className="container  overflow-hidden">
         <Link className="logo-location  navbar-brand d-flex " to="/">
           <img className="tiny" src={logo} alt="logo"  />
-          <span className="ppneue-med nav-logo-text green">The Lemich Clinic</span> 
+          <span className="ppneue-med nav-logo-text green">The Lemich Clinic &nbsp;</span>  |&nbsp; Norfolk, VA
         </Link>
 
         <ul className="navbar-nav  ms-auto d-flex flex-row gap-4 ppneue nav-link-styling">
