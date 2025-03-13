@@ -24,7 +24,7 @@ function Dashboard() {
     textTimeline
       .to(".title2", { opacity: 1, duration: 3, delay: 1 }) 
       .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
-      .set(".title2", { text: "take a deep breath" }) // Instead of instantly changing text, set it before fading in
+      .set(".title2", { text: "take a deep breath." }) // Instead of instantly changing text, set it before fading in
       .to(".title2", { opacity: 1, duration: 1.5 })  // Smooth fade-in
       .to(".title2", { opacity: 1, duration: 2 }) 
       .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
@@ -58,7 +58,7 @@ function Dashboard() {
                 alt="logo heart"
                 className="logo rotate mb-lg-2 mb-2"
               />
-              <h1 className="align-content-center TLC ppneue title2">THE LEMICH CLINIC</h1>
+              <h1 className="align-content-center TLC ppneue-med title2">THE LEMICH CLINIC</h1>
             </div>
             <div className="sub-head ppneue d-flex">
               HOME&nbsp;
