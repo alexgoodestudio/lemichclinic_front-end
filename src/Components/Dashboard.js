@@ -8,8 +8,6 @@ import logo from "./images/newlogo.png";
 import { TextPlugin } from "gsap/TextPlugin";  
 import { Helmet } from "react-helmet";
 
-
-
 function Dashboard() {
   const titleRef = useRef(null);
   gsap.registerPlugin(TextPlugin);  
@@ -32,6 +30,7 @@ function Dashboard() {
       .to(".title2", { opacity: 1, duration: 1.8, ease: "power2.out" }); // Smooth fade-in with easing
   
   }, []);
+  
   return (
     <div className="bg-slate-50 overflow-hidden">
       <Helmet>
@@ -41,12 +40,13 @@ function Dashboard() {
         />
         <title> The Lemich Clinic | Norfolk, VA | Military Mental Health Services </title>
       </Helmet>
+
       <div className="row align-items-center background-section">
         <video autoPlay muted loop playsInline className="video-background ">
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="col-lg-6  col-12 relative h-full flex justify-center items-center">
+        <div className="col-lg-6 col-12 relative h-full flex justify-center items-center">
           <div className="absolute inset-0 bg-opacity-40"></div>
           <h1
             ref={titleRef}
@@ -58,7 +58,7 @@ function Dashboard() {
                 alt="logo heart"
                 className="logo rotate mb-lg-2 mb-2"
               />
-              <h1 className="align-content-center TLC ppneue title2">THE LEMICH CLINIC</h1>
+              <h1 className="align-content-center TLC ppneue-700 title2">THE LEMICH CLINIC</h1>
             </div>
             <div className="sub-head ppneue-200 d-flex">
               HOME&nbsp;
@@ -90,14 +90,11 @@ function Dashboard() {
 
       {/* Mission Section */}
       <div className="py-4 bg-slate-100">
-
         <div className="container">
           <div className="row ">
             <div className="col-lg-2"></div>
             <div className="col-lg-8 px-4 m-0 ">
-            <h2 className="mb-3 mt-3 text-start spaced-underline">Our Mission</h2>
-
-
+              <h2 className="mb-3 mt-3 text-start spaced-underline">Our Mission</h2>
               <p className="text-justify ppneue text-lg ">
                 The Lemich Clinic for Military Mental Health was founded on the
                 belief that everyone who serves should have access to high
@@ -116,13 +113,13 @@ function Dashboard() {
 
       {/* Features Section */}
       <div className="bg-slate-100 pt-3">
-        <div className="container  mb-5">
-          <div className="row text-center ">
-            <div className="col-lg-3 col-12 p-5 border rounded ">
+        <div className="container mb-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
+            <div className="text-center p-3 border rounded">
               <div className="mb-4">
-                <i className="fas fa-user-circle fa-3x accent-icon"></i>
+                <i className="fas fa-user-circle text-gray-600 fa-3x"></i>
               </div>
-              <h2 className="text-xl  mb-3 ppneue-med">Personalized</h2>
+              <h2 className="text-xl mb-3 ppneue-med">Personalized</h2>
               <p className="ppneue text-lg card-text mb-5">
                 You are matched with a therapist that fits your needs and style.
                 We take the time to get to know you to make the right pairing.
@@ -130,22 +127,22 @@ function Dashboard() {
                 spend the time with you during an intake to find your match.
               </p>
             </div>
-            <div className="col-lg-3 col-12  p-5 border rounded ">
+            <div className="text-center p-3 border rounded">
               <div className="mb-4">
-                <i className="fas fa-layer-group fa-3x accent-icon"></i>
+                <i className="fas fa-layer-group text-gray-600 fa-3x"></i>
               </div>
-              <h2 className="text-xl  mb-3 ppneue-med">Varied</h2>
+              <h2 className="text-xl mb-3 ppneue-med">Varied</h2>
               <p className="ppneue text-lg card-text mb-5">
                 We have a large variety of clinician specialties to take care of
                 your needs. A few of these include trauma, suicidal ideations,
                 major depression, anxiety, anger, OCD, and perinatal concerns.
               </p>
             </div>
-            <div className="col-lg-3 col-12 p-5 border rounded ">
+            <div className="text-center p-3 border rounded">
               <div className="mb-4">
-                <i className="fas fa-flag fa-3x accent-icon"></i>
+                <i className="fas fa-flag fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl  mb-3 ppneue-med">Specialized</h2>
+              <h2 className="text-xl mb-3 ppneue-med">Specialized</h2>
               <p className="ppneue text-lg card-text mb-5">
                 As most of our clients are on active duty, we also specialize in
                 military-specific concerns. Some of these struggles include PCS
@@ -153,11 +150,11 @@ function Dashboard() {
                 grief over fallen friends, and civilian transitioning.
               </p>
             </div>
-            <div className="col-lg-3 col-12 border p-5 border rounded ">
+            <div className="text-center p-3 border rounded">
               <div className="mb-4">
-                <i className="fas fa-file-alt fa-3x accent-icon"></i>
+                <i className="fas fa-file-alt fa-3x text-gray-600"></i>
               </div>
-              <h2 className="text-xl  mb-3 ppneue-med">Prepared</h2>
+              <h2 className="text-xl mb-3 ppneue-med">Prepared</h2>
               <p className="ppneue text-lg card-text mb-5">
                 Our owner, Dr. Lemich, is well-versed in military and VA
                 paperwork. As such, we can assist with LIMDU, Med Board, VA, and
