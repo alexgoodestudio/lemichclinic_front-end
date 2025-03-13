@@ -50,9 +50,15 @@
   padding: 5%;
 }
 
-.ppneue {
+.ppneue-700-{
   font-family: "ppneue", sans-serif;
+  font-weight: 700;
 }
+.ppneue-200 {
+  font-family: "ppneue", sans-serif;
+  font-weight: 400;
+}
+
 .ppneue-med {
   font-family: "ppneue-med", sans-serif;
 }
@@ -396,10 +402,18 @@ color:#000000;
   background-color: #d4e6fe;
   color: #033982;
 }
+.dark-blue{
+  color: #033982;
+
+}
 
 .blueCombo2Home{
   background-color: #344357;
   color: #000000;
+}
+
+.accent-icon{
+  color: #30344d;
 }
 
 .accent-button {
@@ -612,7 +626,7 @@ li {
   }
 
   .TLC {
-    font-size: 20pt;
+    font-size: 19.65pt;
   }
   .home-weight {
     font-weight: 500;

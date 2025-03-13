@@ -22,11 +22,11 @@ function Dashboard() {
     const textTimeline = gsap.timeline({ repeat: -1, yoyo: false, onComplete: () => textTimeline.restart() });
   
     textTimeline
-      .to(".title2", { opacity: 1, duration: 3, delay: 1 }) 
+      .to(".title2", { opacity: 1, duration: 4, delay: 1 }) 
       .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
-      .set(".title2", { text: "take a deep breath." }) // Instead of instantly changing text, set it before fading in
+      .set(".title2", { text: "Take a Deep Breath" }) // Instead of instantly changing text, set it before fading in
       .to(".title2", { opacity: 1, duration: 1.5 })  // Smooth fade-in
-      .to(".title2", { opacity: 1, duration: 2 }) 
+      .to(".title2", { opacity: 1, duration: 4 }) 
       .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
       .set(".title2", { text: "The Lemich Clinic" }) // Add slight delay before fading back in
       .to(".title2", { opacity: 1, duration: 1.8, ease: "power2.out" }); // Smooth fade-in with easing
@@ -58,9 +58,9 @@ function Dashboard() {
                 alt="logo heart"
                 className="logo rotate mb-lg-2 mb-2"
               />
-              <h1 className="align-content-center TLC ppneue-med title2">THE LEMICH CLINIC</h1>
+              <h1 className="align-content-center TLC ppneue title2">THE LEMICH CLINIC</h1>
             </div>
-            <div className="sub-head ppneue d-flex">
+            <div className="sub-head ppneue-200 d-flex">
               HOME&nbsp;
               <HoverExpand
                   triggerText={
@@ -116,11 +116,11 @@ function Dashboard() {
 
       {/* Features Section */}
       <div className="bg-slate-100 pt-3">
-        <div className="container px-5 mb-5">
-          <div className="row text-center">
-            <div className="col-lg-3 col-12 bg-slate-100 p-4 rounded shadow">
+        <div className="container  mb-5">
+          <div className="row text-center ">
+            <div className="col-lg-3 col-12 p-5 border rounded ">
               <div className="mb-4">
-                <i className="fas fa-user-circle fa-3x text-gray-600"></i>
+                <i className="fas fa-user-circle fa-3x accent-icon"></i>
               </div>
               <h2 className="text-xl  mb-3 ppneue-med">Personalized</h2>
               <p className="ppneue text-lg card-text mb-5">
@@ -130,9 +130,9 @@ function Dashboard() {
                 spend the time with you during an intake to find your match.
               </p>
             </div>
-            <div className="col-lg-3 col-12 bg-slate-200 p-4 rounded shadow">
+            <div className="col-lg-3 col-12  p-5 border rounded ">
               <div className="mb-4">
-                <i className="fas fa-layer-group fa-3x text-gray-600"></i>
+                <i className="fas fa-layer-group fa-3x accent-icon"></i>
               </div>
               <h2 className="text-xl  mb-3 ppneue-med">Varied</h2>
               <p className="ppneue text-lg card-text mb-5">
@@ -141,9 +141,9 @@ function Dashboard() {
                 major depression, anxiety, anger, OCD, and perinatal concerns.
               </p>
             </div>
-            <div className="col-lg-3 col-12 bg-slate-300 p-4 rounded shadow">
+            <div className="col-lg-3 col-12 p-5 border rounded ">
               <div className="mb-4">
-                <i className="fas fa-flag fa-3x text-gray-600"></i>
+                <i className="fas fa-flag fa-3x accent-icon"></i>
               </div>
               <h2 className="text-xl  mb-3 ppneue-med">Specialized</h2>
               <p className="ppneue text-lg card-text mb-5">
@@ -153,9 +153,9 @@ function Dashboard() {
                 grief over fallen friends, and civilian transitioning.
               </p>
             </div>
-            <div className="col-lg-3 col-12 bg-slate-400 p-4 rounded shadow">
+            <div className="col-lg-3 col-12 border p-5 border rounded ">
               <div className="mb-4">
-                <i className="fas fa-file-alt fa-3x text-gray-600"></i>
+                <i className="fas fa-file-alt fa-3x accent-icon"></i>
               </div>
               <h2 className="text-xl  mb-3 ppneue-med">Prepared</h2>
               <p className="ppneue text-lg card-text mb-5">
