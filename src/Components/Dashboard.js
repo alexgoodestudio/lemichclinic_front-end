@@ -24,7 +24,7 @@ function Dashboard() {
       textTimeline
         .to(".title2", { opacity: 1, duration: 2.5, delay: 1 }) 
         .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
-        .set(".title2", { text: "Take a Deep Breath" }) 
+        .set(".title2", { text: "Trust the Process" }) 
         .to(".title2", { opacity: 1, duration: 1.5 }) 
         .to(".title2", { opacity: 1, duration: 2.5 }) 
         .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
@@ -67,16 +67,16 @@ function Dashboard() {
                 <img
                   src={logo}
                   alt="logo heart"
-                  className="logo rotate mb-lg-2 mb-2"
+                  className="logo hideMobile rotate mb-lg-2 mb-2"
                 />
-                <h1 className="align-content-center TLC ppneue-700 title2">THE LEMICH CLINIC</h1>
+                <h1 className="align-content-center TLC manrope-bold title2">THE LEMICH CLINIC</h1>
               </div>
-              <div className="sub-head ppneue-200 d-flex">
+              <div className="sub-head manrope-medium d-flex">
                 HOME&nbsp;
                 <HoverExpand
                   triggerText={<>OF MILITARY MENTAL</>}
                   expandedContent={
-                    <p className="text-xl">
+                    <p className="">
                       Our military mental health services are designed to support active duty, spouses, and retirees with specialized care in Norfolk, Virginia.
                     </p>
                   }
@@ -88,7 +88,7 @@ function Dashboard() {
                 <i className="fas fa-phone-alt text-md accent"></i>
                 <a href="tel:+17575361233" className="phone-link mobile-bold">
                   <span className="hideMobile">&nbsp;</span>{" "}
-                  <span className="ppneue-med px-1">Call Us</span>
+                  <span className="-med px-1">Call Us</span>
                 </a>
               </div>
             </h1>
@@ -107,7 +107,7 @@ function Dashboard() {
                   <h2 className="mb-lg-5 mt-lg-2 mb-4 text-start green mobile-header-mission big-line">
                     <span>Our Mission</span>
                   </h2>
-                  <p className="text-justify ppneue mission-text">
+                  <p className="text-justify mission-text">
                     The Lemich Clinic for Military Mental Health was founded on the belief that everyone who serves should have access to high-quality, confidential mental health care. The majority of our clients are active duty sailors at Naval Station Norfolk. We also see service members from the other military installations in Virginia. We also work with military spouses and recent veterans. If you are a first responder or outside the military, contact us to see if you qualify for our program.
                   </p>
                 </div>
@@ -130,8 +130,8 @@ function Dashboard() {
                     <div className="mb-4 mt-5">
                       <i className={`fas ${feature.icon} text-gray-600 fa-2x`}></i>
                     </div>
-                    <h2 className="text-xl mb-3 ppneue-med">{feature.title}</h2>
-                    <p className="ppneue text-lg card-text mb-5">{feature.text}</p>
+                    <h2 className="text-xl mb-3">{feature.title}</h2>
+                    <p className="text-lg card-text mb-5">{feature.text}</p>
                   </div>
                 ))}
               </div>

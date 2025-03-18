@@ -11,14 +11,14 @@ function Navbar() {
       <div className="container  overflow-hidden">
         <Link className="logo-location  navbar-brand d-flex " to="/">
           <img className="tiny" src={logo} alt="logo" />
-          <span className="ppneue-med nav-logo-text green">
+          <span className=" nav-logo-text green">
             The Lemich Clinic &nbsp;
           </span>{" "}
-          <span className="nav-logo-text">|&nbsp; <span className="ppneue">Norfolk, VA</span></span>
+          <span className="nav-logo-text">|&nbsp; <span className="">Norfolk, VA</span></span>
           
         </Link>
 
-        <ul className="navbar-nav  ms-auto d-flex flex-row gap-4 ppneue nav-link-styling">
+        <ul className="navbar-nav  ms-auto d-flex flex-row gap-4  nav-link-styling">
           <li className="nav-item">
             <Link className="nav-link underline3" to="/">
               Home

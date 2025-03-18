@@ -37,7 +37,7 @@ function Services() {
   }, []);
 
   return (
-    <div className="d-flex ppneue flex-column ">
+    <div className="d-flex flex-column ">
       <Helmet>
         <meta
           name="description"
@@ -50,7 +50,7 @@ function Services() {
         {/* Header Section */}
         <div className="row mb-3">
           <div className="col-12">
-            <h1 className="text-4xl ppneue-med mb-4 text-start text-gray-800 mb-1">
+            <h1 className="text-4xl mb-4 text-start text-gray-800 mb-1">
               Exclusive Services.
             </h1>
           </div>

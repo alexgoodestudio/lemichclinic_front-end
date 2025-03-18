@@ -6,6 +6,41 @@
 }
 
 @font-face {
+  font-family: "Manrope-Bold";
+  src: url("./Components/fonts/Manrope-Bold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("./Components/fonts/Manrope-SemiBold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("./Components/fonts/Manrope-Medium.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope-Light";
+  src: url("./Components/fonts/Manrope-Light.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("./Components/fonts/Manrope-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Branch";
   src: url("./Components/fonts/Branch.otf") format("woff2");
   font-weight: normal;
@@ -18,27 +53,28 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "ppneue";
-  src: url("./Components/fonts/ppneuemontreal-book.otf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "ppneue-med";
-  src: url("./Components/fonts/ppneuemontreal-medium.otf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "ppneue-bold";
-  src: url("./Components/fonts/ppneuemontreal-bold.otf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
 .barlow {
   font-family: "Barlow", sans-serif;
+}
+
+.manrope-bold {
+  font-family: "Manrope-Bold", sans-serif;
+}
+
+.manrope-medium {
+  font-family: "Manrope-Medium", sans-serif;
+}
+
+.manrope-semibold {
+  font-family: "Manrope-SemiBold", sans-serif;
+}
+
+.manrope-regular {
+  font-family: "Manrope-Regular", sans-serif;
+}
+.manrope-light {
+  font-family: "Manrope-Light", sans-serif;
 }
 
 .tomorrow {
@@ -63,20 +99,7 @@ background-color: #F7F3F0;
 
 } */
 
-.ppneue-700-{
-  font-family: "ppneue", sans-serif;
-  font-weight: 700;
-}
-.ppneue-200 {
-  font-family: "ppneue", sans-serif;
-}
 
-.ppneue-med {
-  font-family: "ppneue-med", sans-serif;
-}
-.ppneue-bold {
-  font-family: "ppneue-bold", sans-serif;
-}
 
 .branch {
   font-family: "Branch", sans-serif;
@@ -139,10 +162,6 @@ background-color: #F7F3F0;
   transition: .3s;
 }
 
-.noise{
-
-}
-
 .big-line:hover span {
   --i: 100%;
 }
@@ -171,8 +190,45 @@ background-color: #F7F3F0;
 }
 
 .TLC {
-  font-size: 38pt;
+  font-size: 33pt;
+  font-weight: 550;
+  letter-spacing: 1pt;
 }
+
+.sub-head{
+  letter-spacing: 1.75px;
+  font-size: 19pt;
+  font-weight: 200;
+}
+
+/* circle effect*/
+.circled {
+  position: relative;
+}
+.circled:after {
+  border: .25em solid salmon;
+  border-top: none;
+  border-radius: 1.5em 1em 2em 1.5em;
+  bottom: -.3em;
+  content: '';
+  left: -.3em;
+  position: absolute;
+  right: -.3em;
+  top: -.1em;
+}
+.circled:before {
+  border-top: .25em solid salmon;
+  border-radius: .5em;
+  content: '';
+  height: 1em;
+  left: 0;
+  position: absolute;
+  top: -.3em;
+  transform: rotate(-10deg);
+  width: 2em;
+}
+
+/* circle effect end*/
 
 .footer-text-1 {
   font-size: 13pt;
@@ -235,10 +291,6 @@ background-color: #F7F3F0;
   z-index: 0;
 }
 
-.sub-head{
-  letter-spacing: 1.35px;
-  font-size: 20pt;
-}
 
 
 .backdrop-blur-lg {
@@ -314,10 +366,8 @@ background-color: #F7F3F0;
 
 .spaced-underline {
   text-decoration: underline 1px;
-  text-underline-offset: 3px;
+  text-underline-offset: 2px;
 }
-
-
 
 .reduce {
   width: 39px;
@@ -635,10 +685,7 @@ li {
     display: none;
   }
 
-  .sub-head{
-    letter-spacing: 1px;
-    font-size: 10pt;
-  }
+
 
   .hometype {
     font-size: 15pt;
@@ -696,11 +743,19 @@ li {
   }
 
   .TLC {
-    font-size: 19.65pt;
+    font-size: 20.5pt;
+    font-weight: 470;
+    letter-spacing: .5pt;
+    margin-left: 1.5px;
   }
-  .home-weight {
-    font-weight: 500;
+
+  .sub-head{
+    letter-spacing: 1.5px;
+    font-size: 11pt;
+    margin-bottom: 25px;
+    font-family: manrope-medium;
   }
+
   .margin-left-home {
     margin-left: 24px;
   }

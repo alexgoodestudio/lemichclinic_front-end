@@ -172,7 +172,7 @@ function OurTeam() {
   ];
 
   return (
-    <div className="bg-gray-50  ppneue py-12">
+    <div className="bg-gray-50 py-12">
             <Helmet>
               <meta
                 name="description"
@@ -181,7 +181,7 @@ function OurTeam() {
               <title> Meet The Team | The Lemich Clinic | Norfolk, VA | Military Mental Health Services</title>
             </Helmet>
       <div className="container mx-auto ">
-      <h1 className=" text-4xl ppneue-med text-start mb-1">
+      <h1 className=" text-4xl text-start mb-1">
         Meet Our Team.
       </h1>
         {/* Gregory C. Lemich */}
@@ -196,7 +196,7 @@ function OurTeam() {
           </div>
         </div>
         <div className="col-lg-9 col-sm-12 text-start">
-          <h3 className="text-xl font-bold mt-4">
+          <h3 className="text-lg manrope-semibold  mt-4">
             Gregory C. Lemich, Ph.D., LPC
           </h3>
           <p className="text-gray-600 mt-2">Owner and Clinical Director</p>
@@ -227,11 +227,11 @@ function OurTeam() {
                     className="zoom w-full h-full zoom object-cover rounded-full"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-gray-800">
+                <h4 className="text-lg manrope-semibold text-gray-800">
                   {member.name}
-                </h3>
+                </h4>
                 <p className="text-sm text-gray-500">{member.role}</p>
-                <p className="text-sm text-gray-700 mt-2 text-justify">{member.description}</p>
+                <p className="text-sm  text-gray-700 mt-2 text-justify">{member.description}</p>
                 {member.specialties && (
                   <p className="text-sm text-gray-600 mt-2">
                     <span className="font-bold">Specialties: </span>
@@ -272,7 +272,7 @@ function OurTeam() {
                     className="zoom w-full h-full zoom object-cover rounded-full"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-gray-800">
+                <h3 className="text-lg manrope-semibold text-gray-800">
                   {member.name}
                 </h3>
                 <p className="text-sm text-gray-500">{member.role}</p>

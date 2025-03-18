@@ -21,7 +21,7 @@ function ContactInfo({ icon, label, value }) {
 function ContactDetails() {
   return (
     
-    <div className="rounded-lg ppneue bg-white shadow-lg p-6">
+    <div className="rounded-lg bg-white shadow-lg p-6">
             <Helmet>
               <meta
                 name="description"
@@ -95,7 +95,7 @@ function Contact({ contactId = null }) {
     <div className="py-5 ">
       <div className="container mx-auto px-6 lg:px-12">
 
-      <h1 className=" text-4xl ppneue-med text-start text-gray-800 mb-5">
+      <h1 className=" text-4xl  text-start text-gray-800 mb-5">
         Get in Touch with Us.
       </h1>
 

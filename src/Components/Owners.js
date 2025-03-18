@@ -19,7 +19,7 @@ function Owners() {
   }, []);
 
   return (
-    <div className="ppneue">
+    <div className="">
       <Helmet>
         <meta
           name="description"
@@ -30,7 +30,7 @@ function Owners() {
 
       {/* Image Section (Moves to top on mobile) */}
       <div className="row d-flex justify-content-center align-items-center ">
-      <h1 className="text-4xl ppneue-med hideFull pb-3 ps-4 mt-5 mb-5   owners-mobile-text text-start px-2 text-gray-800 mb-0">
+      <h1 className="text-4xl hideFull pb-3 ps-4 mt-5 mb-4   owners-mobile-text text-start px-2 text-gray-800 mb-0">
             Meet The Owners.
           </h1>
         <div className="col-lg-6  order-1 order-lg-2 text-center p-lg-0 ">
@@ -44,14 +44,14 @@ function Owners() {
 
         {/* Text Section */}
         <div className="col-lg-6  order-2 order-lg-1 px-5">
-        <h2 className="text-insurance-header-mobile hideFull thin-insurance-body-2 p-3">
+        <h2 className="text-insurance-header-mobile hideFull ">
         Gregory and Jennifer Lemich
         </h2>
-          <h1 className="text-4xl ppneue-med hideMobile  owners-mobile-text text-start px-2 text-gray-800 mb-0">
+          <h1 className="text-4xl hideMobile  owners-mobile-text text-start px-2 text-gray-800 ">
             Meet The Owners.
           </h1>
-          <div className="text-center p-2">
-            <p className="text-lg text-gray-600 text-justify mt-4 mb-4">
+          <div className="text-center p-1">
+            <p className="text-lg  text-gray-600 text-justify mt-3 mb-3">
               The Lemich Clinic was founded by Gregory and Jennifer Lemich.
               Jennifer is a 22-year US Navy retiree and current Navy employee.
               Gregory holds a PhD in Counselor Education and Supervision, and is
