@@ -86,7 +86,9 @@ background-color: #F7F3F0;
   z-index: 2000;
 }
 
-
+.accent{
+  color: #99efce;
+}
 
 .smallText {
   font-size: 10pt;
@@ -135,6 +137,10 @@ background-color: #F7F3F0;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
   transition: .3s;
+}
+
+.noise{
+
 }
 
 .big-line:hover span {
@@ -698,6 +704,8 @@ li {
   .margin-left-home {
     margin-left: 24px;
   }
+
+
   .accent-button {
     margin-top: 5%;
     padding-top: 7px;
