@@ -67,7 +67,7 @@ function Dashboard() {
                 <img
                   src={logo}
                   alt="logo heart"
-                  className="logo hideMobile rotate mb-lg-2 mb-2"
+                  className="logo rotate mb-lg-2 mb-2"
                 />
                 <h1 className="align-content-center TLC manrope-bold title2">THE LEMICH CLINIC</h1>
               </div>
