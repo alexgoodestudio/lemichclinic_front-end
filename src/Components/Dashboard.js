@@ -69,19 +69,19 @@ function Dashboard() {
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
                 />
-                <h1 className="align-content-center TLC manrope-bold title2">THE LEMICH CLINIC</h1>
+                <h1 className="align-content-center TLC barlow title2 ">THE LEMICH CLINIC</h1>
               </div>
-              <div className="sub-head manrope-medium d-flex">
+              <div className="sub-head demo tomorrow d-flex">
                 HOME&nbsp;
                 <HoverExpand
-                  triggerText={<>OF MILITARY MENTAL</>}
+                  triggerText={<>OF <span className="tomorrow">MILITARY</span> MENTAL</>}
                   expandedContent={
-                    <p className="">
+                    <p className="text-expand">
                       Our military mental health services are designed to support active duty, spouses, and retirees with specialized care in Norfolk, Virginia.
                     </p>
                   }
                 />
-                &nbsp;HEALTH<span className="hideMobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                &nbsp;HEALTH<span className="hideMobile">&nbsp;&nbsp;&nbsp;</span>
               </div>
 
               <div className="btn accent-button text-center my-lg-4 my-md-3 my-sm-1 my-xs-1">

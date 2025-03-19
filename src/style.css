@@ -113,10 +113,15 @@ background-color: #F7F3F0;
   color: #99efce;
 }
 
+
+
 .smallText {
   font-size: 10pt;
 }
 
+.text-expand{
+  font-size: 14pt;
+}
 
 .bottom-left {
   bottom: 0%;
@@ -128,6 +133,12 @@ background-color: #F7F3F0;
 .margin-left-home {
   margin-left: 70px;
 }
+
+.demo {
+  border-top: 1px solid #ffffff;
+  padding: 10px 0; /* Adds 10px spacing above and below the text */
+}
+
 
 .tiny {
   width: 28px;
@@ -190,7 +201,7 @@ background-color: #F7F3F0;
 }
 
 .TLC {
-  font-size: 33pt;
+  font-size: 37pt;
   font-weight: 550;
   letter-spacing: 1pt;
 }
@@ -200,6 +211,7 @@ background-color: #F7F3F0;
   font-size: 19pt;
   font-weight: 200;
 }
+
 
 /* circle effect*/
 .circled {
@@ -743,17 +755,16 @@ li {
   }
 
   .TLC {
-    font-size: 18pt;
-    font-weight: 470;
-    letter-spacing: .5pt;
+    font-size: 21pt;
+    letter-spacing: 1pt;
     margin-left: 1.5px;
   }
 
   .sub-head{
     letter-spacing: 1.5px;
     font-size: 11pt;
-    margin-bottom: 25px;
-    font-family: manrope-medium;
+    margin-bottom: 20px;
+
   }
 
   .margin-left-home {
