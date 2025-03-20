@@ -143,9 +143,9 @@ background-color: #F7F3F0;
 }
 
 
-.tiny {
-  width: 20px;
-  height: 20px;
+.tinyLogo {
+  width: 21px;
+  height: 21px;
   margin-right: 10px;
 }
 
@@ -187,8 +187,11 @@ background-color: #F7F3F0;
 }
 
 .green{
-  color: #10685a;
+  color: #184434ff;
 }
+
+
+
 .bg-green{
   background-color: #10685a;
 }
@@ -307,27 +310,6 @@ background-color: #F7F3F0;
   z-index: 0;
 }
 
-
-
-.backdrop-blur-lg {
-  backdrop-filter: blur(12px);
-  padding: 0%;
-  margin: 0%;
-}
-
-.blur {
-  position: relative;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  z-index: 0;
-  height: max-content;
-  padding: 20px; /* Inner content padding */
-}
-
-.no-blur {
-  position: relative;
-  z-index: 100;
-}
 .border-left-white {
   border-left: 1px solid rgb(255, 255, 255);
   z-index: 2;
@@ -354,6 +336,13 @@ background-color: #F7F3F0;
 .logo {
   width: 39px;
   height: 39px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.logo-tricare {
+  width: 30px;
+  height: 30px;
   margin-right: 15px;
   vertical-align: middle;
 }
@@ -546,8 +535,9 @@ color:#000000;
 }
 
 .accent-button {
-  color: #ffffff;
-  background-color: #5bc099;
+  background-color: #d4e6fe;
+  color: #033982;
+
   border-radius: 25px;
   padding-left: 16px;
   padding-right: 16px;
@@ -557,8 +547,8 @@ color:#000000;
 }
 
 .accent-button:hover {
-  background-color: #114b35;
-      color: #ffffff;
+  background-color: #5bc099;
+  color: #ffffff;
 }
 
 .icon {
@@ -669,6 +659,8 @@ li {
   font-style: italic;
 }
 
+
+
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -693,6 +685,10 @@ li {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
+
+
+
+
 
   .mission-text{
     font-size: 12pt;
@@ -730,7 +726,7 @@ li {
     font-size: 8pt;
   }
 
-  .tiny {
+  .tinyLogo{
     width: 22px;
     height: 22px;
     margin-left: 8px;

@@ -4,9 +4,10 @@ import "../style.css";
 import Tricare from "./Tricare.js";
 // import HoverExpand from "./HoverExpand.js";
 import Video from "./images/stream3.mp4";
-import logo from "./images/newlogo.png";
+import logo from "./images/logo.png";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
+
 
 function Dashboard() {
   const titleRef = useRef(null);

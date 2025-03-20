@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import "./Components/animations/useGsapAnimations";
-// import logo from "../src/Components/images/black.png";
+import logo from "../src/Components/images/logo.png";
+
 
 function Navbar() {
   return (
     <nav className="navbar  main">
       <div className="container  overflow-hidden">
         <Link className="logo-location  navbar-brand d-flex " to="/">
-          {/* <img className="tiny" src={logo} alt="logo" /> */}
+          <img className="tinyLogo" src={logo} alt="logo" />
           <span className=" nav-logo-text ">
             The Lemich Clinic &nbsp;
           </span>{" "}
