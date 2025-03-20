@@ -72,7 +72,7 @@ function Dashboard() {
                 <h1 className="align-content-center TLC barlow title2 ">THE LEMICH CLINIC</h1>
               </div>
               <div className="sub-head demo tomorrow ">
-                HOME OF MILITARY MENTAL HEALTH  <span className="hideMobile"> &nbsp;| Norfolk, VA</span>
+                HOME OF <span className="bg-white text-black px-1 ">MILITARY</span> MENTAL HEALTH  <span className="hideMobile"> &nbsp;| Norfolk, VA</span>
                 {/* <HoverExpand
                   triggerText={<>OF MILITARY MENTAL HEALTH</>}
                   expandedContent={
