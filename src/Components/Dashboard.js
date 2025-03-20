@@ -72,7 +72,7 @@ function Dashboard() {
                 <h1 className="align-content-center TLC barlow title2 ">THE LEMICH CLINIC</h1>
               </div>
               <div className="sub-head demo tomorrow ">
-                HOME OF <span className="bg-white text-black px-1 ">MILITARY</span> MENTAL HEALTH  <span className="hideMobile"> &nbsp;| Norfolk, VA</span>
+                HOME OF MILITARY MENTAL HEALTH  <span className="hideMobile"> &nbsp;| Norfolk, VA</span>
                 {/* <HoverExpand
                   triggerText={<>OF MILITARY MENTAL HEALTH</>}
                   expandedContent={
@@ -85,10 +85,10 @@ function Dashboard() {
               </div>
 
               <div className="btn accent-button text-center my-lg-4 my-md-3 my-sm-1 my-xs-1">
-                <i className="fas fa-phone-alt text-md accent"></i>
+                <i className="fas fa-phone-alt text-md "></i>
                 <a href="tel:+17575361233" className="phone-link mobile-bold">
                   <span className="hideMobile">&nbsp;</span>{" "}
-                  <span className="-med px-1">Call Us</span>
+                  <span className="px-1">Call Us</span>
                 </a>
               </div>
             </h1>
@@ -107,7 +107,7 @@ function Dashboard() {
                   <h2 className="mb-lg-5 mt-lg-2 mb-4 text-start green mobile-header-mission big-line">
                     <span>Our Mission</span>
                   </h2>
-                  <p className="text-justify mission-text">
+                  <p className="text-justify text-lg">
                     The Lemich Clinic for Military Mental Health was founded on the belief that everyone who serves should have access to high-quality, confidential mental health care. The majority of our clients are active duty sailors at Naval Station Norfolk. We also see service members from the other military installations in Virginia. We also work with military spouses and recent veterans. If you are a first responder or outside the military, contact us to see if you qualify for our program.
                   </p>
                 </div>

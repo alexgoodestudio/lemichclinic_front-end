@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Tomorrow";
-  src: url("./Components/fonts/Tomorrow-Medium.ttf") format("woff2");
+  src: url("./Components/fonts/Tomorrow-Regular.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -144,8 +144,8 @@ background-color: #F7F3F0;
 
 
 .tiny {
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
 }
 
@@ -204,14 +204,14 @@ background-color: #F7F3F0;
 }
 
 .TLC {
-  font-size: 33pt;
+  font-size: 35pt;
   font-weight: 550;
   letter-spacing: 1pt;
 }
 
 .sub-head{
   letter-spacing: 1.75px;
-  font-size: 12pt;
+  font-size: 13pt;
   font-weight: 200;
   color: #ffffff;
 }
@@ -557,7 +557,7 @@ color:#000000;
 }
 
 .accent-button:hover {
-  background-color: #4fb38c;
+  background-color: #114b35;
       color: #ffffff;
 }
 
@@ -737,7 +737,7 @@ li {
   }
 
   .nav-logo-text{
-    font-size: 15pt;
+    font-size: 13pt;
   }
 
   .margin-left-full-screen {
@@ -760,14 +760,14 @@ li {
   }
 
   .TLC {
-    font-size: 16pt;
+    font-size: 17.6pt;
     letter-spacing: 1pt;
     margin-left: 1.5px;
   }
 
   .sub-head{
     letter-spacing: 1.5px;
-    font-size: 8pt;
+    font-size: 9pt;
     margin-bottom: 20px;
     color: #ffffff;
   }
@@ -892,6 +892,7 @@ li {
   .TLC {
     font-size: 24pt;
   }
+
   .logo {
     width: 35px;
     height: 35px;
@@ -901,7 +902,7 @@ li {
     margin-left: 0px;
   }
   .sub-head{
-    font-size: 8pt;
+    font-size: 13pt;
   }
 }
 
@@ -915,11 +916,11 @@ li {
     font-weight: 600;
   }
   .TLC {
-    font-size: 24pt;
+    font-size: 28pt;
   }
 
   .sub-head{
-    font-size: 8pt;
+    font-size: 10pt;
   }
 
   .logo {
@@ -933,5 +934,16 @@ li {
 @media (hover: none) {
   .zoom.in-view {
     transform: scale(1.08);
+  }
+}
+
+@media (max-width: 375px) {
+
+  .TLC {
+    font-size: 15pt;
+  }
+  
+  .sub-head{
+    font-size: 8pt;
   }
 }
