@@ -7,7 +7,7 @@ function Tricare() {
       <div className="row p-4 bg-green py-5">
           <div className="col-lg-4"></div>
           <div className="col-lg-4 my-4">
-          <h2 className="text-white text-start">Tricare Accepted ❤️</h2>
+          <h2 className="text-white text-start">Tricare Accepted </h2>
           <p className=" text-white text-start text-lg ">
           Great news! We are in-network with Tricare. Active duty, please have your referral made to <span className="accent spaced-underline">The Lemich Clinic</span>. Dependents and retirees, no referral is needed. Just make an appointment, and we’ll take care of the rest.          </p> 
           </div>

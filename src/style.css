@@ -120,7 +120,10 @@ background-color: #F7F3F0;
 }
 
 .text-expand{
-  font-size: 14pt;
+  font-size: 10pt;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  padding-top: 4%;
 }
 
 .bottom-left {
@@ -201,15 +204,16 @@ background-color: #F7F3F0;
 }
 
 .TLC {
-  font-size: 37pt;
+  font-size: 33pt;
   font-weight: 550;
   letter-spacing: 1pt;
 }
 
 .sub-head{
   letter-spacing: 1.75px;
-  font-size: 19pt;
+  font-size: 12pt;
   font-weight: 200;
+  color: #d4e6fe;
 }
 
 
@@ -755,16 +759,16 @@ li {
   }
 
   .TLC {
-    font-size: 20pt;
+    font-size: 16pt;
     letter-spacing: 1pt;
     margin-left: 1.5px;
   }
 
   .sub-head{
     letter-spacing: 1.5px;
-    font-size: 10pt;
+    font-size: 8pt;
     margin-bottom: 20px;
-
+    color: #ffffff;
   }
 
   .margin-left-home {
@@ -885,7 +889,7 @@ li {
     font-weight: 600;
   }
   .TLC {
-    font-size: 28pt;
+    font-size: 24pt;
   }
   .logo {
     width: 35px;
@@ -896,7 +900,7 @@ li {
     margin-left: 0px;
   }
   .sub-head{
-    font-size: 15pt;
+    font-size: 8pt;
   }
 }
 
@@ -910,8 +914,13 @@ li {
     font-weight: 600;
   }
   .TLC {
-    font-size: 35pt;
+    font-size: 24pt;
   }
+
+  .sub-head{
+    font-size: 8pt;
+  }
+
   .logo {
     width: 35px;
     height: 35px;

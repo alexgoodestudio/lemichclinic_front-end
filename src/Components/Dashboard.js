@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import "../style.css";
 import Tricare from "./Tricare.js";
-import HoverExpand from "./HoverExpand.js";
+// import HoverExpand from "./HoverExpand.js";
 import Video from "./images/stream3.mp4";
 import logo from "./images/newlogo.png";
 import { TextPlugin } from "gsap/TextPlugin";
@@ -71,17 +71,17 @@ function Dashboard() {
                 />
                 <h1 className="align-content-center TLC barlow title2 ">THE LEMICH CLINIC</h1>
               </div>
-              <div className="sub-head demo tomorrow d-flex">
-                HOME&nbsp;
-                <HoverExpand
-                  triggerText={<>OF <span className="tomorrow">MILITARY</span> MENTAL</>}
+              <div className="sub-head demo tomorrow ">
+                HOME OF MILITARY MENTAL HEALTH  <span className="hideMobile"> &nbsp;| Norfolk, VA</span>
+                {/* <HoverExpand
+                  triggerText={<>OF MILITARY MENTAL HEALTH</>}
                   expandedContent={
                     <p className="text-expand">
                       Our military mental health services are designed to support active duty, spouses, and retirees with specialized care in Norfolk, Virginia.
                     </p>
                   }
-                />
-                &nbsp;HEALTH<span className="hideMobile">&nbsp;&nbsp;&nbsp;</span>
+                /> */}
+        
               </div>
 
               <div className="btn accent-button text-center my-lg-4 my-md-3 my-sm-1 my-xs-1">
