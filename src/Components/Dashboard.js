@@ -7,6 +7,7 @@ import Video from "./images/stream3.mp4";
 import logo from "./images/logo.png";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
+import TricareBackground from "./TricareBackground.js"
 
 
 function Dashboard() {
@@ -72,7 +73,7 @@ function Dashboard() {
                 />
                 <h1 className="align-content-center TLC barlow title2 ">THE LEMICH CLINIC</h1>
               </div>
-              <div className="sub-head demo tomorrow ">
+              <div className="sub-head demo tomorrow">
                 HOME OF MILITARY MENTAL HEALTH  <span className="hideMobile"> &nbsp;| Norfolk, VA</span>
                 {/* <HoverExpand
                   triggerText={<>OF MILITARY MENTAL HEALTH</>}
@@ -100,7 +101,7 @@ function Dashboard() {
       {videoLoaded && (
         <>
           {/* Mission Section */}
-          <div className="py-4 bg-gray-50">
+          <div className="py-4 bg-slate-50">
             <div className="container">
               <div className="row ">
                 <div className="col-lg-2"></div>
@@ -116,9 +117,9 @@ function Dashboard() {
               </div>
             </div>
           </div>
-
+          <TricareBackground/>
           {/* Features Section */}
-          <div className="bg-gray-50 pt-3">
+          <div className="bg-slate-50 pt-3">
             <div className="container mb-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
                 {[
@@ -131,12 +132,13 @@ function Dashboard() {
                     <div className="mb-4 mt-5">
                       <i className={`fas ${feature.icon} text-gray-600 fa-2x`}></i>
                     </div>
-                    <h2 className="text-xl mb-3">{feature.title}</h2>
+                    <h2 className="text-xl mb-3 ">{feature.title}</h2>
                     <p className="text-lg card-text mb-5">{feature.text}</p>
                   </div>
                 ))}
               </div>
             </div>
+
             <Tricare />
           </div>
         </>
