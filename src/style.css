@@ -141,6 +141,49 @@ background-color: #F7F3F0;
   border-top: 1px solid #ffffff;
   padding: 10px 0; /* Adds 10px spacing above and below the text */
 }
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Image styles */
+.service-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Zoom effect on hover (desktop) and scroll (mobile) */
+.service-card.in-view .service-image,
+.service-card:hover .service-image {
+  transform: scale(1.1);
+}
+
+/* Overlay styles */
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show overlay on hover (desktop) and scroll (mobile) */
+.service-card.in-view .service-overlay,
+.service-card:hover .service-overlay {
+  opacity: 1;
+}
 
 
 .tinyLogo {

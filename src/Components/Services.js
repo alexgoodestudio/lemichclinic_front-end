@@ -21,7 +21,26 @@ function Services() {
       },
       { threshold: 0.3 }
     );
-
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      const serviceCards = document.querySelectorAll(".service-card");
+    
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+            } else {
+              entry.target.classList.remove("in-view");
+            }
+          });
+        },
+        { threshold: 0.3 } // Trigger when 30% of the card is visible
+      );
+    
+      serviceCards.forEach((card) => observer.observe(card));
+    });
+    
     const elements = serviceRefs.current; // Store the ref value in a variable
 
     elements.forEach((ref) => {
