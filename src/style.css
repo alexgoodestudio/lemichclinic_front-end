@@ -704,7 +704,7 @@ li {
 }
 
 .huge-text {
-  font-size: 16vw;
+  font-size: 15.5vw;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.1); /* Light color for background effect */
   background-color: rgb(255, 255, 255);
