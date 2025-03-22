@@ -105,7 +105,7 @@ function Dashboard() {
             <div className="container">
               <div className="row ">
                 <div className="col-lg-2"></div>
-                <div className="col-lg-8 p-lg-3  p-4">
+                <div className="col-lg-8 p-lg-2  px-4">
                   <h2 className="mb-lg-5 mt-lg-2 mb-4 text-start green mobile-header-mission big-line">
                     <span>Our Mission</span>
                   </h2>

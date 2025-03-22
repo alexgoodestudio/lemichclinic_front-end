@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Tomorrow";
-  src: url("./Components/fonts/Tomorrow-Regular.ttf") format("woff2");
+  src: url("./Components/fonts/Tomorrow-Medium.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -379,6 +379,14 @@ padding: 2000%;
 .font-bold {
   font-weight: 500;
 }
+
+.huge-text {
+  font-size: 17vw;
+  color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+}
+
+
 .logo {
   width: 39px;
   height: 39px;
@@ -703,12 +711,7 @@ li {
   font-style: italic;
 }
 
-.huge-text {
-  font-size: 15.5vw;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.1); /* Light color for background effect */
-  background-color: rgb(255, 255, 255);
-}
+
 .bg-slate{
   background-color: #f8fafc
 }
@@ -741,7 +744,10 @@ li {
     transition: opacity 0.5s ease-in-out;
   }
 
-
+  .huge-text {
+    font-size: 19vw;
+    color: rgba(0, 0, 0, 0.1);
+  }
 
   .mission-text{
     font-size: 12pt;

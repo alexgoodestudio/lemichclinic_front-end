@@ -3,10 +3,10 @@ import "../style.css";
 
 function TricareBackground(){
     return (
-   <div className="container-fluid">
+   <div className="container">
       <div className="row">
         <div className="col-lg-12"></div>
-        <div className="huge-text container-fluid bg-slate pb-5 tomorrow">NORFOLK</div>
+        <div className="huge-text bg-slate pb-lg-5 pb-3 tomorrow">NORFOLK</div>
 
       </div>
     </div>
