@@ -10,18 +10,18 @@ function Tricare() {
         <div className="huge-text container-fluid hideMobile"></div>
 
         </div>
-        <div className="col-lg-4 py-5">
-          <div className="d-flex align-items-center">
+        <div className="col-lg-4 py-5  my-lg-5">
+          <div className=" d-flex  align-items-center mb-lg-3 mb-3">
             <img
               src={logo}
               alt="logo heart"
               className="logo-tricare rotate mb-lg-2 mb-2"
             />
-            <h2 className="text-white text-start">
-              Tricare <span className="secondary">Accepted</span>
+            <h2 className="text-white text-start tricare-header tomorrow ">
+              TRICARE <span className="secondary">ACCEPTED</span>
             </h2>
           </div>
-          <p className="text-white text-start text-md">
+          <p className="text-white text-start text-lg">
             Great news! We are in-network with Tricare. Active duty, please have
             your referral made to{" "}
             <span className="accent">The Lemich Clinic</span>. Dependents

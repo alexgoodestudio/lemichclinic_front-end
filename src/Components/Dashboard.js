@@ -24,7 +24,7 @@ function Dashboard() {
       const textTimeline = gsap.timeline({ repeat: -1, yoyo: false, onComplete: () => textTimeline.restart() });
 
       textTimeline
-        .to(".title2", { opacity: 1, duration: 2.5, delay: 1 }) 
+        .to(".title2", { opacity: 1, duration: 2, delay: 1 }) 
         .to(".title2", { opacity: 0, blur: 5, duration: 1.35 }) 
         .set(".title2", { text: "Take a Deep Breath" }) 
         .to(".title2", { opacity: 1, duration: 1.5 }) 

@@ -145,6 +145,7 @@ background-color: #F7F3F0;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Image styles */
@@ -155,7 +156,7 @@ background-color: #F7F3F0;
   transition: transform 0.5s ease-in-out;
 }
 
-/* Zoom effect on hover (desktop) and scroll (mobile) */
+/* Zoom effect when in view or hovered */
 .service-card.in-view .service-image,
 .service-card:hover .service-image {
   transform: scale(1.1);
@@ -179,7 +180,7 @@ background-color: #F7F3F0;
   align-items: center;
 }
 
-/* Show overlay on hover (desktop) and scroll (mobile) */
+/* Make overlay visible when card is in view or hovered */
 .service-card.in-view .service-overlay,
 .service-card:hover .service-overlay {
   opacity: 1;
@@ -392,6 +393,10 @@ padding: 2000%;
   align-items: center;
 }
 
+.tricare-header{
+  font-size: 28pt;
+}
+
 .logo {
   width: 39px;
   height: 39px;
@@ -400,8 +405,8 @@ padding: 2000%;
 }
 
 .logo-tricare {
-  width: 27px;
-  height: 27px;
+  width: 32px;
+  height: 32px;
   margin-right: 15px;
   vertical-align: middle;
 }
@@ -747,6 +752,18 @@ li {
   .service-overlay3 {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+  }
+
+  .logo-tricare {
+    width: 25px;
+    height: 25px;
+    margin-right: 13px;
+    vertical-align: middle;
+
+  }
+
+  .tricare-header{
+    font-size: 20pt;
   }
 
   .huge-text {
