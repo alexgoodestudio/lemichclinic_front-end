@@ -384,8 +384,13 @@ padding: 2000%;
   font-size: 17vw;
   color: rgba(0, 0, 0, 0.1);
   background-color: rgb(255, 255, 255);
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .logo {
   width: 39px;
