@@ -101,10 +101,10 @@ function Services() {
                   activeOverlay === "overlay1" ? "visible-overlay" : ""
                 }`}
               >
-                <h3 className="text-white text-xl font-semibold mb-2">
+                <h3 className="text-white text-xl font-semibold mb-4">
                   Summary Letters
                 </h3>
-                <p className="text-blue-white text-start">
+                <p className="text-white text-start p-3">
                   Only for Active Duty Military Service Members. This letter will outline the diagnosis that the client has, confirm and give a brief description of their session attendance, and give advice and confirmation of their clinical needs.
                   PRICE: $40/letter
                 </p>
@@ -126,10 +126,10 @@ function Services() {
                   activeOverlay === "overlay2" ? "visible-overlay" : ""
                 }`}
               >
-                <h3 className="text-white text-xl font-semibold mb-2">
+                <h3 className="text-white text-xl font-semibold mb-4">
                   NEXUS Letters
                 </h3>
-                <p className="text-blue-white text-start">
+                <p className="text-white text-start p-3">
                   Only for Veterans who have been out of Active Duty Military Service for more than one year. This letter is a compilation of your medical history that explains the connection between current medical condition(s) and military service.
                   PRICE: $180/letter
                 </p>
@@ -151,15 +151,25 @@ function Services() {
                   activeOverlay === "overlay3" ? "visible-overlay" : ""
                 }`}
               >
-                <h3 className="text-white text-xl font-semibold mb-2">
+                <h3 className="text-white text-xl font-semibold mb-4">
                   Group Therapy
                 </h3>
-                <ul className="text-blue-white text-start">
-                  <li><span>Active Duty Females:</span> Fridays 9am - 10am</li>
-                  <li><span>Military Spouse Support:</span> Thursdays 4pm - 5pm</li>
-                  <li><span>Couples Counseling:</span> Every other Thursday 5pm - 6:30pm</li>
-                  <li><span>Betrayed Partners:</span> Mondays 12pm - 1pm</li>
-                  <li><span>Men's Relationship Skills:</span> Every other Thursday 5pm - 6:30pm</li>
+                <ul className="list-none text-blue-white text-sm text-start pe-3 ps-1">
+                  <li className="border-b border-gray-300 pb-2 mb-2">
+                    <span className="bold px-1 py-1 rounded ">Active Duty Females:</span> Fridays <span className="italics-spaced"> <span className="bold">|</span> 9am - 10am</span>
+                  </li>
+                  <li className="border-b border-gray-300 pb-2 mb-2">
+                  <span className="bold px-1 py-1 rounded ">Military Spouse Support:</span> Thursdays <span className="italics-spaced"> <span className="bold">|</span> 4pm - 5pm</span>
+                  </li>
+                  <li className="border-b border-gray-300 pb-2 mb-2">
+                  <span className="bold px-1 py-1 rounded ">Couples Counseling:</span> Every other Thursday <span className="italics-spaced"> <span className="bold">|</span> 5pm - 6:30pm</span>
+                  </li>
+                  <li className="border-b border-gray-300 pb-2 mb-2">
+                  <span className="bold px-1 py-1 rounded ">Betrayed Partners:</span> Mondays><span className="italics-spaced"> <span className="bold">|</span> 12pm - 1pm</span>
+                  </li>
+                  <li className="pb-2">
+                  <span className="bold px-1 py-1">Men's Relationship Skills:</span> Every other Thursday <span className="italics-spaced"> <span className="bold">|</span> 5pm - 6:30pm</span>
+                  </li>
                 </ul>
               </div>
             </div>
