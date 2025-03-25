@@ -165,7 +165,7 @@ function Services() {
                   <span className="bold px-1 py-1 rounded ">Couples Counseling:</span> Every other Thursday <span className="italics-spaced"> <span className="bold">|</span> 5pm - 6:30pm</span>
                   </li>
                   <li className="border-b border-gray-300 pb-2 mb-2">
-                  <span className="bold px-1 py-1 rounded ">Betrayed Partners:</span> Mondays><span className="italics-spaced"> <span className="bold">|</span> 12pm - 1pm</span>
+                  <span className="bold px-1 py-1 rounded ">Betrayed Partners:</span> Mondays<span className="italics-spaced"> <span className="bold">|</span> 12pm - 1pm</span>
                   </li>
                   <li className="pb-2">
                   <span className="bold px-1 py-1">Men's Relationship Skills:</span> Every other Thursday <span className="italics-spaced"> <span className="bold">|</span> 5pm - 6:30pm</span>
