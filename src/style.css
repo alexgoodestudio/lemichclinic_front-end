@@ -156,7 +156,7 @@ background-color: #F7F3F0;
   transition: transform 0.5s ease-in-out;
 }
 
-/* Zoom effect when in view or hovered */
+/* Ensure zoom works on scroll for mobile */
 .service-card.in-view .service-image,
 .service-card:hover .service-image {
   transform: scale(1.1);
@@ -185,7 +185,6 @@ background-color: #F7F3F0;
 .service-card:hover .service-overlay {
   opacity: 1;
 }
-
 
 .tinyLogo {
   width: 21px;
