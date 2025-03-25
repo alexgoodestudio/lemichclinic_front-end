@@ -747,11 +747,15 @@ li {
 }
 
 @media (max-width: 768px) {
-  .service-overlay1,
-  .service-overlay2,
-  .service-overlay3 {
+  .service-overlay {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+  }
+
+  .visible-overlay {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .logo-tricare {
@@ -794,10 +798,6 @@ li {
   .mission {
     font-size: 14pt;
     padding: 4%;
-  }
-
-  .visible-overlay {
-    opacity: 1;
   }
 
   .footer-text-1 {
