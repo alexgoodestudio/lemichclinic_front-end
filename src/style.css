@@ -180,9 +180,10 @@ background-color: #F7F3F0;
   align-items: center;
 }
 
-/* Make overlay visible when card is in view or hovered */
-.service-card.in-view .service-overlay,
-.service-card:hover .service-overlay {
+
+
+/* Make overlay visible when the card is in view or hovered */
+.service-card.in-view .service-overlay {
   opacity: 1;
 }
 

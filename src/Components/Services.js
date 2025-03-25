@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import img1 from "./images/1.avif";
 import img2 from "./images/2.avif";
@@ -6,40 +6,52 @@ import img3 from "./images/3.avif";
 import "../style.css";
 
 function Services() {
-  const [activeOverlay, setActiveOverlay] = useState(null);
+  const activeOverlay = useRef("overlay1"); // Initialize with the first overlay (e.g., "overlay1")
   const serviceRefs = useRef([]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  
+
     const observer = new IntersectionObserver(
       (entries) => {
         let maxVisibility = 0;
         let mostVisibleElement = null;
-  
+
+        // Iterate over the entries
         entries.forEach((entry) => {
+          console.log(entry.target, entry.intersectionRatio); // Check the intersection ratio
+
+          // Update the most visible element if the current one is more visible
           if (entry.isIntersecting && entry.intersectionRatio > maxVisibility) {
             maxVisibility = entry.intersectionRatio;
             mostVisibleElement = entry.target;
           }
         });
-  
-        // Remove .in-view from all cards
-        serviceRefs.current.forEach((el) => el?.classList.remove("in-view"));
-  
+
+        // Remove .in-view class from all cards
+        serviceRefs.current.forEach((el) => {
+          if (el) el.classList.remove("in-view");
+        });
+
+        // If there's a most visible element, update the overlay ref and add the .in-view class
         if (mostVisibleElement) {
-          setActiveOverlay(mostVisibleElement.getAttribute("data-overlay"));
-          mostVisibleElement.classList.add("in-view"); // Ensure zoom effect applies
+          const overlayId = mostVisibleElement.getAttribute("data-overlay");
+          if (activeOverlay.current !== overlayId) {
+            activeOverlay.current = overlayId; // Update the active overlay
+            mostVisibleElement.classList.add("in-view");
+          }
         }
       },
       { threshold: [0.3, 0.5, 0.7, 1] }
     );
-  
+
+    // Start observing each service card
     const elements = serviceRefs.current;
     elements.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
-  
+
+    // Cleanup observer on component unmount
     return () => {
       elements.forEach((ref) => {
         if (ref) observer.unobserve(ref);
@@ -47,7 +59,7 @@ function Services() {
       observer.disconnect();
     };
   }, []);
-  
+
   return (
     <div className="d-flex flex-column">
       <Helmet>
@@ -80,7 +92,7 @@ function Services() {
           <div className="col-lg-4 col-md-6 mb-3">
             <div className="service-card" data-overlay="overlay1" ref={(el) => (serviceRefs.current[0] = el)}>
               <img src={img1} alt="Service 1" className="service-image" />
-              <div className={`service-overlay service-overlay1 ${activeOverlay === "overlay1" ? "visible-overlay" : ""}`}>
+              <div className={`service-overlay service-overlay1 ${activeOverlay.current === "overlay1" ? "visible-overlay" : ""}`}>
                 <h3 className="text-white text-xl font-semibold mb-2">
                   Summary Letters
                 </h3>
@@ -96,7 +108,7 @@ function Services() {
           <div className="col-lg-4 col-md-6 mb-3">
             <div className="service-card" data-overlay="overlay2" ref={(el) => (serviceRefs.current[1] = el)}>
               <img src={img2} alt="Service 2" className="service-image" />
-              <div className={`service-overlay service-overlay2 ${activeOverlay === "overlay2" ? "visible-overlay" : ""}`}>
+              <div className={`service-overlay service-overlay2 ${activeOverlay.current === "overlay2" ? "visible-overlay" : ""}`}>
                 <h3 className="text-white text-xl font-semibold mb-2">
                   NEXUS Letters
                 </h3>
@@ -112,7 +124,7 @@ function Services() {
           <div className="col-lg-4 col-md-6 mb-3">
             <div className="service-card" data-overlay="overlay3" ref={(el) => (serviceRefs.current[2] = el)}>
               <img src={img3} alt="Service 3" className="service-image" />
-              <div className={`service-overlay service-overlay3 ${activeOverlay === "overlay3" ? "visible-overlay" : ""}`}>
+              <div className={`service-overlay service-overlay3 ${activeOverlay.current === "overlay3" ? "visible-overlay" : ""}`}>
                 <h3 className="text-white text-xl font-semibold mb-2">
                   Group Therapy
                 </h3>

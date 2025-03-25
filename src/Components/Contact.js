@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 function ContactInfo({ icon, label, value }) {
 
   return (
-    <li className="flex items-center text-lg space-x-4 p-3 rounded-lg bg-gray-100 hover:bg-blue-100 transition-shadow duration-200 shadow-sm hover:shadow-md">
+    <li className="flex items-center text-md space-x-4 p-3 rounded-lg bg-gray-100 hover:bg-blue-100 transition-shadow duration-200 shadow-sm hover:shadow-md">
       <div className="text-blue-500 text-xl">{icon}</div>
       <span className="text-gray-800">
         <strong>{label}:</strong> {value}
@@ -95,7 +95,7 @@ function Contact({ contactId = null }) {
     <div className="py-5 ">
       <div className="container mx-auto px-6 lg:px-12">
 
-      <h1 className=" text-4xl  text-start text-gray-800 mb-5">
+      <h1 className=" text-4xl text-start text-gray-800 mb-5">
         Get in Touch with Us.
       </h1>
 
