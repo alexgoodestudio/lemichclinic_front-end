@@ -145,7 +145,6 @@ background-color: #F7F3F0;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
 }
 
 /* Image styles */
@@ -156,7 +155,7 @@ background-color: #F7F3F0;
   transition: transform 0.5s ease-in-out;
 }
 
-/* Ensure zoom works on scroll for mobile */
+/* Zoom effect on hover (desktop) and scroll (mobile) */
 .service-card.in-view .service-image,
 .service-card:hover .service-image {
   transform: scale(1.1);
@@ -180,12 +179,13 @@ background-color: #F7F3F0;
   align-items: center;
 }
 
-
-
-/* Make overlay visible when the card is in view or hovered */
-.service-card.in-view .service-overlay {
+/* Show overlay on hover (desktop) and scroll (mobile) */
+.service-card.in-view .service-overlay,
+.service-card:hover .service-overlay {
   opacity: 1;
+  
 }
+
 
 .tinyLogo {
   width: 21px;
