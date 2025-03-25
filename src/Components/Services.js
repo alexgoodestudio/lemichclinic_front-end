@@ -33,7 +33,7 @@ function Services() {
           setActiveOverlay(closestEntry.target.getAttribute("data-overlay"));
         }
       },
-      { threshold: [0.1, 0.3, 0.5, 0.7, 1], rootMargin: "0px 0px -25% 0px" }
+      { threshold: [0.1, 0.6, 0.5, 0.7, 1],rootMargin: "0px 0px -40% 0px" }
     );
   
     const elements = [...serviceRefs.current];
