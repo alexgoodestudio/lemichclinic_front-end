@@ -421,9 +421,7 @@ padding: 2000%;
 }
 
 .card-text {
-  text-align: justify;
-  text-justify: inter-word;
-  font-size: 12pt;
+  font-size: 10.75pt;
 }
 
 .service-image {
@@ -706,6 +704,8 @@ color:#000000;
 }
 
 @media (max-width: 768px) {
+  
+
   .service-overlay {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -751,7 +751,7 @@ color:#000000;
   }
 
   .card-text {
-    font-size: 12pt;
+    font-size: 10.5pt;
   }
 
   .mission {

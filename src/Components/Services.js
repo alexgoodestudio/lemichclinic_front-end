@@ -15,8 +15,8 @@ function Services() {
     const observer = new IntersectionObserver(
       (entries) => {
         let closestEntry = null;
-        let minDistance = window.innerHeight; // Start with a large number
-  
+        let minDistance = window.innerHeight; 
+        
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const rect = entry.boundingClientRect;
@@ -154,21 +154,21 @@ function Services() {
                 <h3 className="text-white text-xl font-semibold mb-4">
                   Group Therapy
                 </h3>
-                <ul className="list-none text-blue-white text-sm text-start pe-3 ps-1">
+                <ul className="list-none text-blue-white text-sm text-start pe-3 ps-3">
                   <li className="border-b border-gray-300 pb-2 mb-2">
-                    <span className="bold px-1 py-1 rounded ">Active Duty Females:</span> Fridays <span className="italics-spaced"> <span className="bold">|</span> 9am - 10am</span>
+                    <span className="bold  rounded ">Active Duty Females:</span> Fridays <span className="italics-spaced"> <span className="bold">|</span> 9am - 10am</span>
                   </li>
                   <li className="border-b border-gray-300 pb-2 mb-2">
-                  <span className="bold px-1 py-1 rounded ">Military Spouse Support:</span> Thursdays <span className="italics-spaced"> <span className="bold">|</span> 4pm - 5pm</span>
+                  <span className="bold  rounded ">Military Spouse Support:</span> Thursdays <span className="italics-spaced"> <span className="bold">|</span> 4pm - 5pm</span>
                   </li>
                   <li className="border-b border-gray-300 pb-2 mb-2">
-                  <span className="bold px-1 py-1 rounded ">Couples Counseling:</span> Every other Thursday <span className="italics-spaced"> <span className="bold">|</span> 5pm - 6:30pm</span>
+                  <span className="bold  rounded ">Couples Counseling:</span> Every other Thursday <span className="italics-spaced"> <span className="bold">|</span> 5pm - 6:30pm</span>
                   </li>
                   <li className="border-b border-gray-300 pb-2 mb-2">
-                  <span className="bold px-1 py-1 rounded ">Betrayed Partners:</span> Mondays<span className="italics-spaced"> <span className="bold">|</span> 12pm - 1pm</span>
+                  <span className="bold  rounded ">Betrayed Partners:</span> Mondays<span className="italics-spaced"> <span className="bold">|</span> 12pm - 1pm</span>
                   </li>
                   <li className="pb-2">
-                  <span className="bold px-1 py-1">Men's Relationship Skills:</span> Every other Thursday <span className="italics-spaced"> <span className="bold">|</span> 5pm - 6:30pm</span>
+                  <span className="bold ">Men's Relationship Skills:</span> Every other Thursday <span className="italics-spaced"> <span className="bold">|</span> 5pm - 6:30pm</span>
                   </li>
                 </ul>
               </div>
