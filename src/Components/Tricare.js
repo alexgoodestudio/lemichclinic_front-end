@@ -6,11 +6,11 @@ function Tricare() {
   return (
     <div className="container-fluid position-relative">
       <div className="row p-4 bg-tricare1 position-relative">
-        <div className="col-lg-4">
+        <div className="col-lg-3">
         <div className="huge-text container-fluid hideMobile"></div>
 
         </div>
-        <div className="col-lg-4 py-5  my-lg-5">
+        <div className="col-lg-6 py-5  my-lg-5">
           <div className=" d-flex  align-items-center mb-lg-3 mb-3">
             <img
               src={logo}
@@ -29,7 +29,7 @@ function Tricare() {
             we’ll take care of the rest.
           </p>
         </div>
-        <div className="col-lg-4"></div>
+        <div className="col-lg-3"></div>
       </div>
     </div>
   );

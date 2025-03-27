@@ -52,12 +52,13 @@ function Insurance() {
           {/* Text Content Column */}
           <div className="col-lg-6 text-justify p-4 col-md-12">
             <h2 className="text-2xl font-semibold mb-3 ">Active Duty</h2>
-            <ul className=" list-unstyled text-gray-700">
-              <li>
+            <ul className=" text-gray-700 me-lg-5 me-4">
+              <li className="mb-2">
                 <strong>Tricare:</strong> Must have an active referral on file
                 for counseling prior to scheduling.
               </li>
-              <li>
+              
+              <li className="mb-2">
                 <strong>Private Pay Options:</strong> If you would prefer the
                 highest level of confidentiality, we can work with you on a
                 private pay option. Prices vary by clinician and session length.
@@ -68,30 +69,34 @@ function Insurance() {
             <h2 className="text-2xl font-semibold mb-3">
               Veterans and Dependents
             </h2>
-            <ul className="text-justify list-unstyled text-gray-700">
-              <li>
+            <ul className="text-justify  text-gray-700 me-lg-5 me-4">
+              <li className="mb-2">
                 <strong>Tricare:</strong> A referral is not required for Tricare
                 Prime or Select. Provide your benefits number when completing
                 your New Client Paperwork.
               </li>
-              <li>
+              
+              <li className="mb-2">
                 <strong>Veterans Affairs:</strong> A referral is required from
                 the VA prior to scheduling.
               </li>
-              <li>
+              
+              <li className="mb-2">
                 <strong>Other Insurance:</strong> Veterans with insurance other
                 than Tricare, call our clinic to inquire about in-network
                 benefits.
               </li>
-              <li>
+              
+              <li className="mb-2">
                 <strong>Private Pay Options:</strong> If you would prefer the
                 highest level of confidentiality, we can work with you on a
                 private pay option. Prices vary by clinician and session length.
               </li>
-              <li className="mt-5 border rounded bg-slate-100 p-4">
-              Are you Active Duty and not able to see your PCM quickly to get a referral? AD may present to the Care Connect station at the Behavioral Health Department in Building 3 at NMCP to meet with a Behavioral Health Technician to get a referral for mental health counseling. The Care Connect station is open Monday-Friday from 8:30-10:30. Once the referral is created, the service member will need to call Tricare to have the provider updated to The Lemich Clinic.
-              </li>
+             
             </ul>
+            <div className="mt-5 m-4 border rounded bg-slate-100 p-3">
+              Are you Active Duty and not able to see your PCM quickly to get a referral? AD may present to the Care Connect station at the Behavioral Health Department in Building 3 at NMCP to meet with a Behavioral Health Technician to get a referral for mental health counseling. The Care Connect station is open Monday-Friday from 8:30-10:30. Once the referral is created, the service member will need to call Tricare to have the provider updated to The Lemich Clinic.
+              </div>
           </div>
         </div>
       </div>
