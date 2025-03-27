@@ -236,6 +236,10 @@ background-color: #F7F3F0;
   background-color: #10685a;
 }
 
+.process-header{
+  text-align: start;
+}
+
 .tricare {
 padding: 2000%;
 }
@@ -344,8 +348,10 @@ padding: 2000%;
 }
 
 .huge-text {
-  font-size: 17vw;
+  font-size: 16vw;
   color: rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  margin-bottom: 40px;
   background-color: rgb(255, 255, 255);
   text-align: center;
   white-space: nowrap;
@@ -398,6 +404,12 @@ padding: 2000%;
 .spaced-underline {
   text-decoration: underline 1px;
   text-underline-offset: 2px;
+}
+
+.border-top-bottom {
+  border-top: 2px solid #ccc;  /* Adjust thickness and color as needed */
+  /* border-bottom: 2px solid #ccc; */
+  padding: 10px 0;  /* Optional: Adds spacing inside the borders */
 }
 
 .reduce {
@@ -742,7 +754,16 @@ color:#000000;
     display: none;
   }
 
+  .process-header{
+    text-align: start;
+    font-size: 16pt;
+    margin-left: 10px;
+  }
 
+  .process-body{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   .hometype {
     font-size: 15pt;
