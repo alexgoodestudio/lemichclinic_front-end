@@ -113,8 +113,6 @@ background-color: #F7F3F0;
   color: #99efce;
 }
 
-
-
 .smallText {
   font-size: 10pt;
 }
@@ -361,8 +359,9 @@ padding: 2000%;
   align-items: center;
 }
 
-.tricare-header{
-  font-size: 28pt;
+.border-left {
+  border-left: 4px solid #dde4fc;; /* Blue left border */
+  padding-left: 16px; /* Adds spacing so text doesn’t stick to the border */
 }
 
 .logo {
@@ -373,15 +372,23 @@ padding: 2000%;
 }
 
 .logo-tricare {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   margin-right: 15px;
   vertical-align: middle;
+}
+
+.tricare-header{
+  font-size: 26pt;
 }
 
 .d-flex {
   display: flex;
   align-items: center; /* Vertically centers the content */
+}
+
+.check{
+  font-size: 34pt;
 }
 
 .footer_logo {
@@ -738,7 +745,8 @@ color:#000000;
   }
 
   .tricare-header{
-    font-size: 20pt;
+    font-size: 26pt; 
+    margin-bottom: 10px;
   }
 
   .huge-text {
@@ -756,7 +764,7 @@ color:#000000;
 
   .process-header{
     text-align: start;
-    font-size: 16pt;
+    font-size: 20pt;
     margin-left: 10px;
   }
 

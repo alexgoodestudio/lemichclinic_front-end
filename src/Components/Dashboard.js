@@ -140,7 +140,7 @@ function Dashboard() {
               <div className="mb-5 ">
 
                 <h2 className="mb-3 process-header barlow green">
-                  OUR PROCESS,{" "}
+                 {/* <span className="hideMobile"> OUR PROCESS,</span>{" "} */}
                   <span className="text-gray-600 "> BUILT FOR YOU</span>{" "}
                 </h2>
                 <p className="text-justify text-gray-600 border-top-bottom  process-body text-md pt-4">

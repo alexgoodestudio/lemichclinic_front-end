@@ -7,6 +7,7 @@ function Footer() {
       <div className="col-lg-3"></div>
       <div className="col-lg-6">
       <p className="footer-text-1">© The Lemich Clinic | Norfolk, Virginia </p>
+
       <p className="footer-text-2">
         Providing expert military mental health counseling services in Norfolk,
         Virginia. {" "}
