@@ -69,7 +69,7 @@ function Dashboard() {
             <div className="absolute inset-0  bg-opacity-40"></div>
             <h1
               ref={titleRef}
-              className="relative z-10  p-5 slide-text margin-left-home text-white ipad mobile-center-text textMobile text-start"
+              className="relative z-10  p-5 slide-text  text-white ipad mobile-center-text textMobile text-start"
             >
             
               <div className="d-flex ">

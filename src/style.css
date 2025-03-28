@@ -260,8 +260,8 @@ padding: 2000%;
 }
 
 .sub-head{
-  letter-spacing: 1.75px;
-  font-size: 13pt;
+  letter-spacing: 1.65px;
+  font-size: 14pt;
   font-weight: 200;
   color: #ffffff;
 }
@@ -374,7 +374,7 @@ padding: 2000%;
 .logo {
   width: 39px;
   height: 39px;
-  margin-right: 15px;
+  margin-right: 20px;
   vertical-align: middle;
 }
 
@@ -583,9 +583,8 @@ color:#000000;
 }
 
 .accent-button {
-  background-color: #d4e6fe;
-  color: #033982;
-
+  background-color: #5bc099;
+  color: #ffffff;
   border-radius: 25px;
   padding-left: 16px;
   padding-right: 16px;
@@ -595,7 +594,7 @@ color:#000000;
 }
 
 .accent-button:hover {
-  background-color: #5bc099;
+  background-color: #309e74;
   color: #ffffff;
 }
 
@@ -992,7 +991,7 @@ color:#000000;
   .logo {
     width: 35px;
     height: 35px;
-    margin-right: 7px;
+    margin-right: 17px;
   }
 }
 
