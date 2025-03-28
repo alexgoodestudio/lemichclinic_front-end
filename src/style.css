@@ -825,20 +825,20 @@ color:#000000;
   }
 
   .TLC {
-    font-size: 18.6pt;
+    font-size: 18.25pt;
     letter-spacing: 1pt;
     margin-left: 1.8px;
   }
 
   .sub-head{
-    letter-spacing: 1.25px;
-    font-size: 9.7pt;
+    letter-spacing: 1.35px;
+    font-size: 9.53pt;
     margin-bottom: 20px;
     color: #ffffff;
   }
 
   .margin-left-home {
-    margin-left: 24px;
+    margin-left: 0px;
   }
 
 
@@ -889,10 +889,11 @@ color:#000000;
     border-bottom-left-radius: 10px;
     padding: 30px;
   }
+
   .logo {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
+    width: 21.5px;
+    height: 21.5px;
+    margin-right: 7px;
   }
   .video-background {
     width: 100%;

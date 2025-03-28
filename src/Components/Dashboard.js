@@ -39,7 +39,7 @@ function Dashboard() {
   }, [videoLoaded]);
 
   return (
-    <div className="bg-slate-50 overflow-hidden">
+    <div className="bg-slate-50 overflow-hidden ">
       <Helmet>
         <meta
           name="description"
@@ -66,12 +66,13 @@ function Dashboard() {
 
         {videoLoaded && (
           <div className="col-lg-6 col-12 relative h-full flex justify-center items-center">
-            <div className="absolute inset-0 bg-opacity-40"></div>
+            <div className="absolute inset-0  bg-opacity-40"></div>
             <h1
               ref={titleRef}
-              className="relative z-10 p-5 slide-text margin-left-home text-white ipad mobile-center-text textMobile text-start"
+              className="relative z-10  p-5 slide-text margin-left-home text-white ipad mobile-center-text textMobile text-start"
             >
-              <div className="d-flex">
+          
+              <div className="d-flex ">
                 <img
                   src={logo}
                   alt="logo heart"
@@ -81,9 +82,12 @@ function Dashboard() {
                   THE LEMICH CLINIC
                 </h1>
               </div>
+            
               <div className="sub-head demo tomorrow">
                 HOME OF MILITARY MENTAL HEALTH{" "}
+                </div>
                 <span className="hideMobile"> &nbsp;| Norfolk, VA</span>
+                
                 {/* <HoverExpand
                   triggerText={<>OF MILITARY MENTAL HEALTH</>}
                   expandedContent={
@@ -92,7 +96,7 @@ function Dashboard() {
                     </p>
                   }
                 /> */}
-              </div>
+             
 
               <div className="btn accent-button text-center my-lg-4 my-md-3 my-sm-1 my-xs-1">
                 <i className="fas fa-phone-alt text-md "></i>
