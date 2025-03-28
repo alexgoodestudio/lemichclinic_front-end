@@ -71,7 +71,7 @@ function Dashboard() {
               ref={titleRef}
               className="relative z-10  p-5 slide-text margin-left-home text-white ipad mobile-center-text textMobile text-start"
             >
-          
+            
               <div className="d-flex ">
                 <img
                   src={logo}
@@ -85,8 +85,8 @@ function Dashboard() {
             
               <div className="sub-head demo tomorrow">
                 HOME OF MILITARY MENTAL HEALTH{" "}
-                </div>
                 <span className="hideMobile"> &nbsp;| Norfolk, VA</span>
+                </div>
                 
                 {/* <HoverExpand
                   triggerText={<>OF MILITARY MENTAL HEALTH</>}
@@ -96,7 +96,7 @@ function Dashboard() {
                     </p>
                   }
                 /> */}
-             
+           
 
               <div className="btn accent-button text-center my-lg-4 my-md-3 my-sm-1 my-xs-1">
                 <i className="fas fa-phone-alt text-md "></i>
