@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Services from "./Components/Services";
 import Dashboard from "./Components/Dashboard"; 
 import OurTeam from "./Components/Team";
@@ -11,6 +11,13 @@ import ContactEditForm from "./Components/ContactEditForm";
 import "./App.css";
 
 function WebRoutes() {
+  const location = useLocation();
+
+  // Scroll to top without animation on route change
+  useEffect(() => {
+    window.scrollTo(0, 0); // This makes sure the page loads at the top on route change
+  }, [location]);
+
   return (
     <Routes>
       <Route path="/" element={<div className="fade-in"><Dashboard /></div>} /> 
