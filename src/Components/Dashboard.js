@@ -143,9 +143,8 @@ function Dashboard() {
             <div className="container mb-5">
               <div className="mb-5 ">
 
-                <h2 className="mb-3 process-header barlow green">
-                 {/* <span className="hideMobile"> OUR PROCESS,</span>{" "} */}
-                  <span className="text-gray-600 "> BUILT FOR YOU</span>{" "}
+                <h2 className="mb-3 process-header barlow green ">
+                  <span className="text-gray-600 ms-2"> BUILT FOR YOU</span>{" "}
                 </h2>
                 <p className="text-justify text-gray-600 border-top-bottom  process-body text-md pt-4">
                   Every service member’s journey is different, and so are their
@@ -156,7 +155,7 @@ function Dashboard() {
                   mission-ready.
                 </p>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
+              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
                 {[
                   {
                     icon: "fa-user-circle",
@@ -181,15 +180,15 @@ function Dashboard() {
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className="text-center p-3 border rounded mb-lg-3 "
+                    className=" p-lg-3 p-2 border rounded mb-lg-3 "
                   >
-                    <div className="mb-4 mt-5">
+                    <div className="mb-4 mt-lg-5 mt-4">
                       <i
                         className={`fas ${feature.icon} text-gray-600 fa-2x`}
                       ></i>
                     </div>
-                    <h2 className="text-xl mb-3 ">{feature.title}</h2>
-                    <p className="text-lg card-text mb-5">{feature.text}</p>
+                    <h2 className=" spaced-underline-card-header text-sm  md:text-xl mb-3 ">{feature.title}</h2>
+                    <p className="text-lg card-text mb-lg-5 mb-2">{feature.text}</p>
                   </div>
                 ))}
               </div>

@@ -416,10 +416,14 @@ padding: 2000%;
   text-underline-offset: 2px;
 }
 
+.spaced-underline-card-header{
+  text-decoration: none;
+}
+
 .border-top-bottom {
   border-top: 2px solid #ccc;  /* Adjust thickness and color as needed */
   /* border-bottom: 2px solid #ccc; */
-  padding: 10px 0;  /* Optional: Adds spacing inside the borders */
+  padding: 10px ;  /* Optional: Adds spacing inside the borders */
 }
 
 .reduce {
@@ -444,6 +448,7 @@ padding: 2000%;
 
 .card-text {
   font-size: 10.75pt;
+  text-align: center;
 }
 
 .service-image {
@@ -726,7 +731,11 @@ color:#000000;
 
 @media (max-width: 768px) {
   
-
+  .spaced-underline-card-header{
+    text-decoration: underline 1px;
+    text-underline-offset: 2px;
+  }
+  
   .service-overlay {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -785,7 +794,8 @@ color:#000000;
   }
 
   .card-text {
-    font-size: 10.5pt;
+    font-size: 8.5pt;
+    text-align: center;
   }
 
   .mission {
