@@ -457,7 +457,7 @@ padding: 2000%;
 .border-top-bottom {
   border-top: 2px solid #ccc;  /* Adjust thickness and color as needed */
   /* border-bottom: 2px solid #ccc; */
-  padding: 10px ;  /* Optional: Adds spacing inside the borders */
+  padding: 1px ;  /* Optional: Adds spacing inside the borders */
 }
 
 .reduce {
@@ -569,25 +569,6 @@ padding: 2000%;
   color: #dde4fc;
 }
 
-.bgp {
-  position: relative;
-  display: inline-block;
-}
-
-.bgp::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -7px;
-  width: 0;
-  height: 3.25px;
-  background-color: currentColor; /* Uses text color */
-  transition: width 0.3s ease-in-out;
-}
-
-.bgp:hover::after {
-  width: 100%;
-}
 
 .insurance-image {
   width: 80%;
@@ -841,8 +822,8 @@ color:#000000;
   }
 
   .process-body{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
   .hometype {
