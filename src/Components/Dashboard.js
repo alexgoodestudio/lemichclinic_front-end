@@ -27,7 +27,7 @@ function Dashboard() {
       });
 
       textTimeline
-        .to(".title2", { opacity: 1, duration: 2, delay: 1 })
+        .to(".title2", { opacity: 1, duration: 1, delay: 1 })
         .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
         .set(".title2", { text: "Take a Deep Breath" })
         .to(".title2", { opacity: 1, duration: 1.5 })
@@ -180,7 +180,7 @@ function Dashboard() {
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className=" p-lg-3 p-2 border rounded mb-lg-3 "
+                    className=" p-lg-3 p-2 service-hover border rounded mb-lg-3 "
                   >
                     <div className="mb-4 mt-lg-5 mt-4">
                       <i

@@ -261,9 +261,13 @@ padding: 2000%;
 
 .sub-head{
   letter-spacing: 1.65px;
-  font-size: 14pt;
+  font-size: 14.5pt;
   font-weight: 200;
   color: #ffffff;
+}
+
+.side-note{
+  text-align: center;
 }
 
 
@@ -368,8 +372,8 @@ padding: 2000%;
 }
 
 .huge-text {
-  font-size: 16vw;
-  color: rgba(0, 0, 0, 0.1);
+  font-size: 16.5vw;
+  color: rgba(0, 0, 0, 0.08);
   margin-top: 35px;
   margin-bottom: 40px;
   background-color: rgb(255, 255, 255);
@@ -380,6 +384,21 @@ padding: 2000%;
   justify-content: center;
   align-items: center;
 }
+
+.service-hover:nth-child(1):hover {
+  background-color: #f1f4fc;
+}
+
+.service-hover:nth-child(2):hover {
+  background-color: #f1f4fc;}
+
+.service-hover:nth-child(3):hover {
+  background-color: #f1f4fc;}
+
+.service-hover:nth-child(4):hover {
+  background-color: #f1f4fc;}
+
+
 
 .border-left {
   border-left: 4px solid #dde4fc;; /* Blue left border */
@@ -548,6 +567,26 @@ padding: 2000%;
 
 .bgp {
   color: #dde4fc;
+}
+
+.bgp {
+  position: relative;
+  display: inline-block;
+}
+
+.bgp::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 3.25px;
+  background-color: currentColor; /* Uses text color */
+  transition: width 0.3s ease-in-out;
+}
+
+.bgp:hover::after {
+  width: 100%;
 }
 
 .insurance-image {
@@ -750,6 +789,10 @@ color:#000000;
     text-decoration: underline 1px;
     text-underline-offset: 2px;
   }
+
+  .side-note{
+    text-align: start;
+  }
   
   .service-overlay {
     opacity: 0;
@@ -779,7 +822,7 @@ color:#000000;
   }
 
   .huge-text {
-    font-size: 19vw;
+    font-size: 20vw;
     color: rgba(0, 0, 0, 0.1);
   }
 
