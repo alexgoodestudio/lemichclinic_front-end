@@ -65,11 +65,11 @@ function Dashboard() {
         </video>
 
         {videoLoaded && (
-          <div className="col-lg-6 col-12 relative h-full flex justify-center items-center">
-            <div className="absolute inset-0  bg-opacity-40"></div>
+          <div className="col-lg-6 ms-lg-4 col-12 relative h-full flex justify-center items-center">
+            <div className="absolute inset-0"></div>
             <h1
               ref={titleRef}
-              className="relative z-10  p-5 slide-text  text-white ipad mobile-center-text textMobile text-start"
+              className="relative slide-text  text-white ipad textMobile text-start"
             >
             
               <div className="d-flex ">
@@ -85,7 +85,7 @@ function Dashboard() {
             
               <div className="sub-head demo tomorrow">
                 HOME OF MILITARY MENTAL HEALTH{" "}
-                <span className="hideMobile"> &nbsp;| Norfolk, VA</span>
+                <span className="hideMobile barlow"> &nbsp;| NORFOLK, VA</span>
                 </div>
                 
                 {/* <HoverExpand

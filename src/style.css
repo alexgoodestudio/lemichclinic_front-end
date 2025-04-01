@@ -445,6 +445,17 @@ padding: 2000%;
   transform: rotate(30deg);
 }
 
+.footer-link {
+  color: #4b5563; /* text-gray-600 */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #000000; /* Pure black on hover */
+  text-decoration: none; /* Ensure underline doesn't appear on hover */
+}
+
 .spaced-underline {
   text-decoration: underline 1px;
   text-underline-offset: 2px;
