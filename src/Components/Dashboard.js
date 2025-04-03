@@ -118,10 +118,10 @@ function Dashboard() {
               <div className="row ">
                 <div className="col-lg-2"></div>
                 <div className="col-lg-8 p-lg-2  px-4">
-                  <h2 className="mb-lg-5 mt-lg-2 mb-4 barlow text-start green mobile-header-mission big-line">
+                  <h2 className="mb-lg-5 mt-lg-5 mt-2 mb-4 barlow text-start green mobile-header-mission big-line">
                     <span>OUR MISSION</span>
                   </h2>
-                  <p className="text-justify text-lg">
+                  <p className="text-justify large-body-text">
                     The Lemich Clinic for Military Mental Health was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority
@@ -141,12 +141,12 @@ function Dashboard() {
           {/* Features Section */}
           <div className="bg-slate-50 pt-3">
             <div className="container mb-5">
-              <div className="mb-5 ">
+              <div className="mb-5 hideMobile">
 
                 <h2 className="mb-3 process-header barlow green ">
                   <span className="text-gray-600 ms-lg-1 ms-0"> BUILT FOR YOU</span>{" "}
                 </h2>
-                <p className="text-justify text-gray-600 border-top-bottom   process-body text-md pt-4">
+                <p className="text-justify text-gray-600 border-top-bottom  process-body large-body-text text-md pt-4">
                   Every service member’s journey is different, and so are their
                   mental health needs. Whether you're facing the weight of
                   deployment, adjusting to life changes, or navigating
@@ -188,7 +188,7 @@ function Dashboard() {
                       ></i>
                     </div>
                     <h2 className=" spaced-underline-card-header text-sm  md:text-xl mb-3 ">{feature.title}</h2>
-                    <p className="text-lg card-text mb-lg-5 mb-2">{feature.text}</p>
+                    <p className=" card-text mb-lg-5 mb-2">{feature.text}</p>
                   </div>
                 ))}
               </div>

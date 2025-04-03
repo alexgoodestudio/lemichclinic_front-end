@@ -85,10 +85,6 @@
   font-size: 16pt;
   padding: 5%;
 }
-.mission-text{
-  font-size: 15pt;
-  letter-spacing: .5pt;
-}
 
 /* .bg-service-cards{
 background-color: #F7F3F0;
@@ -190,7 +186,7 @@ background-color: #F7F3F0;
 }
 
 .nav-logo-text{
-  font-size: 17pt;
+  font-size: 15pt;
 }
 
 .big-line {
@@ -226,6 +222,12 @@ background-color: #F7F3F0;
   margin-right: 14px;
 }
 
+.large-body-text{
+  font-size: 13pt;
+  letter-spacing: .5pt;
+}
+
+
 .green{
   color: #184434ff;
 }
@@ -239,7 +241,7 @@ background-color: #F7F3F0;
 }
 
 .tricare {
-padding: 2000%;
+  padding: 2000%;
 }
 
 .check-tricare {
@@ -269,7 +271,6 @@ padding: 2000%;
 .side-note{
   text-align: center;
 }
-
 
 .footer-text-1 {
   font-size: 13pt;
@@ -311,6 +312,13 @@ padding: 2000%;
   transform: scale(1.08);
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: end;
+  visibility: visible;
+  align-items: center;
+  width: 100%;
+}
 
 .zoom-owners {
   display: inline-block;
@@ -372,7 +380,7 @@ padding: 2000%;
 }
 
 .huge-text {
-  font-size: 16.5vw;
+  font-size: 15.85vw;
   color: rgba(0, 0, 0, 0.08);
   margin-top: 35px;
   margin-bottom: 40px;
@@ -492,8 +500,11 @@ padding: 2000%;
 }
 
 .card-text {
-  font-size: 10.75pt;
-  text-align: center;
+  font-size: 10pt;
+  padding-left:10px ;
+  padding-right:10px ;
+  text-align: justify;
+
 }
 
 .service-image {
@@ -623,6 +634,9 @@ color:#000000;
 .dark-blue{
   color: #033982;
 }
+.bg-lightblue{
+  background-color: #d4e6fe;
+}
 
 .blueCombo2Home{
   background-color: #344357;
@@ -707,7 +721,7 @@ color:#000000;
 }
 
 .nav-link-styling {
-  font-size: 14pt;
+  font-size: 13pt;
 }
 
 .shape {
@@ -818,9 +832,10 @@ color:#000000;
     color: rgba(0, 0, 0, 0.1);
   }
 
-  .mission-text{
+  .large-body-text{
     font-size: 12pt;
   }
+
  
   .blueCombo2Home{
     display: none;
@@ -845,7 +860,9 @@ color:#000000;
 
   .card-text {
     font-size: 8.5pt;
-    text-align: center;
+    text-align: justify;
+    padding-left:2px ;
+    padding-right:2px ;
   }
 
   .mission {
@@ -861,8 +878,8 @@ color:#000000;
   }
 
   .tinyLogo{
-    width: 22px;
-    height: 22px;
+    width: 16.5px;
+    height: 16.5px;
     margin-left: 8px;
   }
 

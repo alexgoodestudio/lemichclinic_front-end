@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import run from "./images/take1.jpg";
+import run from "./images/kou.jpg";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Helmet } from "react-helmet";
