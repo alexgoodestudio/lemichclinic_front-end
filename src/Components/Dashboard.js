@@ -141,12 +141,12 @@ function Dashboard() {
           {/* Features Section */}
           <div className="bg-slate-50 pt-3">
             <div className="container mb-5">
-              <div className="mb-5 hideMobile">
+              <div className="mb-5">
 
                 <h2 className="mb-3 process-header barlow green ">
                   <span className="text-gray-600 ms-lg-1 ms-0"> BUILT FOR YOU</span>{" "}
                 </h2>
-                <p className="text-justify text-gray-600 border-top-bottom  process-body large-body-text text-md pt-4">
+                <p className="text-justify text-gray-600 border-top-bottom  process-body  text-md pt-4">
                   Every service member’s journey is different, and so are their
                   mental health needs. Whether you're facing the weight of
                   deployment, adjusting to life changes, or navigating

@@ -22,10 +22,10 @@ function Tricare() {
             
             <img src={check} alt="check mark" className="check-tricare mb-2 rotate "/>
             <h2 className="text-white tricare-header tomorrow ">
-            TRICARE <span className="">&nbsp;ACCEPTED&nbsp;</span>
+            TRICARE <span className="accent">&nbsp;ACCEPTED&nbsp;</span>
             </h2>
           </div>
-          <p className="text-white large-body-text  text-start text-md border-left p-md-4 p-">
+          <p className="text-white text-start text-md border-left p-md-4 p-">
             Great news! We are in-network with Tricare. Active duty, please have
             your referral made to{" "}
             <span className="spaced-underline">The Lemich Clinic</span>. Dependents
