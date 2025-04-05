@@ -24,13 +24,12 @@ function Footer() {
   target="_blank" 
   rel="noopener noreferrer"
 >
-  Psychology Today Review
+  Psychology Today 
 </a>
         </div>
         <div className="flex flex-col space-y-3 text-start ">
           <h4 className="font-semibold text-xl text-gray-800">Support</h4>
           <a href="/contact" className="footer-link ">Contact Us</a>
-          <a href="/login" className="footer-link ">Client Login</a>
         </div>
       </div>
       <div className="text-sm  text-gray-600 mt-10 border-t pt-4 text-center">
