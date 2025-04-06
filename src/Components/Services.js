@@ -4,6 +4,7 @@ import img1 from "./images/1.avif";
 import img2 from "./images/2.avif";
 import img3 from "./images/3.avif";
 import "../style.css";
+import { gsap } from "gsap"; // Import GSAP
 
 function Services() {
   const [activeOverlay, setActiveOverlay] = useState(null);
@@ -11,37 +12,37 @@ function Services() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  
+
     const observer = new IntersectionObserver(
       (entries) => {
         let closestEntry = null;
-        let minDistance = window.innerHeight; 
-        
+        let minDistance = window.innerHeight;
+
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const rect = entry.boundingClientRect;
             const distanceToCenter = Math.abs(rect.top + rect.height / 2 - window.innerHeight / 2);
-  
+
             if (distanceToCenter < minDistance) {
               minDistance = distanceToCenter;
               closestEntry = entry;
             }
           }
         });
-  
+
         if (closestEntry) {
           setActiveOverlay(closestEntry.target.getAttribute("data-overlay"));
         }
       },
-      { threshold: [0.1, 0.6, 0.5, 0.7, 1],rootMargin: "0px 0px -40% 0px" }
+      { threshold: [0.1, 0.6, 0.5, 0.7, 1], rootMargin: "0px 0px -40% 0px" }
     );
-  
+
     const elements = [...serviceRefs.current];
-  
+
     elements.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
-  
+
     return () => {
       elements.forEach((ref) => {
         if (ref) observer.unobserve(ref);
@@ -49,11 +50,20 @@ function Services() {
       observer.disconnect();
     };
   }, []);
-  
 
-  // Handle click event for toggling overlay
+  // Handle click event for toggling overlay with GSAP animation
   const handleCardClick = (overlay) => {
-    setActiveOverlay((prev) => (prev === overlay ? null : overlay)); // Toggle active overlay
+    const targetOverlay = document.querySelector(`[data-overlay='${overlay}'] .service-overlay`);
+
+    if (activeOverlay === overlay) {
+      // Use GSAP to fade out the overlay
+      gsap.to(targetOverlay, { opacity: 0, duration: 0.5 });
+      setActiveOverlay(null);
+    } else {
+      // Use GSAP to fade in the overlay
+      gsap.to(targetOverlay, { opacity: 1, duration: 0.5 });
+      setActiveOverlay(overlay);
+    }
   };
 
   return (
@@ -174,7 +184,7 @@ function Services() {
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   );
