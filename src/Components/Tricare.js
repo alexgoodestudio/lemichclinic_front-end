@@ -25,7 +25,7 @@ function Tricare() {
             TRICARE <span className="accent">&nbsp;ACCEPTED&nbsp;</span>
             </h2>
           </div>
-          <p className="text-white text-start text-md border-left p-md-4 p-">
+          <p className="text-white text-start text-md border-left p-md-4 ">
             <span className="barlow text-lg">Great news! We are in-network with TRICARE.</span><br/><br/>
              Active duty, please have
             your referral made to{" "}

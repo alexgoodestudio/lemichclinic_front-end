@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";  
 import "../style.css";
 import Tricare from "./Tricare.js";
-// import HoverExpand from "./HoverExpand.js";
+
 import Video from "./images/stream3.mp4";
 import logo from "./images/logo.png";
 import { TextPlugin } from "gsap/TextPlugin";
@@ -11,6 +12,10 @@ import TricareBackground from "./TricareBackground.js";
 
 function Dashboard() {
   const titleRef = useRef(null);
+
+  const missionRef = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+
   const [videoLoaded, setVideoLoaded] = useState(false);
   gsap.registerPlugin(TextPlugin);
 
@@ -36,6 +41,26 @@ function Dashboard() {
         .set(".title2", { text: "The Lemich Clinic" })
         .to(".title2", { opacity: 1, duration: 1.8, ease: "power2.out" });
     }
+    gsap.fromTo(
+      missionRef.current,
+      {
+        x: "100%",
+        opacity: 0,
+      },
+      {
+        x: "0%",
+        opacity: 1,
+        duration: 3.25,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: missionRef.current,
+          start: "top 75%", // start when top of element hits 50% down the viewport
+          end: "bottom 50%", // end when the bottom of the element hits 50% down the viewport
+          scrub: 1, // allows the animation to trace with scroll
+          toggleActions: "play none reverse none", // make the animation reverse on scroll up
+        },
+      }
+    );
   }, [videoLoaded]);
 
   return (
@@ -87,15 +112,7 @@ function Dashboard() {
                 HOME OF MILITARY MENTAL HEALTH{" "}
                 <span className="hideMobile barlow"> &nbsp;| NORFOLK, VA</span>
                 </div>
-                
-                {/* <HoverExpand
-                  triggerText={<>OF MILITARY MENTAL HEALTH</>}
-                  expandedContent={
-                    <p className="text-expand">
-                      Our military mental health services are designed to support active duty, spouses, and retirees with specialized care in Norfolk, Virginia.
-                    </p>
-                  }
-                /> */}
+              
            
 
               <div className="btn accent-button text-center my-lg-4 my-md-3 my-sm-1 my-xs-1">
@@ -118,7 +135,7 @@ function Dashboard() {
               <div className="row ">
                 <div className="col-lg-2"></div>
                 <div className="col-lg-8   px-4">
-                  <h2 className="mb-lg-5 mt-lg-5 mt-2 mb-4 barlow text-start green mobile-header-mission big-line">
+                  <h2   className="mb-lg-5 mt-lg-5 mt-2 mb-4 barlow text-start green mobile-header-mission big-line">
                     <span>OUR MISSION</span>
                   </h2>
                   <p className="text-justify large-body-text">
@@ -142,7 +159,7 @@ function Dashboard() {
           <div className="bg-slate-50">
             <div className="container mb-5">
               <div className="mb-5">
-                <h2 className="mb-3 process-header barlow green ">
+                <h2  className="mb-3 process-header barlow green ">
                   <span className="text-gray-600 px-2"> BUILT FOR YOU</span>{" "}
                 </h2>
                 
@@ -155,7 +172,7 @@ function Dashboard() {
                   mission-ready.
                 </p>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
+              <div ref={missionRef} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
                 {[
                   {
                     icon: "fa-user-circle",
