@@ -57,7 +57,7 @@ function Services() {
   };
 
   return (
-    <div className="d-flex flex-column">
+    <div className="d-flex flex-column bg-slate-50">
       <Helmet>
         <meta
           name="description"

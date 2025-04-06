@@ -92,7 +92,7 @@ function Contact({ contactId = null }) {
   };
 
   return (
-    <div className="py-5 ">
+    <div className="py-5 bg-slate-50">
       <div className="container mx-auto px-6 lg:px-12">
 
       <h1 className=" text-4xl text-start text-gray-800 mb-5">

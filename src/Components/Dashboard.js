@@ -117,7 +117,7 @@ function Dashboard() {
             <div className="container">
               <div className="row ">
                 <div className="col-lg-2"></div>
-                <div className="col-lg-8 p-lg-2  px-4">
+                <div className="col-lg-8   px-4">
                   <h2 className="mb-lg-5 mt-lg-5 mt-2 mb-4 barlow text-start green mobile-header-mission big-line">
                     <span>OUR MISSION</span>
                   </h2>
@@ -139,14 +139,14 @@ function Dashboard() {
           </div>
           <TricareBackground />
           {/* Features Section */}
-          <div className="bg-slate-50 pt-3">
+          <div className="bg-slate-50">
             <div className="container mb-5">
               <div className="mb-5">
                 <h2 className="mb-3 process-header barlow green ">
                   <span className="text-gray-600 px-2"> BUILT FOR YOU</span>{" "}
                 </h2>
                 
-                <p className="text-justify text-gray-600 border-top-bottom px-2  text-md pt-4">
+                <p className="text-justify text-gray-600  border-top-bottom px-2  text-md pt-4">
                   Every service member’s journey is different, and so are their
                   mental health needs. Whether you're facing the weight of
                   deployment, adjusting to life changes, or navigating
@@ -180,15 +180,15 @@ function Dashboard() {
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className=" p-lg-3 p-2 service-hover border rounded mb-lg-3 "
+                    className=" p-lg-4 p-2 service-hover border rounded mb-lg-3 "
                   >
                     <div className="mb-4 mt-lg-5 mt-4">
                       <i
                         className={`fas ${feature.icon} text-gray-600 fa-2x`}
                       ></i>
                     </div>
-                    <h2 className=" spaced-underline-card-header text-sm  md:text-xl mb-3 ">{feature.title}</h2>
-                    <p className=" card-text mb-lg-5 mb-2">{feature.text}</p>
+                    <h2 className=" spaced-underline-card-header barlow text-md  md:text-xl mb-3 ">{feature.title}</h2>
+                    <p className=" text-gray-600 card-text mb-lg-5 mb-2">{feature.text}</p>
                   </div>
                 ))}
               </div>

@@ -152,7 +152,7 @@ background-color: #F7F3F0;
 
 .service-card.in-view .service-image,
 .service-card:hover .service-image {
-  transform: scale(1.1);
+  transform: scale(1.05);
   opacity: 1;
 }
 
@@ -268,10 +268,6 @@ background-color: #F7F3F0;
   color: #ffffff;
 }
 
-.side-note{
-  text-align: center;
-}
-
 .footer-text-1 {
   font-size: 13pt;
   margin-top: 5px;
@@ -320,19 +316,6 @@ background-color: #F7F3F0;
   width: 100%;
 }
 
-.zoom-owners {
-  display: inline-block;
-  overflow: hidden; /* Ensures the image stays contained within the container */
-}
-
-.zoom-owners img {
-  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
-  object-fit: cover; /* Ensures the image scales properly */
-}
-
-.zoom-owners:hover img {
-  transform: scale(1.023); /* Zoom effect on hover */
-}
 
 .background-section {
   position: relative;
@@ -382,8 +365,8 @@ background-color: #F7F3F0;
 .huge-text {
   font-size: 15.85vw;
   color: rgba(0, 0, 0, 0.08);
-  margin-top: 35px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 38px;
   background-color: rgb(255, 255, 255);
   text-align: center;
   white-space: nowrap;
@@ -500,7 +483,7 @@ background-color: #F7F3F0;
 }
 
 .card-text {
-  font-size: 10pt;
+  font-size: 11pt;
   padding-left:10px ;
   padding-right:10px ;
   text-align: justify;
@@ -830,13 +813,13 @@ color:#000000;
   .huge-text {
     font-size: 20vw;
     color: rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
-
 
   .large-body-text{
     font-size: 12pt;
   }
-
  
   .blueCombo2Home{
     display: none;

@@ -20,7 +20,7 @@ function Insurance() {
       );
   }, []);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-slate-50">
                   <Helmet>
                     <meta
                       name="description"
@@ -50,7 +50,7 @@ function Insurance() {
 
 
           {/* Text Content Column */}
-          <div className="col-lg-6 text-justify p-4 col-md-12">
+          <div className="col-lg-6 text-justify p-4 col-md-12 ">
             <h2 className="text-2xl font-semibold mb-3 ">Active Duty</h2>
             <ul className=" text-gray-700 me-lg-5 me-4">
               <li className="mb-2">

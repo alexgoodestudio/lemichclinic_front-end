@@ -7,7 +7,7 @@ import "../style.css";
 function Tricare() {
   return (
     <div className="container-fluid position-relative">
-      <div className="row p-4 bg-tricare1 position-relative">
+      <div className="row p-4 bg-tricare1 position-relative py-5">
         <div className="col-lg-3">
         <div className="huge-text container-fluid hideMobile"></div>
 
@@ -26,7 +26,8 @@ function Tricare() {
             </h2>
           </div>
           <p className="text-white text-start text-md border-left p-md-4 p-">
-            Great news! We are in-network with Tricare. Active duty, please have
+            <span className="barlow text-lg">Great news! We are in-network with TRICARE.</span><br/><br/>
+             Active duty, please have
             your referral made to{" "}
             <span className="spaced-underline">The Lemich Clinic</span>. Dependents
             and retirees, no referral is needed. Just make an appointment, and
