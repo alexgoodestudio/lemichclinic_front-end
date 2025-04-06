@@ -50,14 +50,13 @@ function Dashboard() {
       {
         x: "0%",
         opacity: 1,
-        duration: 3.25,
         ease: "power3.out",
         scrollTrigger: {
           trigger: missionRef.current,
-          start: "top 100%", // start when top of element hits 50% down the viewport
-          end: "bottom 100%", // end when the bottom of the element hits 50% down the viewport
-          scrub: 1, // allows the animation to trace with scroll
-          toggleActions: "play none reverse none", // make the animation reverse on scroll up
+          start: "top 90%", // Adjusting start to a bit earlier in the viewport
+          end: "bottom 30%", // Letting the animation run through until a bit further down
+          scrub: 1, // Smoothly trace the animation with scroll
+          toggleActions: "play none reverse none", // Ensures the animation plays smoothly
         },
       }
     );
