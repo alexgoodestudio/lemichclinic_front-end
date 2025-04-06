@@ -54,8 +54,8 @@ function Dashboard() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: missionRef.current,
-          start: "top 75%", // start when top of element hits 50% down the viewport
-          end: "bottom 50%", // end when the bottom of the element hits 50% down the viewport
+          start: "top 100%", // start when top of element hits 50% down the viewport
+          end: "bottom 100%", // end when the bottom of the element hits 50% down the viewport
           scrub: 1, // allows the animation to trace with scroll
           toggleActions: "play none reverse none", // make the animation reverse on scroll up
         },
