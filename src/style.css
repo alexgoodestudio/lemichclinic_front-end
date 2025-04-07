@@ -150,11 +150,11 @@ background-color: #F7F3F0;
 }
 
 
-.service-card.in-view .service-image,
+/* .service-card.in-view .service-image,
 .service-card:hover .service-image {
   transform: scale(1.05);
   opacity: 1;
-}
+} */
 
 
 .service-overlay {
@@ -887,7 +887,7 @@ color:#000000;
 
   .sub-head{
     letter-spacing: 1.35px;
-    font-size: 9.53pt;
+    font-size: 10.2pt;
     margin-bottom: 20px;
     color: #ffffff;
   }

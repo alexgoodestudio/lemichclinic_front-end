@@ -134,17 +134,17 @@ function Dashboard() {
               <div className="row ">
                 <div className="col-lg-2"></div>
                 <div className="col-lg-8   px-4">
-                  <h2   className="mb-lg-5 mt-lg-5 mt-2 mb-4 barlow text-start green mobile-header-mission big-line">
+                  <h2   className="mb-lg-5 mt-lg-5 mt-2 mb-4 barlow text-center green mobile-header-mission big-line">
                     <span>OUR MISSION</span>
                   </h2>
-                  <p className="text-justify large-body-text">
+                  <p className="text-center large-body-text">
                     The Lemich Clinic for Military Mental Health was founded on
                     the belief that everyone who serves should have access to
-                    high-quality, confidential mental health care. The majority
+                    high-quality, confidential mental health care. <br/><br/> The majority
                     of our clients are active duty sailors at Naval Station
                     Norfolk. We also see service members from the other military
                     installations in Virginia. We also work with military
-                    spouses and recent veterans. If you are a first responder or
+                    spouses and recent veterans.<br/><br/> If you are a first responder or
                     outside the military, contact us to see if you qualify for
                     our program.
                   </p>
