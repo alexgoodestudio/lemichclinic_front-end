@@ -7,7 +7,7 @@ import Video from "./images/water.mp4";
 // import logo from "./images/logo.png";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
-import TricareBackground from "./TricareBackground.js";
+import Norfolk from "./Norfolk.js";
 
 function Dashboard() {
   const titleRef = useRef(null);
@@ -42,20 +42,16 @@ function Dashboard() {
     }
     gsap.fromTo(
       missionRef.current,
+      { opacity: 0, y: 100 },
       {
-        x: "100%",
-        opacity: 0,
-      },
-      {
-        x: "0%",
         opacity: 1,
-        ease: "power3.out",
+        y: 0,
+        ease: "power4.out",
         scrollTrigger: {
           trigger: missionRef.current,
-          start: "top 90%", // Adjusting start to a bit earlier in the viewport
-          end: "bottom 30%", // Letting the animation run through until a bit further down
-          scrub: 1, // Smoothly trace the animation with scroll
-          toggleActions: "play none reverse none", // Ensures the animation plays smoothly
+          start: "top 90%",
+          end: "bottom 10%",
+          scrub: 1,
         },
       }
     );
@@ -108,7 +104,7 @@ function Dashboard() {
             
               <div className="sub-head demo tomorrow">
                 HOME OF MILITARY MENTAL HEALTH{" "}
-                <span className="hideMobile tomorrow"> &nbsp;| NORFOLK, VA</span>
+                <span className="hideMobile "> &nbsp;| NORFOLK, VA</span>
                 </div>
               
            
@@ -128,18 +124,18 @@ function Dashboard() {
       {videoLoaded && (
         <>
           {/* Mission Section */}
-          <div className="py-4 bg-slate-50">
+          <div className="py-4  bg-slate-50">
             <div className="container">
               <div className="row ">
                 <div className="col-lg-2"></div>
-                <div className="col-lg-8   px-4">
-                  <h2   className="mb-lg-5 mt-lg-5 mt-2 mb-4 barlow text-center green mobile-header-mission big-line">
+                <div className="col-lg-8 px-4">
+                  <h2   className="mb-lg-5 mt-lg-5 mt-2 barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
                     <span>OUR MISSION</span>
                   </h2>
-                  <p className="text-justify large-body-text line-height-large">
-                  The Lemich Clinic for <span className="border-black px-2 py-1 rounded">Military Mental Health</span> was founded on
+                  <p className="text-justify text-gray-500 line-height-large">
+                  The Lemich Clinic for <span className="italics bold text-gray-600">Military Mental Health</span> was founded on
                     the belief that everyone who serves should have access to
-                    high-quality, confidential mental health care.The majority
+                    high-quality, confidential mental health care. The majority
                     of our clients are active duty sailors at Naval Station
                     Norfolk. We also see service members from the other military
                     installations in Virginia. We also work with military
@@ -152,16 +148,16 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <TricareBackground />
+          <Norfolk/>
           {/* Features Section */}
           <div className="bg-slate-50">
             <div className="container mb-5">
-              <div className="mb-5">
-                <h2  className="mb-3 process-header barlow green ">
-                  <span className="text-gray-600 px-2"> BUILT FOR YOU</span>{" "}
+              <div className="mb-0">
+                <h2  className="mb-3 process-header barlow">
+                  <span className="text-gray-800 px-2"> BUILT FOR YOU</span>{" "}
                 </h2>
                 
-                <p className="text-justify text-gray-600  border-top-bottom px-2  text-md pt-4">
+                <p className="text-justify text-gray-500  line-height-large  border-top-bottom px-2  text-md pt-4">
                   Every service member’s journey is different, and so are their
                   mental health needs. Whether you're facing the weight of
                   deployment, adjusting to life changes, or navigating
@@ -195,15 +191,15 @@ function Dashboard() {
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className=" p-lg-4 p-2 service-hover border rounded mb-lg-3 "
+                    className=" p-lg-3 p-2 service-hover border rounded mb-lg-3 "
                   >
                     <div className="mb-4 mt-lg-5 mt-4">
                       <i
                         className={`fas ${feature.icon} text-gray-600 fa-2x`}
                       ></i>
                     </div>
-                    <h2 className=" spaced-underline-card-header barlow text-md  md:text-xl mb-3 ">{feature.title}</h2>
-                    <p className=" text-gray-600 card-text mb-lg-5 mb-2">{feature.text}</p>
+                    <h2 className="spaced-underline-card-header text-gray-800 barlow text-md  md:text-xl mb-3 ">{feature.title}</h2>
+                    <p className="text-gray-500 card-text mb-lg-5 mb-2">{feature.text}</p>
                   </div>
                 ))}
               </div>

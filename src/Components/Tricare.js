@@ -1,7 +1,6 @@
 import React from "react";
 // import logo from "./images/logo3.png";
-import check from "./images/check.png";
-
+// import check from "./images/check.png";
 import "../style.css";
 
 function Tricare() {
@@ -20,12 +19,12 @@ function Tricare() {
               className="logo-tricare rotate mb-lg-2 mb-2"
             /> */}
             
-            <img src={check} alt="check mark" className="check-tricare mb-2 rotate "/>
-            <h2 className="text-white tricare-header tomorrow ">
-            TRICARE <span className="accent">&nbsp;ACCEPTED&nbsp;</span>
+            {/* <img src={check} alt="check mark" className="check-tricare mb-2 rotate "/> */}
+            <h2 className="text-white tricare-header space tomorrow ">
+            TRICARE<span className="accent">&nbsp;ACCEPTED&nbsp;</span>
             </h2>
           </div>
-          <p className="text-white text-start text-md border-left p-md-4 ">
+          <p className="text-white text-start text-sm  py-md-4 ">
             <span className="barlow text-lg">Great news! We are in-network with TRICARE.</span><br/><br/>
              Active duty, please have
             your referral made to{" "}
