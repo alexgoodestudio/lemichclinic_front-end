@@ -105,6 +105,9 @@ background-color: #F7F3F0;
   z-index: 2000;
 }
 
+.border-black {
+  border: 1px solid #000000;
+}
 .accent{
   color: #99efce;
 }
@@ -135,6 +138,15 @@ background-color: #F7F3F0;
   border-top: 1px solid #ffffff;
   padding: 10px 0; /* Adds 10px spacing above and below the text */
 }
+
+
+.border-tb {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+
+  padding: 10px 0; /* Adds 10px spacing above and below the text */
+}
+
 .service-card {
   position: relative;
   overflow: hidden;
@@ -147,6 +159,9 @@ background-color: #F7F3F0;
   height: auto;
   display: block;
   transition: transform 0.5s ease-in-out;
+}
+.tiny3{
+  font-size: 10pt;
 }
 
 
@@ -173,6 +188,8 @@ background-color: #F7F3F0;
   justify-content: center;
   align-items: center;
 }
+
+
 
 .tinyLogo {
   width: 21px;
@@ -252,18 +269,19 @@ background-color: #F7F3F0;
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
+
 .TLC {
-  font-size: 39pt;
+  font-size: 38pt;
   font-weight: 550;
   letter-spacing: 1pt;
 }
 
 .sub-head{
-  letter-spacing: 1.65px;
-  font-size: 14.5pt;
+  letter-spacing: 1.25px;
+  font-size: 13pt;
   font-weight: 200;
   color: #ffffff;
 }
@@ -338,6 +356,8 @@ background-color: #F7F3F0;
   z-index: 0;
 }
 
+
+
 .border-left-white {
   border-left: 1px solid rgb(255, 255, 255);
   z-index: 2;
@@ -363,7 +383,7 @@ background-color: #F7F3F0;
 }
 
 .huge-text {
-  font-size: 15.85vw;
+  font-size: 15.5vw;
   color: rgba(0, 0, 0, 0.08);
   margin-top: 30px;
   margin-bottom: 38px;
@@ -389,7 +409,9 @@ background-color: #F7F3F0;
 .service-hover:nth-child(4):hover {
   background-color: #f1f4fc;}
 
-
+.line-height-large{
+  line-height: 2.6;
+}
 
 .border-left {
   border-left: 4px solid #dde4fc;; /* Blue left border */
@@ -397,9 +419,9 @@ background-color: #F7F3F0;
 }
 
 .logo {
-  width: 39px;
-  height: 39px;
-  margin-right: 20px;
+  width: 34px;
+  height: 34px;
+  margin-right: 15px;
   vertical-align: middle;
 }
 
@@ -727,7 +749,7 @@ color:#000000;
 
 .thin-insurance-body {
   font-weight: 200;
-  font-size: 22pt;
+  font-size: 20pt;
 }
 
 .icon {
@@ -880,14 +902,14 @@ color:#000000;
   }
 
   .TLC {
-    font-size: 18.25pt;
+    font-size: 21pt;
     letter-spacing: 1pt;
-    margin-left: 1.8px;
+    text-align: center;
   }
 
   .sub-head{
     letter-spacing: 1.35px;
-    font-size: 10.2pt;
+    font-size: 9.53pt;
     margin-bottom: 20px;
     color: #ffffff;
   }

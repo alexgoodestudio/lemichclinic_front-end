@@ -3,9 +3,8 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";  
 import "../style.css";
 import Tricare from "./Tricare.js";
-
-import Video from "./images/stream3.mp4";
-import logo from "./images/logo.png";
+import Video from "./images/water.mp4";
+// import logo from "./images/logo.png";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
 import TricareBackground from "./TricareBackground.js";
@@ -32,7 +31,7 @@ function Dashboard() {
       });
 
       textTimeline
-        .to(".title2", { opacity: 1, duration: 1, delay: 1 })
+        .to(".title2", { opacity: 1, duration: 2.5, delay: 1 })
         .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
         .set(".title2", { text: "Take a Deep Breath" })
         .to(".title2", { opacity: 1, duration: 1.5 })
@@ -75,13 +74,13 @@ function Dashboard() {
         </title>
       </Helmet>
 
-      <div className="row align-items-center background-section">
+      <div className="row align-items-center background-section ">
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="video-background"
+          className="video-background "
           onLoadedData={() => setVideoLoaded(true)}
         >
           <source src={Video} type="video/mp4" />
@@ -93,23 +92,23 @@ function Dashboard() {
             <div className="absolute inset-0"></div>
             <h1
               ref={titleRef}
-              className="relative slide-text  text-white ipad textMobile text-start"
+              className="relative slide-text text-white ipad textMobile text-start"
             >
             
-              <div className="d-flex ">
-                <img
+              <div className="d-flex">
+                {/* <img
                   src={logo}
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
-                />
-                <h1 className="align-content-center TLC barlow title2 ">
+                /> */}
+                <h1 className="align-content-center TLC barlow title2">
                   THE LEMICH CLINIC
                 </h1>
               </div>
             
               <div className="sub-head demo tomorrow">
                 HOME OF MILITARY MENTAL HEALTH{" "}
-                <span className="hideMobile barlow"> &nbsp;| NORFOLK, VA</span>
+                <span className="hideMobile tomorrow"> &nbsp;| NORFOLK, VA</span>
                 </div>
               
            
@@ -137,14 +136,14 @@ function Dashboard() {
                   <h2   className="mb-lg-5 mt-lg-5 mt-2 mb-4 barlow text-center green mobile-header-mission big-line">
                     <span>OUR MISSION</span>
                   </h2>
-                  <p className="text-center large-body-text">
-                    The Lemich Clinic for Military Mental Health was founded on
+                  <p className="text-justify large-body-text line-height-large">
+                  The Lemich Clinic for <span className="border-black px-2 py-1 rounded">Military Mental Health</span> was founded on
                     the belief that everyone who serves should have access to
-                    high-quality, confidential mental health care. <br/><br/> The majority
+                    high-quality, confidential mental health care.The majority
                     of our clients are active duty sailors at Naval Station
                     Norfolk. We also see service members from the other military
                     installations in Virginia. We also work with military
-                    spouses and recent veterans.<br/><br/> If you are a first responder or
+                    spouses and recent veterans. If you are a first responder or
                     outside the military, contact us to see if you qualify for
                     our program.
                   </p>

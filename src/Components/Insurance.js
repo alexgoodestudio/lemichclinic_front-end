@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import run from "./images/kou.jpg";
+import run from "./images/creek.jpg";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Helmet } from "react-helmet";
@@ -12,7 +12,6 @@ function Insurance() {
   useEffect(() => {
       window.scrollTo(0, 0);
 
-      // Ensure the animation runs only after the component is mounted
       gsap.fromTo(
           logoRef.current, 
           { opacity: 0 }, 
