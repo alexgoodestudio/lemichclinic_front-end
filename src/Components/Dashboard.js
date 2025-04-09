@@ -97,14 +97,14 @@ function Dashboard() {
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
                 /> */}
-                <h1 className="align-content-center TLC barlow title2">
-                  THE LEMICH CLINIC
+                <h1 className="align-content-center TLC tomorrow title2">
+                  The Lemich Clinic
                 </h1>
               </div>
             
-              <div className="sub-head demo tomorrow">
+              <div className="sub-head demo roboto">
                 HOME OF MILITARY MENTAL HEALTH{" "}
-                <span className="hideMobile "> &nbsp;| NORFOLK, VA</span>
+                <span className="hideMobile  "> &nbsp;| NORFOLK, VIRGINIA</span>
                 </div>
               
            

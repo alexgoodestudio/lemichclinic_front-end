@@ -10,6 +10,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./Components/fonts/Roboto-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Manrope-Bold";
@@ -62,6 +68,10 @@
 
 .barlow {
   font-family: "Barlow", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto-Regular", sans-serif;
 }
 
 .manrope-bold {
@@ -287,13 +297,13 @@ background-color: #F7F3F0;
 
 
 .TLC {
-  font-size: 35pt;
-  letter-spacing: 1pt;
+  font-size: 38pt;
+  letter-spacing: 2pt;
 }
 
 .sub-head{
   letter-spacing: 2px;
-  font-size: 10pt;
+  font-size: 14pt;
   color: #ffffff;
 }
 
@@ -656,9 +666,11 @@ color:#000000;
   background-color: #d4e6fe;
   color: #033982;
 }
+
 .dark-blue{
   color: #033982;
 }
+
 .bg-lightblue{
   background-color: #d4e6fe;
 }
@@ -680,6 +692,7 @@ color:#000000;
   padding-right: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 11pt;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -948,7 +961,7 @@ color:#000000;
   }
 
   .TLC {
-    font-size: 21pt;
+    font-size: 18.75pt;
     letter-spacing: 1pt;
     text-align: center;
   }
