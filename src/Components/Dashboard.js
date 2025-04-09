@@ -97,12 +97,12 @@ function Dashboard() {
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
                 /> */}
-                <h1 className="align-content-center TLC tomorrow title2">
+                <h1 className="align-content-center TLC lora title2">
                   The Lemich Clinic
                 </h1>
               </div>
             
-              <div className="sub-head demo roboto">
+              <div className="sub-head demo tomorrow">
                 HOME OF MILITARY MENTAL HEALTH{" "}
                 <span className="hideMobile  "> &nbsp;| NORFOLK, VIRGINIA</span>
                 </div>
@@ -129,7 +129,7 @@ function Dashboard() {
               <div className="row ">
                 <div className="col-lg-2"></div>
                 <div className="col-lg-8 px-4">
-                  <h2   className="mb-lg-5 mt-lg-5 mt-2 barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
+                  <h2   className="mb-lg-5 mb-5 mt-lg-5 mt-2 barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
                     <span>OUR MISSION</span>
                   </h2>
                   <p className="text-justify text-gray-500 line-height-large">
@@ -152,7 +152,7 @@ function Dashboard() {
           {/* Features Section */}
           <div className="bg-slate-50">
             <div className="container mb-5">
-              <div className="mb-0">
+              {/* <div className="hideMobile">
                 <h2  className="mb-3 process-header barlow">
                   <span className="text-gray-800 px-2"> BUILT FOR YOU</span>{" "}
                 </h2>
@@ -165,7 +165,7 @@ function Dashboard() {
                   care that fits you—personalized, specialized, and
                   mission-ready.
                 </p>
-              </div>
+              </div> */}
               <div ref={missionRef} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
                 {[
                   {

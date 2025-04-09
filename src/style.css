@@ -4,12 +4,22 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 @font-face {
   font-family: "Tomorrow-Semibold";
   src: url("./Components/fonts/Tomorrow-SemiBold.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Lora";
+  src: url("./Components/fonts/Lora-VariableFont_wght.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "Roboto-Regular";
   src: url("./Components/fonts/Roboto-Regular.ttf") format("woff2");
@@ -68,6 +78,10 @@
 
 .barlow {
   font-family: "Barlow", sans-serif;
+}
+
+.lora {
+  font-family: "Lora", sans-serif;
 }
 
 .roboto {
@@ -297,13 +311,13 @@ background-color: #F7F3F0;
 
 
 .TLC {
-  font-size: 38pt;
+  font-size: 36pt;
   letter-spacing: 2pt;
 }
 
 .sub-head{
   letter-spacing: 2px;
-  font-size: 14pt;
+  font-size: 12pt;
   color: #ffffff;
 }
 
