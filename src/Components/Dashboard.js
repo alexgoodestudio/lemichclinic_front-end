@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";  
+import ScrollTrigger from "gsap/ScrollTrigger";
 import "../style.css";
 import Tricare from "./Tricare.js";
 import Video from "./images/water.mp4";
@@ -22,7 +22,7 @@ function Dashboard() {
     if (videoLoaded) {
       window.scrollTo(0, 0);
 
-      gsap.set(".title2", { text: "The Lemich Clinic", opacity: 1 });
+      gsap.set(".title2", { text: "THE LEMICH CLINIC", opacity: 1 });
 
       const textTimeline = gsap.timeline({
         repeat: -1,
@@ -33,11 +33,11 @@ function Dashboard() {
       textTimeline
         .to(".title2", { opacity: 1, duration: 2.5, delay: 1 })
         .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
-        .set(".title2", { text: "Take a Deep Breath" })
+        .set(".title2", { text: "TAKE A DEEP BREATH" })
         .to(".title2", { opacity: 1, duration: 1.5 })
         .to(".title2", { opacity: 1, duration: 2.5 })
         .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
-        .set(".title2", { text: "The Lemich Clinic" })
+        .set(".title2", { text: "THE LEMICH CLINIC" })
         .to(".title2", { opacity: 1, duration: 1.8, ease: "power2.out" });
     }
     gsap.fromTo(
@@ -58,7 +58,7 @@ function Dashboard() {
   }, [videoLoaded]);
 
   return (
-    <div className="bg-slate-50 overflow-hidden ">
+    <div className="bg-slate-100 overflow-hidden ">
       <Helmet>
         <meta
           name="description"
@@ -90,31 +90,30 @@ function Dashboard() {
               ref={titleRef}
               className="relative slide-text text-white ipad textMobile text-start"
             >
-            
+
               <div className="d-flex">
                 {/* <img
                   src={logo}
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
                 /> */}
-                <h1 className="align-content-center TLC lora title2">
+                <h1 className="align-content-center TLC fira title2">
                   The Lemich Clinic
                 </h1>
               </div>
-            
-              <div className="sub-head demo tomorrow">
-                HOME OF MILITARY MENTAL HEALTH{" "}
-                <span className="hideMobile  "> &nbsp;| NORFOLK, VIRGINIA</span>
-                </div>
-              
-           
 
-              <div className="btn accent-button text-center my-lg-4 my-md-3 my-sm-1 my-xs-1">
-                <i className="fas fa-phone-alt text-md "></i>
-                <a href="tel:+17575361233" className="phone-link mobile-bold">
-                  <span className="hideMobile">&nbsp;</span>{" "}
-                  <span className="px-1">Call Us</span>
-                </a>
+              <div className="sub-head demo  d-flex">
+                <div className="btn accent-button me-3  text-center my-lg-2 my-md-2 my-1 my-1">
+                  <i className="fas fa-phone-alt text-md "></i>
+                  <a href="tel:+17575361233" className="phone-link mobile-bold">
+                    <span className="hideMobile">&nbsp;</span>{" "}
+                    <span className="px-1 ">Call Us</span>
+                  </a>
+                </div>
+                <div>
+                  LOCATED IN NORFOLK, VIRGINIA
+                  {/* <span className="hideMobile  "> &nbsp;| NORFOLK, VIRGINIA</span> */}
+                </div>
               </div>
             </h1>
           </div>
@@ -124,16 +123,16 @@ function Dashboard() {
       {videoLoaded && (
         <>
           {/* Mission Section */}
-          <div className="py-4  bg-slate-50">
+          <div className="py-4  ">
             <div className="container">
               <div className="row ">
                 <div className="col-lg-2"></div>
                 <div className="col-lg-8 px-4">
-                  <h2   className="mb-lg-4 mb-4 mt-lg-5 mt-2 barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
+                  <h2 className="mb-lg-4 mb-4 mt-lg-5 mt-2 barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
                     <span>OUR MISSION</span>
                   </h2>
                   <p className="text-justify text-gray-500 line-height-large">
-                  The Lemich Clinic for <span className=" bold text-gray-600">Military Mental Health</span> was founded on
+                    The Lemich Clinic for <span className=" bold text-gray-600">Military Mental Health</span> was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority
                     of our clients are active duty sailors at Naval Station
@@ -148,9 +147,9 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <Norfolk/>
+          <Norfolk />
           {/* Features Section */}
-          <div className="bg-slate-50">
+          <div className="bg-slate-100">
             <div className="container mb-5">
               {/* <div className="hideMobile">
                 <h2  className="mb-3 process-header barlow">
@@ -166,7 +165,7 @@ function Dashboard() {
                   mission-ready.
                 </p>
               </div> */}
-              <div ref={missionRef} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
+              <div ref={missionRef} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center ">
                 {[
                   {
                     icon: "fa-user-circle",

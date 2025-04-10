@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import "./Components/animations/useGsapAnimations";
-import logo from "../src/Components/images/logo.png";
+// import logo from "../src/Components/images/logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ function Navbar() {
       <div className="container overflow-hidden">
         {/* Logo and Brand */}
         <Link className="logo-location navbar-brand d-flex" to="/">
-          <img className="tinyLogo" src={logo} alt="logo" />
+          {/* <img className="tinyLogo" src={logo} alt="logo" /> */}
           <span className="nav-logo-text">The Lemich Clinic &nbsp;</span>
           <span className="nav-logo-text">
             |&nbsp; <span className="">Norfolk, VA</span>

@@ -5,10 +5,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Fira";
+  src: url("./Components/fonts/FiraSansCondensed-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Tomorrow-Semibold";
   src: url("./Components/fonts/Tomorrow-SemiBold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sintony";
+  src: url("./Components/fonts/Sintony-Bold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gleegoo";
+  src: url("./Components/fonts/Glegoo-Bold.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,6 +53,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 
 @font-face {
@@ -76,8 +97,20 @@
   font-style: normal;
 }
 
-.barlow {
+.fira {
   font-family: "Barlow", sans-serif;
+}
+
+.barlow {
+  font-family: "Fira", sans-serif;
+}
+
+.gleegoo {
+  font-family: "Gleegoo", sans-serif;
+}
+
+.sintony {
+  font-family: "Sintony", sans-serif;
 }
 
 .lora {
@@ -311,13 +344,13 @@ background-color: #F7F3F0;
 
 
 .TLC {
-  font-size: 32pt;
-  letter-spacing: 2pt;
+  font-size: 35pt;
+  /* letter-spacing: 1pt; */
 }
 
 .sub-head{
   letter-spacing: 2px;
-  font-size: 9pt;
+  font-size: 12pt;
   color: #ffffff;
 }
 
@@ -422,7 +455,7 @@ background-color: #F7F3F0;
   color: rgba(0, 0, 0, 0.08);
   margin-top: 30px;
   margin-bottom: 38px;
-  background-color: rgb(255, 255, 255);
+  background-color: #f1f5f9;
   text-align: center;
   white-space: nowrap;
   width: 100%;
@@ -431,7 +464,7 @@ background-color: #F7F3F0;
   align-items: center;
 }
 
-.service-hover:nth-child(1):hover {
+/* .service-hover:nth-child(1):hover {
   background-color: #f1f4fc;
 }
 
@@ -442,7 +475,7 @@ background-color: #F7F3F0;
   background-color: #f1f4fc;}
 
 .service-hover:nth-child(4):hover {
-  background-color: #f1f4fc;}
+  background-color: #f1f4fc;} */
 
 .line-height-large{
   line-height: 2.6;
@@ -699,9 +732,10 @@ color:#000000;
 }
 
 .accent-button {
-  background-color: #5bc099;
+  /* background-color: #5bc099; */
+  background-color: #5bc099 ;
   color: #ffffff;
-  border-radius: 25px;
+  border-radius: 20px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 10px;
@@ -711,8 +745,9 @@ color:#000000;
 }
 
 .accent-button:hover {
-  background-color: #309e74;
   color: #ffffff;
+  border-color: #5bc099 ;
+
 }
 
 .icon {
