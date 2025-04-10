@@ -129,11 +129,11 @@ function Dashboard() {
               <div className="row ">
                 <div className="col-lg-2"></div>
                 <div className="col-lg-8 px-4">
-                  <h2   className="mb-lg-5 mb-5 mt-lg-5 mt-2 barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
+                  <h2   className="mb-lg-4 mb-4 mt-lg-5 mt-2 barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
                     <span>OUR MISSION</span>
                   </h2>
                   <p className="text-justify text-gray-500 line-height-large">
-                  The Lemich Clinic for <span className="italics bold text-gray-600">Military Mental Health</span> was founded on
+                  The Lemich Clinic for <span className=" bold text-gray-600">Military Mental Health</span> was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority
                     of our clients are active duty sailors at Naval Station
