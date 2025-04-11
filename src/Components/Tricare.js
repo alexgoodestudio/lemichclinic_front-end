@@ -24,8 +24,8 @@ function Tricare() {
             TRICARE<span className="accent">&nbsp;ACCEPTED&nbsp;</span>
             </h2>
           </div>
-          <p className="text-white text-start text-sm  py-md-4 ">
-            <span className="barlow text-lg">Great news! We are in-network with TRICARE.</span><br/><br/>
+          <p className="text-white text-start tricare-text text-sm space-1 py-md-4 ">
+            <span className="barlow text-lg ">Great news! We are in-network with TRICARE.</span><br/><br/>
              Active duty, please have
             your referral made to{" "}
             <span className="spaced-underline">The Lemich Clinic</span>. Dependents

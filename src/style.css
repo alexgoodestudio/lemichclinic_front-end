@@ -76,6 +76,11 @@
   padding: 5%;
 }
 
+.mission-text{
+  letter-spacing: .5pt;
+}
+
+
 /* .bg-service-cards{
 background-color: #F7F3F0;
 }
@@ -193,11 +198,6 @@ background-color: #F7F3F0;
 }
 
 
-
-.nav-logo-text{
-  font-size: 15pt;
-}
-
 .big-line {
   --a: -45deg; /* control the angle */
   --t: .23em; /* thickness of the underline */ 
@@ -243,7 +243,8 @@ background-color: #F7F3F0;
 }
 
 .bg-green{
-  background-color: #10685a;
+  background-color: hsla(158, 48%, 18%); 
+
 }
 
 .process-header{
@@ -267,13 +268,14 @@ background-color: #F7F3F0;
 
 
 .TLC {
-  font-size: 22.652pt;
+  font-size: 25.888pt;
   letter-spacing: 1pt;
 }
 
+
 .sub-head{
   letter-spacing: 2px;
-  font-size: 14pt;
+  font-size: 16pt;
   color: #ffffff;
 }
 
@@ -509,7 +511,11 @@ background-color: #F7F3F0;
   padding-left:10px ;
   padding-right:10px ;
   text-align: center;
+  letter-spacing: .5pt;
+}
 
+.tricare-text{
+  letter-spacing: .5pt;
 }
 
 .service-image {
@@ -592,40 +598,12 @@ background-color: #F7F3F0;
   opacity: 1;
 }
 
-.bgp {
-  color: #dde4fc;
-}
-
 
 .insurance-image {
   width: 80%;
 }
 .normalize {
   text-decoration: none;
-}
-
-.number{
-  letter-spacing: 1px;
-}
-
-.bg1{
-background-color: #e1eed9;
-color:#000000;
-}
-
-.bg2{
-  background-color: #e7e0ec ;
-  color:#000000;
-}
-
-.bg3{
-  background-color: #fae6d1;
-  color:#000000;
-}
-
-.bg4{
-  background-color: #faeed1;
-  color:#000000;
 }
 
 .blueCombo {
@@ -641,22 +619,11 @@ color:#000000;
   color: #033982;
 }
 
-.bg-lightblue{
-  background-color: #d4e6fe;
-}
-
-.blueCombo2Home{
-  background-color: #344357;
-  color: #000000;
-}
-
-.accent-icon{
-  color: #30344d;
-}
 
 .accent-button {
   /* background-color: #5bc099; */
-  background-color: #5bc099 ;
+  /* background-color: #5bc099 ; */
+  background-color: #10685a;
   color: #ffffff;
   border-radius: 20px;
   padding-left: 16px;
@@ -744,6 +711,9 @@ color:#000000;
   border-bottom-left-radius: 20px;
 }
 
+.call-text{
+  letter-spacing: 0.5px;
+}
 
 .scale {
   width: 55%;
@@ -826,6 +796,8 @@ color:#000000;
 }
 
 @media (max-width: 768px) {
+
+
   
   .spaced-underline-card-header{
     text-decoration: underline 1px;
@@ -895,6 +867,8 @@ color:#000000;
     text-align: justify;
     padding-left:2px ;
     padding-right:2px ;
+    letter-spacing: .35pt;
+
   }
 
   .mission {
@@ -915,9 +889,6 @@ color:#000000;
     margin-left: 8px;
   }
 
-  .nav-logo-text{
-    font-size: 13pt;
-  }
 
   .margin-left-full-screen {
     margin-left: 0%;
@@ -940,7 +911,7 @@ color:#000000;
 
   .sub-head{
     letter-spacing: 1.35px;
-    font-size: 7.53pt;
+    font-size: 8pt;
     margin-bottom: 20px;
     color: #ffffff;
   }
@@ -948,7 +919,6 @@ color:#000000;
   .margin-left-home {
     margin-left: 0px;
   }
-
 
   .accent-button {
     margin-top: 5%;

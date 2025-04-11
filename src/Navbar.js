@@ -12,10 +12,10 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg main">
       <div className="container overflow-hidden">
         {/* Logo and Brand */}
-        <Link className="logo-location navbar-brand d-flex" to="/">
+        <Link className="logo-location navbar-brand  d-flex" to="/">
           {/* <img className="tinyLogo" src={logo} alt="logo" /> */}
-          <span className="nav-logo-text">The Lemich Clinic &nbsp;</span>
-          <span className="nav-logo-text">
+          <span className="">The Lemich Clinic &nbsp;</span>
+          <span className="">
             |&nbsp; <span className="">Norfolk, VA</span>
           </span>
         </Link>

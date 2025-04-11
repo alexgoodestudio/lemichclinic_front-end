@@ -102,12 +102,11 @@ function Dashboard() {
                 </h1>
               </div>
 
-              <div className="sub-head demo  d-flex">
-                <div className="btn accent-button me-4  text-center my-1">
+              <div className="sub-head  demo  d-flex">
+                <div className="btn accent-button  me-4  text-center my-1">
                   <i className="fas fa-phone-alt text-md "></i>
                   <a href="tel:+17575361233" className="phone-link mobile-bold">
-                    <span className="hideMobile">&nbsp;</span>{" "}
-                    <span className="px-1 ">Call Us</span>
+                    <span className="ps-lg-2 p-1 call-text">Call Us</span>
                   </a>
                 </div>
                 <div>
@@ -125,13 +124,13 @@ function Dashboard() {
           {/* Mission Section */}
           <div className="py-4  ">
             <div className="container">
-              <div className="row ">
+              <div className="row">
                 <div className="col-lg-2"></div>
                 <div className="col-lg-8 px-4">
-                  <h2 className="mb-lg-4 mb-4 mt-lg-5 mt-2 barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
+                  <h2 className="mb-lg-4 mb-4 mt-lg-5 mt-2 mission-text barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
                     <span>OUR MISSION</span>
                   </h2>
-                  <p className="text-justify text-gray-500 line-height-large">
+                  <p className="text-justify mission-text text-gray-500 line-height-large">
                     The Lemich Clinic for <span className=" bold text-gray-600">Military Mental Health</span> was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority
@@ -197,7 +196,7 @@ function Dashboard() {
                         className={`fas ${feature.icon} text-gray-600 fa-2x`}
                       ></i>
                     </div>
-                    <h2 className="spaced-underline-card-header text-gray-800 barlow text-md  md:text-xl mb-3 ">{feature.title}</h2>
+                    <h2 className="spaced-underline-card-header card-header text-gray-800 barlow text-md  md:text-xl mb-3 ">{feature.title}</h2>
                     <p className="text-gray-500 card-text mb-lg-5 mb-2">{feature.text}</p>
                   </div>
                 ))}
