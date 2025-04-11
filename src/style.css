@@ -5,12 +5,7 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Fira";
-  src: url("./Components/fonts/FiraSansCondensed-Regular.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 @font-face {
   font-family: "Tomorrow-Semibold";
@@ -19,12 +14,7 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Sintony";
-  src: url("./Components/fonts/Sintony-Bold.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 @font-face {
   font-family: "Gleegoo";
@@ -40,48 +30,7 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("./Components/fonts/Roboto-Regular.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Manrope-Bold";
-  src: url("./Components/fonts/Manrope-Bold.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: "Manrope-SemiBold";
-  src: url("./Components/fonts/Manrope-SemiBold.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope-Medium";
-  src: url("./Components/fonts/Manrope-Medium.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope-Light";
-  src: url("./Components/fonts/Manrope-Light.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url("./Components/fonts/Manrope-Regular.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: "Branch";
@@ -97,48 +46,22 @@
   font-style: normal;
 }
 
-.fira {
-  font-family: "Barlow", sans-serif;
-}
+
 
 .barlow {
-  font-family: "Fira", sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 .gleegoo {
   font-family: "Gleegoo", sans-serif;
 }
 
-.sintony {
-  font-family: "Sintony", sans-serif;
-}
+
 
 .lora {
   font-family: "Lora", sans-serif;
 }
 
-.roboto {
-  font-family: "Roboto-Regular", sans-serif;
-}
-
-.manrope-bold {
-  font-family: "Manrope-Bold", sans-serif;
-}
-
-.manrope-medium {
-  font-family: "Manrope-Medium", sans-serif;
-}
-
-.manrope-semibold {
-  font-family: "Manrope-SemiBold", sans-serif;
-}
-
-.manrope-regular {
-  font-family: "Manrope-Regular", sans-serif;
-}
-.manrope-light {
-  font-family: "Manrope-Light", sans-serif;
-}
 
 .tomorrow {
   font-family: "Tomorrow", sans-serif;
@@ -344,13 +267,13 @@ background-color: #F7F3F0;
 
 
 .TLC {
-  font-size: 35pt;
-  /* letter-spacing: 1pt; */
+  font-size: 22.652pt;
+  letter-spacing: 1pt;
 }
 
 .sub-head{
   letter-spacing: 2px;
-  font-size: 12pt;
+  font-size: 14pt;
   color: #ffffff;
 }
 
@@ -1010,14 +933,14 @@ color:#000000;
   }
 
   .TLC {
-    font-size: 18.75pt;
+    font-size: 14.75pt;
     letter-spacing: 1pt;
     text-align: center;
   }
 
   .sub-head{
     letter-spacing: 1.35px;
-    font-size: 9.53pt;
+    font-size: 7.53pt;
     margin-bottom: 20px;
     color: #ffffff;
   }
@@ -1029,9 +952,9 @@ color:#000000;
 
   .accent-button {
     margin-top: 5%;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-size: 10pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 8pt;
   }
 
   .nav-link-styling {
@@ -1167,11 +1090,11 @@ color:#000000;
     font-weight: 600;
   }
   .TLC {
-    font-size: 28pt;
+    font-size: 22pt;
   }
 
   .sub-head{
-    font-size: 10pt;
+    font-size: 11pt;
   }
 
   .logo {

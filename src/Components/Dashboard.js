@@ -22,23 +22,23 @@ function Dashboard() {
     if (videoLoaded) {
       window.scrollTo(0, 0);
 
-      gsap.set(".title2", { text: "THE LEMICH CLINIC", opacity: 1 });
+      gsap.set(".title2", { text: "Home of Military Mental Health", opacity: 1 });
+      gsap.set(".title2", { opacity: 1 });
+      // const textTimeline = gsap.timeline({
+      //   repeat: -1,
+      //   yoyo: false,
+      //   onComplete: () => textTimeline.restart(),
+      // });
 
-      const textTimeline = gsap.timeline({
-        repeat: -1,
-        yoyo: false,
-        onComplete: () => textTimeline.restart(),
-      });
-
-      textTimeline
-        .to(".title2", { opacity: 1, duration: 2.5, delay: 1 })
-        .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
-        .set(".title2", { text: "TAKE A DEEP BREATH" })
-        .to(".title2", { opacity: 1, duration: 1.5 })
-        .to(".title2", { opacity: 1, duration: 2.5 })
-        .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
-        .set(".title2", { text: "THE LEMICH CLINIC" })
-        .to(".title2", { opacity: 1, duration: 1.8, ease: "power2.out" });
+      // textTimeline
+      //   .to(".title2", { opacity: 1, duration: 30.5, delay: 1 })
+      //   .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
+      //   .set(".title2", { text: "TAKE A DEEP BREATH" })
+      //   .to(".title2", { opacity: 1, duration: 1.5 })
+      //   .to(".title2", { opacity: 1, duration: 2.5 })
+      //   .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
+      //   .set(".title2", { text: "Home of Military Mental Health" })
+      //   .to(".title2", { opacity: 1, duration: 1.8, ease: "power2.out" });
     }
     gsap.fromTo(
       missionRef.current,
@@ -97,13 +97,13 @@ function Dashboard() {
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
                 /> */}
-                <h1 className="align-content-center TLC fira title2">
+                <h1 className="align-content-center TLC title2">
                   The Lemich Clinic
                 </h1>
               </div>
 
               <div className="sub-head demo  d-flex">
-                <div className="btn accent-button me-3  text-center my-lg-2 my-md-2 my-1 my-1">
+                <div className="btn accent-button me-4  text-center my-1">
                   <i className="fas fa-phone-alt text-md "></i>
                   <a href="tel:+17575361233" className="phone-link mobile-bold">
                     <span className="hideMobile">&nbsp;</span>{" "}
