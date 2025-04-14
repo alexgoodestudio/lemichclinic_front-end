@@ -97,7 +97,7 @@ function Dashboard() {
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
                 /> */}
-                <h1 className="align-content-center TLC title2">
+                <h1 className="align-content-center  bold TLC title2">
                   The Lemich Clinic
                 </h1>
               </div>
