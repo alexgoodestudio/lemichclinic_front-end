@@ -84,11 +84,11 @@ function Dashboard() {
         </video>
 
         {videoLoaded && (
-          <div className="col-lg-6 ms-lg-4 col-12 relative h-full flex justify-center items-center">
+          <div className="col-lg-6 ms-lg-4 col-12  relative h-full flex justify-center items-center">
             <div className="absolute inset-0"></div>
             <h1
               ref={titleRef}
-              className="relative slide-text text-white ipad textMobile text-start"
+              className="relative slide-text mb-lg-5 text-white ipad textMobile text-start"
             >
 
               <div className="d-flex">
@@ -103,7 +103,7 @@ function Dashboard() {
               </div>
 
               <div className="sub-head  demo  d-flex">
-                <div className="btn accent-button  me-4  text-center my-1">
+                <div className="btn accent-button  me-lg-3 me-2 mt-lg-2  text-center my-1">
                   <i className="fas fa-phone-alt text-md "></i>
                   <a href="tel:+17575361233" className="phone-link mobile-bold">
                     <span className="ps-lg-2 p-1 call-text">Call Us</span>
