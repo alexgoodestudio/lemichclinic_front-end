@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "../style.css";
 import Tricare from "./Tricare.js";
-import Video from "./images/water.mp4";
+import Video from "./images/woods2.mp4";
 // import logo from "./images/logo.png";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
@@ -70,7 +70,7 @@ function Dashboard() {
         </title>
       </Helmet>
 
-      <div className="row align-items-center background-section ">
+      <div className="row align-items-center  background-section ">
         <video
           autoPlay
           muted
@@ -109,7 +109,7 @@ function Dashboard() {
                     <span className="ps-lg-2 p-1 call-text">Call Us</span>
                   </a>
                 </div>
-                <div>
+                <div className="bold sub-head-text">
                   LOCATED IN NORFOLK, VIRGINIA
                   {/* <span className="hideMobile  "> &nbsp;| NORFOLK, VIRGINIA</span> */}
                 </div>

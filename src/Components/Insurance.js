@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import run from "./images/creek.jpg";
+import run from "./images/creek3.jpg";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Helmet } from "react-helmet";
@@ -42,14 +42,14 @@ function Insurance() {
               <img
                 ref={logoRef} 
                 src={run}
-                alt="Hiker"
+                alt="Calm, Soothing Water"
                 className="img-fluid"
               />
             </div>
 
 
           {/* Text Content Column */}
-          <div className="col-lg-6 text-justify p-4 col-md-12 ">
+          <div className="col-lg-6 text-sm text-justify p-4 col-md-12 ">
             <h2 className="text-2xl font-semibold mb-3 ">Active Duty</h2>
             <ul className=" text-gray-700 me-lg-5 me-4">
               <li className="mb-2">

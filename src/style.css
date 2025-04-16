@@ -922,6 +922,11 @@ background-color: #F7F3F0;
     margin-bottom: 20px;
     color: #ffffff;
   }
+  .sub-head-text{
+    background-color:#5bc099;
+    padding: 9px;
+    border-radius: 15px;
+  }
 
   .margin-left-home {
     margin-left: 0px;
