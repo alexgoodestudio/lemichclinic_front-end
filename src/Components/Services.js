@@ -7,6 +7,7 @@ import "../style.css";
 
 function Services() {
   const [activeOverlay, setActiveOverlay] = useState(null);
+  const scrollEnabledRef = useRef(true);
   const serviceRefs = useRef([]);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ function Services() {
           }
         });
 
-        if (closestEntry) {
+        if (closestEntry && scrollEnabledRef.current) {
           const newOverlay = closestEntry.target.getAttribute("data-overlay");
           setActiveOverlay((prev) =>
             prev === newOverlay ? prev : newOverlay
@@ -56,7 +57,12 @@ function Services() {
   }, []);
 
   const handleCardClick = (overlay) => {
+    scrollEnabledRef.current = false;
     setActiveOverlay((prev) => (prev === overlay ? null : overlay));
+
+    setTimeout(() => {
+      scrollEnabledRef.current = true;
+    }, 1500);
   };
 
   return (
