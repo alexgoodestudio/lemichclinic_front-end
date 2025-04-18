@@ -5,6 +5,7 @@ import "../style.css";
 import Tricare from "./Tricare.js";
 import Video from "./images/woods2.mp4";
 // import logo from "./images/logo.png";
+import { Link } from "react-router-dom";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
 import Norfolk from "./Norfolk.js";
@@ -110,9 +111,10 @@ function Dashboard() {
                   </a>
                 </div>
                 <div className="bold sub-head-text">
-                  LOCATED IN NORFOLK, VIRGINIA
-                  {/* <span className="hideMobile  "> &nbsp;| NORFOLK, VIRGINIA</span> */}
-                </div>
+  <Link to="/contact" className="no-underline text-inherit hover:opacity-80 transition-opacity">
+    LOCATED IN NORFOLK, VIRGINIA
+  </Link>
+</div>
               </div>
             </h1>
           </div>
