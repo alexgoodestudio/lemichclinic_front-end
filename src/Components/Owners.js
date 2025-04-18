@@ -34,14 +34,12 @@ function Owners() {
           Meet The Owners.
         </h1>
         <div className="col-lg-6 order-1  order-lg-2 text-center p-lg-0">
-          {/* <div className="zoom-owners"> */}
-            <img
-              ref={logoRef}
-              src={img4}
-              alt="Gregory and Jennifer Lemich"
-              className="h-100"
-            />
-          {/* </div> */}
+          <img
+            ref={logoRef}
+            src={img4}
+            alt="Gregory and Jennifer Lemich"
+            className="w-full h-auto mx-auto"
+          />
         </div>
 
         {/* Text Section */}
