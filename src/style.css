@@ -198,6 +198,15 @@ background-color: #F7F3F0;
   margin-right: 10px;
 }
 
+.transition-card {
+  transition: all 0.3s ease;
+}
+
+.transition-card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
 
 .big-line {
   --a: -45deg; /* control the angle */
@@ -511,7 +520,7 @@ background-color: #F7F3F0;
   font-size: 11pt;
   padding-left:10px ;
   padding-right:10px ;
-  text-align: center;
+  text-align: start;
   letter-spacing: .5pt;
 }
 

@@ -1,70 +1,11 @@
-import { useEffect, useState, useRef } from "react";
 import { Helmet } from "react-helmet";
 import img1 from "./images/1.avif";
 import img2 from "./images/2.avif";
 import img3 from "./images/3.avif";
 import "../style.css";
+import { FileText, Group, History } from "lucide-react";
 
 function Services() {
-  const [activeOverlay, setActiveOverlay] = useState(null);
-  const scrollEnabledRef = useRef(true);
-  const serviceRefs = useRef([]);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        let closestEntry = null;
-        let minDistance = window.innerHeight;
-
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const rect = entry.boundingClientRect;
-            const distanceToCenter = Math.abs(
-              rect.top + rect.height / 2 - window.innerHeight / 2
-            );
-
-            if (distanceToCenter < minDistance) {
-              minDistance = distanceToCenter;
-              closestEntry = entry;
-            }
-          }
-        });
-
-        if (closestEntry && scrollEnabledRef.current) {
-          const newOverlay = closestEntry.target.getAttribute("data-overlay");
-          setActiveOverlay((prev) =>
-            prev === newOverlay ? prev : newOverlay
-          );
-        }
-      },
-      { threshold: [0.1, 0.6, 0.5, 0.7, 1], rootMargin: "0px 0px -40% 0px" }
-    );
-
-    const elements = [...serviceRefs.current];
-
-    elements.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => {
-      elements.forEach((ref) => {
-        if (ref) observer.unobserve(ref);
-      });
-      observer.disconnect();
-    };
-  }, []);
-
-  const handleCardClick = (overlay) => {
-    scrollEnabledRef.current = false;
-    setActiveOverlay((prev) => (prev === overlay ? null : overlay));
-
-    setTimeout(() => {
-      scrollEnabledRef.current = true;
-    }, 1500);
-  };
-
   return (
     <div className="d-flex flex-column bg-slate-50">
       <Helmet>
@@ -81,7 +22,7 @@ function Services() {
         <div className="row mb-3">
           <div className="col-12">
             <h1 className="text-4xl mb-4 text-start text-gray-800">
-              Exclusive Services.
+              Exclusive Services
             </h1>
           </div>
         </div>
@@ -99,101 +40,86 @@ function Services() {
 
         <div className="row">
           {/* Card 1 */}
-          <div className="col-lg-4 col-md-6 mb-3">
-            <div
-              className="service-card"
-              data-overlay="overlay1"
-              ref={(el) => (serviceRefs.current[0] = el)}
-              onClick={() => handleCardClick("overlay1")}
-            >
-              <img src={img1} alt="Service 1" className="service-image" />
-              <div
-                className={`service-overlay service-overlay1 ${
-                  activeOverlay === "overlay1" ? "visible-overlay" : ""
-                }`}
-              >
-                <h3 className="text-white barlow text-xl font-semibold mb-4">
-                  Summary Letters
+          <div className="col-lg-4 col-md-6 mb-4">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-full text-start transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg card-animate">
+              <img
+                src={img1}
+                className="card-img-top object-cover w-full h-48"
+                alt="Summary Letters"
+              />
+              <div className="card-body p-5 flex-grow-1">
+                <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-800 mb-2">
+                  <FileText size={18} /> Summary Letters
                 </h3>
-                <p className="text-white text-start p-3">
+                <p className="text-[15px] sm:text-[16px] leading-relaxed text-gray-600">
                   Only for Active Duty Military Service Members. This letter
                   will outline the diagnosis that the client has, confirm and
                   give a brief description of their session attendance, and give
-                  advice and confirmation of their clinical needs. PRICE:
-                  $40/letter
+                  advice and confirmation of their clinical needs.
                 </p>
+              </div>
+              <div className="card-footer bg-slate-100 p-3">
+                <small className="text-muted">PRICE: $40/letter</small>
               </div>
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="col-lg-4 col-md-6 mb-3">
-            <div
-              className="service-card"
-              data-overlay="overlay2"
-              ref={(el) => (serviceRefs.current[1] = el)}
-              onClick={() => handleCardClick("overlay2")}
-            >
-              <img src={img2} alt="Service 2" className="service-image" />
-              <div
-                className={`service-overlay service-overlay2 ${
-                  activeOverlay === "overlay2" ? "visible-overlay" : ""
-                }`}
-              >
-                <h3 className="text-white barlow text-xl font-semibold mb-4">
-                  NEXUS Letters
+          <div className="col-lg-4 col-md-6 mb-4">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-full text-start transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg card-animate">
+              <img
+                src={img2}
+                className="card-img-top object-cover w-full h-48"
+                alt="NEXUS Therapy"
+              />
+              <div className="card-body p-5 flex-grow-1">
+                <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-800 mb-2">
+                  <History size={18} /> NEXUS Therapy
                 </h3>
-                <p className="text-white text-start p-3">
+                <p className="text-[15px] sm:text-[16px] leading-relaxed text-gray-600">
                   Only for Veterans who have been out of Active Duty Military
                   Service for more than one year. This letter is a compilation
                   of your medical history that explains the connection between
-                  current medical condition(s) and military service. PRICE:
-                  $180/letter
+                  current medical condition(s) and military service.
                 </p>
+              </div>
+              <div className="card-footer bg-slate-100 p-3">
+                <small className="text-muted">PRICE: $180/letter</small>
               </div>
             </div>
           </div>
 
           {/* Card 3 */}
-          <div className="col-lg-4 col-md-6 mb-3">
-            <div
-              className="service-card"
-              data-overlay="overlay3"
-              ref={(el) => (serviceRefs.current[2] = el)}
-              onClick={() => handleCardClick("overlay3")}
-            >
-              <img src={img3} alt="Service 3" className="service-image" />
-              <div
-                className={`service-overlay service-overlay3 ${
-                  activeOverlay === "overlay3" ? "visible-overlay" : ""
-                }`}
-              >
-                <h3 className="text-white barlow text-xl font-semibold mb-4">
-                  Group Therapy
+          <div className="col-lg-4 col-md-6 mb-4">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-full text-start transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg card-animate">
+              <img
+                src={img3}
+                className="card-img-top object-cover w-full h-48"
+                alt="Group Therapy"
+              />
+              <div className="card-body p-5 flex-grow-1">
+                <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-800 mb-2">
+                  <Group size={18} /> Group Therapy
                 </h3>
-                <p className=" text-start mb-4">
-                  To register for a group and get cost/payment information,
-                  click the{" "}
+                <p className="text-[15px] sm:text-[16px] leading-relaxed text-gray-600">
+                  To register for a group and get cost/payment information,{" "}
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSf772Z4DElgOFl_7u2GM71MB6xB3g-qOYMmjd1-Rlu4EVoz_Q/viewform"
-                    className="text-white accent underline"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
                   >
-                    link
+                    click here
                   </a>{" "}
-                  to register or call our office.
+                  or call our office.
                 </p>
-                <ul className="list-disc text-white text-start pe-3 ps-3">
-                  <li className="pb-3 mb-2">
-                    <span className="spaced-underline">Betrayed Partners:</span>{" "}
-                    Mondays @ 12pm - 1pm
+                <ul className="list-unstyled mt-3">
+                  <li>
+                    <strong>Betrayed Partners:</strong> Mondays @ 12pm - 1pm
                   </li>
-                  <li className="pb-2">
-                    <span className="spaced-underline">
-                      Men's Relationship Skills:
-                    </span>{" "}
-                    Every other Thursday @ 5pm - 6:30pm
+                  <li>
+                    <strong>Men's Relationship Skills:</strong> Every other
+                    Thursday @ 5pm - 6:30pm
                   </li>
                 </ul>
               </div>
