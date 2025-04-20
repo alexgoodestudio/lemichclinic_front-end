@@ -27,7 +27,7 @@ function Services() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mt-lg-5">
           <div className="col-lg-12">
             <p className="text-justify mb-4 text-md text-gray-600 border rounded bg-slate-100 p-3">
               For current clients, we have a selection of services provided by
@@ -74,7 +74,7 @@ function Services() {
               />
               <div className="card-body p-5 flex-grow-1">
                 <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-800 mb-2">
-                  <History size={18} /> NEXUS Therapy
+                  <History size={18} /> NEXUS Letters
                 </h3>
                 <p className="text-[15px] sm:text-[16px] leading-relaxed text-gray-600">
                   Only for Veterans who have been out of Active Duty Military
