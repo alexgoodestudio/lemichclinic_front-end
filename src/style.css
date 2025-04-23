@@ -80,7 +80,6 @@
   letter-spacing: .5pt;
 }
 
-
 /* .bg-service-cards{
 background-color: #F7F3F0;
 }
@@ -384,12 +383,15 @@ background-color: #F7F3F0;
 .font-bold {
   font-weight: 500;
 }
+.bg-contact{
+  background-color: #222222;
+}
 
 .huge-text {
   font-size: 16vw;
   color: rgba(0, 0, 0, 0.08);
-  margin-top: 30px;
-  margin-bottom: 38px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   background-color: #f1f5f9;
   text-align: center;
   white-space: nowrap;
@@ -397,6 +399,13 @@ background-color: #F7F3F0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bg-yellow{
+  background-color: #fae795;
+}
+.yellow{
+  color: #fae795;
 }
 
 /* .service-hover:nth-child(1):hover {
@@ -459,6 +468,7 @@ background-color: #F7F3F0;
 .rotate {
   transition: transform 0.3s ease-in-out;
 }
+
 
 .rotate:hover {
   transform: rotate(30deg);
@@ -645,9 +655,8 @@ background-color: #F7F3F0;
 }
 
 .accent-button:hover {
+  background-color: #094f43;
   color: #ffffff;
-  border-color: #5bc099 ;
-
 }
 
 .icon {
@@ -932,9 +941,10 @@ background-color: #F7F3F0;
     color: #ffffff;
   }
   .sub-head-text{
-    background-color:#5bc099;
+    background-color:	#414141;
     padding: 9px;
     border-radius: 15px;
+    font-weight: 700;
   }
 
   .margin-left-home {

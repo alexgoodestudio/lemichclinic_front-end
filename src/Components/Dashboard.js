@@ -4,7 +4,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "../style.css";
 import Tricare from "./Tricare.js";
 import Video from "./images/woods2.mp4";
-// import logo from "./images/logo.png";
+// import flag from "./images/flag2.jpg";
+import ContactForm from "./ContactForm";
 import { Link } from "react-router-dom";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
@@ -24,38 +25,42 @@ function Dashboard() {
       window.scrollTo(0, 0);
 
       gsap.set(".title2", { text: "Home of Military Mental Health", opacity: 1 });
-      gsap.set(".title2", { opacity: 1 });
-      // const textTimeline = gsap.timeline({
-      //   repeat: -1,
-      //   yoyo: false,
-      //   onComplete: () => textTimeline.restart(),
-      // });
 
-      // textTimeline
-      //   .to(".title2", { opacity: 1, duration: 30.5, delay: 1 })
-      //   .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
-      //   .set(".title2", { text: "TAKE A DEEP BREATH" })
-      //   .to(".title2", { opacity: 1, duration: 1.5 })
-      //   .to(".title2", { opacity: 1, duration: 2.5 })
-      //   .to(".title2", { opacity: 0, blur: 5, duration: 1.35 })
-      //   .set(".title2", { text: "Home of Military Mental Health" })
-      //   .to(".title2", { opacity: 1, duration: 1.8, ease: "power2.out" });
+      gsap.fromTo(
+        missionRef.current,
+        { opacity: 0, y: 100 },
+        {
+          opacity: 1,
+          y: 0,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: missionRef.current,
+            start: "top 90%",
+            end: "bottom 10%",
+            scrub: 1,
+          },
+        }
+      );
+
+      gsap.utils.toArray(".service-hover").forEach((card, i) => {
+        gsap.fromTo(
+          card,
+          { opacity: 0, scale: 0.8 },
+          {
+            opacity: 1,
+            scale: 1,
+            ease: "power3.out",
+            duration: 0.8,
+            delay: i * 0.15,
+            scrollTrigger: {
+              trigger: card,
+              start: "top 85%",
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+      });
     }
-    gsap.fromTo(
-      missionRef.current,
-      { opacity: 0, y: 100 },
-      {
-        opacity: 1,
-        y: 0,
-        ease: "power4.out",
-        scrollTrigger: {
-          trigger: missionRef.current,
-          start: "top 90%",
-          end: "bottom 10%",
-          scrub: 1,
-        },
-      }
-    );
   }, [videoLoaded]);
 
   return (
@@ -111,10 +116,10 @@ function Dashboard() {
                   </a>
                 </div>
                 <div className="bold sub-head-text">
-  <Link to="/contact" className="no-underline text-inherit hover:opacity-80 transition-opacity">
-    LOCATED IN NORFOLK, VIRGINIA
-  </Link>
-</div>
+                  <Link to="/contact" className="no-underline text-inherit hover:opacity-80 transition-opacity">
+                    LOCATED IN NORFOLK, VIRGINIA
+                  </Link>
+                </div>
               </div>
             </h1>
           </div>
@@ -124,15 +129,14 @@ function Dashboard() {
       {videoLoaded && (
         <>
           {/* Mission Section */}
-          <div className="py-4  ">
+          <div className="pt-4 ">
             <div className="container">
               <div className="row">
-                <div className="col-lg-2"></div>
-                <div className="col-lg-8 px-4">
+                <div className="col-lg-12 px-4 mt-lg-5">
                   <h2 className="mb-lg-4 mb-4 mt-lg-5 mt-2 mission-text barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
                     <span>OUR MISSION</span>
                   </h2>
-                  <p className="text-justify mission-text text-gray-500 line-height-large">
+                  <p className="text-justify mission-text mb-lg-5 text-gray-500 line-height-large">
                     The Lemich Clinic for <span className=" bold text-gray-600">Military Mental Health</span> was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority
@@ -144,7 +148,6 @@ function Dashboard() {
                     our program.
                   </p>
                 </div>
-                <div className="col-lg-2"></div>
               </div>
             </div>
           </div>
@@ -166,6 +169,13 @@ function Dashboard() {
                   mission-ready.
                 </p>
               </div> */}
+
+              {/* <div className="row mb-5">
+              <div className="col-lg-12">
+                <img src={flag} alt="American Flag" />
+              </div>
+            </div> */}
+
               <div ref={missionRef} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center ">
                 {[
                   {
@@ -191,9 +201,9 @@ function Dashboard() {
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className=" p-lg-3 p-2 service-hover border rounded mb-lg-3 "
+                    className=" p-lg-3 p-2 service-hover border rounded mb-lg-0 "
                   >
-                    <div className="mb-4 mt-lg-5 mt-4">
+                    <div className="mb-4 mt-lg-5 mt-4 ">
                       <i
                         className={`fas ${feature.icon} text-gray-600 fa-2x`}
                       ></i>
@@ -204,8 +214,24 @@ function Dashboard() {
                 ))}
               </div>
             </div>
+            
+            <div className="row">
+              <div className="col-lg-12 ">
+                <Tricare />
+              </div>
+            </div>
+            
+            <div className="row bg-gray-400">
+              <div className="col-lg-4"></div>
+              <div className="col-lg-4 p-5  ">
+                <h2 className="mb-5 text-start text-gray-100">Get in Touch with Us</h2>
+                <ContactForm />
+              </div>
+              <div className="col-lg-4"></div>
+            </div>
+            
 
-            <Tricare />
+            
           </div>
         </>
       )}
