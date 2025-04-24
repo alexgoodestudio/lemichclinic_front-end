@@ -121,7 +121,7 @@ function Dashboard() {
                   <Link to="/contact" className="no-underline text-inherit hover:opacity-80 transition-opacity">
                     LOCATED IN NORFOLK, VIRGINIA
                   </Link>
-                  
+
                 </div>
               </div>
             </h1>
@@ -133,22 +133,24 @@ function Dashboard() {
         <>
           {/* Mission Section */}
           <div className="pt-4 ">
-            <div className="container">                 
+            <div className="container">
 
 
               <div className="row">
-                <div className="col-lg-12 px-4 ">
-                  <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
-                    <span>OUR MISSION <div className="row ">
-                  <div className="col-lg-4"></div>
-                    <div className="col-lg-4">
-                      <img src={flag} alt="American Flag " />
-                    </div>
-                    <div className="col-lg-4"></div>
-                  </div></span>
+                <div className="col-lg-12">
+                  <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text barlow  text-gray-600 mobile-header-mission justify-center spaced-underline-header">
+                    OUR MISSION 
+                      <div className="row">
+                        <div className="col-lg-4"></div>
+                        <div className="col-lg-4 ms-2">
+                          <img src={flag} alt="American Flag " />
+                        </div>
+                        <div className="col-lg-4"></div>
+                      </div>
+                    
 
                   </h2>
-                  <p className="text-justify mission-text mb-lg-5 text-gray-500 line-height-large">
+                  <p className="text-justify px-2 mission-text mb-lg-5 text-gray-500 line-height-large">
                     The Lemich Clinic for <span className=" bold text-gray-600">Military Mental Health</span> was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority
@@ -172,8 +174,8 @@ function Dashboard() {
             </div>
           </div>
 
-            
-          
+
+
           {/* Features Section */}
 
 
@@ -234,15 +236,15 @@ function Dashboard() {
                 ))}
               </div>
             </div>
-            {/* <Norfolk /> */}
+            <Norfolk />
             <div className="row">
               <div className="col-lg-12 ">
                 <Tricare />
               </div>
             </div>
-            
+
             <div className="row bg-slate-100">
-              
+
               <div className="col-lg-4"></div>
               <div className="col-lg-4 p-5  ">
                 <h2 className="mb-5 text-start dotted-underline text-slate-500">Get in Touch with Us</h2>
@@ -250,9 +252,9 @@ function Dashboard() {
               </div>
               <div className="col-lg-4"></div>
             </div>
-            
 
-            
+
+
           </div>
         </>
       )}
