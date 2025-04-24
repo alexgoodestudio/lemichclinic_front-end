@@ -8,7 +8,7 @@ import "../style.css";
 function Tricare() {
   return (
     <div className="container-fluid  position-relative">
-      <div className="row p-4 bg-dark position-relative py-5">
+      <div className="row p-4 bg-green position-relative py-5">
         <div className="col-lg-3">
           <div className="huge-text container-fluid hideMobile"></div>
 

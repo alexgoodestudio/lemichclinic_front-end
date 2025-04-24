@@ -31,7 +31,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
       
       <div className="row mb-3 ">
         <div className="col-lg-6">
-          <label className="form-label text-white font-medium" htmlFor="name">
+          <label className="form-label text-slate-500 font-medium" htmlFor="name">
             Name
           </label>
           <input
@@ -45,7 +45,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
           />
         </div>
         <div className="col-lg-6">
-          <label className="form-label text-white font-medium" htmlFor="email">
+          <label className="form-label text-slate-500 font-medium" htmlFor="email">
             Email
           </label>
           <input
@@ -60,7 +60,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
         </div>
       </div>
       <div className="mb-3">
-        <label className="form-label text-white font-medium" htmlFor="phone">
+        <label className="form-label text-slate-500 font-medium" htmlFor="phone">
           Phone Number
         </label>
         <input
@@ -73,7 +73,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
         />
       </div>
       <div className="mb-3">
-        <label className="form-label text-white font-medium" htmlFor="message">
+        <label className="form-label text-slate-500 font-medium" htmlFor="message">
           Message
         </label>
         <textarea

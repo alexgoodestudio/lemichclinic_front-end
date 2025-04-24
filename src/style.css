@@ -485,6 +485,13 @@ background-color: #F7F3F0;
   text-decoration: none; /* Ensure underline doesn't appear on hover */
 }
 
+.dotted-underline {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 8px;
+}
+
 .spaced-underline {
   text-decoration: underline 1px;
   text-underline-offset: 2px;
@@ -941,7 +948,7 @@ background-color: #F7F3F0;
     color: #ffffff;
   }
   .sub-head-text{
-    background-color:	#414141;
+    background-color:	#707070;
     padding: 9px;
     border-radius: 15px;
     font-weight: 700;

@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "../style.css";
 import Tricare from "./Tricare.js";
 import Video from "./images/woods2.mp4";
-// import flag from "./images/flag2.jpg";
+import flag from "./images/flag2.png";
 import ContactForm from "./ContactForm";
 import { Link } from "react-router-dom";
 import { TextPlugin } from "gsap/TextPlugin";
@@ -24,8 +24,10 @@ function Dashboard() {
     if (videoLoaded) {
       window.scrollTo(0, 0);
 
-      gsap.set(".title2", { text: "Home of Military Mental Health", opacity: 1 });
-
+      gsap.set(".title2", {
+        text: '<div class="text-center">Home of Military Mental Health</div>',
+        opacity: 1
+      });
       gsap.fromTo(
         missionRef.current,
         { opacity: 0, y: 100 },
@@ -90,7 +92,7 @@ function Dashboard() {
         </video>
 
         {videoLoaded && (
-          <div className="col-lg-6 ms-lg-4 col-12  relative h-full flex justify-center items-center">
+          <div className="col-lg-6 ms-lg-2 col-12  relative h-full flex justify-center items-center">
             <div className="absolute inset-0"></div>
             <h1
               ref={titleRef}
@@ -103,7 +105,7 @@ function Dashboard() {
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
                 /> */}
-                <h1 className="align-content-center  bold TLC title2">
+                <h1 className="bold TLC title2 w-full flex justify-center">
                   The Lemich Clinic
                 </h1>
               </div>
@@ -119,6 +121,7 @@ function Dashboard() {
                   <Link to="/contact" className="no-underline text-inherit hover:opacity-80 transition-opacity">
                     LOCATED IN NORFOLK, VIRGINIA
                   </Link>
+                  
                 </div>
               </div>
             </h1>
@@ -130,11 +133,20 @@ function Dashboard() {
         <>
           {/* Mission Section */}
           <div className="pt-4 ">
-            <div className="container">
+            <div className="container">                 
+
+
               <div className="row">
-                <div className="col-lg-12 px-4 mt-lg-5">
-                  <h2 className="mb-lg-4 mb-4 mt-lg-5 mt-2 mission-text barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
-                    <span>OUR MISSION</span>
+                <div className="col-lg-12 px-4 ">
+                  <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text barlow text-center text-gray-600 mobile-header-mission spaced-underline-header">
+                    <span>OUR MISSION <div className="row ">
+                  <div className="col-lg-4"></div>
+                    <div className="col-lg-4">
+                      <img src={flag} alt="American Flag " />
+                    </div>
+                    <div className="col-lg-4"></div>
+                  </div></span>
+
                   </h2>
                   <p className="text-justify mission-text mb-lg-5 text-gray-500 line-height-large">
                     The Lemich Clinic for <span className=" bold text-gray-600">Military Mental Health</span> was founded on
@@ -147,12 +159,24 @@ function Dashboard() {
                     outside the military, contact us to see if you qualify for
                     our program.
                   </p>
+
                 </div>
               </div>
+              {/* <div className="row ">
+                  <div className="col-lg-4"></div>
+                    <div className="col-lg-4">
+                      <img src={flag} alt="American Flag " />
+                    </div>
+                    <div className="col-lg-4"></div>
+                  </div> */}
             </div>
           </div>
-          <Norfolk />
+
+            
+          
           {/* Features Section */}
+
+
           <div className="bg-slate-100">
             <div className="container mb-5">
               {/* <div className="hideMobile">
@@ -170,11 +194,7 @@ function Dashboard() {
                 </p>
               </div> */}
 
-              {/* <div className="row mb-5">
-              <div className="col-lg-12">
-                <img src={flag} alt="American Flag" />
-              </div>
-            </div> */}
+
 
               <div ref={missionRef} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center ">
                 {[
@@ -214,17 +234,18 @@ function Dashboard() {
                 ))}
               </div>
             </div>
-            
+            {/* <Norfolk /> */}
             <div className="row">
               <div className="col-lg-12 ">
                 <Tricare />
               </div>
             </div>
             
-            <div className="row bg-gray-400">
+            <div className="row bg-slate-100">
+              
               <div className="col-lg-4"></div>
               <div className="col-lg-4 p-5  ">
-                <h2 className="mb-5 text-start text-gray-100">Get in Touch with Us</h2>
+                <h2 className="mb-5 text-start dotted-underline text-slate-500">Get in Touch with Us</h2>
                 <ContactForm />
               </div>
               <div className="col-lg-4"></div>
