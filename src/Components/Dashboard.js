@@ -66,7 +66,7 @@ function Dashboard() {
   }, [videoLoaded]);
 
   return (
-    <div className="bg-slate-100 overflow-hidden ">
+    <div className="bg-slate-100  overflow-hidden ">
       <Helmet>
         <meta
           name="description"
@@ -78,7 +78,7 @@ function Dashboard() {
         </title>
       </Helmet>
 
-      <div className="row align-items-center  background-section ">
+      <div className="row  align-items-center  background-section ">
         <video
           autoPlay
           muted
@@ -92,7 +92,7 @@ function Dashboard() {
         </video>
 
         {videoLoaded && (
-          <div className="col-lg-6 ms-lg-2 col-12  relative h-full flex justify-center items-center">
+          <div className="col-lg-6 ms-lg-2 col-12   relative h-full flex justify-center items-center">
             <div className="absolute inset-0"></div>
             <h1
               ref={titleRef}
@@ -105,7 +105,7 @@ function Dashboard() {
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
                 /> */}
-                <h1 className="bold TLC title2 w-full flex justify-center">
+                <h1 className="bold TLC  title2 w-full flex justify-center">
                   The Lemich Clinic
                 </h1>
               </div>
@@ -117,8 +117,8 @@ function Dashboard() {
                     <span className="ps-lg-2 p-1 call-text">Call Us</span>
                   </a>
                 </div>
-                <div className="bold sub-head-text">
-                  <Link to="/contact" className="no-underline text-inherit hover:opacity-80 transition-opacity">
+                <div className="bold  sub-head-text">
+                  <Link to="/contact" className="ms-lg-4  no-underline text-inherit  hover:opacity-80 transition-opacity">
                     LOCATED IN NORFOLK, VIRGINIA
                   </Link>
 
@@ -236,23 +236,26 @@ function Dashboard() {
                 ))}
               </div>
             </div>
-            <Norfolk />
+            
             <div className="row">
               <div className="col-lg-12 ">
                 <Tricare />
               </div>
             </div>
+            
 
             <div className="row bg-slate-100">
 
               <div className="col-lg-4"></div>
-              <div className="col-lg-4 p-5  ">
-                <h2 className="mb-5 text-start dotted-underline text-slate-500">Get in Touch with Us</h2>
+              <div className="col-lg-4 py-5 px-4  ">
+                <h2 className="mb-5 text-start  text-slate-500">Get in Touch with Us</h2>
                 <ContactForm />
               </div>
               <div className="col-lg-4"></div>
             </div>
-
+            <div className="hideMobile ">
+              <Norfolk />
+            </div>
 
 
           </div>
