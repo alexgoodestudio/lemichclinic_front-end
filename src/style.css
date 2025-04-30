@@ -5,36 +5,9 @@
   font-style: normal;
 }
 
-
-
 @font-face {
   font-family: "Tomorrow-Semibold";
   src: url("./Components/fonts/Tomorrow-SemiBold.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: "Gleegoo";
-  src: url("./Components/fonts/Glegoo-Bold.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lora";
-  src: url("./Components/fonts/Lora-VariableFont_wght.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: "Branch";
-  src: url("./Components/fonts/Branch.otf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -46,22 +19,9 @@
   font-style: normal;
 }
 
-
-
 .barlow {
   font-family: "Barlow", sans-serif;
 }
-
-.gleegoo {
-  font-family: "Gleegoo", sans-serif;
-}
-
-
-
-.lora {
-  font-family: "Lora", sans-serif;
-}
-
 
 .tomorrow {
   font-family: "Tomorrow", sans-serif;
@@ -69,7 +29,6 @@
 .tomorrow-semibold {
   font-family: "Tomorrow-Semibold", sans-serif;
 }
-
 
 .mission {
   font-size: 16pt;
@@ -88,12 +47,6 @@ background-color: #F7F3F0;
   background-color: #F7F3F0;
 
 } */
-
-
-
-.branch {
-  font-family: "Branch", sans-serif;
-}
 
 .forward {
   z-index: 2000;
@@ -129,7 +82,7 @@ background-color: #F7F3F0;
 }
 
 .demo {
-  border-top: 2px solid #ffffff;
+  border-top: 3px solid #ffffff;
   padding: 3px 0; /* Adds 10px spacing above and below the text */
 
 }
@@ -244,9 +197,6 @@ background-color: #F7F3F0;
   letter-spacing: .5pt;
 }
 
-.texture{
-  background-color: #184434ff;
-  background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");}
 .green{
   color: #1e5631
 }
@@ -280,13 +230,12 @@ background-color: #F7F3F0;
 }
 
 .TLC {
-  font-size: 26.697pt;
-  letter-spacing: 1.5pt;
+  font-size: 26pt;
+  letter-spacing: 1pt;
 }
 
-
 .sub-head{
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   font-size: 16.5pt;
   color: #ffffff;
   /* background-color: rgba(112, 112, 112, 0.5); */
@@ -838,7 +787,7 @@ background-color: #F7F3F0;
 }
 
   .demo {
-    border-top: 1px solid #ffffff;
+    border-top: 2px solid #ffffff;
     padding: 7.5px 0; /* Adds 10px spacing above and below the text */
   }
   
@@ -954,10 +903,10 @@ background-color: #F7F3F0;
 
   .sub-head{
     letter-spacing: 1.35px;
-    font-size: 8pt;
+    font-size: 8.5pt;
   }
   .sub-head-text{
-    background-color:	#495360;
+    background-color:	#636060;
     padding: 9px;
     border-radius: 15px;
     font-weight: 700;

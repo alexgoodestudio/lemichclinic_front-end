@@ -9,7 +9,7 @@ import ContactForm from "./ContactForm";
 import { Link } from "react-router-dom";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
-import Norfolk from "./Norfolk.js";
+// import Norfolk from "./Norfolk.js";
 
 function Dashboard() {
   const titleRef = useRef(null);
@@ -25,7 +25,7 @@ function Dashboard() {
       window.scrollTo(0, 0);
 
       gsap.set(".title2", {
-        text: '<div class="text-center">Home of Military Mental Health</div>',
+        text: '<div class="tomorrow-semibold text-center">Home of <span class="">Military Mental Health</span></div>',
         opacity: 1
       });
       gsap.fromTo(
@@ -117,8 +117,8 @@ function Dashboard() {
                     <span className="ps-lg-2 p-1 call-text">Call Us</span>
                   </a>
                 </div>
-                <div className="bold  sub-head-text">
-                  <Link to="/contact" className="ms-lg-4  no-underline text-inherit  hover:opacity-80 transition-opacity">
+                <div className="bold ms-lg-5  sub-head-text">
+                  <Link to="/contact" className=" no-underline text-inherit  hover:opacity-80 transition-opacity">
                     LOCATED IN NORFOLK, VIRGINIA
                   </Link>
 
@@ -253,9 +253,9 @@ function Dashboard() {
               </div>
               <div className="col-lg-4"></div>
             </div>
-            <div className="hideMobile ">
+            {/* <div className="hideMobile ">
               <Norfolk />
-            </div>
+            </div> */}
 
 
           </div>
