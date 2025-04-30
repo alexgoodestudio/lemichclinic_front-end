@@ -114,7 +114,7 @@ function Dashboard() {
                 <div className="btn accent-button  me-lg-3 me-2 mt-lg-2  text-center my-1">
                   <i className="fas fa-phone-alt text-md "></i>
                   <a href="tel:+17575361233" className="phone-link mobile-bold">
-                    <span className="ps-lg-2 p-1 call-text">Call Us</span>
+                    <span className=" p-1 call-text">Call Us</span>
                   </a>
                 </div>
                 <div className="bold ms-lg-5  sub-head-text">

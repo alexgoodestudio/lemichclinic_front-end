@@ -603,20 +603,20 @@ background-color: #F7F3F0;
 .accent-button {
   /* background-color: #5bc099; */
   /* background-color: #5bc099 ; */
-  background-color: #10685a;
-  color: #ffffff;
+  background-color: #a7d1f8;
+  color: #1a1b1b;
+  font-weight: 600;
   border-radius: 20px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 11pt;
+  font-size: 12pt;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .accent-button:hover {
-  background-color: #094f43;
-  color: #ffffff;
+  background-color: rgba(167, 209, 248, 0.8);  color: #1a1b1b;
 }
 
 .icon {
