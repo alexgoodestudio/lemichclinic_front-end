@@ -9,10 +9,10 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar navbar-expand-lg main">
+    <nav className="navbar  bg-light-blue navbar-expand-lg main">
       <div className="container overflow-hidden">
         {/* Logo and Brand */}
-        <Link className="logo-location navbar-brand  d-flex" to="/">
+        <Link className="logo-location barlow navbar-brand  d-flex" to="/">
           {/* <img className="tinyLogo" src={logo} alt="logo" /> */}
           <span className="">The Lemich Clinic &nbsp;</span>
           <span className="">

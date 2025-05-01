@@ -30,7 +30,7 @@ function Tricare() {
             <span className="barlow text-lg ">Great news! We are in-network with TRICARE.</span><br /><br />
             Active duty, please have
             your referral made to{" "}
-            <span className="spaced-underline">The Lemich Clinic</span>. Dependents
+            <span className="spaced-underline tan">The Lemich Clinic</span>. Dependents
             and retirees, no referral is needed. Just make an appointment, and
             we’ll take care of the rest.
           </p>
@@ -38,7 +38,7 @@ function Tricare() {
             to="/tricare-health-insurance"
             className="group flex items-center text-xl text-white space-x-2 no-underline"
           >
-            <p className="m-0 group-hover:text-teal-100 transition-colors duration-300">Learn More</p>
+            <p className="m-0 group-hover:text-teal-100 transition-colors duration-300 ">Learn More</p>
             <span className="material-symbols-outlined text-xl transform transition-all duration-300 group-hover:translate-x-1 group-hover:text-teal-100">
               east
             </span>

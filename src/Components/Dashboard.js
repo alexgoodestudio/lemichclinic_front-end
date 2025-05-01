@@ -25,7 +25,7 @@ function Dashboard() {
       window.scrollTo(0, 0);
 
       gsap.set(".title2", {
-        text: '<div class="tomorrow-semibold text-center">Home of <span class="">Military Mental Health</span></div>',
+        text: '<div class="tomorrow text-center">Home of <span class="">Military</span> <span class="">Mental Health</span></div>',
         opacity: 1
       });
       gsap.fromTo(
@@ -105,7 +105,7 @@ function Dashboard() {
                   alt="logo heart"
                   className="logo rotate mb-lg-2 mb-2"
                 /> */}
-                <h1 className="bold TLC  title2 w-full flex justify-center">
+                <h1 className="bold TLC px-2 title2 w-full flex justify-center">
                   The Lemich Clinic
                 </h1>
               </div>
@@ -117,9 +117,9 @@ function Dashboard() {
                     <span className=" p-1 call-text">Call Us</span>
                   </a>
                 </div>
-                <div className="bold ms-lg-5  sub-head-text">
-                  <Link to="/contact" className=" no-underline text-inherit  hover:opacity-80 transition-opacity">
-                    LOCATED IN NORFOLK, VIRGINIA
+                <div className="sub-head ms-lg-5  sub-head-text">
+                  <Link to="/contact" className="text-white no-underline hover:opacity-80 transition-opacity">
+                    LOCATED IN <span className="">NORFOLK, VIRGINIA</span>
                   </Link>
 
                 </div>
