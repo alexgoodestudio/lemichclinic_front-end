@@ -423,6 +423,9 @@
 .rounded5 {
   border-radius: 10px;
 }
+.insurance-header-text{
+  font-size: 17pt;
+}
 
 .rotate {
   transition: transform 0.3s ease-in-out;
@@ -474,6 +477,7 @@
   height: 39px;
   margin-bottom: 10px;
 }
+
 
 .large {
   font-size: 15pt;
@@ -633,9 +637,6 @@
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.main {
-  background-color: #ffffff;
-}
 
 .rounded3 {
   border-radius: 10px;
@@ -673,7 +674,7 @@
 
 .underline3:hover {
   display: inline-block;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(255, 255, 255);
   padding-bottom: 3px;
 }
 
@@ -708,10 +709,6 @@
   font-weight: 200;
 }
 
-.thin-insurance-body {
-  font-weight: 200;
-  font-size: 20pt;
-}
 .ls{
   letter-spacing: .25pt;
 }
@@ -770,6 +767,10 @@
     line-height: 2;
   }
 
+  .insurance-header-text{
+    font-size: 13pt;
+  }
+
   .p-owners-text{
     font-size: 10pt;
   }
@@ -777,6 +778,7 @@
   .mobile-header-mission {
     font-size: 22.15pt;
   }
+  
 
   .demo {
     border-top: 2px solid #ffffff;
@@ -787,7 +789,9 @@
     text-decoration: underline 1px;
     text-underline-offset: 2px;
   }
-
+.text-gray{
+  color: #353535;
+}
   .side-note {
     text-align: start;
   }
@@ -992,12 +996,12 @@
   .hideFull {
     display: inline;
   }
-  .text-insurance-header-mobile {
-    font-size: 11pt;
-  }
+
   .padding-mobile-owners {
     padding: 30px;
   }
+
+
   .border-radius-mobile {
     border-radius: 20px;
   }

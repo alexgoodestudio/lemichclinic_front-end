@@ -4,7 +4,7 @@ import run from "./images/new_creek.jpg";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Helmet } from "react-helmet";
-
+import { HiOutlineShieldCheck } from "react-icons/hi";
 
 function Insurance() {
   const logoRef = useRef(null); // Reference for the logo
@@ -27,18 +27,19 @@ function Insurance() {
                     />
                     <title> Payment and Insurance Options | Norfolk, VA | Tricare Accepted | Military Mental Health Services</title>
                   </Helmet>
-      <div className="bg-green text-white py-lg-3 px-lg-5  py-1 pt-2 px-2 d-flex text-justify ">
-        
-        <h1 className=" pb-1 mt-3 thin-insurance-body text-white flex text-insurance-header-mobile ms-lg-5">
-        Find the best payment and insurance options to fit your needs.
-        </h1>
-      </div>
 
       {/* Image Section */}
       <div className="">
+      <div className="bg-light-blue  text-gray  ps-lg-3  py-3   d-flex text-justify ">
+      <HiOutlineShieldCheck className="text-gray ms-3  me-lg-3 me-1 text-2xl md:text-3xl" />     
+          <h1 className=" flex barlow insurance-header-text pe-3 ms-2 ms-lg-1 mt-2">
+        Payment and Insurance Options
+        </h1>
+      </div>
         <div className="row">
           {/* Image Column */}
           <div className="col-lg-6 col-md-12 ">
+
               <img
                 ref={logoRef} 
                 src={run}
@@ -48,9 +49,10 @@ function Insurance() {
             </div>
 
 
+
           {/* Text Content Column */}
           <div className="col-lg-6 text-sm text-justify p-4 col-md-12 ">
-            <h2 className="text-2xl font-semibold mb-3 ">Active Duty</h2>
+            <h2 className="text-xl font-semibold mb-3 ">Active Duty</h2>
             <ul className=" text-gray-700 me-lg-5 me-4">
               <li className="mb-2">
                 <strong>Tricare:</strong> Must have an active referral on file
@@ -65,7 +67,7 @@ function Insurance() {
             </ul>
             <br />
 
-            <h2 className="text-2xl font-semibold mb-3">
+            <h2 className="text-xl font-semibold mb-3">
               Veterans and Dependents
             </h2>
             <ul className="text-justify  text-gray-700 me-lg-5 me-4">

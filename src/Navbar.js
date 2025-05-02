@@ -9,10 +9,10 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar  bg-light-blue navbar-expand-lg main">
-      <div className="container overflow-hidden">
+    <nav className="navbar  bg-green text-white navbar-expand-lg main">
+      <div className="container  overflow-hidden">
         {/* Logo and Brand */}
-        <Link className="logo-location barlow navbar-brand  d-flex" to="/">
+        <Link className="logo-location  barlow navbar-brand text-white d-flex" to="/">
           {/* <img className="tinyLogo" src={logo} alt="logo" /> */}
           <span className="">The Lemich Clinic &nbsp;</span>
           <span className="">
@@ -33,35 +33,35 @@ function Navbar() {
 </button>
 
 {/* Collapsible Menu */}
-<div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
-  <ul className="navbar-nav nav-align-end ms-auto d-flex flex-lg-row flex-column gap-3 nav-link-styling">
+<div className={`collapse  navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
+  <ul className="navbar-nav  nav-align-end ms-auto d-flex flex-lg-row flex-column gap-3 nav-link-styling">
     <li className="nav-item">
-      <Link className="nav-link underline3" to="/" onClick={() => setIsOpen(false)}>
+      <Link className="nav-link text-white underline3" to="/" onClick={() => setIsOpen(false)}>
         Home
       </Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link underline3" to="/team-norfolk" onClick={() => setIsOpen(false)}>
+      <Link className="nav-link text-white underline3" to="/team-norfolk" onClick={() => setIsOpen(false)}>
         Team
       </Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link underline3" to="/exclusive-services-norfolk" onClick={() => setIsOpen(false)}>
+      <Link className="nav-link text-white underline3" to="/exclusive-services-norfolk" onClick={() => setIsOpen(false)}>
         Services
       </Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link underline3" to="/tricare-health-insurance" onClick={() => setIsOpen(false)}>
+      <Link className="nav-link text-white underline3" to="/tricare-health-insurance" onClick={() => setIsOpen(false)}>
         Insurance
       </Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link underline3" to="/contact" onClick={() => setIsOpen(false)}>
+      <Link className="nav-link text-white underline3" to="/contact" onClick={() => setIsOpen(false)}>
         Contact
       </Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link underline3" to="/owners-norfolk" onClick={() => setIsOpen(false)}>
+      <Link className="nav-link text-white underline3" to="/owners-norfolk" onClick={() => setIsOpen(false)}>
         Owners
       </Link>
     </li>
