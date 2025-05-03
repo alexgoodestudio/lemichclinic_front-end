@@ -350,9 +350,7 @@
 .font-bold {
   font-weight: 500;
 }
-.bg-contact {
-  background-color: #222222;
-}
+
 
 .huge-text {
   font-size: 19vw;
@@ -624,6 +622,9 @@
   background-color: rgba(167, 209, 248, 0.8);
   color: #1a1b1b;
 }
+.active-link {
+  color: white !important;
+}
 
 .icon {
   width: 10%;
@@ -666,6 +667,10 @@
   width: 75%;
 }
 
+
+.text-insurance{
+  color: #353535;}
+
 .underline2 {
   display: inline-block;
   border-bottom: 1px solid black;
@@ -674,7 +679,8 @@
 
 .underline3:hover {
   display: inline-block;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 2px solid #ffffff;
+  color: white;
   padding-bottom: 3px;
 }
 
@@ -740,6 +746,10 @@
   background-color: #bfd6ee;
 }
 
+.bg-insurance-header{
+  background-color: #bfd6ee;
+}
+
 
 .light-blue {
   color: #b5cde7;
@@ -761,11 +771,35 @@
   animation-delay: 0.3s;
   animation-fill-mode: both;
 }
+.bg-navbar{
+  background-color: hsla(158, 48%, 18%);
+  color: white;
+}
+
+.nav-text{
+  color: #ffffff;
+}
 
 @media (max-width: 768px) {
   .line-height-large {
     line-height: 2;
   }
+  .bg-insurance-header{
+    background-color: hsla(158, 48%, 18%);
+    color: white;
+  }
+
+  .bg-navbar{
+    background-color: #bfd6ee;
+  }
+
+  .nav-text{
+    color: #353535;
+  }
+  .active-link {
+    color: #353535 !important;
+  }
+  
 
   .insurance-header-text{
     font-size: 13pt;
@@ -778,7 +812,6 @@
   .mobile-header-mission {
     font-size: 22.15pt;
   }
-  
 
   .demo {
     border-top: 2px solid #ffffff;
@@ -791,6 +824,9 @@
   }
 .text-gray{
   color: #353535;
+}
+.text-insurance{
+  color: white;
 }
   .side-note {
     text-align: start;

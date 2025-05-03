@@ -30,8 +30,8 @@ function Insurance() {
 
       {/* Image Section */}
       <div className="">
-      <div className="bg-light-blue  text-gray  ps-lg-3  py-3   d-flex text-justify ">
-      <HiOutlineShieldCheck className="text-gray ms-3  me-lg-3 me-1 text-2xl md:text-3xl" />     
+      <div className="bg-insurance-header  text-insurance  ps-lg-3  py-3   d-flex text-justify ">
+      <HiOutlineShieldCheck className="text-insurance ms-3  me-lg-3 me-1 text-2xl md:text-3xl" />     
           <h1 className=" flex barlow insurance-header-text pe-3 ms-2 ms-lg-1 mt-2">
         Payment and Insurance Options
         </h1>
