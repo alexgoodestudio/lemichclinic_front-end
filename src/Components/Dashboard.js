@@ -110,18 +110,17 @@ function Dashboard() {
                 </h1>
               </div>
 
-              <div className="sub-head  demo  d-flex">
-                <div className="btn accent-button  me-lg-3 me-2 mt-lg-2  text-center my-1">
-                  <i className="fas fa-phone-alt text-md "></i>
+              <div className="sub-head demo d-flex">
+                <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
+                  <i className="fas fa-phone-alt text-md"></i>
                   <a href="tel:+17575361233" className="phone-link mobile-bold">
-                    <span className=" p-1 call-text">Call Us</span>
+                    <span className="p-1 call-text">Call Us</span>
                   </a>
                 </div>
                 <div className="sub-head ms-lg-5  sub-head-text">
                   <Link to="/contact" className="text-white no-underline hover:opacity-80 transition-opacity">
                     LOCATED IN <span className="">NORFOLK, VIRGINIA</span>
                   </Link>
-
                 </div>
               </div>
             </h1>
@@ -134,8 +133,6 @@ function Dashboard() {
           {/* Mission Section */}
           <div className="pt-4 ">
             <div className="container">
-
-
               <div className="row">
                 <div className="col-lg-12">
                   <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text barlow  text-gray-600 mobile-header-mission justify-center spaced-underline-header">
@@ -146,9 +143,7 @@ function Dashboard() {
                           <img src={flag} alt="American Flag " />
                         </div>
                         <div className="col-lg-4"></div>
-                      </div>
-                    
-
+                      </div>                    
                   </h2>
                   <p className="text-justify px-2 mission-text mb-lg-5 text-gray-500 line-height-large">
                     The Lemich Clinic for <span className=" bold text-gray-600">Military Mental Health</span> was founded on
@@ -164,40 +159,12 @@ function Dashboard() {
 
                 </div>
               </div>
-              {/* <div className="row ">
-                  <div className="col-lg-4"></div>
-                    <div className="col-lg-4">
-                      <img src={flag} alt="American Flag " />
-                    </div>
-                    <div className="col-lg-4"></div>
-                  </div> */}
             </div>
           </div>
 
-
-
           {/* Features Section */}
-
-
           <div className="bg-slate-100">
             <div className="container mb-5">
-              {/* <div className="hideMobile">
-                <h2  className="mb-3 process-header barlow">
-                  <span className="text-gray-800 px-2"> BUILT FOR YOU</span>{" "}
-                </h2>
-                
-                <p className="text-justify text-gray-500  line-height-large  border-top-bottom px-2  text-md pt-4">
-                  Every service member’s journey is different, and so are their
-                  mental health needs. Whether you're facing the weight of
-                  deployment, adjusting to life changes, or navigating
-                  military-specific challenges, our expert clinicians provide
-                  care that fits you—personalized, specialized, and
-                  mission-ready.
-                </p>
-              </div> */}
-
-
-
               <div ref={missionRef} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center ">
                 {[
                   {

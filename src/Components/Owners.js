@@ -45,7 +45,7 @@ function Owners() {
 
         {/* Text Section */}
         <div className="col-lg-6 order-2 order-lg-1 px-lg-5 px-4">
-          <h2 className="text-insurance-header-mobile hideFull">
+          <h2 className="text-insurance-header-mobile text-lg hideFull">
             Gregory and Jennifer Lemich
           </h2>
           <div className="p-lg-5 p-1">
