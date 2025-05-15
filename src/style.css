@@ -299,6 +299,12 @@
   transform: scale(1.08);
 }
 
+.navbar-brand,
+.nav-link,
+.nav-text {
+  color: white !important;
+}
+
 .navbar-nav {
   display: flex;
   justify-content: end;
@@ -407,6 +413,8 @@
 .tricare-header {
   font-size: 28pt;
 }
+
+
 
 .d-flex {
   display: flex;
@@ -788,6 +796,12 @@
   .line-height-large {
     line-height: 2;
   }
+
+  .navbar-brand,
+.nav-link,
+.nav-text {
+  color: rgb(0, 0, 0) !important;
+}
   .bg-insurance-header{
     background-color: hsla(158, 48%, 18%);
     color: white;

@@ -16,7 +16,7 @@ function Navbar() {
         <Link className="logo-location barlow navbar-brand nav-text d-flex" to="/">
           {/* <img className="tinyLogo" src={logo} alt="logo" /> */}
           <span className="">The Lemich Clinic &nbsp;</span>
-          <span className="">|&nbsp; <span className="">Norfolk, VA</span></span>
+          <span className="">|&nbsp; Norfolk, VA</span>
         </Link>
 
         {/* Navbar Toggler */}
