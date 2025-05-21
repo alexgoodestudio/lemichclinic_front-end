@@ -182,7 +182,7 @@ function OurTeam() {
             </Helmet>
       <div className="container mx-auto ">
       <h1 className=" text-4xl text-start mb-1">
-        Meet Our Team.
+        Meet Our Team
       </h1>
         {/* Gregory C. Lemich */}
         <div className="row bg-white shadow-lg p-4 mb-5 mt-5">
