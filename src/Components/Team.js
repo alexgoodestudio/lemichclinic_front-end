@@ -4,14 +4,15 @@ import armbruster from "./staffimages/armbruster.avif";
 import casey from "./staffimages/casey.avif";
 import garner from "./staffimages/garner.avif";
 import goulart from "./staffimages/goulart.avif";
-import hendersen from "./staffimages/hendersen.avif";
+import henderson from "./staffimages/henderson.avif";
 import ladikos from "./staffimages/ladikos.avif";
-import lemich from "./staffimages/lemich.png";
+import lemich from "./staffimages/lemich.avif";
 import lindelof from "./staffimages/Lindelof.avif";
 import little from "./staffimages/litle.avif";
 import mcnair from "./staffimages/mcnair.avif";
 import meltesen from "./staffimages/meltesen.avif";
 import moghaddam from "./staffimages/moghaddam.avif";
+import nardone from "./staffimages/nardone.jpeg";
 import murdock from "./staffimages/murdock.avif";
 import perez from "./staffimages/Perez.avif";
 import reike from "./staffimages/reike.avif";
@@ -29,7 +30,7 @@ const images = {
   casey,
   garner,
   goulart,
-  hendersen,
+  henderson,
   ladikos,
   lemich,
   lindelof,
@@ -38,6 +39,7 @@ const images = {
   meltesen,
   moghaddam,
   murdock,
+  nardone,
   perez,
   reike,
   rominger,
@@ -140,6 +142,60 @@ function OurTeam() {
         "Hayli holds a Masters Degree in Mental Health Counseling from Old Dominion University and holds a Bachelor’s Degree in Liberal Studies from SUNY Purchase. She has provided counseling services at Chesapeake Regional Hospital and Grassfield Primary Care Clinic. Her clinical experience includes anxiety, depression, trauma, relationship difficulties and LGBTQ affirming care. She is committed to providing a warm and nonjudgmental environment in which clients are able to feel heard and supported as they work towards their personal goals.",
       lastName: "stone",
       specialties: "EMDR",
+      availability: "In-Person and Telehealth",
+    },
+        {
+      name: "TJ Meltesen, MSeD, Resident in Counseling (VA)",
+      role: "Clinician",
+      description:
+        "TJ holds a Masters in Mental Health Counseling at ODU. She holds a Bachelor's degree in Rehabilitation Psychology from the University of Wisconsin-Madison. Having served in the Navy, TJ possesses a valuable understanding of military culture and the challenges of transitioning out of the military. She has a strong background in supporting families and individuals dealing with developmental, physical, and neurodivergent concerns. TJ recognizes the profound impact of bereavement and grief on various aspects of life. She offers a space that is both non-judgmental and collaborative. Her passion lies in helping individuals tap into their inner strengths and embrace authenticity.",
+      lastName: "meltesen",
+      specialties: "",
+      availability: "In-Person and Telehealth",
+    },
+    {
+      name: "Amanda Henderson, MSeD, Resident in Counseling (VA)",
+      role: "Clinician",
+      description:
+        "Amanda holds a Masters in Mental Health Counseling at ODU, and currently holds a B.S. in psychology and human services. As both a Navy veteran and military spouse, she has extensive knowledge and experience surrounding military issues and culture. Amanda has served as a career counselor and sexual assault victim advocate during her time in the military; she also has experience with domestic violence issues from her time working at a women’s shelter. Utilizing an eclectic counseling approach, she collaborates closely with clients to achieve their goals, fostering a nurturing environment that supports healing and personal growth.",
+      lastName: "henderson",
+      specialties: "",
+      availability: "In-Person and Telehealth",
+    },
+    {
+      name: "Amy Garner, MSeD, Resident in Counseling (VA)",
+      role: "Clinician",
+      description:
+        "Amy holds a Masters in Mental Health Counseling at ODU. She currently holds a B.A in psychology and has over 20 years of military-related experience as a Navy spouse, mother, and volunteer. By working hand in hand with commands, sailors, and spouses, Amy developed a unique perspective on the challenges that come with military life. As a parent, she gained extensive experience working with children with disabilities and the foster care/adoption communities. Clinically, Amy has worked at Chesapeake Regional Medical Center, counseling in both the inpatient and outpatient settings. She has experience working with military and life transitions, depression, anxiety, postpartum concerns, trauma, and life stressors. Amy utilizes a holistic approach, collaborating with clients to achieve their goals. Her warm, compassionate demeanor creates a safe space for clients to explore their concerns and embrace personal growth.",
+      lastName: "garner",
+      specialties: "",
+      availability: "In-Person and Telehealth",
+    },
+    {
+      name: "Crystal Goulart, MSeD, Resident in Counseling (VA)",
+      role: "Clinician",
+      description:
+        "Crystal holds a Masters in Mental Health Counseling at ODU, with an expected graduation date of December 2024.  Drawing from her own personal experiences as a Navy veteran and former foster youth, Crystal has developed a profound belief in the transformative power of counseling. With a genuine passion for helping others, Crystal creates a supportive environment where clients feel heard and valued. Each session with Crystal is a partnership focused on understanding individual experiences, validating emotions, and setting achievable goals. Her approach emphasizes trust, empathy, and respect, ensuring that clients feel empowered on their journey towards healing and personal growth. Crystal is committed to making a positive difference in the lives of those she serves, leveraging her background to offer compassionate support and understanding.",
+      lastName: "goulart",
+      specialties: "",
+      availability: "In-Person and Telehealth",
+    },
+    {
+      name: "Morgan Templeton, Intern in Counseling (VA)",
+      role: "Clinician",
+      description:
+        "Morgan is currently an intern pursuing her Master's in Mental Health Counseling at ODU, with an expected graduation date of August 2025. She currently holds a B.S. in psychology and has previous experience working with military members at a psychology clinic in Germany. As a military dependent, she has a valuable understanding of military culture and issues, as well as the effects of these issues on military families. Her eclectic approach emphasizes creating an environment that fosters feelings of safety, empowerment, and trust.",
+      lastName: "templeton",
+      specialties: "",
+      availability: "In-Person and Telehealth",
+    },
+    {
+      name: "Emily Nardone, Intern in Counseling (VA)",
+      role: "Clinician",
+      description:
+        "Emily N. is a practicum student pursuing her Master's in Clinical Mental Health Counseling at Old Dominion University. She holds a Bachelor's degree in Psychology and Neuroscience from Elon University. With strong personal ties to the military through her father and partner, Emily has a deep understanding of military culture and is passionate about supporting service members and their families. Emily's approach is focused on helping clients achieve their goals while promoting healing and personal growth. She is dedicated to creating a supportive and welcoming environment where clients feel comfortable and valued.",
+      lastName: "nardone",
+      specialties: "",
       availability: "In-Person and Telehealth",
     },
     {
