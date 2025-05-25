@@ -6,7 +6,7 @@ import garner from "./staffimages/garner-min.jpeg";
 import goulart from "./staffimages/goulart-min.jpeg";
 import henderson from "./staffimages/henderson-min.jpeg";
 import ladikos from "./staffimages/ladikos.avif";
-import lemich from "./staffimages/lemich.avif";
+import lemich from "./staffimages/lemich-min.jpeg";
 import lindelof from "./staffimages/Lindelof.avif";
 import little from "./staffimages/litle.avif";
 import mcnair from "./staffimages/mcnair.avif";
