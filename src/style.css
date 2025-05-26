@@ -13,25 +13,6 @@
 }
 
 @font-face {
-  font-family: "LC-Reg";
-  src: url("./Components/fonts/LibreCaslonText-Regular.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "LC-Italic";
-  src: url("./Components/fonts/LibreCaslonText-Italic.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "LC-Bold";
-  src: url("./Components/fonts/LibreCaslonText-Bold.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Barlow";
   src: url("./Components/fonts/Barlow-Medium.ttf") format("woff2");
   font-weight: normal;
@@ -40,18 +21,6 @@
 
 .barlow{
   font-family: "Barlow", sans-serif;
-}
-
-.LC-Reg {
-  font-family: "LC-Reg", sans-serif;
-}
-
-.LC-Italic {
-  font-family: "LC-Italic", sans-serif;
-}
-
-.LC-Bold {
-  font-family: "LC-Bold", sans-serif;
 }
 
 .tomorrow {
@@ -259,7 +228,7 @@ background-color: rgba(22, 64, 53);
   /* background-color: rgba(112, 112, 112, 0.5); */
 }
 .sub-head-text {
-  font-size: 16.5pt;
+  font-size: 17pt;
 }
 
 .footer-text-1 {
@@ -1139,7 +1108,7 @@ background-color: rgba(22, 64, 53);
   }
 
   .sub-head {
-    font-size: 11pt;
+    font-size: 13pt;
   }
 
   .logo {

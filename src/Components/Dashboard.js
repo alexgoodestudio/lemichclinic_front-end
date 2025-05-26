@@ -130,8 +130,8 @@ const handleSubmit = async (formData) => {
                     <span className="p-1 call-text">Call Us</span>
                   </a>
                 </div>
-                <div className="sub-head ms-lg-5 sub-head-text">
-                  <Link to="/contact" className="text-white no-underline hover:opacity-80 transition-opacity">
+                <div className=" barlow sub-head ms-lg-5 sub-head-text">
+                  <Link to="/contact" className="text-white no-underline hover:opacity-80  transition-opacity">
                     LOCATED IN <span className="">NORFOLK, VIRGINIA</span>
                   </Link>
                 </div>
