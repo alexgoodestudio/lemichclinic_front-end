@@ -95,7 +95,7 @@ function Contact({ contactId = null }) {
     <div className="py-5 bg-slate-50">
       <div className="container mx-auto px-6 lg:px-12">
 
-      <h1 className=" text-4xl text-start text-gray-800 mb-5">
+      <h1 className="text-4xl barlow text-start text-gray-800 mb-5">
         Get in Touch with Us
       </h1>
 

@@ -30,10 +30,10 @@ function Owners() {
 
       {/* Image Section */}
       <div className="row d-flex  justify-content-center align-items-center">
-        <h1 className="hideFull  pb-3 ps-4 mt-5 mb-4 owners-mobile-text text-start px-2 text-gray-800 mb-0">
+        <h1 className="hideFull barlow  pb-3 ps-4 mt-5 mb-4 owners-mobile-text text-start px-2 text-gray-800 mb-0">
           Meet The Owners
         </h1>
-       
+      
         <div className="col-lg-6 order-1 order-lg-2 text-center p-lg-0">
           <img
             ref={logoRef}
@@ -49,8 +49,9 @@ function Owners() {
             Gregory and Jennifer Lemich
           </h2>
           <div className="p-lg-5 p-1">
-            <h1 className="text-4xl  hideMobile owners-mobile-text text-start text-gray-800">
+            <h1 className="owners-header barlow  hideMobile owners-mobile-text text-start text-gray-800">
               Meet The Owners
+             {/* <h4 className="names mt-lg-2">Gregory and Jennifer Lemich</h4> */}
             </h1>
             <div className="text-center">
               <p className="p-owners-text  text-gray-600 text-justify mt-3 mb-4">

@@ -66,9 +66,10 @@
   padding: 5%;
 }
 
-.mission-text {
+.mission-text-spacing {
   letter-spacing: 0.5pt;
 }
+
 
 .forward {
   z-index: 2000;
@@ -83,6 +84,7 @@
 .tan {
   color: #c3cda7;
 }
+
 
 .smallText {
   font-size: 10pt;
@@ -163,6 +165,7 @@
   margin-right: 10px;
 }
 
+
 .transition-card {
   transition: all 0.3s ease;
 }
@@ -218,7 +221,7 @@
 }
 
 .bg-green {
-  background-color: hsla(158, 48%, 18%);
+background-color: rgba(22, 64, 53);
 }
 
 .process-header {
@@ -256,7 +259,7 @@
   /* background-color: rgba(112, 112, 112, 0.5); */
 }
 .sub-head-text {
-  font-size: 14pt;
+  font-size: 16.5pt;
 }
 
 .footer-text-1 {
@@ -302,8 +305,15 @@
 .navbar-brand,
 .nav-link,
 .nav-text {
-  color: white !important;
+  color: white ;
 }
+
+.navbar-brand,
+.nav-link,
+.nav-text:hover {
+  color:#ebfb84 ;
+}
+
 
 .navbar-nav {
   display: flex;
@@ -430,7 +440,7 @@
   border-radius: 10px;
 }
 .insurance-header-text{
-  font-size: 17pt;
+  font-size: 19pt;
 }
 
 .rotate {
@@ -614,27 +624,26 @@
 }
 
 .accent-button {
-  /* background-color: #5bc099; */
-  /* background-color: #5bc099 ; */
   background-color: #b5cde7;
-  color: #222222;
-  font-weight: 600;
+  color: #353535;
+  font-weight: 500;
   border-radius: 20px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 12pt;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .accent-button:hover {
   background-color: rgba(255, 255, 255);
-  color: #1a1b1b;
+  color: #353535;
 }
 
+
 .active-link {
-  color: white !important;
+   color:#ebfb84 !important;
+
 }
 
 .icon {
@@ -673,6 +682,13 @@
 
 .p-owners-text{
   font-size: 12pt;
+}
+.owners-header{
+  font-size: 26.17924pt;
+}
+.names{
+  font-size: 16.18pt;
+
 }
 
 .lemich {
@@ -784,7 +800,7 @@
   animation-fill-mode: both;
 }
 .bg-navbar{
-  background-color: hsla(158, 48%, 18%);
+background-color: rgba(22, 64, 53);
   color: white;
 }
 
@@ -830,7 +846,7 @@
   
 
   .insurance-header-text{
-    font-size: 13pt;
+    font-size: 15.5pt;
   }
 
   .p-owners-text{
@@ -1033,6 +1049,7 @@
     object-fit: cover;
     background-size: none;
     padding: 0%;
+    
   }
 
   .background-section {
@@ -1043,6 +1060,7 @@
   .tan {
     color: #c3cda7;
   }
+
   .offset-between-5-6 {
     margin-left: 50%;
     transform: translateX(-50%);

@@ -89,7 +89,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
       <div className="text-center">
         <button
           type="submit"
-          className="btn accent-button px-6 py-2 shadow-md hover:shadow-lg transition"
+          className="btn accent-button px-6 py-2  hover:shadow-lg transition"
           disabled={loading}
         >
        Submit

@@ -21,7 +21,7 @@ function Services() {
       <div className="container py-5 flex-grow-1">
         <div className="row mb-3">
           <div className="col-12">
-            <h1 className="text-4xl mb-4 text-start text-gray-800">
+            <h1 className="text-4xl mb-4 barlow text-start text-gray-800">
               Exclusive Services
             </h1>
           </div>

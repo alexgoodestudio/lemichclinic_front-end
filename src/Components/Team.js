@@ -237,7 +237,7 @@ function OurTeam() {
               <title> Meet The Team | The Lemich Clinic | Norfolk, VA | Military Mental Health Services</title>
             </Helmet>
       <div className="container mx-auto ">
-      <h1 className=" text-4xl text-start mb-1">
+      <h1 className=" text-4xl barlow text-start mb-1">
         Meet Our Team
       </h1>
         {/* Gregory C. Lemich */}

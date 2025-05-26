@@ -147,7 +147,7 @@ const handleSubmit = async (formData) => {
             <div className="container">
               <div className="row">
                 <div className="col-lg-12">
-                  <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text barlow text-gray-600 mobile-header-mission justify-center spaced-underline-header">
+                  <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text-spacing barlow text-gray-600 mobile-header-mission justify-center spaced-underline-header">
                     OUR MISSION
                     <div className="row">
                       <div className="col-lg-4"></div>
@@ -157,8 +157,8 @@ const handleSubmit = async (formData) => {
                       <div className="col-lg-4"></div>
                     </div>
                   </h2>
-                  <p className="text-justify px-2 mission-text mb-lg-5 text-gray-500 line-height-large">
-                    The Lemich Clinic for <span className="bold text-gray-600">Military Mental Health</span> was founded on
+                  <p className="text-justify px-2 mission-text-spacing mission-paragraph mb-lg-5 text-gray-600 line-height-large">
+                    The Lemich Clinic for Military Mental Health was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority
                     of our clients are active duty sailors at Naval Station
@@ -205,7 +205,7 @@ const handleSubmit = async (formData) => {
                     <h2 className="spaced-underline-card-header card-header text-gray-800 barlow text-md md:text-xl mb-3">
                       {feature.title}
                     </h2>
-                    <p className="text-gray-500 card-text mb-lg-5 mb-2">{feature.text}</p>
+                    <p className="text-gray-600 card-text mb-lg-5 mb-2">{feature.text}</p>
                   </div>
                 ))}
               </div>
@@ -220,7 +220,7 @@ const handleSubmit = async (formData) => {
             <div className="row bg-slate-100">
               <div className="col-lg-4"></div>
               <div className="col-lg-4 py-5 px-4">
-                <h2 className="mb-5 text-start text-slate-500">Get in Touch with Us</h2>
+                <h2 className="mb-5 text-start barlow text-slate-500">Get in Touch with Us</h2>
                 <ContactForm
                   onSubmit={handleSubmit}
                   loading={loading}
