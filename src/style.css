@@ -280,7 +280,7 @@ background-color: rgba(22, 64, 53);
 .navbar-brand,
 .nav-link,
 .nav-text:hover {
-  color:#ebfb84 ;
+  color:#c3cda7 ;
 }
 
 
@@ -611,7 +611,7 @@ background-color: rgba(22, 64, 53);
 
 
 .active-link {
-   color:#ebfb84 !important;
+   color:#c3cda7 !important;
 
 }
 
