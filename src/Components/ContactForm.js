@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-// Reusable Contact Form Component
-function ContactForm({ onSubmit, initialData = null, loading, error, successMessage, isEditing }) {
+function ContactForm({ onSubmit, initialData = null, loading, error, successMessage}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");

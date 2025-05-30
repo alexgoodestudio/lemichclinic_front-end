@@ -1,4 +1,4 @@
-import img4 from "./images/lemichs.avif";
+import img4 from "./images/owners-min.png";
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -19,7 +19,7 @@ function Owners() {
   }, []);
 
   return (
-    <div className="bg-slate-50">
+    <div className="bg-slate-50 min-h">
       <Helmet>
         <meta
           name="description"
@@ -34,17 +34,17 @@ function Owners() {
           Meet The Owners
         </h1>
       
-        <div className="col-lg-6 order-1 order-lg-2 text-center p-lg-0">
+        <div className="col-lg-4 order-1 order-lg-2 text-center p-lg-0">
           <img
             ref={logoRef}
             src={img4}
             alt="Gregory and Jennifer Lemich"
-            className="w-full h-auto mx-auto"
+            className="p-lg-5 p-3 owners-img"
           />
         </div>
 
         {/* Text Section */}
-        <div className="col-lg-6 order-2 order-lg-1 px-lg-5 px-4">
+        <div className="col-lg-7 order-2 order-lg-1 px-lg-5 px-4">
           <h2 className="text-insurance-header-mobile text-lg hideFull">
             Gregory and Jennifer Lemich
           </h2>
