@@ -1072,6 +1072,12 @@ background-color: rgba(22, 64, 53);
   .ipad {
     font-size: 35px;
   }
+    .hideFull {
+    display: inline;
+  }
+    .hideMobile {
+    display: none;
+  }
 
   .title {
     font-size: 12pt;
