@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "../style.css";
 import Tricare from "./Tricare.js";
-import Video from "./images/woods2.mp4";
+import Video from "./images/woods.mp4";
 import flag from "./images/flag2.png";
 import ContactForm from "./ContactForm";
 import { createContact } from "../utils/api.js";
