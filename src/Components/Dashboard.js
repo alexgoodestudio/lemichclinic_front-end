@@ -25,7 +25,7 @@ function Dashboard() {
       window.scrollTo(0, 0);
 
       gsap.set(".title2", {
-        text: '<div class="tomorrow text-center">Home of <span class="">Military</span> <span class="">Mental Health</span></div>',
+        text: '<div class="tomorrow text-center">Home of Military Mental Health</div>',
         opacity: 1
       });
 
