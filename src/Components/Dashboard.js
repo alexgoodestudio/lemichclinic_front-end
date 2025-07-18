@@ -118,7 +118,7 @@ const handleSubmit = async (formData) => {
               className="relative ipad-bg  slide-text mb-lg-5 text-white ipad textMobile text-start"
             >
               <div className="d-flex">
-                <h1 className="bold TLC px-2 title2 w-full flex justify-center">
+                <h1 className="bold  TLC px-2 title2 w-full flex justify-center">
                   The Lemich Clinic
                 </h1>
               </div>
@@ -132,7 +132,7 @@ const handleSubmit = async (formData) => {
                 </div>
                 <div className=" barlow sub-head ms-lg-5 sub-head-text">
                   <Link to="/contact" className="text-white  py-2 px-2 no-underline hover:opacity-80  transition-opacity">
-                   <span className="text-white">NORFOLK, VIRGINIA</span>
+                   <span className="text-white"> LOCATED IN <span className="spaced-underline">NORFOLK, VIRGINIA </span></span>
                   </Link>
                 </div>
               </div>
@@ -164,7 +164,7 @@ const handleSubmit = async (formData) => {
                       <div className="col-lg-4"></div>
                     </div>
                   </h2>
-                  <p className="text-justify px-2 mission-text-spacing mission-paragraph mb-lg-5 text-gray-600 line-height-large">
+                  <p className="text-justify px-2  mission-text-spacing mission-paragraph mb-lg-5 text-gray-600 line-height-large">
                     The Lemich Clinic for Military Mental Health was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority

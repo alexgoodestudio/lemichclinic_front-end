@@ -78,8 +78,12 @@
 }
 
 .demo {
-  border-top: 3px solid #ffffff;
   padding: 3px 0; /* Adds 10px spacing above and below the text */
+}
+.logo-color{
+  color: #003057;
+  font-weight: 700;
+  font-size: 17pt;
 }
 
 .border-tb {
@@ -87,6 +91,11 @@
   border-bottom: 1px solid #000000;
 
   padding: 10px 0; /* Adds 10px spacing above and below the text */
+}
+
+.bg-banner{
+      background-color: #bfd6ee;
+
 }
 
 .service-card {
@@ -217,7 +226,7 @@ background-color: rgba(22, 64, 53);
 }
 
 .TLC {
-  font-size: 29pt;
+  font-size: 32pt;
   letter-spacing: 1pt;
   
 }
@@ -453,6 +462,7 @@ background-color: rgba(22, 64, 53);
   /* border-bottom: 2px solid #ccc; */
   padding: 30px; /* Optional: Adds spacing inside the borders */
 }
+
 
 .reduce {
   width: 39px;
@@ -760,8 +770,7 @@ background-color: rgba(22, 64, 53);
   animation-fill-mode: both;
 }
 .bg-navbar{
-/* background-color: rgba(22, 64, 53); */
-    background-color: #bfd6ee;
+    /* background-color: #bfd6ee; */
   color: rgb(0, 0, 0);
 }
 
@@ -778,7 +787,7 @@ background-color: rgba(22, 64, 53);
 
 
   .bg-navbar{
-    background-color: #bfd6ee;
+    background-color: #ffffff;
   }
 
 
@@ -1104,7 +1113,7 @@ background-color: rgba(22, 64, 53);
     font-weight: 600;
   }
   .TLC {
-    font-size: 22pt;
+    font-size: 26pt;
   }
 
   .sub-head {

@@ -11,12 +11,12 @@ function Navbar() {
 
 
   return (
-    <nav className=" navbar barlow bg-navbar py-3 nav-text navbar-expand-lg main">
+    <nav className=" navbar barlow bg-white bg-slate-200 py-3 nav-text navbar-expand-lg main">
       <div className="container overflow-hidden">
         {/* Logo and Brand */}
         <Link className="logo-location  barlow navbar-brand nav-text d-flex" to="/">
           {/* <img className="tinyLogo" src={logo} alt="logo" /> */}
-          <span className="">The Lemich Clinic &nbsp;</span>
+          <span className="logo-color">The Lemich Clinic &nbsp;</span>
           <span className="">|&nbsp; Norfolk, VA</span>
         </Link>
 
