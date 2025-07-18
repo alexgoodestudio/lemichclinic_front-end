@@ -11,7 +11,7 @@ function Navbar() {
 
 
   return (
-    <nav className=" navbar bg-navbar nav-text navbar-expand-lg main">
+    <nav className=" navbar barlow bg-navbar py-3 nav-text navbar-expand-lg main">
       <div className="container overflow-hidden">
         {/* Logo and Brand */}
         <Link className="logo-location  barlow navbar-brand nav-text d-flex" to="/">

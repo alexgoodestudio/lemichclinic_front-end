@@ -8,7 +8,7 @@ import "../style.css";
 function Tricare() {
   return (
     <div className="container-fluid  position-relative tricare-section">
-      <div className="row p-4 bg-green border3  position-relative py-5">
+      <div className="row p-4 bg-slate-400 border3  position-relative py-5">
         <div className="col-lg-3">
           <div className="huge-text container-fluid hideMobile"></div>
 
@@ -23,7 +23,7 @@ function Tricare() {
 
             {/* <img src={check} alt="check mark" className="check-tricare mb-2 rotate "/> */}
             <h2 className="text-white tricare-header space tomorrow ">
-              TRICARE<span className="accent">&nbsp;ACCEPTED&nbsp;</span>
+              TRICARE<span className="text-slate-600">&nbsp;ACCEPTED&nbsp;</span>
             </h2>
           </div>
           <p className="text-white text-start tricare-text text-sm space-1 py-md-4 ">

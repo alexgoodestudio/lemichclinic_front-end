@@ -90,7 +90,7 @@ const handleSubmit = async (formData) => {
       <Helmet>
         <meta
           name="description"
-          content="The Lemich Clinic in Norfolk, Virginia offers expert mental health care for active duty military, spouses and veterans. Specializing in PTSD treatment, trauma recovery, and anxiety therapy, we provide confidential, compassionate support to help you heal and thrive."
+          content="The Lemich Clinic in Norfolk, Virginia offers expert mental health care for active duty military, spouses and veterans. Specializing in PTSD treatment, trauma recovery, anxiety & depression therapy, we provide confidential, compassionate support to help you heal and thrive. With services like Summary and Nexus Letters for VA disability claims, we guide you through the process of securing the benefits you deserve. TRICARE accepted."
         />
         <title>
           The Lemich Clinic | Norfolk, VA | Military Mental Health Services
@@ -103,7 +103,7 @@ const handleSubmit = async (formData) => {
           muted
           loop
           playsInline
-          className="video-background"
+          className="video-background container"
           onLoadedData={() => setVideoLoaded(true)}
         >
           <source src={Video} type="video/mp4" />
@@ -115,7 +115,7 @@ const handleSubmit = async (formData) => {
             <div className="absolute inset-0"></div>
             <h1
               ref={titleRef}
-              className="relative slide-text mb-lg-5 text-white ipad textMobile text-start"
+              className="relative ipad-bg  slide-text mb-lg-5 text-white ipad textMobile text-start"
             >
               <div className="d-flex">
                 <h1 className="bold TLC px-2 title2 w-full flex justify-center">
@@ -131,27 +131,34 @@ const handleSubmit = async (formData) => {
                   </a>
                 </div>
                 <div className=" barlow sub-head ms-lg-5 sub-head-text">
-                  <Link to="/contact" className="text-white no-underline hover:opacity-80  transition-opacity">
-                    LOCATED IN <span className="">NORFOLK, VIRGINIA</span>
+                  <Link to="/contact" className="text-white  py-2 px-2 no-underline hover:opacity-80  transition-opacity">
+                   <span className="text-white">NORFOLK, VIRGINIA</span>
                   </Link>
                 </div>
               </div>
             </h1>
           </div>
+          
         )}
+        
       </div>
 
       {videoLoaded && (
         <>
           <div className="pt-4">
+            
             <div className="container">
+              
               <div className="row">
+                
                 <div className="col-lg-12">
+                  
                   <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text-spacing barlow text-gray-600 mobile-header-mission justify-center spaced-underline-header">
+                    
                     OUR MISSION
                     <div className="row">
                       <div className="col-lg-4"></div>
-                      <div className="col-lg-4 ms-2">
+                      <div className="col-lg-4  ms-2">
                         <img src={flag} alt="American Flag" />
                       </div>
                       <div className="col-lg-4"></div>

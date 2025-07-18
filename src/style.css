@@ -217,18 +217,21 @@ background-color: rgba(22, 64, 53);
 }
 
 .TLC {
-  font-size: 28pt;
+  font-size: 29pt;
   letter-spacing: 1pt;
+  
 }
 
 .sub-head {
   letter-spacing: 2px;
   font-size: 16.5pt;
   color: #ffffff;
+
   /* background-color: rgba(112, 112, 112, 0.5); */
+  
 }
 .sub-head-text {
-  font-size: 20pt;
+  font-size: 16pt;
 }
 
 .footer-text-1 {
@@ -271,18 +274,6 @@ background-color: rgba(22, 64, 53);
   transform: scale(1.08);
 }
 
-.navbar-brand,
-.nav-link,
-.nav-text {
-  color: white ;
-}
-
-.navbar-brand,
-.nav-link,
-.nav-text:hover {
-  color:#c3cda7 ;
-}
-
 
 .navbar-nav {
   display: flex;
@@ -301,6 +292,7 @@ background-color: rgba(22, 64, 53);
 .medium {
   font-weight: 300;
 }
+
 
 .video-background {
   position: absolute;
@@ -336,6 +328,11 @@ background-color: rgba(22, 64, 53);
   font-weight: 500;
 }
 
+.banner{
+  background-color: #ffffff;
+    /* background-color: #dceaf9; */
+
+}
 
 .huge-text {
   font-size: 19vw;
@@ -609,12 +606,6 @@ background-color: rgba(22, 64, 53);
   color: #353535;
 }
 
-
-.active-link {
-   color:#c3cda7 !important;
-
-}
-
 .navbar-brand,
 .nav-link,
 .nav-text {
@@ -671,8 +662,6 @@ background-color: rgba(22, 64, 53);
 }
 
 
-.text-insurance{
-  color: white;}
 
 .underline2 {
   display: inline-block;
@@ -749,11 +738,6 @@ background-color: rgba(22, 64, 53);
   background-color: #bfd6ee;
 }
 
-.bg-insurance-header{
-  background-color: hsla(158, 48%, 18%);
-  color: white;
-}
-
 
 .light-blue {
   color: #b5cde7;
@@ -791,18 +775,12 @@ background-color: rgba(22, 64, 53);
 .nav-text {
   color: rgb(0, 0, 0) !important;
 }
-  .bg-insurance-header{
-    background-color: hsla(158, 48%, 18%);
-    color: white;
-  }
+
 
   .bg-navbar{
     background-color: #bfd6ee;
   }
 
-  .nav-text{
-    color: #353535;
-  }
 
 
   .underline3:hover {
@@ -842,9 +820,7 @@ background-color: rgba(22, 64, 53);
 .text-gray{
   color: #353535;
 }
-.text-insurance{
-  color: white;
-}
+
   .side-note {
     text-align: start;
   }
@@ -952,7 +928,7 @@ background-color: rgba(22, 64, 53);
     font-size: 8.5pt;
   }
   .sub-head-text {
-    background-color: #094f40;
+background-color: rgba(22, 64, 53);
     padding: 9px;
     border-radius: 15px;
     font-weight: 700;
@@ -1077,6 +1053,7 @@ background-color: rgba(22, 64, 53);
     font-size: 35px;
   }
 
+
 .owners-img {
   width: 50%;
   display: block;
@@ -1096,6 +1073,11 @@ background-color: rgba(22, 64, 53);
   .TLC {
     font-size: 24pt;
   }
+  .ipad-bg{
+   background-color: #003b4f;
+    border-radius: 20px;
+    padding: 20pt;
+  }
 
   .logo {
     width: 35px;
@@ -1106,14 +1088,16 @@ background-color: rgba(22, 64, 53);
     margin-left: 0px;
   }
   .sub-head {
-    font-size: 13pt;
+    font-size: 18pt;
   }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1380px) {
   .ipad {
     font-size: 35px;
   }
+  
 
   .title {
     font-size: 12pt;
