@@ -153,7 +153,7 @@ const handleSubmit = async (formData) => {
                 
                 <div className="col-lg-12">
                   
-                  <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text-spacing barlow text-gray-600 mobile-header-mission justify-center spaced-underline-header">
+                  <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text-spacing barlow text-gray-600 mobile-header-mission justify-center ">
                     
                     OUR MISSION
                     <div className="row">
