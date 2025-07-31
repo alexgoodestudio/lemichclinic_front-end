@@ -224,6 +224,10 @@ background-color: rgba(22, 64, 53);
 .text-end {
   text-align: end;
 }
+.sub-head-section {
+  opacity: 0;
+  transform: translateY(50px);
+}
 
 .TLC {
   font-size: 32pt;

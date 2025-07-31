@@ -24,10 +24,32 @@ function Dashboard() {
     if (videoLoaded) {
       window.scrollTo(0, 0);
 
-      gsap.set(".title2", {
-        text: '<div class="tomorrow text-center">Home of Military Mental Health</div>',
-        opacity: 1
-      });
+
+      gsap.fromTo(
+        ".TLC",
+        { y: -100, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: "power4.out",
+          delay: 0.2
+        }
+      );
+
+
+
+    gsap.fromTo(
+      ".sub-head-section",
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        delay: 1
+      }
+    );
 
       gsap.fromTo(
         missionRef.current,
@@ -90,7 +112,7 @@ const handleSubmit = async (formData) => {
       <Helmet>
         <meta
           name="description"
-          content="The Lemich Clinic in Norfolk, Virginia offers expert mental health care for active duty military, spouses and veterans. Specializing in PTSD treatment, trauma recovery, anxiety & depression therapy, we provide confidential, compassionate support to help you heal and thrive. With services like Summary and Nexus Letters for VA disability claims, we guide you through the process of securing the benefits you deserve. TRICARE accepted."
+          content="The Lemich Clinic in Norfolk, Virginia located near Naval Station Norfolk offers expert mental health care for active duty military, veterans and spouses. Specializing in PTSD treatment, trauma recovery, anxiety & depression therapy, we provide confidential support to help you heal and thrive. With services like Summary and Nexus Letters for VA disability claims, we guide you through the process of securing the benefits you deserve. TRICARE accepted."
         />
         <title>
           The Lemich Clinic | Norfolk, VA | Military Mental Health Services
@@ -115,15 +137,15 @@ const handleSubmit = async (formData) => {
             <div className="absolute inset-0"></div>
             <h1
               ref={titleRef}
-              className="relative ipad-bg  slide-text mb-lg-5 text-white ipad textMobile text-start"
+              className="relative ipad-bg  mb-lg-5 text-white ipad textMobile text-start"
             >
               <div className="d-flex">
-                <h1 className="bold  TLC px-2 title2 w-full flex justify-center">
-                  The Lemich Clinic
+                <h1 className="bold tomorrow text-center TLC px-2 title2 w-full flex justify-center">
+                  Home of Military Mental Health
                 </h1>
               </div>
 
-              <div className="sub-head demo d-flex">
+              <div className="sub-head sub-head-section demo d-flex">
                 <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
                   <i className="fas fa-phone-alt text-md"></i>
                   <a href="tel:+17575361233" className="phone-link mobile-bold">

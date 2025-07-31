@@ -1,4 +1,4 @@
-import flag from "./Components/images/flag3.png";
+import flag from "./Components/images/flag4.png";
 
 function Banner() {
   return (
