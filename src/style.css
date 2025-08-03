@@ -228,6 +228,15 @@ background-color: rgba(22, 64, 53);
   opacity: 0;
   transform: translateY(50px);
 }
+.clip-line {
+  overflow: hidden;
+}
+
+.clip-text {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
 
 .TLC {
   font-size: 32pt;
@@ -452,6 +461,12 @@ background-color: rgba(22, 64, 53);
   text-decoration: underline 1px;
   text-underline-offset: 2px;
 }
+.spaced-underline-location {
+  text-decoration: underline 1px;
+  text-underline-offset: 2px;
+}
+
+
 .spaced-underline-header {
   text-decoration: underline 1px;
   text-underline-offset: 5px;
@@ -581,6 +596,7 @@ background-color: rgba(22, 64, 53);
 .service-card:hover .service-overlay3 {
   opacity: 1;
 }
+
 
 .insurance-image {
   width: 80%;
@@ -782,6 +798,9 @@ background-color: rgba(22, 64, 53);
   .line-height-large {
     line-height: 2;
   }
+  .spaced-underline-location {
+  text-decoration: none
+}
 
   .navbar-brand,
 .nav-link,

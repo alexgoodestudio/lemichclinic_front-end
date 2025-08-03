@@ -24,6 +24,16 @@ function Dashboard() {
     if (videoLoaded) {
       window.scrollTo(0, 0);
 
+      gsap.fromTo(
+        ".clip-text",
+        { yPercent: 100 },
+        {
+          yPercent: 0,
+          duration: 1.2,
+          ease: "power4.out",
+          delay: 0.2
+        }
+      );
 
       gsap.fromTo(
         ".TLC",
@@ -139,25 +149,32 @@ const handleSubmit = async (formData) => {
               ref={titleRef}
               className="relative ipad-bg  mb-lg-5 text-white ipad textMobile text-start"
             >
-              <div className="d-flex">
-                <h1 className="bold tomorrow text-center TLC px-2 title2 w-full flex justify-center">
-                  Home of Military Mental Health
-                </h1>
-              </div>
+<div className="clip-line overflow-hidden">
+  <h1 className="clip-text bold tomorrow text-center TLC px-2 title2 w-full flex justify-center">
+    Home of Military Mental Health
+  </h1>
+</div>
 
-              <div className="sub-head sub-head-section demo d-flex">
-                <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
-                  <i className="fas fa-phone-alt text-md"></i>
-                  <a href="tel:+17575361233" className="phone-link mobile-bold">
-                    <span className="p-1 call-text">Call Us</span>
-                  </a>
-                </div>
-                <div className=" barlow sub-head ms-lg-5 sub-head-text">
-                  <Link to="/contact" className="text-white  py-2 px-2 no-underline hover:opacity-80  transition-opacity">
-                   <span className="text-white"> LOCATED IN <span className="spaced-underline">NORFOLK, VIRGINIA </span></span>
-                  </Link>
-                </div>
-              </div>
+<div className="clip-line overflow-hidden">
+  <div className="clip-text sub-head sub-head-section demo d-flex">
+    <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
+      <i className="fas fa-phone-alt text-md"></i>
+      <a href="tel:+17575361233" className="phone-link mobile-bold">
+        <span className="p-1 call-text">Call Us</span>
+      </a>
+    </div>
+    <div className="barlow sub-head ms-lg-5 sub-head-text">
+      <Link
+        to="/contact"
+        className="text-white py-2 px-2 no-underline hover:opacity-80 transition-opacity"
+      >
+        <span className="text-white">
+          LOCATED IN <span className="spaced-underline-location">NORFOLK, VIRGINIA</span>
+        </span>
+      </Link>
+    </div>
+  </div>
+</div>
             </h1>
           </div>
           
