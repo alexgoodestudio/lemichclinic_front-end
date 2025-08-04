@@ -237,23 +237,18 @@ background-color: rgba(22, 64, 53);
   transform: translateY(100%);
 }
 
-
 .TLC {
-  font-size: 32pt;
+  font-size: 34pt;
   letter-spacing: 1pt;
-  
 }
 
 .sub-head {
   letter-spacing: 2px;
   font-size: 16.5pt;
-  color: #ffffff;
-
-  /* background-color: rgba(112, 112, 112, 0.5); */
-  
+  color: #ffffff;  
 }
 .sub-head-text {
-  font-size: 16pt;
+  font-size: 18pt;
 }
 
 .footer-text-1 {
@@ -803,17 +798,14 @@ background-color: rgba(22, 64, 53);
 }
 
   .navbar-brand,
-.nav-link,
-.nav-text {
-  color: rgb(0, 0, 0) !important;
+  .nav-link,
+  .nav-text {
+      color: rgb(0, 0, 0) !important;
 }
-
 
   .bg-navbar{
     background-color: #ffffff;
   }
-
-
 
   .underline3:hover {
     display: inline-block;
@@ -822,11 +814,9 @@ background-color: rgba(22, 64, 53);
     padding-bottom: 3px;
   }
 
-
   .active-link {
     color: #353535 !important;
   }
-  
 
   .insurance-header-text{
     font-size: 15.5pt;
@@ -849,9 +839,10 @@ background-color: rgba(22, 64, 53);
     text-decoration: underline 1px;
     text-underline-offset: 2px;
   }
-.text-gray{
-  color: #353535;
-}
+
+  .text-gray{
+    color: #353535;
+  }
 
   .side-note {
     text-align: start;
@@ -1105,11 +1096,11 @@ background-color: rgba(22, 64, 53);
   .TLC {
     font-size: 24pt;
   }
-  .ipad-bg{
-   background-color: #003b4f;
-    border-radius: 20px;
-    padding: 20pt;
-  }
+.ipad-bg {
+  background-color: rgba(0, 59, 79, 0.8); /* 8% opacity */
+  border-radius: 20px;
+  padding: 20pt;
+}
 
   .logo {
     width: 35px;
@@ -1124,6 +1115,14 @@ background-color: rgba(22, 64, 53);
   }
 
 }
+
+
+@media (min-width: 1380px) and (max-width: 1580px) {
+  .TLC {
+    font-size: 31pt;
+  }
+}
+
 
 @media (min-width: 1024px) and (max-width: 1380px) {
   .ipad {

@@ -27,7 +27,7 @@ function Tricare() {
             </h2>
           </div>
           <p className="text-white text-start tricare-text text-sm space-1 py-md-4 ">
-            <span className="barlow text-xl ">Great news! We are in-network with TRICARE.</span><br /><br />
+            <span className="barlow text-xl ">Great news! We are in-network with <span className="italics">TRICARE</span>.</span><br /><br />
             Active duty, please have
             your referral made to{" "}
             <Link to="/contact" className="spaced-underline text-white">
