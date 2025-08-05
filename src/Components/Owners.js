@@ -30,7 +30,7 @@ function Owners() {
 
       {/* Image Section */}
       <div className="row d-flex  justify-content-center align-items-center">
-        <h1 className="hideFull barlow  pb-1 ps-4 mt-5 mb-lg-4 mb-0 owners-mobile-text text-start px-2 text-gray-800 mb-0">
+        <h1 className="hideFull barlow  pb-1 ps-4 mt-5 mb-lg-4 mb-0 owners-mobile-text text-start px-2 text-gray-800">
           Meet The Owners
         </h1>
       

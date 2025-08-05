@@ -24,14 +24,13 @@ function Dashboard() {
     if (videoLoaded) {
       window.scrollTo(0, 0);
 
-gsap.to(".left-border-bar", {
-  duration: 1,
-  x: 0,
-  opacity: 1,
-  ease: "power3.out",
-  delay: 1.3, // fade + slide delay to come after sub-head-section animates
-});
-
+      gsap.to(".left-border-bar", {
+        duration: 1,
+        x: 0,
+        opacity: 1,
+        ease: "power3.out",
+        delay: 2, 
+      });
 
       gsap.fromTo(
         ".clip-text",

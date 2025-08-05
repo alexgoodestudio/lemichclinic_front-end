@@ -26,6 +26,14 @@ function Footer() {
           >
             Psychology Today 
           </a>
+          <a 
+            href="https://www.facebook.com/p/The-Lemich-Clinic-For-Military-Mental-Health-100086257112340/" 
+            className="footer-link" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
         </div>
         <div className="flex flex-col space-y-3 text-start">
           <h4 className="font-semibold text-xl text-gray-800">Support</h4>

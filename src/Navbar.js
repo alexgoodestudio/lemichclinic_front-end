@@ -14,9 +14,9 @@ function Navbar() {
     <nav className="navbar barlow bg-white py-3 nav-text navbar-expand-lg main">
       <div className="container overflow-hidden">
         {/* Logo and Brand */}
-        <Link className="logo-location barlow navbar-brand nav-text d-flex" to="/">
-          <span className="logo-color">The Lemich Clinic &nbsp;</span>
-          <span className="">|&nbsp; Norfolk, VA</span>
+        <Link className="logo-location  barlow navbar-brand nav-text d-flex" to="/">
+          <span className="text-slate-800">The Lemich Clinic &nbsp;</span>
+          <span className="text-slate-800">|&nbsp; Norfolk, VA</span>
         </Link>
 
         {/* Navbar Toggler */}
