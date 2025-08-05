@@ -39,7 +39,7 @@ function Owners() {
             ref={logoRef}
             src={img4}
             alt="Gregory and Jennifer Lemich"
-            className="p-lg-3 p-0 owners-img"
+            className="p-lg-5 p-0 owners-img"
           />
         </div>
 

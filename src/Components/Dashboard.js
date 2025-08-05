@@ -24,6 +24,15 @@ function Dashboard() {
     if (videoLoaded) {
       window.scrollTo(0, 0);
 
+gsap.to(".left-border-bar", {
+  duration: 1,
+  x: 0,
+  opacity: 1,
+  ease: "power3.out",
+  delay: 1.3, // fade + slide delay to come after sub-head-section animates
+});
+
+
       gsap.fromTo(
         ".clip-text",
         { yPercent: 100 },
@@ -31,7 +40,7 @@ function Dashboard() {
           yPercent: 0,
           duration: 1.2,
           ease: "power4.out",
-          delay: 0.2
+          delay: 0.2,
         }
       );
 
@@ -43,23 +52,22 @@ function Dashboard() {
           opacity: 1,
           duration: 1.2,
           ease: "power4.out",
-          delay: 0.2
+          delay: 0.2,
         }
       );
 
-
-
-    gsap.fromTo(
-      ".sub-head-section",
-      { y: 50, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power3.out",
-        delay: 1
-      }
-    );
+      gsap.fromTo(
+        ".sub-head-section",
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          delay: 1,
+        }
+      );
+      
 
       gsap.fromTo(
         missionRef.current,
@@ -77,24 +85,6 @@ function Dashboard() {
         }
       );
 
-      gsap.utils.toArray(".service-hover").forEach((card, i) => {
-        gsap.fromTo(
-          card,
-          { opacity: 0, scale: 0.8 },
-          {
-            opacity: 1,
-            scale: 1,
-            ease: "power3.out",
-            duration: 0.8,
-            delay: i * 0.15,
-            scrollTrigger: {
-              trigger: card,
-              start: "top 85%",
-              toggleActions: "play none none reverse",
-            },
-          }
-        );
-      });
     }
   }, [videoLoaded]);
 
@@ -102,20 +92,22 @@ function Dashboard() {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-const handleSubmit = async (formData) => {
-  setLoading(true);
-  setSuccessMessage("");
-  setErrorMessage("");
+  const handleSubmit = async (formData) => {
+    setLoading(true);
+    setSuccessMessage("");
+    setErrorMessage("");
 
-  try {
-    await createContact(formData);
-    setSuccessMessage("Message sent successfully!");
-  } catch (error) {
-    setErrorMessage(error.message || "Error processing contact. Please try again.");
-  } finally {
-    setLoading(false);
-  }
-};
+    try {
+      await createContact(formData);
+      setSuccessMessage("Message sent successfully!");
+    } catch (error) {
+      setErrorMessage(
+        error.message || "Error processing contact. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="bg-slate-100 overflow-hidden">
@@ -147,53 +139,53 @@ const handleSubmit = async (formData) => {
             <div className="absolute inset-0"></div>
             <h1
               ref={titleRef}
-              className="relative ipad-bg  mb-lg-5 text-white ipad textMobile text-start"
+              className="relative ipad-bg border-left-dash mb-lg-5 text-white ipad textMobile text-start"
             >
-<div className="clip-line overflow-hidden">
-  <h1 className="clip-text bold tomorrow text-center TLC px-2 title2 w-full flex justify-center">
-    Home of Military Mental Health
-  </h1>
-</div>
+                <span className="left-border-bar absolute left-0 top-0 h-full bg-white w-1"></span>
+              <div className="clip-line overflow-hidden">
+                <h1 className="clip-text bold tomorrow text-center TLC px-2 title2 w-full flex justify-center">
+                  Home of Military Mental Health
+                </h1>
+              </div>
 
-<div className="clip-line overflow-hidden">
-  <div className="clip-text sub-head sub-head-section demo d-flex">
-    <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
-      <i className="fas fa-phone-alt text-md"></i>
-      <a href="tel:+17575361233" className="phone-link mobile-bold">
-        <span className="p-1 call-text">Call Us</span>
-      </a>
-    </div>
-    <div className="barlow sub-head ms-lg-5 sub-head-text">
-      <Link
-        to="/contact"
-        className="text-white py-2 px-2 no-underline hover:opacity-80 transition-opacity"
-      >
-        <span className="text-white">
-          LOCATED IN <span className="spaced-underline-location">NORFOLK, VIRGINIA</span>
-        </span>
-      </Link>
-    </div>
-  </div>
-</div>
+              <div className="clip-line overflow-hidden">
+                <div className="clip-text sub-head sub-head-section demo d-flex">
+                  <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
+                    <i className="fas fa-phone-alt text-md"></i>
+                    <a
+                      href="tel:+17575361233"
+                      className="phone-link mobile-bold"
+                    >
+                      <span className="p-1 call-text">Call Us</span>
+                    </a>
+                  </div>
+                  <div className="barlow sub-head ms-lg-5 sub-head-text">
+                    <Link
+                      to="/contact"
+                      className="text-white py-2 px-2 no-underline hover:opacity-80 transition-opacity"
+                    >
+                      <span className="text-white">
+                        LOCATED IN{" "}
+                        <span className="spaced-underline-location">
+                          NORFOLK, VIRGINIA
+                        </span>
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </h1>
           </div>
-          
         )}
-        
       </div>
 
       {videoLoaded && (
         <>
           <div className="pt-4">
-            
             <div className="container">
-              
               <div className="row">
-                
                 <div className="col-lg-12">
-                  
                   <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text-spacing barlow text-gray-600 mobile-header-mission justify-center ">
-                    
                     OUR MISSION
                     <div className="row">
                       <div className="col-lg-4"></div>
@@ -203,7 +195,7 @@ const handleSubmit = async (formData) => {
                       <div className="col-lg-4"></div>
                     </div>
                   </h2>
-                  <p className="text-justify px-2  mission-text-spacing mission-paragraph mb-lg-5 text-gray-600 line-height-large">
+                  <p className="text-justify px-2   mission-text-spacing mission-paragraph mb-lg-5 text-gray-600 line-height-large">
                     The Lemich Clinic for Military Mental Health was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority
@@ -221,7 +213,10 @@ const handleSubmit = async (formData) => {
 
           <div className="bg-slate-100">
             <div className="container mb-5">
-              <div ref={missionRef} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
+              <div
+                ref={missionRef}
+                className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center"
+              >
                 {[
                   {
                     icon: "fa-user-circle",
@@ -244,14 +239,21 @@ const handleSubmit = async (formData) => {
                     text: "Our owner, Dr. Lemich, is well-versed in military and VA paperwork, assisting with LIMDU, Med Board, VA, and Security Clearance paperwork if medically necessary.",
                   },
                 ].map((feature, index) => (
-                  <div key={index} className="p-lg-3 p-2 service-hover border rounded mb-lg-0">
+                  <div
+                    key={index}
+                    className="p-lg-3 p-2 service-hover border rounded mb-lg-0"
+                  >
                     <div className="mb-4 mt-lg-5 mt-4">
-                      <i className={`fas ${feature.icon} text-gray-600 fa-2x`}></i>
+                      <i
+                        className={`fas ${feature.icon} text-gray-600 fa-2x`}
+                      ></i>
                     </div>
                     <h2 className="spaced-underline-card-header card-header text-gray-800 barlow text-md md:text-xl mb-3">
                       {feature.title}
                     </h2>
-                    <p className="text-gray-600 card-text mb-lg-5 mb-2">{feature.text}</p>
+                    <p className="text-gray-600 card-text mb-lg-5 mb-2">
+                      {feature.text}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -266,14 +268,15 @@ const handleSubmit = async (formData) => {
             <div className="row bg-slate-100">
               <div className="col-lg-4"></div>
               <div className="col-lg-4 py-5 px-4">
-                <h2 className="mb-5 text-start barlow text-slate-500">Get in Touch with Us</h2>
+                <h2 className="mb-5 text-start barlow text-slate-500">
+                  Get in Touch with Us
+                </h2>
                 <ContactForm
                   onSubmit={handleSubmit}
                   loading={loading}
                   error={errorMessage}
                   successMessage={successMessage}
                 />
-                
               </div>
               <div className="col-lg-4"></div>
             </div>

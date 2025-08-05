@@ -40,7 +40,7 @@ function Tricare() {
             to="/tricare-health-insurance"
             className="group flex items-center text-xl text-white space-x-2 no-underline"
           >
-            <p className="m-0 group-hover:text-teal-100 transition-colors duration-300 ">Learn More</p>
+            <p className="m-0 group-hover:text-slate-600 transition-colors duration-300 ">Learn More</p>
             <span className="material-symbols-outlined text-xl transform transition-all duration-300 group-hover:translate-x-1 group-hover:text-teal-100">
               east
             </span>
