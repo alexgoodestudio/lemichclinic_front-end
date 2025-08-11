@@ -10,64 +10,42 @@ import { createContact } from "../utils/api.js";
 import { Link } from "react-router-dom";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
-// import Norfolk from "./Norfolk.js";
 
 function Dashboard() {
   const titleRef = useRef(null);
   const missionRef = useRef(null);
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(TextPlugin);
+
+  gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   useEffect(() => {
-    if (videoLoaded) {
-      window.scrollTo(0, 0);
+    if (!videoLoaded) return;
 
-      gsap.to(".left-border-bar", {
-        duration: 1,
-        x: 0,
-        opacity: 1,
-        ease: "power3.out",
-        delay: 2, 
-      });
+    window.scrollTo(0, 0);
 
-      gsap.fromTo(
-        ".clip-text",
-        { yPercent: 100 },
-        {
-          yPercent: 0,
-          duration: 1.2,
-          ease: "power4.out",
-          delay: 0.2,
-        }
+    // Create scoped GSAP context for cleanup
+    const ctx = gsap.context(() => {
+      // Timeline for hero animations
+      const tl = gsap.timeline();
+      tl.fromTo(".clip-text", 
+        { yPercent: 100 }, 
+        { yPercent: 0, duration: 1.2, ease: "power4.out" }
+      )
+      .fromTo(".TLC", 
+        { y: -100, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 1.2, ease: "power4.out" }, "<"
+      )
+      .fromTo(".sub-head", 
+        { y: 50, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out" }, "-=0.5"
+      )
+      .fromTo(".btn", 
+        { y: 50, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 1,delay:.275, ease: "power3.out" }, "<"
       );
 
-      gsap.fromTo(
-        ".TLC",
-        { y: -100, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1.2,
-          ease: "power4.out",
-          delay: 0.2,
-        }
-      );
-
-      gsap.fromTo(
-        ".sub-head-section",
-        { y: 50, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          ease: "power3.out",
-          delay: 1,
-        }
-      );
-      
-
+      // Scroll-triggered mission section animation
       gsap.fromTo(
         missionRef.current,
         { opacity: 0, y: 100 },
@@ -83,8 +61,9 @@ function Dashboard() {
           },
         }
       );
+    });
 
-    }
+    return () => ctx.revert();
   }, [videoLoaded]);
 
   const [loading, setLoading] = useState(false);
@@ -140,25 +119,23 @@ function Dashboard() {
               ref={titleRef}
               className="relative ipad-bg border-left-dash mb-lg-5 text-white ipad textMobile text-start"
             >
-                <span className="left-border-bar absolute left-0 top-0 h-full bg-white w-1"></span>
               <div className="clip-line overflow-hidden">
                 <h1 className="clip-text bold tomorrow text-center TLC px-2 title2 w-full flex justify-center">
                   Home of Military Mental Health
                 </h1>
               </div>
 
-              <div className="clip-line overflow-hidden">
-                <div className="clip-text sub-head sub-head-section demo d-flex">
-                  <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
-                    <i className="fas fa-phone-alt text-md"></i>
-                    <a
-                      href="tel:+17575361233"
-                      className="phone-link mobile-bold"
-                    >
-                      <span className="p-1 call-text">Call Us</span>
-                    </a>
-                  </div>
-                  <div className="barlow sub-head ms-lg-5 sub-head-text">
+              <div className="sub-head sub-head-section demo d-flex">
+  <div className="clip-line overflow-hidden">
+  <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
+    <i className="fas fa-phone-alt text-md"></i>
+    <a href="tel:+17575361233" className="phone-link mobile-bold">
+      <span className="p-1 call-text">Call Us</span>
+    </a>
+  </div>
+</div>
+                <div className="clip-line overflow-hidden">
+                  <div className="clip-text barlow sub-head ms-lg-5 sub-head-text">
                     <Link
                       to="/contact"
                       className="text-white py-2 px-2 no-underline hover:opacity-80 transition-opacity"
@@ -184,18 +161,18 @@ function Dashboard() {
             <div className="container">
               <div className="row">
                 <div className="col-lg-12">
-                  <h2 className="mb-lg-4 mb-4 mt-lg-1 mt-2 mission-text-spacing barlow text-gray-600 mobile-header-mission justify-center ">
+                  <h2 className="mb-lg-4 mb-2 mt-lg-5 mt-2 barlow text-gray-600 mobile-header-mission justify-center">
                     OUR MISSION
                     <div className="row">
                       <div className="col-lg-4"></div>
-                      <div className="col-lg-4  ms-2">
+                      <div className="col-lg-4 ms-2">
                         <img src={flag} alt="American Flag" />
                       </div>
                       <div className="col-lg-4"></div>
                     </div>
                   </h2>
-                  <p className="text-justify px-2   mission-text-spacing mission-paragraph mb-lg-5 text-gray-600 line-height-large">
-                    The Lemich Clinic for Military Mental Health was founded on
+                  <p className="text-justify px-2 mission-text  text-gray-600">
+                    <span className="spaced-underline-mission">The Lemich Clinic</span> for Military Mental Health was founded on
                     the belief that everyone who serves should have access to
                     high-quality, confidential mental health care. The majority
                     of our clients are active duty sailors at Naval Station
@@ -268,7 +245,7 @@ function Dashboard() {
               <div className="col-lg-4"></div>
               <div className="col-lg-4 py-5 px-4">
                 <h2 className="mb-5 text-start barlow text-slate-500">
-                  Get in Touch with Us
+                  Get in Touch with Us!
                 </h2>
                 <ContactForm
                   onSubmit={handleSubmit}

@@ -35,8 +35,12 @@
   padding: 5%;
 }
 
-.mission-text-spacing {
-  letter-spacing: 0.5pt;
+.mission-text {
+  letter-spacing: 0.1pt;
+  line-height:2;
+  font-size: 12.5pt;
+  font-weight: 600;
+  margin-bottom: 80px;
 }
 
 .forward {
@@ -247,7 +251,14 @@
   display: inline-block;
   transform: translateY(100%);
 }
+.btn-clip-line {
+  overflow: hidden;
+}
 
+.btn-clip-text {
+  display: inline-block;
+  transform: translateY(100%);
+}
 .TLC {
   font-size: 34pt;
   letter-spacing: 1pt;
@@ -310,6 +321,7 @@
   width: 100%;
 }
 
+
 .background-section {
   position: relative;
   height: 100vh;
@@ -358,6 +370,7 @@
   background-color: #ffffff;
   /* background-color: #dceaf9; */
 }
+
 
 .huge-text {
   font-size: 19vw;
@@ -478,9 +491,23 @@
   text-decoration: underline 1px;
   text-underline-offset: 2px;
 }
+
+
+.spaced-underline-mission {
+  text-decoration: underline 1px;       
+  text-underline-offset: 3px;     
+  text-decoration-color: #003057;   
+  color: #003057;                        
+}
+
+
+.spaced-underline-tricare{
+    text-decoration: underline 1px;
+  text-underline-offset: 3px;
+}
 .spaced-underline-location {
   text-decoration: underline 1px;
-  text-underline-offset: 2px;
+  text-underline-offset: 4px;
 }
 
 .spaced-underline-header {
@@ -523,7 +550,7 @@
   padding-left: 10px;
   padding-right: 10px;
   text-align: start;
-  letter-spacing: 0.5pt;
+  letter-spacing: 0.25pt;
 }
 
 .tricare-text {
@@ -805,10 +832,20 @@
   color: rgb(0, 0, 0);
 }
 
+
+/* phones */
 @media (max-width: 768px) {
   .line-height-large {
     line-height: 2;
   }
+  .mission-text {
+  letter-spacing: 0.1pt;
+  line-height:2;
+  font-size: 11pt;
+  font-weight: 700;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
   .spaced-underline-location {
     text-decoration: none;
   }
@@ -929,7 +966,7 @@
     text-align: justify;
     padding-left: 2px;
     padding-right: 2px;
-    letter-spacing: 0.35pt;
+    letter-spacing: 0.1pt;
   }
 
   .mission {
@@ -1091,7 +1128,7 @@
     margin-top: 6%;
   }
 }
-
+/* ipad */
 @media (min-width: 768px) and (max-width: 1024px) {
   .ipad {
     font-size: 35px;
@@ -1144,13 +1181,13 @@
 
 @media (min-width: 1596px) and (max-width: 1740px) {
   .TLC {
-    font-size: 28pt;
+    font-size: 30pt;
   }
 }
 
 @media (min-width: 1380px) and (max-width: 1595px) {
   .TLC {
-    font-size: 28pt;
+    font-size: 29pt;
   }
 }
 

@@ -7,7 +7,7 @@ function Banner() {
         <img
           src={flag}
           alt="American flag"
-          className="w-4 h-4 sm:w-4 sm:h-5 mx-1 object-contain inline-block"
+          className="w-4 h-4 sm:w-4 sm:h-4 mx-1 object-contain inline-block"
         />
         Dedicated to the Mental Health of Norfolk’s Military Community
         

@@ -26,11 +26,11 @@ function Tricare() {
               TRICARE<span className="text-slate-600">&nbsp;ACCEPTED&nbsp;</span>
             </h2>
           </div>
-          <p className="text-white text-start tricare-text text-sm space-1 py-md-4 ">
+          <p className="text-white text-start tricare-text text-md space-1 py-md-4 ">
             <span className="barlow text-xl ">Great news! We are in-network with <span className="italics">TRICARE</span>.</span><br /><br />
             Active duty, please have
             your referral made to{" "}
-            <Link to="/contact" className="spaced-underline text-white">
+            <Link to="/contact" className="spaced-underline-tricare text-white">
               The Lemich Clinic
             </Link>. Dependents
             and retirees, no referral is needed. Just make an appointment, and
@@ -41,7 +41,7 @@ function Tricare() {
             className="group flex items-center text-xl text-white space-x-2 no-underline"
           >
             <p className="m-0 group-hover:text-slate-600 transition-colors duration-300 ">Learn More</p>
-            <span className="material-symbols-outlined text-xl transform transition-all duration-300 group-hover:translate-x-1 group-hover:text-teal-100">
+            <span className="material-symbols-outlined text-xl transform transition-all duration-300 group-hover:translate-x-1 group-hover:text-slate-800">
               east
             </span>
           </Link>
