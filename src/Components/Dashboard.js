@@ -244,8 +244,8 @@ function Dashboard() {
             <div className="row bg-slate-100">
               <div className="col-lg-4"></div>
               <div className="col-lg-4 py-5 px-4">
-                <h2 className="mb-5 text-start barlow text-slate-500">
-                  Get in Touch with Us!
+                <h2 className=" text-start barlow text-slate-500 form-title">
+                  Get in touch
                 </h2>
                 <ContactForm
                   onSubmit={handleSubmit}
@@ -254,6 +254,7 @@ function Dashboard() {
                   successMessage={successMessage}
                 />
               </div>
+              <div className="bottom-form"></div>
               <div className="col-lg-4"></div>
             </div>
           </div>

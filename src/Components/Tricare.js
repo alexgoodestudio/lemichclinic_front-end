@@ -8,7 +8,7 @@ import "../style.css";
 function Tricare() {
   return (
     <div className="container-fluid  position-relative tricare-section">
-      <div className="row p-4 bg-slate-400 border3  position-relative py-5">
+      <div className="row p-4 bg-tricare1 border3  position-relative py-5">
         <div className="col-lg-3">
           <div className="huge-text container-fluid hideMobile"></div>
 
@@ -23,11 +23,13 @@ function Tricare() {
 
             {/* <img src={check} alt="check mark" className="check-tricare mb-2 rotate "/> */}
             <h2 className="text-white tricare-header space tomorrow ">
-              TRICARE<span className="text-slate-600">&nbsp;ACCEPTED&nbsp;</span>
+              TRICARE<span className="light-blue">&nbsp;ACCEPTED&nbsp;</span>
             </h2>
+            
           </div>
           <p className="text-white text-start tricare-text text-md space-1 py-md-4 ">
             <span className="barlow text-xl ">Great news! We are in-network with <span className="italics">TRICARE</span>.</span><br /><br />
+            
             Active duty, please have
             your referral made to{" "}
             <Link to="/contact" className="spaced-underline-tricare text-white">

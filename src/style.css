@@ -101,6 +101,9 @@
 .bg-banner {
   background-color: #bfd6ee;
 }
+.bg-tricare {
+  background-color: #bfd6ee;
+}
 
 .service-card {
   position: relative;
@@ -478,6 +481,22 @@
 .footer-link:hover {
   color: #000000; /* Pure black on hover */
   text-decoration: none; /* Ensure underline doesn't appear on hover */
+}
+.form-title{
+  margin-bottom: 70px;
+}
+.bottom-form{
+  margin-top: 20px;
+}
+.bg-slate-gradient {
+  background: linear-gradient(
+    to bottom,
+    #f1f5f9 0%,       
+    #c2c9db 25%,      
+    #9aa6b7 50%,      
+    #b1bbce 75%,      
+    #f1f5f9 100%     
+  );
 }
 
 .dotted-underline {
