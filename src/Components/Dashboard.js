@@ -21,7 +21,6 @@ function Dashboard() {
 
   useEffect(() => {
     if (!videoLoaded) return;
-
     window.scrollTo(0, 0);
 
     // Create scoped GSAP context for cleanup

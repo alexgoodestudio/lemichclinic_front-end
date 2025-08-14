@@ -4,8 +4,12 @@ import img2 from "./images/2.avif";
 import img3 from "./images/3.avif";
 import "../style.css";
 import { FileText, Group, History } from "lucide-react";
+import { useEffect } from "react";
 
 function Services() {
+    useEffect(() => { 
+      window.scrollTo(0, 0);
+    });
   return (
     <div className="d-flex flex-column bg-slate-50">
       <Helmet>
