@@ -857,6 +857,15 @@
   .line-height-large {
     line-height: 2;
   }
+
+  .spaced-underline-mission {
+  text-decoration: underline 1px;       
+  text-underline-offset: 3px;     
+  text-decoration-color: #003057;   
+  color: #003057;                        
+}
+
+
   .mission-text {
   letter-spacing: 0.1pt;
   line-height:2;
