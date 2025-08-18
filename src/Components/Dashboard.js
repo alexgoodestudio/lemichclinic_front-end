@@ -180,7 +180,7 @@ function Dashboard() {
                       <div className="col-lg-4"></div>
                     </div>
                   </h2>
-                  <p className="text-justify px-2 mission-text  text-gray-600">
+                  <p className="text-justify px-2 py-lg-1 mission-text  text-gray-600">
                     <span className="spaced-underline-mission">
                       The Lemich Clinic
                     </span>{" "}
@@ -256,7 +256,7 @@ function Dashboard() {
               <div className="col-lg-4"></div>
               <div className="col-lg-4 py-5 px-4">
                 <h2 className=" text-start barlow text-slate-500 form-title">
-                  Get in touch
+                  Get in Touch:
                 </h2>
                 <ContactForm
                   onSubmit={handleSubmit}

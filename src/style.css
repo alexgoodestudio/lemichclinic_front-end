@@ -39,7 +39,7 @@
   letter-spacing: 0.1pt;
   line-height:2;
   font-size: 14.5pt;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 80px;
 }
 
@@ -273,7 +273,7 @@
   color: #ffffff;
 }
 .sub-head-text {
-  font-size: 19pt;
+  font-size: 19.5pt;
 }
 
 .footer-text-1 {
@@ -513,8 +513,8 @@
 
 
 .spaced-underline-mission {
-  text-decoration: underline 2px;       
-  text-underline-offset: 3px;     
+  text-decoration: underline 1.6px;       
+  text-underline-offset: 4px;     
                    
 }
 
@@ -828,6 +828,7 @@
 .light-blue {
   color: #b5cde7;
 }
+
 
 @keyframes fadeInRight {
   from {
