@@ -27,22 +27,29 @@ function Dashboard() {
     const ctx = gsap.context(() => {
       // Timeline for hero animations
       const tl = gsap.timeline();
-      tl.fromTo(".clip-text", 
-        { yPercent: 100 }, 
+      tl.fromTo(
+        ".clip-text",
+        { yPercent: 100 },
         { yPercent: 0, duration: 1.2, ease: "power4.out" }
       )
-      .fromTo(".TLC", 
-        { y: -100, opacity: 0 }, 
-        { y: 0, opacity: 1, duration: 1.2, ease: "power4.out" }, "<"
-      )
-      .fromTo(".sub-head", 
-        { y: 50, opacity: 0 }, 
-        { y: 0, opacity: 1, duration: 1, ease: "power3.out" }, "-=0.5"
-      )
-      .fromTo(".btn", 
-        { y: 50, opacity: 0 }, 
-        { y: 0, opacity: 1, duration: 1,delay:.275, ease: "power3.out" }, "<"
-      );
+        .fromTo(
+          ".TLC",
+          { y: -100, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1.2, ease: "power4.out" },
+          "<"
+        )
+        .fromTo(
+          ".sub-head",
+          { y: 50, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
+          "-=0.5"
+        )
+        .fromTo(
+          ".btn",
+          { y: 50, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1, delay: 0.275, ease: "power3.out" },
+          "<"
+        );
 
       // Scroll-triggered mission section animation
       gsap.fromTo(
@@ -125,14 +132,17 @@ function Dashboard() {
               </div>
 
               <div className="sub-head sub-head-section demo d-flex">
-  <div className="clip-line overflow-hidden">
-  <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
-    <i className="fas fa-phone-alt text-md"></i>
-    <a href="tel:+17575361233" className="phone-link mobile-bold">
-      <span className="p-1 call-text">Call Us</span>
-    </a>
-  </div>
-</div>
+                <div className="clip-line overflow-hidden">
+                  <div className="btn accent-button me-lg-3 me-2 mt-lg-2 text-center my-1">
+                    <i className="fas fa-phone-alt text-md"></i>
+                    <a
+                      href="tel:+17575361233"
+                      className="phone-link mobile-bold"
+                    >
+                      <span className="p-1 call-text">Call Us</span>
+                    </a>
+                  </div>
+                </div>
                 <div className="clip-line overflow-hidden">
                   <div className="clip-text barlow sub-head ms-lg-5 sub-head-text">
                     <Link
@@ -171,15 +181,17 @@ function Dashboard() {
                     </div>
                   </h2>
                   <p className="text-justify px-2 mission-text  text-gray-600">
-                    <span className="spaced-underline-mission">The Lemich Clinic</span> for Military Mental Health was founded on
-                    the belief that everyone who serves should have access to
-                    high-quality, confidential mental health care. The majority
-                    of our clients are active duty sailors at Naval Station
-                    Norfolk. We also see service members from the other military
-                    installations in Virginia. We also work with military
-                    spouses and recent veterans. If you are a first responder or
-                    outside the military, contact us to see if you qualify for
-                    our program.
+                    <span className="spaced-underline-mission">
+                      The Lemich Clinic
+                    </span>{" "}
+                    for Military Mental Health was founded on the belief that
+                    everyone who serves should have access to high-quality,
+                    confidential mental health care. The majority of our clients
+                    are active duty sailors at Naval Station Norfolk. We also
+                    see service members from the other military installations in
+                    Virginia. We also work with military spouses and recent
+                    veterans. If you are a first responder or outside the
+                    military, contact us to see if you qualify for our program.
                   </p>
                 </div>
               </div>

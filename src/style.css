@@ -38,7 +38,7 @@
 .mission-text {
   letter-spacing: 0.1pt;
   line-height:2;
-  font-size: 12.5pt;
+  font-size: 14.5pt;
   font-weight: 600;
   margin-bottom: 80px;
 }
@@ -513,10 +513,9 @@
 
 
 .spaced-underline-mission {
-  text-decoration: underline 1px;       
+  text-decoration: underline 2px;       
   text-underline-offset: 3px;     
-  text-decoration-color: #003057;   
-  color: #003057;                        
+                   
 }
 
 
