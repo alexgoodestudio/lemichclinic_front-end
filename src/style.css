@@ -851,13 +851,23 @@
   color: rgb(0, 0, 0);
 }
 
+  .blue-bg {
+    background-color: rgba(0, 59, 79, 0.8); /* 8% opacity */
+    border-radius: 20px;
+    padding: 30pt;
+  }
+
 
 /* phones */
 @media (max-width: 768px) {
   .line-height-large {
     line-height: 2;
   }
+.blue-bg{
+  background-color: rgba(0, 59, 79, 0.0); /* 8% opacity */
+     padding: 0pt;
 
+}
   .spaced-underline-mission {
   text-decoration: underline 1px;       
   text-underline-offset: 3px;     
@@ -1209,31 +1219,24 @@
 
 @media (min-width: 1596px) and (max-width: 1740px) {
   .TLC {
-    font-size: 30pt;
+    font-size: 32pt;
   }
-}
 
+}
 @media (min-width: 1380px) and (max-width: 1595px) {
   .TLC {
-    font-size: 29pt;
-  }
-}
-
-
-
-@media (min-width: 1024px) and (max-width: 1100px) {
-  .TLC {
-    font-size: 19pt;
+    font-size: 27pt;
   }
   .sub-head {
-    font-size: 10pt;
+    font-size: 17pt;
   }
+
 }
-@media (min-width: 1100px) and (max-width: 1192px) {
-  .TLC {
-    font-size: 21pt;
-  }
-}
+
+
+
+
+
 
 
 @media (min-width: 1193px) and (max-width: 1380px) {
@@ -1250,13 +1253,30 @@
   }
 
   .sub-head {
-    font-size: 15pt;
+    font-size: 13pt;
   }
 
   .logo {
     width: 35px;
     height: 35px;
     margin-right: 17px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1192px) {
+  .TLC {
+    font-size: 21pt;
+  }
+    .sub-head {
+    font-size: 13pt;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .TLC {
+    font-size: 19pt;
+  }
+  .sub-head {
+    font-size: 10pt;
   }
 }
 

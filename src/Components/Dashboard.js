@@ -119,11 +119,11 @@ function Dashboard() {
         </video>
 
         {videoLoaded && (
-          <div className="col-lg-6 ms-lg-2 col-12 relative h-full flex justify-center items-center">
+          <div className="col-lg-6 ms-lg-2 col-12 relative  h-full flex justify-center items-center">
             <div className="absolute inset-0"></div>
             <h1
               ref={titleRef}
-              className="relative ipad-bg border-left-dash mb-lg-5 text-white ipad textMobile text-start"
+              className="relative ipad-bg blue-bg border-left-dash mb-lg-5 text-white ipad textMobile text-start"
             >
               <div className="clip-line overflow-hidden">
                 <h1 className="clip-text bold tomorrow text-center TLC px-2 title2 w-full flex justify-center">
@@ -149,7 +149,7 @@ function Dashboard() {
                       to="/contact"
                       className="text-white py-2 px-2 no-underline hover:opacity-80 transition-opacity"
                     >
-                      <span className="text-white">
+                      <span className="text-white ">
                         LOCATED IN{" "}
                         <span className="spaced-underline-location">
                           NORFOLK, VIRGINIA
