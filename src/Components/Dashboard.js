@@ -5,8 +5,8 @@ import "../style.css";
 import Tricare from "./Tricare.js";
 import Video from "./images/woods.mp4";
 import flag from "./images/flag2.png";
-import ContactForm from "./ContactForm";
-import { createContact } from "../utils/api.js";
+// import ContactForm from "./ContactForm";
+// import { createContact } from "../utils/api.js";
 import { Link } from "react-router-dom";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
@@ -73,26 +73,26 @@ function Dashboard() {
     return () => ctx.revert();
   }, [videoLoaded]);
 
-  const [loading, setLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  // const [loading, setLoading] = useState(false);
+  // const [successMessage, setSuccessMessage] = useState("");
+  // const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = async (formData) => {
-    setLoading(true);
-    setSuccessMessage("");
-    setErrorMessage("");
+  // const handleSubmit = async (formData) => {
+  //   setLoading(true);
+  //   setSuccessMessage("");
+  //   setErrorMessage("");
 
-    try {
-      await createContact(formData);
-      setSuccessMessage("Message sent successfully!");
-    } catch (error) {
-      setErrorMessage(
-        error.message || "Error processing contact. Please try again."
-      );
-    } finally {
-      setLoading(false);
-    }
-  };
+  //   try {
+  //     await createContact(formData);
+  //     setSuccessMessage("Message sent successfully!");
+  //   } catch (error) {
+  //     setErrorMessage(
+  //       error.message || "Error processing contact. Please try again."
+  //     );
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
     <div className="bg-slate-100 overflow-hidden">
@@ -252,7 +252,7 @@ function Dashboard() {
               </div>
             </div>
 
-            <div className="row bg-slate-100">
+            {/* <div className="row bg-slate-100">
               <div className="col-lg-4"></div>
               <div className="col-lg-4 py-5 px-4">
                 
@@ -265,7 +265,7 @@ function Dashboard() {
               </div>
               <div className="bottom-form"></div>
               <div className="col-lg-4"></div>
-            </div>
+            </div> */}
           </div>
         </>
       )}

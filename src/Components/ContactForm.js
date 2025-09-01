@@ -29,9 +29,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
       {successMessage && <div className="text-green-500">{successMessage}</div>}
       
       <div className="row mb-3 ">
-        <h2 className=" text-start barlow text-slate-500 form-title">
-                  Get in Touch
-                </h2>
+   
         <div className="col-lg-6">
           <label className="form-label text-slate-500 font-medium" htmlFor="name">
             Name
@@ -91,7 +89,7 @@ function ContactForm({ onSubmit, initialData = null, loading, error, successMess
       <div className="text-center">
         <button
           type="submit"
-          className="btn accent-button px-6 py-2  hover:shadow-lg transition"
+          className="btn accent-button px-6 py-2  text-gray-600 transition"
           disabled={loading}
         >
        Submit
