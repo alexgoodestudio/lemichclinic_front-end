@@ -38,8 +38,8 @@
 .mission-text {
   letter-spacing: 0.1pt;
   line-height:2;
-  font-size: 14.5pt;
-  font-weight: 500;
+  font-size: 13.5pt;
+  font-weight: 325;
   margin-bottom: 80px;
 }
 
@@ -101,9 +101,7 @@
 .bg-banner {
   background-color: #bfd6ee;
 }
-.bg-tricare {
-  background-color: #bfd6ee;
-}
+
 
 .service-card {
   position: relative;
@@ -263,7 +261,7 @@
   transform: translateY(100%);
 }
 .TLC {
-  font-size: 34pt;
+  font-size: 31pt;
   letter-spacing: 1pt;
 }
 
@@ -273,7 +271,7 @@
   color: #ffffff;
 }
 .sub-head-text {
-  font-size: 19.5pt;
+  font-size: 18pt;
 }
 
 .footer-text-1 {
@@ -360,6 +358,8 @@
   border-top: 1px solid rgb(255, 255, 255);
   z-index: 2;
 }
+
+
 
 .small {
   font-size: 11pt;
@@ -852,9 +852,9 @@
 }
 
   .blue-bg {
-    background-color: rgba(0, 59, 79, 0.8); /* 8% opacity */
+    background-color: rgba(0, 59, 79, 0.72); /* 8% opacity */
     border-radius: 20px;
-    padding: 30pt;
+    padding: 42.5pt;
   }
 
 
@@ -863,16 +863,17 @@
   .line-height-large {
     line-height: 2;
   }
+
+
 .blue-bg{
   background-color: rgba(0, 59, 79, 0.0); /* 8% opacity */
-     padding: 0pt;
+  padding: 0pt;
 
 }
   .spaced-underline-mission {
   text-decoration: underline 1px;       
   text-underline-offset: 3px;     
-  text-decoration-color: #003057;   
-  color: #003057;                        
+                  
 }
 
 
@@ -880,7 +881,6 @@
   letter-spacing: 0.1pt;
   line-height:2;
   font-size: 11pt;
-  font-weight: 700;
   margin-bottom: 50px;
   margin-top: 30px;
 }
@@ -1213,16 +1213,11 @@
     margin-left: 0px;
   }
   .sub-head {
-    font-size: 18pt;
+    font-size: 17pt;
   }
 }
 
-@media (min-width: 1596px) and (max-width: 1740px) {
-  .TLC {
-    font-size: 32pt;
-  }
 
-}
 @media (min-width: 1380px) and (max-width: 1595px) {
   .TLC {
     font-size: 27pt;
@@ -1253,7 +1248,7 @@
   }
 
   .sub-head {
-    font-size: 13pt;
+    font-size: 14pt;
   }
 
   .logo {

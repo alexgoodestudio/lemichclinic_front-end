@@ -43,7 +43,7 @@ function Footer() {
         </div>
       </div>
       <div className="text-sm text-gray-600 mt-10 border-t pt-4 text-center">
-        © {new Date().getFullYear()} The Lemich Clinic <span className="mx-1">|</span> Norfolk, Virginia
+        © {new Date().getFullYear()} The Lemich Clinic <span className="mx-1">•</span> Norfolk, Virginia
       </div>
     </footer>
   );

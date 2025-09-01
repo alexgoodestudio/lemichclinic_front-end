@@ -10,10 +10,11 @@ import { createContact } from "../utils/api.js";
 import { Link } from "react-router-dom";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Helmet } from "react-helmet";
+import AccordionServices from "./AccordionServices.js";
 
 function Dashboard() {
   const titleRef = useRef(null);
-  const missionRef = useRef(null);
+  // const missionRef = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
@@ -52,21 +53,21 @@ function Dashboard() {
         );
 
       // Scroll-triggered mission section animation
-      gsap.fromTo(
-        missionRef.current,
-        { opacity: 0, y: 100 },
-        {
-          opacity: 1,
-          y: 0,
-          ease: "power4.out",
-          scrollTrigger: {
-            trigger: missionRef.current,
-            start: "top 90%",
-            end: "bottom 10%",
-            scrub: 1,
-          },
-        }
-      );
+      // gsap.fromTo(
+      //   missionRef.current,
+      //   { opacity: 0, y: 100 },
+      //   {
+      //     opacity: 1,
+      //     y: 0,
+      //     ease: "power4.out",
+      //     scrollTrigger: {
+      //       trigger: missionRef.current,
+      //       start: "top 90%",
+      //       end: "bottom 10%",
+      //       scrub: 1,
+      //     },
+      //   }
+      // );
     });
 
     return () => ctx.revert();
@@ -167,39 +168,38 @@ function Dashboard() {
       {videoLoaded && (
         <>
           <div className="pt-4">
-            <div className="container">
+            <div className="">
               <div className="row">
-                <div className="col-lg-12">
-                  <h2 className="mb-lg-4 mb-2 mt-lg-5 mt-2 barlow text-gray-600 mobile-header-mission justify-center">
-                    OUR MISSION
-                    <div className="row">
-                      <div className="col-lg-4"></div>
-                      <div className="col-lg-4 ms-2">
-                        <img src={flag} alt="American Flag" />
-                      </div>
-                      <div className="col-lg-4"></div>
-                    </div>
-                  </h2>
-                  <p className="text-justify px-2 py-lg-1 mission-text  text-gray-600">
-                    <span className="spaced-underline-mission">
-                      The Lemich Clinic
-                    </span>{" "}
-                    for Military Mental Health was founded on the belief that
-                    everyone who serves should have access to high-quality,
-                    confidential mental health care. The majority of our clients
-                    are active duty sailors at Naval Station Norfolk. We also
-                    see service members from the other military installations in
-                    Virginia. We also work with military spouses and recent
-                    veterans. If you are a first responder or outside the
-                    military, contact us to see if you qualify for our program.
+                <div className="col-lg-3"></div>
+                <div className="col-lg-6">
+                <h2 className="mb-lg-1 mt-lg-5 mt-2 barlow spaced-underline-mission text-gray-600 mobile-header-mission text-center">
+                  OUR MISSION
+                  <div className="mt-2 inline-block w-full">
+                    <img src={flag} className="w-full max-w-[420px] mx-auto" alt="Flag" />
+                  </div>
+                </h2>
+                  <p className="text-justify px-lg-0 px-4 pb-lg-5 mb-5 mission-text  text-gray-600">
+                    The Lemich Clinic for Military Mental Health was founded on
+                    the belief that everyone who serves should have access to
+                    high-quality, confidential mental health care. The majority
+                    of our clients are active duty sailors at Naval Station
+                    Norfolk. We also see service members from the other military
+                    installations in Virginia. We also work with military
+                    spouses and recent veterans. If you are a first responder or
+                    outside the military, contact us to see if you qualify for
+                    our program.
                   </p>
+                 <div className="pb-5 mb-5 px-lg-0 px-5">
+              <AccordionServices />
+            </div>
                 </div>
+                <div className="col-lg-3"></div>
               </div>
             </div>
           </div>
 
           <div className="bg-slate-100">
-            <div className="container mb-5">
+            {/* <div className="container mb-5">
               <div
                 ref={missionRef}
                 className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-center"
@@ -244,7 +244,7 @@ function Dashboard() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <div className="row">
               <div className="col-lg-12">
@@ -255,9 +255,7 @@ function Dashboard() {
             <div className="row bg-slate-100">
               <div className="col-lg-4"></div>
               <div className="col-lg-4 py-5 px-4">
-                <h2 className=" text-start barlow text-slate-500 form-title">
-                  Get in Touch:
-                </h2>
+                
                 <ContactForm
                   onSubmit={handleSubmit}
                   loading={loading}
