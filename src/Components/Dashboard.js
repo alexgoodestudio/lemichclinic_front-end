@@ -168,10 +168,10 @@ function Dashboard() {
       {videoLoaded && (
         <>
           <div className="pt-4">
-            <div className="">
+            <div className="container">
               <div className="row">
-                <div className="col-lg-3"></div>
-                <div className="col-lg-6">
+               
+                <div className="col-lg-12">
                 <h2 className="mb-lg-1 mt-lg-5 mt-2 barlow spaced-underline-mission text-gray-600 mobile-header-mission text-center">
                   OUR MISSION
                   <div className="mt-2 inline-block w-full">
@@ -193,7 +193,7 @@ function Dashboard() {
               <AccordionServices />
             </div>
                 </div>
-                <div className="col-lg-3"></div>
+              
               </div>
             </div>
           </div>
