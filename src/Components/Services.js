@@ -45,7 +45,7 @@ function Services() {
         <div className="row">
           {/* Card 1 */}
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-full text-start transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg card-animate">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-full text-start card-animate">
               <img
                 src={img1}
                 className="card-img-top object-cover w-full h-48"
@@ -70,7 +70,7 @@ function Services() {
 
           {/* Card 2 */}
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-full text-start transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg card-animate">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-full text-start card-animate">
               <img
                 src={img2}
                 className="card-img-top object-cover w-full h-48"
@@ -95,7 +95,7 @@ function Services() {
 
           {/* Card 3 */}
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-full text-start transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg card-animate">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-full text-start card-animate">
               <img
                 src={img3}
                 className="card-img-top object-cover w-full h-48"
