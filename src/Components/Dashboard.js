@@ -21,6 +21,10 @@ function Dashboard() {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   useEffect(() => {
+    console.log("testing 123");
+  }, []);
+
+  useEffect(() => {
     if (!videoLoaded) return;
     window.scrollTo(0, 0);
 
