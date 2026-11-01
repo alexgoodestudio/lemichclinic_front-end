@@ -154,6 +154,11 @@
   transition: all 0.3s ease;
 }
 
+.transition-card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
 .big-line {
   --a: -45deg; /* control the angle */
   --t: 0.23em; /* thickness of the underline */
@@ -205,7 +210,13 @@
 
 .service-hover {
   border-radius: 0.5rem; /* rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+}
+
+.service-hover:hover {
+  transform: translateY(-0.25rem); /* lift on hover */
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 .process-header {
   text-align: start;
@@ -1272,6 +1283,7 @@
     font-size: 10pt;
   }
 }
+
 /* For mobile devices (where hover isn’t available) */
 @media (hover: none) {
   .zoom.in-view {
